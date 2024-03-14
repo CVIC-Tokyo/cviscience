@@ -6,6 +6,7 @@ const en = {
     EQUIPMENTS: "Equipments",
     SERVICES: "Services",
     PROCESS: "Process",
+    CONTACT: "Contact",
     ACCESS: "Access",
     MORE: "More",
   },
