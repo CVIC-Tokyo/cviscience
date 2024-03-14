@@ -7,3 +7,5 @@ interface TranslationTabProps {
 }
 
 interface HomeDropdownProps {}
+
+interface FooterProps {}
