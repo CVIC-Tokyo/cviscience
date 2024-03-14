@@ -1,13 +1,9 @@
-interface NavbarProps {
-    
-}
+interface NavbarProps {}
 
 interface TranslationTabProps {
-    language: string;
-    setLanguage: (arg: string) => void;
-    handleLanguage: () => void;
+  language: string;
+  setLanguage: (arg: string) => void;
+  handleLanguage: () => void;
 }
 
-interface HomeDropdownProps {
-    
-}
+interface HomeDropdownProps {}
