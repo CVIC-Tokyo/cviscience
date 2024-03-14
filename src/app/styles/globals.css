@@ -10,6 +10,10 @@ html {
   .navbar-button {
     @apply p-2 bg-white md:text-sm lg:text-base flex items-center justify-center tracking-wide uppercase hover:bg-gray-50 cursor-pointer
   }
+
+  .footer-text {
+    @apply text-xs
+  }
 }
 
 /* body {
