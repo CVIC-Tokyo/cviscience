@@ -7,3 +7,7 @@ interface TranslationTabProps {
     setLanguage: (arg: string) => void;
     handleLanguage: () => void;
 }
+
+interface HomeDropdownProps {
+    
+}
