@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link"
 import Image from "next/image";
 import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png"
+import TranslationTab from "./navcomponents/TranslationTab";
 
 const Navbar: React.FC<NavbarProps> = () => {
     const [showSidebar, setShowSidebar] = useState<boolean>(false);
@@ -43,6 +44,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 <Link href={"/"} className="scroll-false">
                     <Image src={cvic_logo_600} alt="CVIC logo" width={600} unoptimized/>
                 </Link>
+                <TranslationTab language={ language } setLanguage={ setLanguage } handleLanguage={ handleLanguage }/>
             </div>
         </div>
     )
