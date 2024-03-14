@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window?.scrollY >= 90) {
+      if (window?.scrollY >= 45) {
         setShowShadow(true);
       } else {
         setShowShadow(false);
@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = () => {
       } else {
         setLocale("en");
       }
-    }, 250); // 1000 milliseconds = 1 second
+    }, 500); // 1000 milliseconds = 1 second
   };
 
   const handleSidebar = () => {
@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 z-[100] ${showShadow ? `shadow-lg bg-opacity-75` : ""}`}
+      className={`fixed top-0 left-0 right-0 z-[100] bg-white/75 ${showShadow ? `shadow-lg` : ""}`}
     >
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="max-w-[1240px] mx-auto flex justify-between items-center p-2">
