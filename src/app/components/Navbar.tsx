@@ -33,10 +33,8 @@ const Navbar: React.FC<NavbarProps> = () => {
     // Delay the execution of the language toggle by 1 second
     setTimeout(() => {
       if (locale === "en") {
-        console.log('handle')
         setLocale("ja");
       } else {
-        console.log('twice')
         setLocale("en");
       }
     }, 250); // 1000 milliseconds = 1 second
