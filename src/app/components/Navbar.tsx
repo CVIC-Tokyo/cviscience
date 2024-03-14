@@ -6,12 +6,13 @@ import Image from "next/image";
 import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
 import TranslationTab from "./navcomponents/TranslationTab";
 import { getLocaleData } from "@/utils/helpers";
+import { useGlobalContext } from "../Context/store";
 
 const Navbar: React.FC<NavbarProps> = () => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
   const [showShadow, setShowShadow] = useState<boolean>(false);
-  const [language, setLanguage] = useState<string>("en");
-  const localeData = getLocaleData(language);
+  const { locale, setLocale } = useGlobalContext();
+  const localeData = getLocaleData(locale);
 
   useEffect(() => {
     const handleShadow = () => {
@@ -31,10 +32,12 @@ const Navbar: React.FC<NavbarProps> = () => {
   const handleLanguage = () => {
     // Delay the execution of the language toggle by 1 second
     setTimeout(() => {
-      if (language === "en") {
-        setLanguage("ja");
+      if (locale === "en") {
+        console.log('handle')
+        setLocale("ja");
       } else {
-        setLanguage("en");
+        console.log('twice')
+        setLocale("en");
       }
     }, 250); // 1000 milliseconds = 1 second
   };
@@ -53,8 +56,6 @@ const Navbar: React.FC<NavbarProps> = () => {
           <Image src={cvic_logo_600} alt="CVIC logo" width={600} unoptimized />
         </Link>
         <TranslationTab
-          language={language}
-          setLanguage={setLanguage}
           handleLanguage={handleLanguage}
         />
       </div>

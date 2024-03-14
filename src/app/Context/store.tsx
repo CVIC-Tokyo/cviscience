@@ -8,15 +8,15 @@ interface ContextProps {
 }
 
 const GlobalContext = createContext<ContextProps>({
-  locale: 'en',
-  setLocale: (): string => 'en'
+  locale: '',
+  setLocale: (): string => ''
 });
 
 export const GlobalContextProvider = ({ children }:{ children:ReactNode }) => {
   const [locale, setLocale] = useState('');
 
   return (
-    <GlobalContext.Provider value={{ locale, setLocale}}>
+    <GlobalContext.Provider value={{ locale, setLocale }}>
       {children}
     </GlobalContext.Provider>
   )
