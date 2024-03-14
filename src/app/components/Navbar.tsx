@@ -5,11 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
 import TranslationTab from "./navcomponents/TranslationTab";
+import { getLocaleData } from "@/utils/helpers";
 
 const Navbar: React.FC<NavbarProps> = () => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
   const [showShadow, setShowShadow] = useState<boolean>(false);
   const [language, setLanguage] = useState<string>("en");
+  const localeData = getLocaleData(language);
 
   useEffect(() => {
     const handleShadow = () => {
@@ -27,9 +29,14 @@ const Navbar: React.FC<NavbarProps> = () => {
   }, []);
 
   const handleLanguage = () => {
-    if (language === "en") {
-      setLanguage("ja");
-    } else setLanguage("en");
+    // Delay the execution of the language toggle by 1 second
+    setTimeout(() => {
+      if (language === "en") {
+        setLanguage("ja");
+      } else {
+        setLanguage("en");
+      }
+    }, 250); // 1000 milliseconds = 1 second
   };
 
   const handleSidebar = () => {
@@ -40,6 +47,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     <div
       className={`fixed top-0 left-0 right-0 z-[100] ${showShadow ? `shadow-lg bg-opacity-75` : ""}`}
     >
+      {/* NAVBAR LOGO AND TOGGLE */}
       <div className="max-w-[1240px] mx-auto flex justify-between items-center p-2">
         <Link href={"/"} className="scroll-false">
           <Image src={cvic_logo_600} alt="CVIC logo" width={600} unoptimized />
@@ -49,6 +57,29 @@ const Navbar: React.FC<NavbarProps> = () => {
           setLanguage={setLanguage}
           handleLanguage={handleLanguage}
         />
+      </div>
+      {/* NAVBAR BUTTONS */}
+      <div className="max-w-[1240px] mx-auto hidden md:flex items-center pt-2">
+        <div className="w-full p-1 grid grid-cols-6">
+          <Link href="/" className="navbar-button">
+            {localeData.BASIC.HOME}
+          </Link>
+          <Link href="/" className="navbar-button">
+            {localeData.BASIC.SERVICES}
+          </Link>
+          <Link href="/" className="navbar-button">
+            {localeData.BASIC.PROCESS}
+          </Link>
+          <Link href="/" className="navbar-button">
+            {localeData.BASIC.CONTACT}
+          </Link>
+          <Link href="/" className="navbar-button">
+            {localeData.BASIC.ACCESS}
+          </Link>
+          <Link href="/" className="navbar-button">
+            {localeData.BASIC.MORE}
+          </Link>
+        </div>
       </div>
     </div>
   );
