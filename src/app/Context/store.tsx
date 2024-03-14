@@ -13,7 +13,7 @@ const GlobalContext = createContext<ContextProps>({
 });
 
 export const GlobalContextProvider = ({ children }:{ children:ReactNode }) => {
-  const [locale, setLocale] = useState('');
+  const [locale, setLocale] = useState('en');
 
   return (
     <GlobalContext.Provider value={{ locale, setLocale }}>
