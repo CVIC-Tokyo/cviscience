@@ -14,4 +14,11 @@ html {
   .footer-text {
     @apply text-xs
   }
+
+  .noto-serif jp-black {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
 }
