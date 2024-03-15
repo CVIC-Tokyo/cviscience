@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../Context/store";
 import { getLocaleData } from "@/utils/helpers";
-import { BsArrowBarRight, BsArrowRightCircle } from "react-icons/bs";
-import { FaArrowRightArrowLeft } from "react-icons/fa6";
-import { BiRightArrow, BiRightArrowAlt, BiRightArrowCircle } from "react-icons/bi";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 const About: React.FC<AboutProps> = () => {
   const aboutImage = "/images/about_image.jpg";

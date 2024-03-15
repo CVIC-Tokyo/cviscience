@@ -9,3 +9,5 @@ interface HomeDropdownProps {}
 interface FooterProps {}
 
 interface AboutProps {}
+
+interface EquipmentsProps {}
