@@ -52,6 +52,9 @@ const Navbar: React.FC<NavbarProps> = () => {
     >
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="max-w-[1240px] mx-auto flex justify-between items-center p-2">
+      <div onClick={handleSidebar} className="md:hidden curser-pointer">
+        <AiOutlineMenu className="border-y-2 border=[#820000] p-2" size={45} />
+      </div>
         <Link href={"/"} className="scroll-false">
           <Image src={cvic_logo_600} alt="CVIC logo" width={600} unoptimized />
         </Link>
@@ -79,9 +82,6 @@ const Navbar: React.FC<NavbarProps> = () => {
             {localeData.BASIC.MORE}
           </Link>
         </div>
-      </div>
-      <div onClick={handleSidebar} className="md:hidden curser-pointer">
-        <AiOutlineMenu className="border-x-2 border=[#820000] p-2" size={45} />
       </div>
       <Sidebar
         showSidebar={showSidebar}

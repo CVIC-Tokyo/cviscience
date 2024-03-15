@@ -4,7 +4,7 @@ import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
 
 const Access: React.FC<AccessProps> = () => {
-  const accessImage = "/images/access_image.JPG";
+  const accessImage = "/images/access_image.jpg";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
