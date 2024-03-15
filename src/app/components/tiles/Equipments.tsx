@@ -53,12 +53,12 @@ const Equipments: React.FC<EquipmentsProps> = () => {
           }}
           className="w-full h-full"
         ></div>
-        <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center bg-white/5 hover:bg-black/25">
+        <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center bg-black/25 hover:bg-black/50">
           <div
             className="w-[60%] h-full flex flex-col items-center justify-center"
             style={{
-              transform: zoomOut ? "scale(2)" : "scale(1)", // Zoom-out effect for the overlay
-              transition: "transform 2s ease-in-out", // Transition effect for scaling
+              transform: zoomOut ? "scale(2)" : "scale(1.5)", // Zoom-out effect for the overlay
+              transition: "transform 1s ease-in-out", // Transition effect for scaling
             }}
           >
             <p className="md:m-2 noto-serif text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">
