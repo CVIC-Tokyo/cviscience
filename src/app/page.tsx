@@ -1,5 +1,6 @@
 "use client";
 
+import "./styles/globals.css";
 import React from "react";
 import About from "./components/About";
 import Equipments from "./components/Equipments";
