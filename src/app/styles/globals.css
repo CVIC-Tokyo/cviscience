@@ -2,32 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  .navbar-button {
+    @apply p-2 md:text-sm lg:text-base flex items-center justify-center tracking-wide uppercase hover:bg-gray-50 cursor-pointer;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .footer-text {
+    @apply text-xs;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .noto-serif jp-black {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-style: normal;
   }
 }
