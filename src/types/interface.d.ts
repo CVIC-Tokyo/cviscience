@@ -11,3 +11,7 @@ interface FooterProps {}
 interface AboutProps {}
 
 interface EquipmentsProps {}
+
+interface DoctorsProps {}
+
+interface ServicesProps {}
