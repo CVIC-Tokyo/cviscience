@@ -38,7 +38,7 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full max-h-[40vw] overflow-clip relative"
+      className="w-full min-h-[60vw] md:max-h-[40vw] overflow-clip relative"
     >
       <div className="w-full h-full m-auto relative">
         <div
@@ -53,7 +53,7 @@ const About: React.FC<AboutProps> = () => {
           }}
           className="w-full h-full"
         ></div>
-        <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center bg-black/25 hover:bg-black/50">
+        <div className="absolute top-0 left-0 w-full h-[60vw] flex items-start justify-center bg-black/25 hover:bg-black/50">
           <div
             className="w-[60%] h-full flex flex-col items-center justify-center"
             style={{
