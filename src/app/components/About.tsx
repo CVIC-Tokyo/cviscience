@@ -21,7 +21,7 @@ const About: React.FC<AboutProps> = () => {
   }, [onHover]);
 
   return (
-    <div className="w-full max-h-[50vw] overflow-hidden relative">
+    <div className="w-full max-h-[40vw] overflow-hidden relative">
       <div className="w-full h-full m-auto relative">
         <div
           style={{
@@ -38,17 +38,17 @@ const About: React.FC<AboutProps> = () => {
         ></div>
         <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center bg-black/5 hover:bg-black/25">
           <div
-            className="w-[50%] h-full flex flex-col items-center justify-center"
+            className="w-[60%] h-full flex flex-col items-center justify-center"
             style={{
               transform: zoomOut ? "scale(2)" : "scale(1)", // Zoom-out effect for the overlay
               transition: "transform 4s ease-in-out", // Transition effect for scaling
             }}
           >
-            <p className="noto-serif text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">{localeData.CVIC_INFO.CLINIC_NAME}</p>
-            <p className="noto-serif text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">{localeData.CVIC_INFO.CLINIC_DESCRIPTION}</p>
-            <div className="p-2 h-[10px] w-[50px] md:h-[20px] md:w-[70px] lg:h-[30px] lg:w-[90px] rounded bg-white/75 hover:bg-white flex items-center justify-center">
-              <p className="text:[2px] md:text-xs lg:text-xs">About </p>
-              <BiRightArrowAlt/>
+            <p className="md:m-2 noto-serif text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">{localeData.CVIC_INFO.CLINIC_NAME}</p>
+            <p className="md:m-2 noto-serif text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">{localeData.CVIC_INFO.CLINIC_DESCRIPTION}</p>
+            <div className="noto-serif p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
+              <p className="text-[4px] md:text-xs lg:text-xs">{localeData.BASIC.ABOUT}</p>
+              <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]"/>
             </div>
           </div>
         </div>
