@@ -7,6 +7,8 @@ import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
 import TranslationTab from "./navcomponents/TranslationTab";
 import { getLocaleData } from "@/utils/helpers";
 import { useGlobalContext } from "../Context/store";
+import { AiOutlineMenu } from "react-icons/ai";
+import Sidebar from "./Sidebar";
 
 const Navbar: React.FC<NavbarProps> = () => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
@@ -78,6 +80,18 @@ const Navbar: React.FC<NavbarProps> = () => {
           </Link>
         </div>
       </div>
+      <div onClick={handleSidebar} className="md:hidden curser-pointer">
+        <AiOutlineMenu
+          className="border-x-2 border=[#820000] p-2"
+          size={45}
+        />
+      </div>
+      <Sidebar
+         showSidebar={showSidebar}
+         setShowSidebar={setShowSidebar}
+         handleSidebar={handleSidebar}
+         handleLanguage={handleLanguage}
+      />
     </div>
   );
 };
