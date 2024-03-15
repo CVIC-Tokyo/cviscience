@@ -21,7 +21,7 @@ const Services: React.FC<ServicesProps> = () => {
           setZoomOut(false); // Zoom out when not on screen
         }
       },
-      { threshold: 0.5 } // Adjust threshold as needed
+      { threshold: 0.5 }, // Adjust threshold as needed
     );
 
     if (containerRef.current) {
@@ -36,7 +36,10 @@ const Services: React.FC<ServicesProps> = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full max-h-[40vw] overflow-clip relative">
+    <div
+      ref={containerRef}
+      className="w-full max-h-[40vw] overflow-clip relative"
+    >
       <div className="w-full h-full m-auto relative">
         <div
           style={{
@@ -58,11 +61,17 @@ const Services: React.FC<ServicesProps> = () => {
               transition: "transform 2s ease-in-out", // Transition effect for scaling
             }}
           >
-            <p className="md:m-2 noto-serif text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">{localeData.BASIC.SERVICES}</p>
-            <p className="md:m-2 noto-serif text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">{localeData.CVIC_INFO.CLINIC_DESCRIPTION}</p>
+            <p className="md:m-2 noto-serif text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">
+              {localeData.BASIC.SERVICES}
+            </p>
+            <p className="md:m-2 noto-serif text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
+              {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
+            </p>
             <div className="noto-serif p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
-              <p className="text-[4px] md:text-xs lg:text-xs">{localeData.BASIC.SERVICES}</p>
-              <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]"/>
+              <p className="text-[4px] md:text-xs lg:text-xs">
+                {localeData.BASIC.SERVICES}
+              </p>
+              <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]" />
             </div>
           </div>
         </div>

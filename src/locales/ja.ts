@@ -24,8 +24,7 @@ const ja = {
     CLINIC_NAME: "心臓画像クリニック",
     CLINIC_ADDRESS: "東京都新宿区新小川町1-14 飯田橋リープレックスビズ 4F",
     CLINIC_DESCRIPTION: "心臓MRI検査、心臓ドック、画像診断の専門家チーム",
-    CLINIC_RIGHTS_RESERVED:
-      "© 2020 CVIC Allrights Reserved.",
+    CLINIC_RIGHTS_RESERVED: "© 2020 CVIC Allrights Reserved.",
   },
 };
 

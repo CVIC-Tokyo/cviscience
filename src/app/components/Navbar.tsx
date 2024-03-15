@@ -53,9 +53,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         <Link href={"/"} className="scroll-false">
           <Image src={cvic_logo_600} alt="CVIC logo" width={600} unoptimized />
         </Link>
-        <TranslationTab
-          handleLanguage={handleLanguage}
-        />
+        <TranslationTab handleLanguage={handleLanguage} />
       </div>
       {/* NAVBAR BUTTONS */}
       <div className="max-w-[1240px] mx-auto hidden md:flex items-center pt-2">

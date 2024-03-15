@@ -8,11 +8,11 @@ html {
 
 @layer base {
   .navbar-button {
-    @apply p-2 md:text-sm lg:text-base flex items-center justify-center tracking-wide uppercase hover:bg-gray-50 cursor-pointer
+    @apply p-2 md:text-sm lg:text-base flex items-center justify-center tracking-wide uppercase hover:bg-gray-50 cursor-pointer;
   }
 
   .footer-text {
-    @apply text-xs
+    @apply text-xs;
   }
 
   .noto-serif jp-black {
@@ -20,5 +20,4 @@ html {
     font-weight: 900;
     font-style: normal;
   }
-  
 }

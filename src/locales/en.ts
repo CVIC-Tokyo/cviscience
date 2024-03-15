@@ -27,8 +27,7 @@ const en = {
       "Iidabashi Leeplex Biz 4F, 1-14 Shin-Ogawacho, Shinjuku-ku, Tokyo",
     CLINIC_DESCRIPTION:
       "Team of specialists for cardiovascular MRI examinations, heart check-ups and image diagnosis",
-    CLINIC_RIGHTS_RESERVED:
-      "© 2020 CVIC Allrights Reserved.",
+    CLINIC_RIGHTS_RESERVED: "© 2020 CVIC Allrights Reserved.",
   },
 };
 
