@@ -4,7 +4,7 @@ import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
 
 const Doctors: React.FC<DoctorsProps> = () => {
-  const doctorsImage = "/images/doctors_image.jpg";
+  const doctorsImage = "/images/doctors_image.JPG";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
