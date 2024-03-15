@@ -15,3 +15,5 @@ interface EquipmentsProps {}
 interface DoctorsProps {}
 
 interface ServicesProps {}
+
+interface AccessProps {}

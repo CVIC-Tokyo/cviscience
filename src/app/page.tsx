@@ -6,6 +6,7 @@ import About from "./components/About";
 import Equipments from "./components/Equipments";
 import Doctors from "./components/Doctors";
 import Services from "./components/Services";
+import Access from "./components/Access";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Equipments />
       <Doctors />
+      <Access />
     </main>
   );
 }
