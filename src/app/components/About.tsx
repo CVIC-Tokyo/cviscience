@@ -7,16 +7,13 @@ const About: React.FC<AboutProps> = () => {
   const aboutImage = "/images/about_image.jpg";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
-  const [loaded, setLoaded] = useState(false);
-  const [onHover, setOnHover] = useState(false);
   const localeData = getLocaleData(locale);
 
   useEffect(() => {
-    setLoaded(true);
+    setZoomOut(true);
     setTimeout(() => {
-      setZoomOut(true);
     }, 0); // Set a delay before starting the zoom-out animation (adjust duration as needed)
-  }, [onHover]);
+  }, []);
 
   return (
     <div className="w-full max-h-[40vw] overflow-hidden relative">
@@ -27,10 +24,9 @@ const About: React.FC<AboutProps> = () => {
             width: "100vw", // Width of the container will be the size of the screen
             height: "40vw", // You can adjust the height as needed
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
-            transition: "transform 4s ease-in-out", // Transition effect for scaling
-            backgroundSize: zoomOut ? "contain" : "cover", // Adjust background size for zoom-out
+            transition: "transform 2s ease-in-out", // Transition effect for scaling
+            backgroundSize: "contain", // Adjust background size for zoom-out
             backgroundPosition: "center", // Centers the image within the container
-            opacity: loaded ? 1 : 0, // Initially hide the image
           }}
           className="w-full h-full bg-center bg-no-repeat shadow-lg"
         ></div>
@@ -39,7 +35,7 @@ const About: React.FC<AboutProps> = () => {
             className="w-[60%] h-full flex flex-col items-center justify-center"
             style={{
               transform: zoomOut ? "scale(2)" : "scale(1)", // Zoom-out effect for the overlay
-              transition: "transform 4s ease-in-out", // Transition effect for scaling
+              transition: "transform 2s ease-in-out", // Transition effect for scaling
             }}
           >
             <p className="md:m-2 noto-serif text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">{localeData.CVIC_INFO.CLINIC_NAME}</p>
