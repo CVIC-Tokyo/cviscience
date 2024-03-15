@@ -3,8 +3,8 @@ import { useGlobalContext } from "../Context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
 
-const Equipments: React.FC<EquipmentsProps> = () => {
-  const equipmentsImage = "/images/vintage_titan.jpg";
+const Doctors: React.FC<DoctorsProps> = () => {
+  const doctorsImage = "/images/doctors_image.jpg";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
@@ -40,7 +40,7 @@ const Equipments: React.FC<EquipmentsProps> = () => {
       <div className="w-full h-full m-auto relative">
         <div
           style={{
-            backgroundImage: `url(${equipmentsImage})`,
+            backgroundImage: `url(${doctorsImage})`,
             width: "100vw", // Width of the container will be the size of the screen
             height: "40vw", // You can adjust the height as needed
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
@@ -58,10 +58,10 @@ const Equipments: React.FC<EquipmentsProps> = () => {
               transition: "transform 2s ease-in-out", // Transition effect for scaling
             }}
           >
-            <p className="md:m-2 noto-serif text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">{localeData.BASIC.EQUIPMENTS}</p>
+            <p className="md:m-2 noto-serif text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">{localeData.BASIC.DOCTORS}</p>
             <p className="md:m-2 noto-serif text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">{localeData.CVIC_INFO.CLINIC_DESCRIPTION}</p>
             <div className="noto-serif p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
-              <p className="text-[4px] md:text-xs lg:text-xs">{localeData.BASIC.EQUIPMENTS}</p>
+              <p className="text-[4px] md:text-xs lg:text-xs">{localeData.BASIC.DOCTORS}</p>
               <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]"/>
             </div>
           </div>
@@ -71,4 +71,4 @@ const Equipments: React.FC<EquipmentsProps> = () => {
   );
 };
 
-export default Equipments;
+export default Doctors;
