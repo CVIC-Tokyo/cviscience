@@ -81,16 +81,13 @@ const Navbar: React.FC<NavbarProps> = () => {
         </div>
       </div>
       <div onClick={handleSidebar} className="md:hidden curser-pointer">
-        <AiOutlineMenu
-          className="border-x-2 border=[#820000] p-2"
-          size={45}
-        />
+        <AiOutlineMenu className="border-x-2 border=[#820000] p-2" size={45} />
       </div>
       <Sidebar
-         showSidebar={showSidebar}
-         setShowSidebar={setShowSidebar}
-         handleSidebar={handleSidebar}
-         handleLanguage={handleLanguage}
+        showSidebar={showSidebar}
+        setShowSidebar={setShowSidebar}
+        handleSidebar={handleSidebar}
+        handleLanguage={handleLanguage}
       />
     </div>
   );
