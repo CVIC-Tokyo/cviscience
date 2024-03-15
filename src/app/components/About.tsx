@@ -53,7 +53,7 @@ const About: React.FC<AboutProps> = () => {
           }}
           className="w-full h-full"
         ></div>
-        <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center bg-black/5 hover:bg-black/25">
+        <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center bg-white/5 hover:bg-black/25">
           <div
             className="w-[60%] h-full flex flex-col items-center justify-center"
             style={{
