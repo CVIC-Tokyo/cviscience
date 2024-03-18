@@ -48,7 +48,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-full"
+          className="w-full h-full relative"
         >
           <Image src={doctorsImage} alt="services image" style={{objectFit:"cover"}} fill/>
         </div>

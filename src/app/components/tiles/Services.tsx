@@ -5,7 +5,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";
 
 const Services: React.FC<ServicesProps> = () => {
-  const servicesImage = "/images/services_image.JPG";
+  const servicesImage = "/images/services_image.jpg";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
@@ -38,8 +38,9 @@ const Services: React.FC<ServicesProps> = () => {
 
   return (
     <div
+    id="services"
       ref={containerRef}
-      className="w-full h-[280px] md:h-[50vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black"
+      className="w-[screen] h-[250px] md:h-[50vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black"
     >
       <div className="w-full h-full relative">
         <div
@@ -47,12 +48,11 @@ const Services: React.FC<ServicesProps> = () => {
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-full"
+          className="w-full h-full relative"
         >
           <Image src={servicesImage} alt="services image" style={{objectFit:"cover"}} fill/>
         </div>
         <div
-          id="services"
           className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/25 hover:bg-black/50">
           <div
             className="w-auto h-auto flex flex-col items-start justify-start"
