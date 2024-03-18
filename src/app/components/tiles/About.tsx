@@ -39,32 +39,33 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full max-h-screen overflow-hidden relative border-y-8 border-black">
-      <div className="w-full h-auto flex justify-end items-end m-auto relative">
+      className="w-full h-[450px] md:h-[50vh] lg:h-[50vw] overflow-hidden relative border-y-8 border-black"
+    >
+      <div className="w-full h-full relative">
         <div
           style={{
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-[400px] md:h-[50vh] lg:h-[70vh]"
+          className="w-full h-full"
         >
-          <Image src={aboutImage} style={{objectFit:"cover"}} fill alt="leeplex" />
+          <Image src={aboutImage} alt="services image" style={{objectFit:"cover"}} fill/>
         </div>
-        <div className="absolute top-0 left-0 w-full h-[400px] md:h-[50vh] lg:h-[70vh] flex items-start justify-center bg-black/25 hover:bg-black/60">
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/25 hover:bg-black/50">
           <div
-            className="w-[60%] h-full flex flex-col items-center justify-center"
+            className="w-auto h-auto flex flex-col items-center justify-center"
             style={{
               transform: zoomOut ? "scale(2)" : "scale(1.5)", // Zoom-out effect for the overlay
               transition: "transform 1s ease-in-out", // Transition effect for scaling
             }}
           >
-            <p className="md:m-2 noto-serif text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">
+            <p className="md:m-2 text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">
               {localeData.CVIC_INFO.CLINIC_NAME}
             </p>
-            <p className="md:m-2 noto-serif text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
+            <p className="md:m-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
               {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
             </p>
-            <div className="noto-serif p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
+            <div className="p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
               <p className="text-[4px] md:text-xs lg:text-xs">
                 {localeData.BASIC.ABOUT}
               </p>

@@ -39,7 +39,7 @@ const Services: React.FC<ServicesProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full h-[350px] md:h-[50vh] lg:h-[60vh] overflow-hidden relative border-y-8 border-black"
+      className="w-full h-[280px] md:h-[50vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black"
     >
       <div className="w-full h-full relative">
         <div
