@@ -5,7 +5,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";
 
 const Services: React.FC<ServicesProps> = () => {
-  const servicesImage = "/images/services_image.JPG";
+  const servicesImage = "/images/services_image.jpg";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
@@ -38,8 +38,9 @@ const Services: React.FC<ServicesProps> = () => {
 
   return (
     <div
+    id="services"
       ref={containerRef}
-      className="w-full h-[280px] md:h-[50vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black"
+      className="w-[screen] h-[310px] md:h-[40vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black"
     >
       <div className="w-full h-full relative">
         <div
@@ -47,12 +48,11 @@ const Services: React.FC<ServicesProps> = () => {
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-full"
+          className="w-full h-[200px] md:h-[30vh] lg:h-[70vh]"
         >
           <Image src={servicesImage} alt="services image" style={{objectFit:"cover"}} fill/>
         </div>
         <div
-          id="services"
           className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/25 hover:bg-black/50">
           <div
             className="w-auto h-auto flex flex-col items-start justify-start"
@@ -61,7 +61,7 @@ const Services: React.FC<ServicesProps> = () => {
               transition: "transform 1s ease-in-out", // Transition effect for scaling
             }}
           >
-            <p className="md:m-2 text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">
+            <p className="md:m-2 text-white text-[10px] md:text-base lg:text-3xl font-bold h-[30px]">
               {localeData.BASIC.SERVICES}
             </p>
             <p className="md:m-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">

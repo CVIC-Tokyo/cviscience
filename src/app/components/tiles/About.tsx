@@ -40,7 +40,7 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full h-[450px] md:h-[50vh] lg:h-[50vw] overflow-hidden relative border-y-8 border-black"
+      className="w-full h-[450px] md:h-[50vh] lg:h-[90vh] overflow-hidden relative border-y-8 border-black"
     >
       <div className="w-full h-full relative">
         <div
@@ -48,7 +48,7 @@ const About: React.FC<AboutProps> = () => {
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-full"
+          className="w-full h-[350px] md:h-[40vh] lg:h-[80vh]"
         >
           <Image src={aboutImage} alt="services image" style={{objectFit:"cover"}} fill/>
         </div>
@@ -61,7 +61,7 @@ const About: React.FC<AboutProps> = () => {
             }}
           >
             <Image src={boxLogo} alt="cvic-logo-red" width={40} height={40} />
-            <p className="md:m-2 text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">
+            <p className="md:m-2 text-white text-[13px] md:text-base lg:text-3xl font-bold h-[30px]">
               {localeData.CVIC_INFO.CLINIC_NAME}
             </p>
             <p className="md:m-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">

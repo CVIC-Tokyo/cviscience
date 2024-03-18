@@ -40,7 +40,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
     <div
       id="doctors"
       ref={containerRef}
-      className="w-full h-[250px] md:h-[35vh] lg:h-[70vh] overflow-hidden relative border-y-8 border-black"
+      className="w-full h-[210px] md:h-[35vh] lg:h-[70vh] overflow-hidden relative border-y-8 border-black"
     >
       <div className="w-full h-full relative">
         <div
@@ -48,7 +48,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-full"
+          className="w-full h-[180px] md:h-[50vh] lg:h-[60vh]"
         >
           <Image src={doctorsImage} alt="services image" style={{objectFit:"cover"}} fill/>
         </div>
@@ -60,7 +60,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
               transition: "transform 1s ease-in-out", // Transition effect for scaling
             }}
           >
-            <p className="md:m-2 text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">
+            <p className="md:m-2 text-white text-[10px] md:text-base lg:text-3xl font-bold h-[30px]">
               {localeData.BASIC.DOCTORS}
             </p>
             <p className="md:m-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">

@@ -40,7 +40,7 @@ const Services: React.FC<ServicesProps> = () => {
     <div
       id="equipments"
       ref={containerRef}
-      className="w-full h-[290px] md:h-[40vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black"
+      className="w-[screen] h-[310px] md:h-[40vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black"
     >
       <div className="w-full h-full relative">
         <div
@@ -48,7 +48,7 @@ const Services: React.FC<ServicesProps> = () => {
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-full"
+          className="w-full h-[200px] md:h-[30vh] lg:h-[70vh]"
         >
           <Image src={servicesImage} alt="services image" style={{objectFit:"cover"}} fill/>
         </div>
@@ -60,7 +60,7 @@ const Services: React.FC<ServicesProps> = () => {
               transition: "transform 1s ease-in-out", // Transition effect for scaling
             }}
           >
-            <p className="md:m-2 text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">
+            <p className="md:m-2 text-white text-[10px] md:text-base lg:text-3xl font-bold h-[30px]">
               {localeData.BASIC.EQUIPMENTS}
             </p>
             <p className="md:m-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
