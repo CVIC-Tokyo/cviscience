@@ -53,12 +53,14 @@ const Navbar: React.FC<NavbarProps> = () => {
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="max-w-[1240px] mx-auto flex justify-between items-center p-2">
       <div onClick={handleSidebar} className="md:hidden curser-pointer">
-        <AiOutlineMenu className="border-y-2 border=[#820000] p-2" size={45} />
+        <AiOutlineMenu className="border-y-2 border-[#820000] p-2" size={45} />
       </div>
         <Link href={"/"} className="scroll-false">
           <Image src={cvic_logo_600} alt="CVIC logo" width={600} unoptimized />
         </Link>
-        <TranslationTab handleLanguage={handleLanguage} />
+        <div className="hidden md:flex h-full">
+          <TranslationTab handleLanguage={handleLanguage} />
+        </div>
       </div>
       {/* NAVBAR BUTTONS */}
       <div className="max-w-[1240px] mx-auto hidden md:flex items-center pt-2">
@@ -66,16 +68,16 @@ const Navbar: React.FC<NavbarProps> = () => {
           <Link href="/" className="navbar-button">
             {localeData.BASIC.HOME}
           </Link>
-          <Link href="/" className="navbar-button">
+          <Link href="/#services" className="navbar-button">
             {localeData.BASIC.SERVICES}
           </Link>
-          <Link href="/" className="navbar-button">
-            {localeData.BASIC.PROCESS}
+          <Link href="/#equipments" className="navbar-button">
+            {localeData.BASIC.EQUIPMENTS}
           </Link>
-          <Link href="/" className="navbar-button">
-            {localeData.BASIC.CONTACT}
+          <Link href="/#doctors" className="navbar-button">
+            {localeData.BASIC.DOCTORS}
           </Link>
-          <Link href="/" className="navbar-button">
+          <Link href="/#access" className="navbar-button">
             {localeData.BASIC.ACCESS}
           </Link>
           <Link href="/" className="navbar-button">
