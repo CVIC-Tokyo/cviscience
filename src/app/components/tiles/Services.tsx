@@ -40,7 +40,7 @@ const Services: React.FC<ServicesProps> = () => {
     <div
     id="services"
       ref={containerRef}
-      className="w-[screen] h-[250px] md:h-[50vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black"
+      className="w-[screen] h-[380px] md:h-[40vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black"
     >
       <div className="w-full h-full relative">
         <div
@@ -48,7 +48,7 @@ const Services: React.FC<ServicesProps> = () => {
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-full relative"
+          className="w-full h-[250px] md:h-[30vh] lg:h-[70vh]"
         >
           <Image src={servicesImage} alt="services image" style={{objectFit:"cover"}} fill/>
         </div>
