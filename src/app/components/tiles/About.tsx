@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { useGlobalContext, useSmallScreen } from "../../Context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
+import Image from "next/image";
+import access_image from "../../../../public/images/access_image.jpg"
 
 const About: React.FC<AboutProps> = () => {
-  const isSmallScreen = useSmallScreen();
-  const aboutImage = "/images/access_image.JPG";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
@@ -40,21 +40,17 @@ const About: React.FC<AboutProps> = () => {
     <div
       ref={containerRef}
       className="w-full max-h-screen overflow-hidden relative border-y-8 border-black">
-      <div className="w-full h-full flex justify-end items-end m-auto relative">
+      <div className="w-full h-auto flex justify-end items-end m-auto relative">
         <div
           style={{
-            backgroundImage: `url(${aboutImage})`,
-            width: "100vw", // Width of the container will be the size of the screen
-            height: `${isSmallScreen ? '49vh' : "80vh"}`, // You can adjust the height as needed
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
-            backgroundSize: "cover", // Adjust background size for zoom-out
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center", // Centers the image within the container
           }}
-          className="w-full"
-        ></div>
-        <div className="absolute top-0 left-0 w-full h-[50vh] md:h-[80vh] flex items-start justify-center bg-black/25 hover:bg-black/60">
+          className="w-full h-[400px] md:h-[50vh] lg:h-[70vh]"
+        >
+          <Image src={access_image} style={{objectFit:"cover"}} fill alt="leeplex" />
+        </div>
+        <div className="absolute top-0 left-0 w-full h-[400px] md:h-[50vh] lg:h-[70vh] flex items-start justify-center bg-black/25 hover:bg-black/60">
           <div
             className="w-[60%] h-full flex flex-col items-center justify-center"
             style={{
