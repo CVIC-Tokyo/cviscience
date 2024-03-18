@@ -50,22 +50,24 @@ const SideBar: React.FC<SidebarProps> = ({
             </div>
           </div>
           {/* SIDE BAR BUTTONS */}
-          <div className="py-4 flex-col">
-            <ul className="uppercase">
+          <div className="py-4 flex flex-col w-full">
+            <div className="w-full flex items-center justify-center">
               <TranslationTab handleLanguage={handleLanguage}/>
-              <Link onClick={() => setShowSidebar(false)} href="/">
-                <li className="py-4 text-sm">Services</li>
+            </div>
+            <ul className="uppercase grid grid-cols-2 w-full">
+              <Link onClick={() => setShowSidebar(false)} href="/#services" className="flex items-center justify-center">
+                <li className="py-4 text-sm">{localeData.BASIC.SERVICES}</li>
               </Link>
-              <Link onClick={() => setShowSidebar(false)} href="/">
-                <li className="py-4 text-sm">Process</li>
+              <Link onClick={() => setShowSidebar(false)} href="/#equipments" className="flex items-center justify-center">
+                <li className="py-4 text-sm">{localeData.BASIC.EQUIPMENTS}</li>
               </Link>
-              <Link onClick={() => setShowSidebar(false)} href="/">
-                <li className="py-4 text-sm">Contact</li>
+              <Link onClick={() => setShowSidebar(false)} href="/#doctors" className="flex items-center justify-center">
+                <li className="py-4 text-sm">{localeData.BASIC.DOCTORS}</li>
               </Link>
-              <Link onClick={() => setShowSidebar(false)} href="/">
-                <li className="py-4 text-sm">Access</li>
+              <Link onClick={() => setShowSidebar(false)} href="/#access" className="flex items-center justify-center">
+                <li className="py-4 text-sm">{localeData.BASIC.ACCESS}</li>
               </Link>
-              <Link onClick={() => setShowSidebar(false)} href="/">
+              <Link onClick={() => setShowSidebar(false)} href="/" className="flex items-center justify-center">
                 <li className="py-4 text-sm">More</li>
               </Link>
             </ul>
