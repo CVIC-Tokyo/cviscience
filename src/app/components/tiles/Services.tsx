@@ -38,7 +38,7 @@ const Services: React.FC<ServicesProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full max-h-[40vw] overflow-clip relative"
+      className="w-full max-h-screen overflow-hidden relative border-y-8 border-black"
     >
       <div className="w-full h-full m-auto relative">
         <div

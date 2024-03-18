@@ -15,8 +15,8 @@ interface ContextProps {
 }
 
 export const useSmallScreen = () => {
-  if (window) {
-    return window.innerWidth <= 768;
+  if (typeof window !== undefined) {
+    return window.innerWidth <= 740;
   } else return
 }
 

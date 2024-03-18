@@ -32,7 +32,7 @@ const SideBar: React.FC<SidebarProps> = ({
       <div
         className={
           showSidebar
-            ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-auto p-5 ease-in duration-500 bg-white"
+            ? "fixed left-0 top-0 w-full h-auto p-5 ease-in duration-500 bg-white"
             : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
         }
       >
