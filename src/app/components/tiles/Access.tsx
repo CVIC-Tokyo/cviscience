@@ -38,6 +38,7 @@ const Access: React.FC<AccessProps> = () => {
 
   return (
     <div
+      id="access"
       ref={containerRef}
       className="w-full h-[350px] md:h-[40vh] lg:h-[70vh] overflow-hidden relative border-y-8 border-black">
         <Image src={accessImage} alt="access" fill style={{objectFit: "cover"}}/>

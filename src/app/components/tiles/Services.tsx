@@ -51,7 +51,9 @@ const Services: React.FC<ServicesProps> = () => {
         >
           <Image src={servicesImage} alt="services image" style={{objectFit:"cover"}} fill/>
         </div>
-        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/25 hover:bg-black/50">
+        <div
+          id="services"
+          className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/25 hover:bg-black/50">
           <div
             className="w-auto h-auto flex flex-col items-start justify-start"
             style={{

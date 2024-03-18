@@ -38,6 +38,7 @@ const Services: React.FC<ServicesProps> = () => {
 
   return (
     <div
+      id="equipments"
       ref={containerRef}
       className="w-full h-[290px] md:h-[40vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black"
     >

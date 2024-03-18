@@ -6,6 +6,7 @@ import Image from "next/image";
 
 const About: React.FC<AboutProps> = () => {
   const aboutImage = "/images/access_image.jpg";
+  const boxLogo = "/logos/cvic_logo_box_red.png"
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
@@ -59,6 +60,7 @@ const About: React.FC<AboutProps> = () => {
               transition: "transform 1s ease-in-out", // Transition effect for scaling
             }}
           >
+            <Image src={boxLogo} alt="cvic-logo-red" width={40} height={40} />
             <p className="md:m-2 text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">
               {localeData.CVIC_INFO.CLINIC_NAME}
             </p>
