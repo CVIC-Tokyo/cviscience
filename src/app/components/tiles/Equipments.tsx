@@ -60,7 +60,7 @@ const Services: React.FC<ServicesProps> = () => {
               transition: "transform 1s ease-in-out", // Transition effect for scaling
             }}
           >
-            <p className="md:m-2 text-white text-[8px] md:text-sm lg:text-base font-bold h-[30px]">
+            <p className="md:m-2 text-white text-[10px] md:text-base lg:text-3xl font-bold h-[30px]">
               {localeData.BASIC.EQUIPMENTS}
             </p>
             <p className="md:m-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
