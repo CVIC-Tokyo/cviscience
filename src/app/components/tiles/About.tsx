@@ -61,7 +61,7 @@ const About: React.FC<AboutProps> = () => {
             }}
           >
             <Image src={boxLogo} alt="cvic-logo-red" width={40} height={40} />
-            <p className="md:m-2 text-white text-[13px] md:text-base lg:text-3xl font-bold h-[30px] overflow-auto">
+            <p className="md:m-2 text-white text-[13px] md:text-base lg:text-3xl font-bold h-[30px]">
               {localeData.CVIC_INFO.CLINIC_NAME}
             </p>
             <p className="md:m-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">

@@ -40,7 +40,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
     <div
       id="doctors"
       ref={containerRef}
-      className="w-full h-[200px] md:h-[35vh] lg:h-[70vh] overflow-hidden relative border-y-8 border-black"
+      className="w-full h-[210px] md:h-[35vh] lg:h-[70vh] overflow-hidden relative border-y-8 border-black"
     >
       <div className="w-full h-full relative">
         <div
@@ -48,7 +48,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-[150px] md:h-[25vh] lg:h-[60vh]"
+          className="w-full h-[180px] md:h-[50vh] lg:h-[60vh]"
         >
           <Image src={doctorsImage} alt="services image" style={{objectFit:"cover"}} fill/>
         </div>
