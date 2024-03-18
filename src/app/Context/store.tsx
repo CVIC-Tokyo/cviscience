@@ -14,6 +14,12 @@ interface ContextProps {
   setLocale: Dispatch<SetStateAction<string>>;
 }
 
+export const useSmallScreen = () => {
+  if (window) {
+    return window.innerWidth <= 768;
+  } else return
+}
+
 const GlobalContext = createContext<ContextProps>({
   locale: "",
   setLocale: (): string => "",

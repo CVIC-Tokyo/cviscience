@@ -4,8 +4,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { GlobalContextProvider } from "./Context/store";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "Cardiovascular Imaging Clinic",
   description: "CVIC Iidabashi",
