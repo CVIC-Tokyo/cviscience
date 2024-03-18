@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { useGlobalContext } from "../../Context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
-import access_image from "../../../../public/images/access_image.jpg"
 import Image from "next/image";
 
 const Access: React.FC<AccessProps> = () => {
@@ -41,7 +40,7 @@ const Access: React.FC<AccessProps> = () => {
     <div
       ref={containerRef}
       className="w-full h-[350px] md:h-[40vh] lg:h-[70vh] overflow-hidden relative border-y-8 border-black">
-        <Image src={accessImage} alt="access" fill/>
+        <Image src={accessImage} alt="access" fill style={{objectFit: "cover"}}/>
     </div>
   );
 };
