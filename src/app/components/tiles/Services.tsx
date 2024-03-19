@@ -10,24 +10,17 @@ const Services: React.FC<ServicesProps> = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          clearTimeout(timeoutId);
-          timeoutId = setTimeout(() => {
+          setTimeout(() => {
             setZoomOut(true);
-          }, 3000);
+          }, 0);
         } else {
-          clearTimeout(timeoutId);
-          timeoutId = setTimeout(() => {
-            setZoomOut(false);
-          }, 1000)
           setZoomOut(false); // Zoom out when not on screen
         }
       },
-      { threshold: 1 }, // Adjust threshold as needed
+      { threshold: 0.5 }, // Adjust threshold as needed
     );
 
     if (containerRef.current) {
@@ -45,7 +38,7 @@ const Services: React.FC<ServicesProps> = () => {
     <div
       id="services"
       ref={containerRef}
-      className={`w-[screen] md:h-[40vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black ${zoomOut ? 'h-[490px]' : 'h-[340px]'}`}
+      className="w-[screen] md:h-[40vh] lg:h-[80vh] overflow-hidden relative border-y-8 border-black h-[490px]"
     >
       <div
         style={{
@@ -79,7 +72,7 @@ const Services: React.FC<ServicesProps> = () => {
           </div>
       <div className="hidden md:flex absolute top-0 left-0 w-full h-full items-center justify-center bg-black/25 hover:bg-black/50">
         <div
-          className="w-auto h-auto flex flex-col items-center justify-center"
+          className="w-auto h-auto flex flex-col items-start justify-center"
           style={{
             transform: zoomOut ? "scale(2)" : "scale(1.5)", // Zoom-out effect for the overlay
             transition: "transform 1s ease-in-out", // Transition effect for scaling

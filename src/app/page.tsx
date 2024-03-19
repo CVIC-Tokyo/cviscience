@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <main className="w-full h-auto pt-20 md:pt-44 lg:pt-48">
       <About />
+      <Doctors />
       <Services />
       <Equipments />
-      <Doctors />
       <Access />
     </main>
   );
