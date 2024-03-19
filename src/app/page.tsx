@@ -10,7 +10,7 @@ import Access from "./components/tiles/Access";
 
 export default function Home() {
   return (
-    <main className="w-full h-auto pt-20 md:pt-44 lg:pt-48">
+    <main className="w-screen h-screen pt-20 md:pt-44 lg:pt-48">
       <About />
       <Doctors />
       <Services />
