@@ -5,7 +5,6 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";
 
 const Access: React.FC<AccessProps> = () => {
-  const accessImage = "/images/access_image.jpg";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
@@ -40,8 +39,7 @@ const Access: React.FC<AccessProps> = () => {
     <div
       id="access"
       ref={containerRef}
-      className="w-full h-[350px] md:h-[40vh] lg:h-[70vh] overflow-hidden relative border-y-8 border-black">
-        <Image src={accessImage} alt="access" fill style={{objectFit: "cover"}}/>
+      className="w-full h-[350px] md:h-[40vh] lg:h-[70vh] border-t-8 flex items-center justify-center bg-bottom border-black bg-fixed bg-parallax bg-cover">
     </div>
   );
 };
