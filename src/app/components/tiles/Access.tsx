@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { useGlobalContext } from "../../Context/store";
 import { getLocaleData } from "@/utils/helpers";
+import GoogleMap from "../GoogleMap";
 
 const Access: React.FC<AccessProps> = () => {
   const { locale } = useGlobalContext();
@@ -12,7 +13,13 @@ const Access: React.FC<AccessProps> = () => {
       id="access"
       ref={containerRef}
       className="w-full h-[350px] md:h-[40vh] lg:h-[70vh] border-t-8 flex items-center justify-center bg-bottom border-black bg-fixed bg-parallax bg-cover"
-    ></div>
+    >
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="w-[80%] h-[60%] flex items-center justify-center bg-white rounded-lg shadow-3xl">
+          <GoogleMap />
+        </div>
+      </div>
+    </div>
   );
 };
 
