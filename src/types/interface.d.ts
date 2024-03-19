@@ -24,3 +24,5 @@ interface DoctorsProps {}
 interface ServicesProps {}
 
 interface AccessProps {}
+
+interface GoogleMapProps {}
