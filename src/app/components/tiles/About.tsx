@@ -39,13 +39,13 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full h-[450px] md:h-[50vh] lg:h-[90vh] overflow-hidden relative border-y-8 border-black"
+      className="w-full h-[450px] md:h-[50vh] lg:h-[90vh] overflow-hidden relative border-black"
     >
       <div className="w-full h-full relative">
         <div
           id="access"
           ref={containerRef}
-          className="w-full h-[450px] md:h-[50vh] lg:h-[90vh] border-t-8 flex items-center justify-center bg-bottom border-black bg-fixed bg-parallax bg-cover"
+          className="w-full h-[450px] md:h-[50vh] lg:h-[90vh] flex items-center justify-center bg-bottom border-black bg-fixed bg-parallax bg-cover"
         ></div>
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/25 hover:bg-black/50">
           <div
