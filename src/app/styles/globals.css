@@ -15,6 +15,10 @@ html {
     @apply text-xs;
   }
 
+  .tile-hidden-info {
+    @apply md:hidden h-full w-full absolute top-0 left-0 items-end justify-center bg-black/25 hover:bg-black/50 transition-all duration-500
+  }
+
   .noto-serif jp-black {
     font-family: "Noto Serif JP", serif;
     font-weight: 900;

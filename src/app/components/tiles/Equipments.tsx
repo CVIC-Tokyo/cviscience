@@ -5,7 +5,6 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";
 
 const Services: React.FC<ServicesProps> = () => {
-  const servicesImage = "/images/vintage_titan.jpg";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
