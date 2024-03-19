@@ -12,6 +12,7 @@ const config: Config = {
         'parallax': 'url("/images/access_image.jpg")',
         'services': 'url("/images/services_image.JPG")',
         'equipments': 'url("/images/vintage_titan.jpg")',
+        'doctors': 'url("/images/doctors_image.JPG")',
       },
     },
   },
