@@ -79,14 +79,14 @@ const Services: React.FC<ServicesProps> = () => {
           }}
         >
           <p className="m-2 text-white text-base lg:text-3xl font-bold h-[30px]">
-            {localeData.BASIC.SERVICES}
+            {localeData.BASIC.EQUIPMENTS}
           </p>
           <p className="m-2 text-white text-[9px] lg:text-sm h-[20px]">
             {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
           </p>
           <div className="p-2 w-auto h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
             <p className="text-xs lg:text-xs">
-              {localeData.BASIC.SERVICES}
+              {localeData.BASIC.EQUIPMENTS}
             </p>
             <BiRightArrowAlt className="md:size-[10px] lg:size-[15px]" />
           </div>
