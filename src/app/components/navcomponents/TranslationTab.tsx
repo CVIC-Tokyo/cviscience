@@ -9,12 +9,12 @@ const TranslationTab: React.FC<TranslationTabProps> = ({ handleLanguage }) => {
   return (
     <div className="w-[200px] p-2 rounded-lg border-2 flex justify-center items-center border-[#820000]">
       <div
-        className="ml-5 text-3xl flex justify-center items-center w-full h-full cursor-pointer"
+        className="text-3xl flex justify-center items-center w-full h-full cursor-pointer"
         onClick={() => handleLanguage()}
       >
         <div className="flex uppercase">
           {locale}
-          <FaLanguage />
+          <FaLanguage className="mx-2"/>
           {locale === "ja" ? <BsToggleOff /> : <BsToggleOn />}
         </div>
       </div>

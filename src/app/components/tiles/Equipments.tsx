@@ -48,7 +48,7 @@ const Services: React.FC<ServicesProps> = () => {
         className="w-full h-[220px] md:h-[30vh] lg:h-[70vh] bg-equipments bg-cover bg-top md:bg-center bg-fixed"
       ></div>
           <div
-            className={`flex md:hidden h-full w-full absolute top-0 left-0 items-end justify-center bg-black/25 hover:bg-black/50`}>
+            className="flex md:hidden h-full w-full absolute top-0 left-0 items-end justify-center bg-black/25 hover:bg-black/50`">
             <div
               className="flex items-center transition-transform duration-500s flex-col p-2 bg-black h-[100px] w-full"
               style={{
@@ -56,7 +56,7 @@ const Services: React.FC<ServicesProps> = () => {
                 transition: "transform 1s ease-in-out", // Transition effect for scaling
               }}
             >
-              <p className="md:m-2 text-white text-[10px] font-bold h-[30px]">
+              <p className="text-white text-[10px] font-bold h-[30px]">
                 {localeData.BASIC.EQUIPMENTS}
               </p>
               <p className="text-white text-[4px] h-[20px] w-[150px]">
@@ -78,15 +78,15 @@ const Services: React.FC<ServicesProps> = () => {
             transition: "transform 1s ease-in-out", // Transition effect for scaling
           }}
         >
-          <p className="m-2 text-white text-base lg:text-3xl font-bold h-[30px]">
-            {localeData.BASIC.SERVICES}
+          <p className="my-2 text-white text-base lg:text-3xl font-bold h-[30px]">
+            {localeData.BASIC.EQUIPMENTS}
           </p>
-          <p className="m-2 text-white text-[9px] lg:text-sm h-[20px]">
+          <p className="my-2 text-white text-[9px] lg:text-sm h-[20px]">
             {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
           </p>
-          <div className="p-2 w-auto h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
+          <div className="my-2 p-2 w-auto h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
             <p className="text-xs lg:text-xs">
-              {localeData.BASIC.SERVICES}
+              {localeData.BASIC.EQUIPMENTS}
             </p>
             <BiRightArrowAlt className="md:size-[10px] lg:size-[15px]" />
           </div>
