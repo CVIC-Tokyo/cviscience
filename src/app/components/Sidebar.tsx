@@ -52,22 +52,42 @@ const SideBar: React.FC<SidebarProps> = ({
           {/* SIDE BAR BUTTONS */}
           <div className="py-4 flex flex-col w-full">
             <div className="w-full flex items-center justify-center">
-              <TranslationTab handleLanguage={handleLanguage}/>
+              <TranslationTab handleLanguage={handleLanguage} />
             </div>
             <ul className="uppercase grid grid-cols-2 w-full">
-              <Link onClick={() => setShowSidebar(false)} href="/#services" className="flex items-center justify-center">
+              <Link
+                onClick={() => setShowSidebar(false)}
+                href="/#services"
+                className="flex items-center justify-center"
+              >
                 <li className="py-4 text-sm">{localeData.BASIC.SERVICES}</li>
               </Link>
-              <Link onClick={() => setShowSidebar(false)} href="/#equipments" className="flex items-center justify-center">
+              <Link
+                onClick={() => setShowSidebar(false)}
+                href="/#equipments"
+                className="flex items-center justify-center"
+              >
                 <li className="py-4 text-sm">{localeData.BASIC.EQUIPMENTS}</li>
               </Link>
-              <Link onClick={() => setShowSidebar(false)} href="/#doctors" className="flex items-center justify-center">
+              <Link
+                onClick={() => setShowSidebar(false)}
+                href="/#doctors"
+                className="flex items-center justify-center"
+              >
                 <li className="py-4 text-sm">{localeData.BASIC.DOCTORS}</li>
               </Link>
-              <Link onClick={() => setShowSidebar(false)} href="/#access" className="flex items-center justify-center">
+              <Link
+                onClick={() => setShowSidebar(false)}
+                href="/#access"
+                className="flex items-center justify-center"
+              >
                 <li className="py-4 text-sm">{localeData.BASIC.ACCESS}</li>
               </Link>
-              <Link onClick={() => setShowSidebar(false)} href="/" className="flex items-center justify-center">
+              <Link
+                onClick={() => setShowSidebar(false)}
+                href="/"
+                className="flex items-center justify-center"
+              >
                 <li className="py-4 text-sm">More</li>
               </Link>
             </ul>

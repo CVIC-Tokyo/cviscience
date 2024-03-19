@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'parallax': 'url("/images/access_image.jpg")',
-        'services': 'url("/images/services_image.JPG")',
-        'equipments': 'url("/images/vintage_titan.jpg")',
-        'doctors': 'url("/images/doctors_image.JPG")',
+        parallax: 'url("/images/access_image.jpg")',
+        services: 'url("/images/services_image.JPG")',
+        equipments: 'url("/images/vintage_titan.jpg")',
+        doctors: 'url("/images/doctors_image.JPG")',
       },
     },
   },

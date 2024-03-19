@@ -49,8 +49,7 @@ const Services: React.FC<ServicesProps> = () => {
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
           className="w-full h-[200px] md:h-[30vh] lg:h-[70vh] bg-equipments bg-cover bg-center"
-        >
-        </div>
+        ></div>
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/25 hover:bg-black/50">
           <div
             className="w-[150px] md:w-auto h-auto flex flex-col items-center md:items-start"

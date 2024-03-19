@@ -5,7 +5,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";
 
 const About: React.FC<AboutProps> = () => {
-  const boxLogo = "/logos/cvic_logo_box_red.png"
+  const boxLogo = "/logos/cvic_logo_box_red.png";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
@@ -42,11 +42,11 @@ const About: React.FC<AboutProps> = () => {
       className="w-full h-[450px] md:h-[50vh] lg:h-[90vh] overflow-hidden relative border-y-8 border-black"
     >
       <div className="w-full h-full relative">
-      <div
-      id="access"
-      ref={containerRef}
-      className="w-full h-[450px] md:h-[50vh] lg:h-[90vh] border-t-8 flex items-center justify-center bg-bottom border-black bg-fixed bg-parallax bg-cover">
-    </div>
+        <div
+          id="access"
+          ref={containerRef}
+          className="w-full h-[450px] md:h-[50vh] lg:h-[90vh] border-t-8 flex items-center justify-center bg-bottom border-black bg-fixed bg-parallax bg-cover"
+        ></div>
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/25 hover:bg-black/50">
           <div
             className="w-[150px] md:w-auto h-auto flex flex-wrap flex-col items-center justify-center"
