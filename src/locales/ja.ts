@@ -26,6 +26,10 @@ const ja = {
     CLINIC_DESCRIPTION: "心臓MRI検査、心臓ドック、画像診断の専門家チーム",
     CLINIC_RIGHTS_RESERVED: "© 2020 CVIC Allrights Reserved.",
   },
+  REACH: {
+    NUMBER: "03-5206-5956",
+    HOURS: "08:00 - 19:00",
+  }
 };
 
 export default ja;

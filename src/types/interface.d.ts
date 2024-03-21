@@ -27,6 +27,6 @@ interface AccessProps {}
 
 interface GoogleMapProps {}
 
-interface BannerProps {
-  
-}
+interface BannerProps {}
+
+interface ContactProps {}
