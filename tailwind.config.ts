@@ -12,6 +12,7 @@ const config: Config = {
       "cvic-red": "#8C1515",
       "cvic-light": "#B83A4B",
       "white": '#FFFFFF',
+      "black": '#000000'
     },
     extend: {
       backgroundImage: {
