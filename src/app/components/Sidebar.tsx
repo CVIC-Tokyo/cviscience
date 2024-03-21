@@ -55,35 +55,35 @@ const SideBar: React.FC<SidebarProps> = ({
               <Link
                 onClick={() => setShowSidebar(false)}
                 href="/#Services"
-                className="flex items-center justify-center shadow-lg"
+                className="sidebar-button"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.SERVICES}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
                 href="/#Equipments"
-                className="flex items-center justify-center shadow-lg"
+                className="sidebar-button"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.EQUIPMENTS}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
                 href="/#Doctors"
-                className="flex items-center justify-center shadow-lg"
+                className="sidebar-button"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.DOCTORS}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
                 href="/#Access"
-                className="flex items-center justify-center shadow-lg"
+                className="sidebar-button"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.ACCESS}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
                 href="/"
-                className="flex items-center justify-center shadow-lg"
+                className="sidebar-button"
               >
                 <li className="py-4 text-sm">More</li>
               </Link>

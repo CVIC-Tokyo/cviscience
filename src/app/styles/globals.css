@@ -24,4 +24,8 @@ html {
     font-weight: 900;
     font-style: normal;
   }
+
+  .sidebar-button {
+    @apply flex items-center justify-center shadow-lg;
+  }
 }
