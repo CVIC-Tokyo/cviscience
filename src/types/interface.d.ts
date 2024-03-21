@@ -26,3 +26,7 @@ interface ServicesProps {}
 interface AccessProps {}
 
 interface GoogleMapProps {}
+
+interface BannerProps {
+  
+}
