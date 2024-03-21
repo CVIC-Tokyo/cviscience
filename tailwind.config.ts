@@ -8,11 +8,11 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      "cvic-dark": '#820000',
+      "cvic-dark": "#820000",
       "cvic-red": "#8C1515",
       "cvic-light": "#B83A4B",
-      "white": '#FFFFFF',
-      "black": '#000000'
+      white: "#FFFFFF",
+      black: "#000000",
     },
     extend: {
       backgroundImage: {
