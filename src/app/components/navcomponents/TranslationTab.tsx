@@ -14,7 +14,7 @@ const TranslationTab: React.FC<TranslationTabProps> = ({ handleLanguage }) => {
       >
         <div className="flex uppercase">
           {locale}
-          <FaLanguage className="mx-2"/>
+          <FaLanguage className="mx-2" />
           {locale === "ja" ? <BsToggleOff /> : <BsToggleOn />}
         </div>
       </div>

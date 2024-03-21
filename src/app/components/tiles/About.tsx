@@ -39,13 +39,13 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen overflow-hidden relative border-black"
+      className="w-full h-screen overflow-hidden relative"
     >
       <div className="w-full h-full relative">
         <div
           id="About"
           ref={containerRef}
-          className="w-full h-full flex items-center justify-center bg-bottom border-black bg-fixed bg-parallax bg-cover"
+          className="w-full h-full flex items-center justify-center bg-bottom bg-fixed bg-parallax bg-cover"
         ></div>
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
           <div

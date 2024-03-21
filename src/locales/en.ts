@@ -32,7 +32,7 @@ const en = {
   REACH: {
     NUMBER: "03-5206-5956",
     HOURS: "08:00 - 19:00",
-  }
+  },
 };
 
 export default en;
