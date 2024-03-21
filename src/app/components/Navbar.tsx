@@ -71,16 +71,16 @@ const Navbar: React.FC<NavbarProps> = () => {
           <Link href="/" className="navbar-button">
             {localeData.BASIC.HOME}
           </Link>
-          <Link href="/#services" className="navbar-button">
+          <Link href="/#Services" className="navbar-button">
             {localeData.BASIC.SERVICES}
           </Link>
-          <Link href="/#equipments" className="navbar-button">
+          <Link href="/#Equipments" className="navbar-button">
             {localeData.BASIC.EQUIPMENTS}
           </Link>
-          <Link href="/#doctors" className="navbar-button">
+          <Link href="/#Doctors" className="navbar-button">
             {localeData.BASIC.DOCTORS}
           </Link>
-          <Link href="/#access" className="navbar-button">
+          <Link href="/#Access" className="navbar-button">
             {localeData.BASIC.ACCESS}
           </Link>
           <Link href="/" className="navbar-button">

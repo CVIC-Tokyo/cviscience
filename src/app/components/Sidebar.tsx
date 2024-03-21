@@ -57,28 +57,28 @@ const SideBar: React.FC<SidebarProps> = ({
             <ul className="uppercase grid grid-cols-2 w-full">
               <Link
                 onClick={() => setShowSidebar(false)}
-                href="/#services"
+                href="/#Services"
                 className="flex items-center justify-center"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.SERVICES}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
-                href="/#equipments"
+                href="/#Equipments"
                 className="flex items-center justify-center"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.EQUIPMENTS}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
-                href="/#doctors"
+                href="/#Doctors"
                 className="flex items-center justify-center"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.DOCTORS}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
-                href="/#access"
+                href="/#Access"
                 className="flex items-center justify-center"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.ACCESS}</li>

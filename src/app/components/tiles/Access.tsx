@@ -10,7 +10,7 @@ const Access: React.FC<AccessProps> = () => {
 
   return (
     <div
-      id="access"
+      id="Access"
       ref={containerRef}
       className="w-full h-[350px] md:h-[40vh] lg:h-[70vh] flex items-center justify-center bg-bottom bg-fixed bg-parallax bg-cover"
     >
