@@ -29,6 +29,10 @@ const en = {
       "Team of specialists for cardiovascular MRI examinations, heart check-ups and image diagnosis",
     CLINIC_RIGHTS_RESERVED: "© 2020 CVIC Allrights Reserved.",
   },
+  REACH: {
+    NUMBER: "03-5206-5956",
+    HOURS: "08:00 - 19:00",
+  }
 };
 
 export default en;

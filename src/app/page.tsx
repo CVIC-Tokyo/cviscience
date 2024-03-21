@@ -8,10 +8,12 @@ import Doctors from "./components/tiles/Doctors";
 import Services from "./components/tiles/Services";
 import Access from "./components/tiles/Access";
 import Banner from "./components/tiles/Banner";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
     <main className="w-full h-auto">
+      <Contact />
       <About />
       <Doctors />
       <Banner />

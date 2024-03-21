@@ -92,7 +92,7 @@ const SideBar: React.FC<SidebarProps> = ({
               </Link>
             </ul>
             <div className="pt-10">
-              <p className="uppercase">Let&apos;s Connect!</p>
+              <p className="uppercase">{localeData.CONTACT.GET_IN_TOUCH}</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
                   <AiFillPushpin />
