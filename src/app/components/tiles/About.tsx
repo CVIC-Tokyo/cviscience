@@ -43,7 +43,7 @@ const About: React.FC<AboutProps> = () => {
     >
       <div className="w-full h-full relative">
         <div
-          id="access"
+          id="About"
           ref={containerRef}
           className="w-full h-[450px] md:h-[50vh] lg:h-[90vh] flex items-center justify-center bg-bottom border-black bg-fixed bg-parallax bg-cover"
         ></div>

@@ -8,7 +8,7 @@ html {
 
 @layer base {
   .navbar-button {
-    @apply p-2 md:text-sm lg:text-base flex items-center justify-center tracking-wide uppercase hover:bg-gray-50 cursor-pointer;
+    @apply p-2 md:text-sm lg:text-base flex items-center justify-center tracking-wide uppercase hover:bg-cvic-dark/25 cursor-pointer
   }
 
   .footer-text {
@@ -19,7 +19,7 @@ html {
     @apply md:hidden h-full w-full absolute top-0 left-0 items-end justify-center bg-black/25 hover:bg-black/50 transition-all duration-500
   }
 
-  .noto-serif jp-black {
+  .noto-serif jp-white {
     font-family: "Noto Serif JP", serif;
     font-weight: 900;
     font-style: normal;

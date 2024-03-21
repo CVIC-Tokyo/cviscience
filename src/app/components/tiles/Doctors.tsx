@@ -36,7 +36,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
 
   return (
     <div
-      id="doctors"
+      id="Doctors"
       ref={containerRef}
       className="w-full h-[210px] md:h-[35vh] lg:h-[70vh] overflow-hidden relative border-y-8 border-black"
     >

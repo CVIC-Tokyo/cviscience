@@ -7,6 +7,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      "cvic-dark": '#820000',
+      "cvic-red": "#8C1515",
+      "cvic-light": "#B83A4B",
+      "white": '#FFFFFF',
+    },
     extend: {
       backgroundImage: {
         parallax: 'url("/images/access_image.jpg")',
