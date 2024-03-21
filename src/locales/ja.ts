@@ -11,7 +11,7 @@ const ja = {
     MORE: "詳細",
   },
   CONTACT: {
-    GET_IN_TOUCH: "お問い合わせ",
+    GET_IN_TOUCH: "お問い合わせ!",
     NAME: "名前",
     SURNAME: "姓",
     EMAIL: "Eメール",
