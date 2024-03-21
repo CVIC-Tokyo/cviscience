@@ -11,7 +11,7 @@ import Banner from "./components/tiles/Banner";
 
 export default function Home() {
   return (
-    <main className="w-full h-full pt-16 md:pt-40">
+    <main className="w-full h-auto">
       <About />
       <Doctors />
       <Banner />

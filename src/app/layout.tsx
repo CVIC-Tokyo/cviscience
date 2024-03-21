@@ -14,11 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="w-full h-auto">
+    <html lang="en">
       <script async
           src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBIC_MAPS_API_KEY}&loading=async&callback=initMap`}>
       </script>
-      <body className="noto-serif w-full h-full">
+      <body className="noto-serif w-full h-full pt-16 md:pt-40">
         <GlobalContextProvider>
           <Navbar />
           {children}

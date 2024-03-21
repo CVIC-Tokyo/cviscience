@@ -38,7 +38,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
     <div
       id="Doctors"
       ref={containerRef}
-      className="w-full h-[210px] md:h-[35vh] lg:h-[70vh] overflow-hidden relative border-y-8 border-black"
+      className="w-full h-[280px] md:h-[70vh] overflow-hidden relative border-y-8 border-black"
     >
       <div
         style={{
@@ -47,7 +47,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
         }}
         className="w-full h-[180px] md:h-[50vh] lg:h-[60vh] bg-doctors bg-cover bg-center"
       ></div>
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/25 hover:bg-black/50">
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center hover:bg-black/25">
         <div
           className="w-[150px] md:w-auto h-auto flex flex-wrap flex-col items-center md:items-start justify-center"
           style={{
