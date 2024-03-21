@@ -44,53 +44,53 @@ const SideBar: React.FC<SidebarProps> = ({
             </Link>
             <div
               onClick={handleSidebar}
-              className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer"
+              className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer bg-cvic-red text-white"
             >
               <AiOutlineClose />
             </div>
           </div>
           {/* SIDE BAR BUTTONS */}
           <div className="py-4 flex flex-col w-full">
-            <div className="w-full flex items-center justify-center">
-              <TranslationTab handleLanguage={handleLanguage} />
-            </div>
             <ul className="uppercase grid grid-cols-2 w-full">
               <Link
                 onClick={() => setShowSidebar(false)}
                 href="/#Services"
-                className="flex items-center justify-center"
+                className="flex items-center justify-center shadow-lg"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.SERVICES}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
                 href="/#Equipments"
-                className="flex items-center justify-center"
+                className="flex items-center justify-center shadow-lg"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.EQUIPMENTS}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
                 href="/#Doctors"
-                className="flex items-center justify-center"
+                className="flex items-center justify-center shadow-lg"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.DOCTORS}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
                 href="/#Access"
-                className="flex items-center justify-center"
+                className="flex items-center justify-center shadow-lg"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.ACCESS}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
                 href="/"
-                className="flex items-center justify-center"
+                className="flex items-center justify-center shadow-lg"
               >
                 <li className="py-4 text-sm">More</li>
               </Link>
             </ul>
+            <div className="w-full flex items-center justify-start my-2">
+              <TranslationTab handleLanguage={handleLanguage} />
+            </div>
             <div className="pt-10">
               <p className="uppercase">{localeData.CONTACT.GET_IN_TOUCH}</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">

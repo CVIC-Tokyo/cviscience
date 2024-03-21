@@ -48,13 +48,13 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 z-[100] bg-white/75 ${showShadow ? `shadow-lg` : ""}`}
+      className={`fixed top-0 left-0 right-0 z-[100] bg-white/75 ${showShadow ? `shadow-3xl` : ""}`}
     >
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="max-w-[1240px] mx-auto flex justify-between items-center p-2">
         <div onClick={handleSidebar} className="md:hidden curser-pointer">
           <AiOutlineMenu
-            className="border-y-2 border-cvic-dark p-2"
+            className="border-y-2 p-2 bg-cvic-red text-white"
             size={45}
           />
         </div>
