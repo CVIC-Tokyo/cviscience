@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
+import Link from "next/link";
 
 const Services: React.FC<ServicesProps> = () => {
   const [zoomOut, setZoomOut] = useState(false);
@@ -63,12 +64,12 @@ const Services: React.FC<ServicesProps> = () => {
           <p className="md:my-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
             {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
           </p>
-          <div className="my-2 p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
+          <Link href={"/pages/services"} className="my-2 p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
             <p className="text-[4px] md:text-xs lg:text-xs">
               {localeData.BASIC.SERVICES}
             </p>
             <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]" />
-          </div>
+          </Link>
         </div>
       </div>
     </div>
