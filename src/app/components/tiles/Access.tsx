@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { useGlobalContext } from "../../Context/store";
+import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import GoogleMap from "../GoogleMap";
 

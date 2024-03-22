@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useGlobalContext } from "../../Context/store";
+import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";

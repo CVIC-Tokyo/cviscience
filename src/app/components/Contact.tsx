@@ -1,6 +1,6 @@
 import { getLocaleData } from "@/utils/helpers";
 import React from "react";
-import { useGlobalContext } from "../Context/store";
+import { useGlobalContext } from "../../context/store";
 import { AiFillPhone, AiFillWeiboCircle, AiOutlinePhone } from "react-icons/ai";
 
 const Contact: React.FC<ContactProps> = () => {

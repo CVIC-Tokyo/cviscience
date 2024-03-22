@@ -8,7 +8,7 @@ import {
   AiOutlineClose,
   AiOutlineMail,
 } from "react-icons/ai";
-import { useGlobalContext } from "../Context/store";
+import { useGlobalContext } from "../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import TranslationTab from "./navcomponents/TranslationTab";
 
