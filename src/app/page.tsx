@@ -11,13 +11,13 @@ import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <main className="w-full h-auto snap-mandatory snap-y">
+    <div className="w-full h-auto snap-mandatory snap-y">
       <About />
       <Doctors />
       <Services />
       <Equipments />
       <Access />
       <Contact />
-    </main>
+    </div>
   );
 }

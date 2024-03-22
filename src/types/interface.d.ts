@@ -28,3 +28,5 @@ interface AccessProps {}
 interface GoogleMapProps {}
 
 interface ContactProps {}
+
+interface DoctorsPageProps {}
