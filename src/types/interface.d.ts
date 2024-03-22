@@ -30,3 +30,7 @@ interface GoogleMapProps {}
 interface ContactProps {}
 
 interface DoctorsPageProps {}
+
+interface ServicesPageProps {}
+
+interface EquipmentsPageProps {}
