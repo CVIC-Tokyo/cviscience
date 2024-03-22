@@ -10,13 +10,15 @@ const Access: React.FC<AccessProps> = () => {
 
   return (
     <div
+      className="w-full h-screen flex items-center bg-parallax bg-cover bg-center bg-fixed snap-center"
       id="Access"
-      ref={containerRef}
-      className="w-full h-[550px] md:h-[80vh] flex items-center justify-center bg-center bg-fixed bg-parallax bg-cover"
+      ref={containerRef}  
     >
-      <div className="w-full h-full flex items-center justify-center">
-        <div className="w-[80%] h-[60%] flex items-center justify-center bg-white rounded-lg shadow-3xl">
-          <GoogleMap />
+      <div className="w-full h-[550px] md:h-[80vh] flex items-center justify-center bg-center bg-fixed bg-parallax bg-cover">
+        <div className="w-full h-full flex items-center justify-center">
+          <div className="w-[80%] h-[60%] flex items-center justify-center bg-white rounded-lg shadow-3xl">
+            <GoogleMap />
+          </div>
         </div>
       </div>
     </div>

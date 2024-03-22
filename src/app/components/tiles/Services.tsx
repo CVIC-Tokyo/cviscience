@@ -36,10 +36,12 @@ const Services: React.FC<ServicesProps> = () => {
 
   return (
     <div
+      className="w-full h-screen flex items-center bg-parallax bg-cover bg-center bg-fixed snap-center"
       id="Services"
       ref={containerRef}
-      className="w-full h-[280px] md:h-[70vh] overflow-hidden relative border-y-8 border-white"
     >
+    <div
+      className="w-full h-[280px] md:h-[70vh] overflow-hidden relative border-y-8 border-white shadow-2xl">
       <div
         style={{
           transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
@@ -70,6 +72,7 @@ const Services: React.FC<ServicesProps> = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 

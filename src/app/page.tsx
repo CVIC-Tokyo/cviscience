@@ -7,20 +7,17 @@ import Equipments from "./components/tiles/Equipments";
 import Doctors from "./components/tiles/Doctors";
 import Services from "./components/tiles/Services";
 import Access from "./components/tiles/Access";
-import Banner from "./components/tiles/Banner";
 import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <main className="w-full h-auto">
-      <Contact />
+    <main className="w-full h-auto snap-mandatory snap-y">
       <About />
       <Doctors />
-      <Banner />
       <Services />
-      <Banner />
       <Equipments />
       <Access />
+      <Contact />
     </main>
   );
 }

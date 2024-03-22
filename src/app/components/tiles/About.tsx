@@ -39,13 +39,12 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen overflow-hidden relative"
+      className="w-full h-screen flex items-center justify-center bg-center bg-fixed bg-parallax bg-cover snap-center"
+      id="About"
     >
-      <div className="w-full h-full relative">
         <div
-          id="About"
           ref={containerRef}
-          className="w-full h-full flex items-center justify-center bg-bottom bg-fixed bg-parallax bg-cover"
+          className="w-full h-full"
         ></div>
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
           <div
@@ -70,7 +69,6 @@ const About: React.FC<AboutProps> = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
