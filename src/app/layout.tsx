@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { GlobalContextProvider } from "./Context/store";
+import { GlobalContextProvider } from "../context/store";
 
 export const metadata: Metadata = {
   title: "Cardiovascular Imaging Clinic",

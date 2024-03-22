@@ -6,7 +6,7 @@ import Image from "next/image";
 import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
 import TranslationTab from "./navcomponents/TranslationTab";
 import { getLocaleData } from "@/utils/helpers";
-import { useGlobalContext } from "../Context/store";
+import { useGlobalContext } from "../../context/store";
 import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
 

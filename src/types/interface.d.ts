@@ -27,6 +27,12 @@ interface AccessProps {}
 
 interface GoogleMapProps {}
 
-interface BannerProps {}
-
 interface ContactProps {}
+
+interface DoctorsPageProps {}
+
+interface ServicesPageProps {}
+
+interface EquipmentsPageProps {}
+
+interface AboutPageProps {}

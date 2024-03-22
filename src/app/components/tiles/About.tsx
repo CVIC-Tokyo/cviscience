@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useGlobalContext } from "../../Context/store";
+import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";
+import Link from "next/link";
 
 const About: React.FC<AboutProps> = () => {
   const boxLogo = "/logos/cvic_logo_box_red.png";
@@ -39,13 +40,12 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen overflow-hidden relative"
+      className="tile-container"
+      id="About"
     >
-      <div className="w-full h-full relative">
         <div
-          id="About"
           ref={containerRef}
-          className="w-full h-full flex items-center justify-center bg-bottom bg-fixed bg-parallax bg-cover"
+          className="w-full h-full"
         ></div>
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
           <div
@@ -62,15 +62,14 @@ const About: React.FC<AboutProps> = () => {
             <p className="md:m-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
               {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
             </p>
-            <div className="p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
+            <Link href={"/pages/about"} className="p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer">
               <p className="text-[4px] md:text-xs lg:text-xs">
                 {localeData.BASIC.ABOUT}
               </p>
               <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]" />
-            </div>
+            </Link>
           </div>
         </div>
-      </div>
     </div>
   );
 };

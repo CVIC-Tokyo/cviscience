@@ -1,7 +1,7 @@
 import React from "react";
 import { BsToggleOff, BsToggleOn } from "react-icons/bs";
 import { FaLanguage } from "react-icons/fa";
-import { useGlobalContext } from "@/app/Context/store";
+import { useGlobalContext } from "@/context/store";
 
 const TranslationTab: React.FC<TranslationTabProps> = ({ handleLanguage }) => {
   const { locale } = useGlobalContext();
