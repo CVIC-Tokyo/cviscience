@@ -12,7 +12,7 @@ html {
   }
 
   .footer-text {
-    @apply text-xs;
+    @apply text-xs flex items-center justify-center w-full;
   }
 
   .tile-container {
