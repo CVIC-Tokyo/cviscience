@@ -36,7 +36,7 @@ const Services: React.FC<ServicesProps> = () => {
 
   return (
     <div
-      className="w-full h-screen flex items-center bg-parallax bg-cover bg-center bg-fixed snap-center"
+      className="tile-container"
       id="Services"
       ref={containerRef}
     >

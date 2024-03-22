@@ -15,6 +15,10 @@ html {
     @apply text-xs;
   }
 
+  .tile-container {
+    @apply w-full h-screen flex items-center justify-center bg-center bg-fixed bg-parallax bg-cover snap-center;
+  }
+
   .tile-hidden-info {
     @apply md:hidden h-full w-full absolute top-0 left-0 items-end justify-center bg-black/25 hover:bg-black/50 transition-all duration-500;
   }

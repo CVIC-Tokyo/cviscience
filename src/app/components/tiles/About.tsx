@@ -39,7 +39,7 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen flex items-center justify-center bg-center bg-fixed bg-parallax bg-cover snap-center"
+      className="tile-container"
       id="About"
     >
         <div

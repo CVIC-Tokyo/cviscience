@@ -35,7 +35,7 @@ const Equipments: React.FC<EquipmentsProps> = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen bg-parallax bg-cover bg-center bg-fixed flex items-center snap-center"
+    <div className="tile-container"
       id="Equipments"
       ref={containerRef}
     >

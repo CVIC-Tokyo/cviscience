@@ -36,7 +36,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
 
   return (
     <div
-      className="w-full h-screen bg-parallax bg-cover bg-center bg-fixed flex items-center snap-center"
+      className="tile-container"
       id="Doctors"
       ref={containerRef}>
       <div
