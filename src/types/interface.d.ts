@@ -34,3 +34,5 @@ interface DoctorsPageProps {}
 interface ServicesPageProps {}
 
 interface EquipmentsPageProps {}
+
+interface AboutPageProps {}
