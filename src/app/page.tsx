@@ -7,7 +7,6 @@ import Equipments from "./components/tiles/Equipments";
 import Doctors from "./components/tiles/Doctors";
 import Services from "./components/tiles/Services";
 import Access from "./components/tiles/Access";
-import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       <Services />
       <Equipments />
       <Access />
-      <Contact />
     </div>
   );
 }
