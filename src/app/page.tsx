@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <div className="w-full h-auto snap-mandatory snap-y">
       <About />
-      <Doctors />
       <Services />
       <Equipments />
+      <Doctors />
       <Access />
     </div>
   );

@@ -20,6 +20,7 @@ const config: Config = {
         services: 'url("/images/services_image.JPG")',
         equipments: 'url("/images/vintage_titan.jpg")',
         doctors: 'url("/images/doctors_image.JPG")',
+        parallax_small: 'url("/images/access_image_sm.jpg")',
       },
     },
   },

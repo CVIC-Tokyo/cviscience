@@ -16,7 +16,7 @@ html {
   }
 
   .tile-container {
-    @apply w-full h-screen flex items-center justify-center bg-center bg-fixed bg-parallax bg-cover snap-center;
+    @apply w-full h-[50vh] md:h-screen flex items-center justify-center bg-center bg-fixed bg-parallax_small md:bg-parallax bg-cover snap-center;
   }
 
   .tile-hidden-info {
