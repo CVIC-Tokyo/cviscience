@@ -1,6 +1,6 @@
 "use client";
 
-import "./styles/globals.css";
+import "../styles/globals.css";
 import React from "react";
 import About from "./components/tiles/About";
 import Equipments from "./components/tiles/Equipments";

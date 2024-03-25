@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+@layer base {
+  .navbar-button {
+    @apply p-2 md:text-sm lg:text-base flex items-center justify-center tracking-wide uppercase hover:bg-cvic-dark/25 cursor-pointer;
+  }
+
+  .footer-text {
+    @apply text-xs flex items-center justify-center w-full;
+  }
+
+  .tile-container {
+    @apply w-full h-[50vh] md:h-screen flex items-center justify-center bg-center bg-fixed bg-parallax_small md:bg-parallax bg-cover snap-center;
+  }
+
+  .tile-hidden-info {
+    @apply md:hidden h-full w-full absolute top-0 left-0 items-end justify-center bg-black/25 hover:bg-black/50 transition-all duration-500;
+  }
+
+  .noto-serif jp-white {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .sidebar-button {
+    @apply flex items-center justify-center shadow-lg;
+  }
+}
