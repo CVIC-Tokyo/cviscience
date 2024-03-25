@@ -1,7 +1,9 @@
+'use client'
+
 import React, { useRef } from "react";
-import { useGlobalContext } from "../../../context/store";
+import { useGlobalContext } from "../../context/store";
 import { getLocaleData } from "@/utils/helpers";
-import GoogleMap from "../GoogleMap";
+import GoogleMap from "./GoogleMap";
 
 const Access: React.FC<AccessProps> = () => {
   const { locale } = useGlobalContext();

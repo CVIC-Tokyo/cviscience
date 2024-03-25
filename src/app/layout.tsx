@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { GlobalContextProvider } from "../context/store";
+import Access from "./components/Access";
 
 export const metadata: Metadata = {
   title: "Cardiovascular Imaging Clinic",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <GlobalContextProvider>
           <Navbar />
           {children}
+          <Access />
           <Footer />
         </GlobalContextProvider>
       </body>
