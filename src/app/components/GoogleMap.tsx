@@ -1,7 +1,7 @@
 import { Loader } from "@googlemaps/js-api-loader";
 import React, { useEffect } from "react";
 
-const GoogleMap: React.FC<GoogleMapProps> = () => {
+const GoogleMap = () => {
   const mapRef = React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -14,8 +14,8 @@ const GoogleMap: React.FC<GoogleMapProps> = () => {
       const { Map } = (await loader.importLibrary(
         "maps",
       )) as google.maps.MapsLibrary;
-      const { Marker } = (await loader.importLibrary(
-        "marker",
+      const { AdvancedMarkerElement } = (await loader.importLibrary(
+        "marker"
       )) as google.maps.MarkerLibrary;
 
       const position = {
@@ -33,7 +33,7 @@ const GoogleMap: React.FC<GoogleMapProps> = () => {
       const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
 
       // put up a marker
-      const marker = new Marker({
+      const marker = new AdvancedMarkerElement({
         map: map,
         position: position,
       });
