@@ -41,7 +41,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
       id="Doctors"
       ref={containerRef}>
       <div
-        className="w-full h-[280px] md:h-[70vh] overflow-hidden relative border-y-8 border-white shadow-2xl">
+        className="tile-photo-container">
         <div
           style={{
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect

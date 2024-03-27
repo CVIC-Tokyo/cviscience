@@ -19,6 +19,10 @@ html {
     @apply w-full h-[50vh] md:h-screen flex items-center justify-center bg-center bg-fixed bg-parallax bg-cover snap-center;
   }
 
+  .tile-photo-container {
+    @apply w-full h-[280px] md:h-[70vh] overflow-hidden relative md:m-2 shadow-2xl before:bg-white/10 border-white/20 border-8 before:rounded-xl rounded-large
+  }
+
   .tile-hidden-info {
     @apply md:hidden h-full w-full absolute top-0 left-0 items-end justify-center bg-black/25 hover:bg-black/50 transition-all duration-500;
   }
