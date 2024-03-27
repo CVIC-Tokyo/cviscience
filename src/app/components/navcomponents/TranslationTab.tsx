@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { FaArrowDown, FaLanguage } from "react-icons/fa";
+import React, { useEffect, useRef, useState } from "react";
+import { FaLanguage } from "react-icons/fa";
 import { useGlobalContext } from "@/context/store";
 import { Button } from "@nextui-org/react";
-import { BsArrowDown, BsArrowDownCircle } from "react-icons/bs";
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 
 const TranslationTab: React.FC<TranslationTabProps> = () => {
   const { locale, setLocale } = useGlobalContext();
   const [ showDropdown, setShowDropdown ] = useState<boolean>(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const locales = [
     { abbreviation: "ja", nativeName: "日本語" }, // Japanese
@@ -32,11 +32,25 @@ const TranslationTab: React.FC<TranslationTabProps> = () => {
     { abbreviation: "pl", nativeName: "Polski" },
     { abbreviation: "th", nativeName: "ไทย" } // Thai
   ];
-  
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setShowDropdown(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   const handleLanguage = (arg: string) => {
+    setShowDropdown(false)
     setTimeout(() => {
       setLocale(arg);
-      setShowDropdown(false)
     }, 500)
   }
   
@@ -44,9 +58,9 @@ const TranslationTab: React.FC<TranslationTabProps> = () => {
 
   return (
     
-    <div className="relative">
+    <div className="relative" ref={dropdownRef}>
       <Button
-        onClick={() => setShowDropdown(true)}
+        onClick={() => setShowDropdown(!showDropdown)}
         className="w-[150px] p-2 rounded-lg flex justify-center items-center bg-cvic-red text-white"
       >
         <div
