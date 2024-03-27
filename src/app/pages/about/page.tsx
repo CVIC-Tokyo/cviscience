@@ -3,7 +3,7 @@ import '../../../styles/globals.css'
 
 const AboutPage: React.FC<AboutPageProps> = () => {
   return (
-    <div className='w-full h-screen bg-black'></div>
+    <div className='page-container'></div>
   )
 };
 

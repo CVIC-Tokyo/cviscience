@@ -3,7 +3,7 @@ import '../../../styles/globals.css'
 
 const DoctorsPage: React.FC<DoctorsPageProps> = () => {
   return (
-    <div className="w-full h-screen bg-cvic-red">sdfsdfsdf</div>
+    <div className="page-container">sdfsdfsdf</div>
   )
 }
 
