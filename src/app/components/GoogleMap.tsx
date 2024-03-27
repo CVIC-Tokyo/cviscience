@@ -1,8 +1,12 @@
 import { Loader } from "@googlemaps/js-api-loader";
 import React, { useEffect } from "react";
+import { getLocaleData } from "@/utils/helpers";
+import { useGlobalContext } from "@/context/store";
 
 const GoogleMap = () => {
   const mapRef = React.useRef<HTMLDivElement>(null);
+  const { locale } = useGlobalContext();
+  const localeData = getLocaleData(locale);
 
   useEffect(() => {
     const initMap = async () => {
@@ -14,7 +18,7 @@ const GoogleMap = () => {
       const { Map } = (await loader.importLibrary(
         "maps",
       )) as google.maps.MapsLibrary;
-      const { AdvancedMarkerElement } = (await loader.importLibrary(
+      const { Marker } = (await loader.importLibrary(
         "marker"
       )) as google.maps.MarkerLibrary;
 
@@ -27,15 +31,17 @@ const GoogleMap = () => {
       const mapOptions: google.maps.MapOptions = {
         center: position,
         zoom: 18,
+        mapId: process.env.NEXT_GOOGLE_MAP_ID,
       };
 
       //setup the map
       const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
 
       // put up a marker
-      const marker = new AdvancedMarkerElement({
+      const marker = new Marker({
         map: map,
         position: position,
+        title:`${localeData.CVIC_INFO.CLINIC_NAME}`
       });
     };
 
