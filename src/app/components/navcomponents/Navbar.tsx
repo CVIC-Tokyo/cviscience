@@ -9,6 +9,7 @@ import { getLocaleData } from "@/utils/helpers";
 import { useGlobalContext } from "../../../context/store";
 import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
+import { animate, motion } from "framer-motion";
 
 const Navbar: React.FC<NavbarProps> = () => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
@@ -41,12 +42,18 @@ const Navbar: React.FC<NavbarProps> = () => {
     >
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="max-w-[1240px] mx-auto flex justify-between items-center p-2">
-        <div onClick={handleSidebar} className="md:hidden curser-pointer">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          onClick={handleSidebar} className="md:hidden curser-pointer"
+        >
           <AiOutlineMenu
+          onClick={() => animate('.sidebar', {x: 200})}
             className="border-y-2 p-2 bg-cvic-red text-white"
             size={45}
           />
-        </div>
+        </motion.div>
         <Link href={"/"} className="scroll-false">
           <Image src={cvic_logo_600} alt="CVIC logo" width={600} unoptimized />
         </Link>
