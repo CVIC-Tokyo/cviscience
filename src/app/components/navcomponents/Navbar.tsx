@@ -4,16 +4,17 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
-import TranslationTab from "./navcomponents/TranslationTab";
+import TranslationTab from "./TranslationTab";
 import { getLocaleData } from "@/utils/helpers";
-import { useGlobalContext } from "../../context/store";
+import { useGlobalContext } from "../../../context/store";
 import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
+import { motion } from "framer-motion";
 
 const Navbar: React.FC<NavbarProps> = () => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
   const [showShadow, setShowShadow] = useState<boolean>(false);
-  const { locale, setLocale } = useGlobalContext();
+  const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
 
   useEffect(() => {
@@ -31,38 +32,32 @@ const Navbar: React.FC<NavbarProps> = () => {
     };
   }, []);
 
-  const handleLanguage = () => {
-    // Delay the execution of the language toggle by 1 second
-    setTimeout(() => {
-      if (locale === "en") {
-        setLocale("ja");
-      } else {
-        setLocale("en");
-      }
-    }, 500); // 1000 milliseconds = 1 second
-  };
-
   const handleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 z-[100] bg-white/75 ${showShadow ? `shadow-3xl` : ""}`}
+      className={`fixed top-0 left-0 right-0 z-[100] bg-white/75 ${showShadow ? `shadow-2xl` : ""}`}
     >
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="max-w-[1240px] mx-auto flex justify-between items-center p-2">
-        <div onClick={handleSidebar} className="md:hidden curser-pointer">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          onClick={handleSidebar} className="md:hidden curser-pointer"
+        >
           <AiOutlineMenu
             className="border-y-2 p-2 bg-cvic-red text-white"
             size={45}
           />
-        </div>
+        </motion.div>
         <Link href={"/"} className="scroll-false">
           <Image src={cvic_logo_600} alt="CVIC logo" width={600} unoptimized />
         </Link>
         <div className="hidden md:flex h-full">
-          <TranslationTab handleLanguage={handleLanguage} />
+          <TranslationTab />
         </div>
       </div>
       {/* NAVBAR BUTTONS */}
@@ -92,7 +87,6 @@ const Navbar: React.FC<NavbarProps> = () => {
         showSidebar={showSidebar}
         setShowSidebar={setShowSidebar}
         handleSidebar={handleSidebar}
-        handleLanguage={handleLanguage}
       />
     </div>
   );

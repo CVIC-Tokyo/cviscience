@@ -24,7 +24,7 @@ export const GlobalContextProvider = ({
 }: {
   children: ReactNode;
 }) => {
-  const [locale, setLocale] = useState("en");
+  const [locale, setLocale] = useState("ja");
 
   return (
     <GlobalContext.Provider value={{ locale, setLocale }}>

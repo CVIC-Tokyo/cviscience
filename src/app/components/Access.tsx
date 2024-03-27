@@ -17,7 +17,7 @@ const Access: React.FC<AccessProps> = () => {
       ref={containerRef}  
     >
       <div className="w-full h-full p-2 flex flex-col items-center justify-center">
-        <div className="w-full h-full md:w-[80%] md:h-[60%] flex items-center justify-center bg-white border-white border-2 shadow-3xl">
+        <div className="w-full h-full md:w-[80%] md:h-[60%] bg-white/50 hover:bg-white flex items-center justify-center tile-photo-container">
           <GoogleMap />
         </div>
       </div>

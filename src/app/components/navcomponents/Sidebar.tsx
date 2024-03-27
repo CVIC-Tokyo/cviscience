@@ -8,15 +8,14 @@ import {
   AiOutlineClose,
   AiOutlineMail,
 } from "react-icons/ai";
-import { useGlobalContext } from "../../context/store";
+import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
-import TranslationTab from "./navcomponents/TranslationTab";
+import TranslationTab from "./TranslationTab";
 
 const SideBar: React.FC<SidebarProps> = ({
   showSidebar,
   setShowSidebar,
   handleSidebar,
-  handleLanguage,
 }) => {
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
@@ -89,7 +88,7 @@ const SideBar: React.FC<SidebarProps> = ({
               </Link>
             </ul>
             <div className="w-full flex items-center justify-start my-2">
-              <TranslationTab handleLanguage={handleLanguage} />
+              <TranslationTab />
             </div>
             <div className="pt-10">
               <p className="uppercase">{localeData.CONTACT.GET_IN_TOUCH}</p>
