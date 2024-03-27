@@ -2,9 +2,6 @@ import { getLocaleData } from "@/utils/helpers";
 import React from "react";
 import { useGlobalContext } from "../../context/store";
 import { PiPhoneCallFill } from "react-icons/pi";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
-import { MdMailOutline } from "react-icons/md";
 import { IoMailSharp } from "react-icons/io5";
 
 const Contact: React.FC<ContactProps> = () => {
