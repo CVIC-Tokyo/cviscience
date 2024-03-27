@@ -55,8 +55,11 @@ const TranslationTab: React.FC<TranslationTabProps> = () => {
     <motion.div
       className="relative"
       ref={dropdownRef}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
     >
-      <Button
+      <motion.div
         onClick={() => {
           handleRotation();
           setShowDropdown(!showDropdown);
@@ -72,7 +75,7 @@ const TranslationTab: React.FC<TranslationTabProps> = () => {
             <TiArrowSortedDown className="dropdown-arrow"/>
           </div>
         </div>
-      </Button>
+      </motion.div>
       {showDropdown && (
         <motion.div layoutScroll className="absolute top-full left-0 w-[150px] h-[200px] overflow-y-scroll bg-white shadow rounded-b-lg">
           {locales.map((lang) => (
