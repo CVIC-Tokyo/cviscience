@@ -13,7 +13,7 @@ import Sidebar from "./Sidebar";
 const Navbar: React.FC<NavbarProps> = () => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
   const [showShadow, setShowShadow] = useState<boolean>(false);
-  const { locale, setLocale } = useGlobalContext();
+  const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
 
   useEffect(() => {
@@ -30,17 +30,6 @@ const Navbar: React.FC<NavbarProps> = () => {
       window.removeEventListener("scroll", handleShadow);
     };
   }, []);
-
-  const handleLanguage = () => {
-    // Delay the execution of the language toggle by 1 second
-    setTimeout(() => {
-      if (locale === "en") {
-        setLocale("ja");
-      } else {
-        setLocale("en");
-      }
-    }, 500); // 1000 milliseconds = 1 second
-  };
 
   const handleSidebar = () => {
     setShowSidebar(!showSidebar);
@@ -62,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           <Image src={cvic_logo_600} alt="CVIC logo" width={600} unoptimized />
         </Link>
         <div className="hidden md:flex h-full">
-          <TranslationTab handleLanguage={handleLanguage} />
+          <TranslationTab />
         </div>
       </div>
       {/* NAVBAR BUTTONS */}
@@ -92,7 +81,6 @@ const Navbar: React.FC<NavbarProps> = () => {
         showSidebar={showSidebar}
         setShowSidebar={setShowSidebar}
         handleSidebar={handleSidebar}
-        handleLanguage={handleLanguage}
       />
     </div>
   );
