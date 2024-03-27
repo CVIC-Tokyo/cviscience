@@ -3,7 +3,7 @@
 import { GlobalContextProvider } from "@/context/store"
 import { NextUIProvider } from "@nextui-org/react"
 import React from "react"
-import Navbar from "./components/Navbar"
+import Navbar from "./components/navcomponents/Navbar"
 import Access from "./components/Access"
 import Footer from "./components/Footer"
 

@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
-import TranslationTab from "./navcomponents/TranslationTab";
+import TranslationTab from "./TranslationTab";
 import { getLocaleData } from "@/utils/helpers";
-import { useGlobalContext } from "../../context/store";
+import { useGlobalContext } from "../../../context/store";
 import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
 
@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 z-[100] bg-white/75 ${showShadow ? `shadow-3xl` : ""}`}
+      className={`fixed top-0 left-0 right-0 z-[100] bg-white/75 ${showShadow ? `shadow-2xl` : ""}`}
     >
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="max-w-[1240px] mx-auto flex justify-between items-center p-2">

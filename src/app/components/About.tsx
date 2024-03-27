@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useGlobalContext } from "../../../context/store";
+import { useGlobalContext } from "../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";
@@ -40,7 +40,7 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="h-screen tile-container"
+      className="h-screen mt-16 md:mt-40 scroll-my-16 md:scroll-my-40 tile-container"
       id="About"
     >
         <div
