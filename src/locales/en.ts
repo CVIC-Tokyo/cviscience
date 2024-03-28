@@ -34,6 +34,20 @@ const en = {
     HOURS: "08:00 - 19:00",
     APPLY_ONLINE: "Apply Online",
   },
+  ABOUT: {
+    MISSION_TITLE: "Our Mission",
+    MISSION: "At CVIC (Cardiac Imaging Clinic Iidabashi), our mission is simple yet profound: to transform cardiac healthcare in Japan. We are dedicated to pioneering advanced cardiac imaging diagnostics that enable the early detection and effective treatment of heart diseases. Through our relentless pursuit of excellence in technology and expertise, we aim to close the gap between Japan and the global forefront of cardiac imaging capabilities, ultimately saving lives by facilitating timely interventions.",
+    VISION_TITLE: "Our Vision",
+    VISION: "We envision CVIC as the undisputed leader in cardiac imaging diagnosis throughout Japan. Our vision is not merely to set new standards but to redefine them, shaping the future of cardiac healthcare with innovation and unwavering commitment. By continuously refining our techniques and fostering collaboration among healthcare professionals, we aspire to ensure that every patient receives accurate and timely diagnosis, leading to improved outcomes and enhanced quality of life. Together, we are driving forward the advancement of medical care in Japan, one heartbeat at a time.",
+  },
 };
 
 export default en;
+
+// Our Mission
+
+// At CVIC (Cardiac Imaging Clinic Iidabashi), our mission is simple yet profound: to transform cardiac healthcare in Japan. We are dedicated to pioneering advanced cardiac imaging diagnostics that enable the early detection and effective treatment of heart diseases. Through our relentless pursuit of excellence in technology and expertise, we aim to close the gap between Japan and the global forefront of cardiac imaging capabilities, ultimately saving lives by facilitating timely interventions.
+
+// Our Vision
+
+// We envision CVIC as the undisputed leader in cardiac imaging diagnosis throughout Japan. Our vision is not merely to set new standards but to redefine them, shaping the future of cardiac healthcare with innovation and unwavering commitment. By continuously refining our techniques and fostering collaboration among healthcare professionals, we aspire to ensure that every patient receives accurate and timely diagnosis, leading to improved outcomes and enhanced quality of life. Together, we are driving forward the advancement of medical care in Japan, one heartbeat at a time.
