@@ -3,6 +3,7 @@ import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Link from "next/link";
+import Reveal from "@/app/Reveal";
 
 const Services: React.FC<ServicesProps> = () => {
   const [zoomOut, setZoomOut] = useState(false);
@@ -37,6 +38,7 @@ const Services: React.FC<ServicesProps> = () => {
 
   return (
     <div className="tile-container" id="Services" ref={containerRef}>
+      <Reveal></Reveal>
       <div className="tile-photo-container">
         <div
           style={{
@@ -53,21 +55,27 @@ const Services: React.FC<ServicesProps> = () => {
               transition: "transform 1s ease-in-out", // Transition effect for scaling
             }}
           >
-            <p className="md:my-2 text-white text-[10px] md:text-base lg:text-3xl font-bold h-[30px]">
-              {localeData.BASIC.SERVICES}
-            </p>
-            <p className="md:my-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
-              {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
-            </p>
-            <Link
-              href={"/pages/services"}
-              className="my-2 p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 border-4 border-white/10 hover:bg-white flex items-center justify-center cursor-pointer"
-            >
-              <p className="text-[4px] md:text-xs lg:text-xs">
+            <Reveal>
+              <p className="md:my-2 text-white text-[10px] md:text-base lg:text-3xl font-bold h-[30px]">
                 {localeData.BASIC.SERVICES}
               </p>
-              <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]" />
-            </Link>
+            </Reveal>
+            <Reveal>
+              <p className="md:my-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
+                {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
+              </p>
+            </Reveal>
+            <Reveal>
+              <Link
+                href={"/pages/services"}
+                className="my-2 p-2 h-[8px] w-fit md:h-[20px] lg:h-[30px] rounded bg-white/75 border-4 border-white/10 hover:bg-white flex items-center justify-center cursor-pointer"
+              >
+                <p className="text-[4px] md:text-xs lg:text-xs">
+                  {localeData.BASIC.SERVICES}
+                </p>
+                <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]" />
+              </Link>
+            </Reveal>
           </div>
         </div>
       </div>
