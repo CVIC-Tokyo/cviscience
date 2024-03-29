@@ -33,3 +33,7 @@ interface ServicesPageProps {}
 interface EquipmentsPageProps {}
 
 interface AboutPageProps {}
+
+interface RevealProps {
+  children: JSX.Element;
+}
