@@ -17,8 +17,8 @@ const Access: React.FC<AccessProps> = () => {
     setIsHovered(true);
 
     setTimeout(() => {
-      setIsHovered(false)
-    }, 400)
+      setIsHovered(false);
+    }, 400);
   }
 
   return (
@@ -27,14 +27,14 @@ const Access: React.FC<AccessProps> = () => {
         onMouseEnter={() => handleHover()}
         className="w-full h-full p-2 flex flex-col items-center justify-center">
         <div className="h-[150px] w-[400px] text-[50px] flex items-end justify-center">
-          <p className="hello font-bold tracking-wide uppercase text-white text-lg md:text-[45px]">
+          <div className="hello font-bold tracking-wide uppercase text-white text-lg md:text-[45px]">
             <motion.div
-            animate={{ y: isHovered ? -20 : 0}}
-            >
+              animate={{ y: isHovered ? -20 : 0}}
+              >
               <MdPinDrop className="w-full h-[55px]" />
             </motion.div>
             {localeData.ACCESS.ACCESS_TITLE}
-          </p>
+          </div>
         </div>
         <div className="w-full h-full md:w-[80%] md:h-[60%] bg-white/10 flex items-center justify-center tile-photo-container">
           <GoogleMap />

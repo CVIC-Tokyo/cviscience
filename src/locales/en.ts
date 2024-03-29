@@ -44,7 +44,7 @@ const en = {
     CSR_TITLE: "Corporate Social Responsibility (CSR)",
     CSR: {
       ONE_TITLE: "Ethical Patient Care",
-      ONE: "At CVIC, our foremost commitment is to ethical and warm patient care. We uphold the highest standards of medical ethics, ensuring patient confidentiality, transparency in procedures and costs, and the delivaery of compassionate and respectful care for individuals.",
+      ONE: "At CVIC, our foremost commitment is to ethical and compassionate patient care. We uphold the highest standards of medical ethics, ensuring patient confidentiality, transparency in procedures and costs, and the delivaery of compassionate and respectful care for individuals.",
       TWO_TITLE: "Accessibility",
       TWO: "We believe that every individual should have acess to quality cardiac imaging diagnostics, regardless of their financial circumstances. That's why we are committed to making our services accessbile and affordable to all members of society",
       THREE_TITLE: "Preventive Care Advocacy",
