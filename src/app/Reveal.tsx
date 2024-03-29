@@ -1,25 +1,23 @@
 import React, { useEffect, useRef } from "react";
-import { motion, useInView, useAnimation } from 'framer-motion';
+import { motion, useInView, useAnimation } from "framer-motion";
 
-export default function Reveal({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const Reveal: React.FC<RevealProps> = ({ children }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
+  const isInView = useInView(ref, { once: false });
 
   const mainControls = useAnimation();
 
   useEffect(() => {
-    if(isInView) {
+    if (isInView) {
       mainControls.start("visible");
     }
   }, [isInView]);
 
-
   return (
-    <div ref={ref} className="w-full h-full">
+    <div
+      ref={ref}
+      style={{ position: "relative", width: "fit-content", overflow: "hidden" }}
+    >
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -27,10 +25,12 @@ export default function Reveal({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25}}
+        transition={{ duration: 0.5, delay: 0.25 }}
       >
         {children}
       </motion.div>
     </div>
   );
-}
+};
+
+export default Reveal;
