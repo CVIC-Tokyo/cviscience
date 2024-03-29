@@ -26,7 +26,7 @@ const Access: React.FC<AccessProps> = () => {
       <div 
         onMouseEnter={() => handleHover()}
         className="w-full h-full p-2 flex flex-col items-center justify-center">
-        <div className="h-[150px] w-[400px] text-[50px] flex items-center justify-center">
+        <div className="h-[150px] w-[400px] text-[50px] flex items-end justify-center">
           <p className="hello font-bold tracking-wide uppercase text-white text-lg md:text-[45px]">
             <motion.div
             animate={{ y: isHovered ? -20 : 0}}
@@ -36,7 +36,7 @@ const Access: React.FC<AccessProps> = () => {
             {localeData.ACCESS.ACCESS_TITLE}
           </p>
         </div>
-        <div className="w-full h-full md:w-[80%] md:h-[60%] bg-white/50 hover:bg-white flex items-center justify-center tile-photo-container">
+        <div className="w-full h-full md:w-[80%] md:h-[60%] bg-white/10 flex items-center justify-center tile-photo-container">
           <GoogleMap />
         </div>
       </div>
