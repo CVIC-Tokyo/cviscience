@@ -38,7 +38,6 @@ const Services: React.FC<ServicesProps> = () => {
 
   return (
     <div className="tile-container" id="Services" ref={containerRef}>
-      <Reveal></Reveal>
       <div className="tile-photo-container">
         <div
           style={{

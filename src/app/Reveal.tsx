@@ -3,7 +3,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 const Reveal: React.FC<RevealProps> = ({ children }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref);
 
   const mainControls = useAnimation();
 
@@ -16,7 +16,12 @@ const Reveal: React.FC<RevealProps> = ({ children }) => {
   return (
     <div
       ref={ref}
-      style={{ position: "relative", width: "fit-content", overflow: "hidden" }}
+      style={{
+        position: "relative",
+        width: "fit-content",
+        height: "fit-content",
+        overflow: "hidden",
+      }}
     >
       <motion.div
         variants={{
