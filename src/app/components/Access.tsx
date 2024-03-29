@@ -13,24 +13,23 @@ const Access: React.FC<AccessProps> = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
-  const handleHover= ()  => {
+  const handleHover = () => {
     setIsHovered(true);
 
     setTimeout(() => {
       setIsHovered(false);
     }, 400);
-  }
+  };
 
   return (
     <div className="tile-container h-[70vh]" id="Access" ref={containerRef}>
-      <div 
+      <div
         onMouseEnter={() => handleHover()}
-        className="w-full h-full p-2 flex flex-col items-center justify-center">
+        className="w-full h-full p-2 flex flex-col items-center justify-center"
+      >
         <div className="h-[150px] w-[400px] text-[50px] flex items-end justify-center">
           <div className="hello font-bold tracking-wide uppercase text-white text-lg md:text-[45px]">
-            <motion.div
-              animate={{ y: isHovered ? -20 : 0}}
-              >
+            <motion.div animate={{ y: isHovered ? -20 : 0 }}>
               <MdPinDrop className="w-full h-[55px]" />
             </motion.div>
             {localeData.ACCESS.ACCESS_TITLE}
