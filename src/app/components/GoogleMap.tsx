@@ -19,7 +19,7 @@ const GoogleMap = () => {
         "maps",
       )) as google.maps.MapsLibrary;
       const { Marker } = (await loader.importLibrary(
-        "marker"
+        "marker",
       )) as google.maps.MarkerLibrary;
 
       const position = {
@@ -41,7 +41,7 @@ const GoogleMap = () => {
       const marker = new Marker({
         map: map,
         position: position,
-        title:`${localeData.CVIC_INFO.CLINIC_NAME}`
+        title: `${localeData.CVIC_INFO.CLINIC_NAME}`,
       });
     };
 
