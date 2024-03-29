@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { useGlobalContext } from "../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import GoogleMap from "./GoogleMap";
