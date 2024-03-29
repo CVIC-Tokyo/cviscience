@@ -3,18 +3,18 @@ import { FaLanguage } from "react-icons/fa";
 import { useGlobalContext } from "@/context/store";
 import { Button } from "@nextui-org/react";
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
-import { animate, motion } from 'framer-motion'
+import { animate, motion } from "framer-motion";
 
 const TranslationTab: React.FC<TranslationTabProps> = () => {
   const { locale, setLocale } = useGlobalContext();
-  const [ showDropdown, setShowDropdown ] = useState<boolean>(false);
+  const [showDropdown, setShowDropdown] = useState<boolean>(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [rotation, setRotation] = useState(180);
 
   const handleRotation = () => {
     setRotation(rotation + 180);
-    animate(".dropdown-arrow", {rotate: rotation});
-  }
+    animate(".dropdown-arrow", { rotate: rotation });
+  };
 
   const locales = [
     { abbreviation: "ja", nativeName: "日本語" }, // Japanese
@@ -37,20 +37,18 @@ const TranslationTab: React.FC<TranslationTabProps> = () => {
     { abbreviation: "fa", nativeName: "فارسی" }, // Persian (Farsi)
     { abbreviation: "vi", nativeName: "Tiếng Việt" }, // Vietnamese
     { abbreviation: "pl", nativeName: "Polski" },
-    { abbreviation: "th", nativeName: "ไทย" } // Thai
+    { abbreviation: "th", nativeName: "ไทย" }, // Thai
   ];
 
   const handleLanguage = (arg: string) => {
     setTimeout(() => {
       setLocale(arg);
-    }, 500)
+    }, 500);
     setShowDropdown(false);
     handleRotation();
-  }
-  
+  };
 
   return (
-    
     <motion.div
       className="relative"
       ref={dropdownRef}
@@ -65,18 +63,19 @@ const TranslationTab: React.FC<TranslationTabProps> = () => {
         }}
         className="w-[150px] p-2 rounded-lg flex justify-center items-center bg-cvic-red text-white"
       >
-        <div
-          className="text-3xl flex justify-center items-center w-full h-full cursor-pointer"
-        >
+        <div className="text-3xl flex justify-center items-center w-full h-full cursor-pointer">
           <div className="flex uppercase">
             {locale}
             <FaLanguage className="mx-2" />
-            <TiArrowSortedDown className="dropdown-arrow"/>
+            <TiArrowSortedDown className="dropdown-arrow" />
           </div>
         </div>
       </motion.div>
       {showDropdown && (
-        <motion.div layoutScroll className="absolute top-full left-0 w-[150px] h-[200px] overflow-y-scroll bg-white shadow rounded-b-lg">
+        <motion.div
+          layoutScroll
+          className="absolute top-full left-0 w-[150px] h-[200px] overflow-y-scroll bg-white shadow rounded-b-lg"
+        >
           {locales.map((lang) => (
             <div
               key={lang.abbreviation}

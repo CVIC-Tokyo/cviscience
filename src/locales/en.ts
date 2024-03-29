@@ -36,9 +36,11 @@ const en = {
   },
   ABOUT: {
     MISSION_TITLE: "Our Mission",
-    MISSION: "At CVIC (Cardiac Imaging Clinic Iidabashi), our mission is simple yet profound: to transform cardiac healthcare in Japan. We are dedicated to pioneering advanced cardiac imaging diagnostics that enable the early detection and effective treatment of heart diseases. Through our relentless pursuit of excellence in technology and expertise, we aim to close the gap between Japan and the global forefront of cardiac imaging capabilities, ultimately saving lives by facilitating timely interventions.",
+    MISSION:
+      "At CVIC (Cardiac Imaging Clinic Iidabashi), our mission is simple yet profound: to transform cardiac healthcare in Japan. We are dedicated to pioneering advanced cardiac imaging diagnostics that enable the early detection and effective treatment of heart diseases. Through our relentless pursuit of excellence in technology and expertise, we aim to close the gap between Japan and the global forefront of cardiac imaging capabilities, ultimately saving lives by facilitating timely interventions.",
     VISION_TITLE: "Our Vision",
-    VISION: "We envision CVIC as the undisputed leader in cardiac imaging diagnosis throughout Japan. Our vision is not merely to set new standards but to redefine them, shaping the future of cardiac healthcare with innovation and unwavering commitment. By continuously refining our techniques and fostering collaboration among healthcare professionals, we aspire to ensure that every patient receives accurate and timely diagnosis, leading to improved outcomes and enhanced quality of life. Together, we are driving forward the advancement of medical care in Japan, one heartbeat at a time.",
+    VISION:
+      "We envision CVIC as the undisputed leader in cardiac imaging diagnosis throughout Japan. Our vision is not merely to set new standards but to redefine them, shaping the future of cardiac healthcare with innovation and unwavering commitment. By continuously refining our techniques and fostering collaboration among healthcare professionals, we aspire to ensure that every patient receives accurate and timely diagnosis, leading to improved outcomes and enhanced quality of life. Together, we are driving forward the advancement of medical care in Japan, one heartbeat at a time.",
     CSR_TITLE: "Corporate Social Responsibility (CSR)",
     CSR: {
       ONE_TITLE: "Ethical Patient Care",
@@ -46,15 +48,17 @@ const en = {
       TWO_TITLE: "Accessibility",
       TWO: "We believe that every individual should have acess to quality cardiac imaging diagnostics, regardless of their financial circumstances. That's why we are committed to making our services accessbile and affordable to all members of society",
       THREE_TITLE: "Preventive Care Advocacy",
-      THREE: "A core aspect of our CSR mission is to inform people that the leading cause of death in Japan, cardiovascular disease, is largely preventable through early detection and preventativve measures. By advocating for regular cardiac examination and promoting a proactive approach to heart health, we aim to reduce the incidence of heart disease and improve overall health outcomes in our community.",
-    }
+      THREE:
+        "A core aspect of our CSR mission is to inform people that the leading cause of death in Japan, cardiovascular disease, is largely preventable through early detection and preventativve measures. By advocating for regular cardiac examination and promoting a proactive approach to heart health, we aim to reduce the incidence of heart disease and improve overall health outcomes in our community.",
+    },
   },
   SERVICES: {
     MRI_TITLE: "Cardiac MRI",
     MRI: "",
     TITLE: "Time Required for Examination and Diagnosis Results",
     PROCESS: {
-      INTRO: "Due to its specialization in cardiac examinations, CVIC boasts high expertise and achieves speedy image processing.",
+      INTRO:
+        "Due to its specialization in cardiac examinations, CVIC boasts high expertise and achieves speedy image processing.",
       CT_TITLE: "Cardiac CT",
       CT_BULLET: {
         1: "Examination Reservation: Within 3 days",
@@ -87,7 +91,6 @@ const en = {
 };
 
 export default en;
-
 
 // Introduction to CVIC
 
