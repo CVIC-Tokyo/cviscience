@@ -16,11 +16,11 @@ html {
   }
 
   .tile-container {
-    @apply w-full h-[50vh] md:h-screen flex items-center justify-center bg-center bg-fixed bg-parallax bg-cover snap-center;
+    @apply w-full h-[30vh] md:h-screen flex items-center justify-center bg-center bg-fixed bg-parallax bg-cover snap-center;
   }
 
   .tile-photo-container {
-    @apply w-full h-[280px] md:h-[70vh] overflow-hidden relative md:m-2 shadow-2xl before:bg-white/10 border-white/20 hover:border-white border-8 before:rounded-xl rounded-large;
+    @apply w-full h-[250px] md:h-[70vh] overflow-hidden relative shadow-2xl before:bg-white/10 border-white/20 hover:border-white m-4 md:m-16 before:rounded-xl rounded-large;
   }
 
   .tile-hidden-info {
