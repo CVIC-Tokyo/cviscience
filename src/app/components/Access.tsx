@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useGlobalContext } from "../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import GoogleMap from "./GoogleMap";
@@ -11,14 +11,27 @@ const Access: React.FC<AccessProps> = () => {
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+
+  const handleHover= ()  => {
+    setIsHovered(true);
+
+    setTimeout(() => {
+      setIsHovered(false)
+    }, 400)
+  }
 
   return (
-    <div className="tile-container" id="Access" ref={containerRef}>
-      <div className="w-full h-full p-2 flex flex-col items-center justify-center">
+    <div className="tile-container h-[70vh]" id="Access" ref={containerRef}>
+      <div 
+        onMouseEnter={() => handleHover()}
+        className="w-full h-full p-2 flex flex-col items-center justify-center">
         <div className="h-[150px] w-[400px] text-[50px] flex items-center justify-center">
-          <p className="hello font-bold tracking-wide uppercase text-white">
-            <motion.div whileHover={{ y: -20 }}>
-              <MdPinDrop className="w-full" />
+          <p className="hello font-bold tracking-wide uppercase text-white text-lg md:text-[45px]">
+            <motion.div
+            animate={{ y: isHovered ? -20 : 0}}
+            >
+              <MdPinDrop className="w-full h-[55px]" />
             </motion.div>
             {localeData.ACCESS.ACCESS_TITLE}
           </p>
