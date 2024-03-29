@@ -12,7 +12,6 @@ const TranslationTab: React.FC<TranslationTabProps> = () => {
   const [rotation, setRotation] = useState(180);
 
   const handleRotation = () => {
-    console.log('rotation')
     setRotation(rotation + 180);
     animate(".dropdown-arrow", {rotate: rotation});
   }
