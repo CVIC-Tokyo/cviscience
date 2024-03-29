@@ -10,7 +10,7 @@ const Reveal: React.FC<RevealProps> = ({ children }) => {
   useEffect(() => {
     if (isInView) {
       mainControls.start("visible");
-    }
+    } else mainControls.start("hidden")
   }, [isInView]);
 
   return (
@@ -30,7 +30,7 @@ const Reveal: React.FC<RevealProps> = ({ children }) => {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         {children}
       </motion.div>
