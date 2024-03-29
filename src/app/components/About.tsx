@@ -40,7 +40,7 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={containerRef}
-      className="h-screen mt-16 md:mt-40 scroll-my-16 md:scroll-my-40 tile-container"
+      className="h-screen tile-container"
       id="About"
     >
       <div ref={containerRef} className="w-full h-full"></div>
