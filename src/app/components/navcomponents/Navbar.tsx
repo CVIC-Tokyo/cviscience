@@ -79,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           <Link href="/#Access" className="navbar-button">
             {localeData.BASIC.ACCESS}
           </Link>
-          <Link href="/" className="navbar-button">
+          <Link href="/" className="navbar-button border-r-0">
             {localeData.BASIC.MORE}
           </Link>
         </div>
