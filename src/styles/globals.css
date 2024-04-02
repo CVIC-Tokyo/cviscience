@@ -8,15 +8,15 @@ html {
 
 @layer base {
   .navbar-button {
-    @apply p-2 md:text-sm lg:text-base flex items-center justify-center tracking-wide uppercase hover:bg-cvic-dark/25 cursor-pointer border-separate text-white border-r-1;
+    @apply p-2 md:text-sm lg:text-base flex items-center justify-center tracking-wide uppercase hover:bg-cvic-dark/25 cursor-pointer font-bold border-separate border-r-1;
   }
 
   .footer-text {
-    @apply text-xs flex items-center justify-center w-full tracking-wider;
+    @apply text-xs flex items-center justify-center w-auto tracking-wider;
   }
 
   .tile-container {
-    @apply w-full h-[30vh] md:h-screen flex items-center justify-center bg-center bg-fixed bg-parallax bg-cover snap-center;
+    @apply w-full h-[40vh] md:h-screen flex items-center justify-center bg-center bg-fixed bg-cvic-dark md:bg-parallax bg-cover snap-center;
   }
 
   .tile-photo-container {
@@ -39,5 +39,9 @@ html {
 
   .sidebar-button {
     @apply flex items-center justify-center shadow-lg;
+  }
+
+  .about-title {
+    @apply text-lg w-[90vw] h-auto py-2 text-white bg-cvic-red flex justify-center items-center truncate
   }
 }
