@@ -54,8 +54,8 @@ const Navbar: React.FC<NavbarProps> = () => {
             size={45}
           />
         </motion.div>
-        <Link href={"/"} className="scroll-false">
-          <Image src={cvic_logo_600} alt="CVIC logo" width={600} unoptimized />
+        <Link href={"/"}>
+          <div className="w-[350px] h-[45px] md:w-[600px] md:h-[70px] bg-logo_600 bg-cover"></div>
         </Link>
         <div className="hidden md:flex h-full">
           <TranslationTab />
