@@ -16,7 +16,11 @@ html {
   }
 
   .tile-container {
-    @apply w-full h-[40vh] md:h-screen flex items-center justify-center bg-center bg-fixed bg-cvic-dark md:bg-parallax bg-cover snap-center;
+    @apply w-full h-[40vh] md:h-screen flex items-center justify-center bg-center bg-fixed bg-parallax_sm md:bg-parallax bg-cover snap-center;
+  }
+
+  .tile-info-container {
+    @apply absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/10
   }
 
   .tile-photo-container {
