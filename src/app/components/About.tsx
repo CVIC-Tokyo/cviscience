@@ -7,6 +7,7 @@ import Link from "next/link";
 
 const About: React.FC<AboutProps> = () => {
   const boxLogo = "/logos/cvic_logo_box_red.png";
+  const boxLogoWhite = "/logos/cvic_logo_box.jpg"
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
@@ -52,7 +53,8 @@ const About: React.FC<AboutProps> = () => {
             transition: "transform 1s ease-in-out", // Transition effect for scaling
           }}
         >
-          <Image src={boxLogo} alt="cvic-logo-red" width={40} height={40} />
+          <Image src={boxLogo} alt="cvic-logo-red" width={40} height={40} className="hidden md:flex" />
+          <Image src={boxLogoWhite} alt="cvic-logo-red" width={40} height={40} className="flex md:hidden"/>
           <p className="md:m-2 text-white text-[10px] md:text-base lg:text-3xl font-bold h-[50px] flex items-center justify-center">
             {localeData.CVIC_INFO.CLINIC_NAME}
           </p>
