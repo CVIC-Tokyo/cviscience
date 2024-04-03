@@ -15,10 +15,13 @@ export default function Providers({
   return (
     <NextUIProvider>
       <GlobalContextProvider>
+        <div className="w-full overflow-hidden">
         <Navbar />
         {children}
         <Access />
         <Footer />
+
+        </div>
       </GlobalContextProvider>
     </NextUIProvider>
   );

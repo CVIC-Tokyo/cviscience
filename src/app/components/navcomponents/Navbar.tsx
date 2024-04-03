@@ -38,16 +38,16 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 z-[100] ${showShadow ? `shadow-2xl bg-white/35` : "bg-white/0"}`}
+      className={`w-auto fixed top-0 left-0 right-0 z-[100] ${showShadow ? `shadow-2xl bg-white/35` : "bg-white/0"}`}
     >
       {/* NAVBAR LOGO AND TOGGLE */}
-      <div className="max-w-[1240px] mx-auto flex justify-between items-center p-2">
+      <div className="max-w-[screen] flex md:justify-between items-center p-2">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           onClick={handleSidebar}
-          className="md:hidden curser-pointer"
+          className="flex md:hidden curser-pointer"
         >
           <AiOutlineMenu
             className="border-y-2 p-2 bg-cvic-red text-white"
@@ -55,9 +55,9 @@ const Navbar: React.FC<NavbarProps> = () => {
           />
         </motion.div>
         <Link href={"/"}>
-          <div className="w-[350px] h-[45px] md:w-[600px] md:h-[70px] bg-logo_600 bg-cover"></div>
+          <div className="w-[280px] h-[39px] md:w-[600px] md:h-[75px] bg-logo_600 bg-contain"></div>
         </Link>
-        <div className="hidden md:flex h-full">
+        <div className="hidden md:flex h-[10xpx]">
           <TranslationTab />
         </div>
       </div>
