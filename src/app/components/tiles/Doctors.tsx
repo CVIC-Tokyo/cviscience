@@ -65,10 +65,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
               </p>
             </Reveal>
             <Reveal>
-              <Link
-                href={"/pages/doctors"}
-                className="tile-button"
-              >
+              <Link href={"/pages/doctors"} className="tile-button">
                 <p className="text-[4px] md:text-xs lg:text-xs">
                   {localeData.BASIC.DOCTORS}
                 </p>
