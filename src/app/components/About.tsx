@@ -56,7 +56,7 @@ const About: React.FC<AboutProps> = () => {
             height={40}
             className="shadow-xl"
           />
-          <p className="md:m-2 text-white text-[10px] md:text-base lg:text-3xl font-bold h-[50px] flex items-center justify-center">
+          <p className="mx-auto text-white text-[10px] md:text-base lg:text-3xl font-bold h-[50px]">
             {localeData.CVIC_INFO.CLINIC_NAME}
           </p>
           <p className="md:m-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
