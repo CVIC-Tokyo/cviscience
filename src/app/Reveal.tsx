@@ -10,7 +10,7 @@ const Reveal: React.FC<RevealProps> = ({ children }) => {
   useEffect(() => {
     if (isInView) {
       mainControls.start("visible");
-    } else mainControls.start("hidden")
+    } else mainControls.start("hidden");
   }, [isInView]);
 
   return (

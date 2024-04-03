@@ -65,10 +65,7 @@ const Services: React.FC<ServicesProps> = () => {
               </p>
             </Reveal>
             <Reveal>
-              <Link
-                href={"/pages/services"}
-                className="tile-button"
-              >
+              <Link href={"/pages/services"} className="tile-button">
                 <p className="text-[4px] md:text-xs lg:text-xs">
                   {localeData.BASIC.SERVICES}
                 </p>

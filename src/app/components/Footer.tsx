@@ -17,7 +17,9 @@ const Footer: React.FC<FooterProps> = () => {
         <Image src={cvic_logo_600} width={75} height={75} alt="/CVIC logo" />
 
         <div className="flex flex-col items-center p-4 truncate justify-center">
-          <p className="footer-text">{localeData.CVIC_INFO.CLINIC_DESCRIPTION}</p>
+          <p className="footer-text">
+            {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
+          </p>
           <p className="footer-text">{localeData.CVIC_INFO.CLINIC_ADDRESS}</p>
         </div>
         <Contact />

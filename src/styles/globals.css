@@ -20,7 +20,7 @@ html {
   }
 
   .tile-info-container {
-    @apply absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/10
+    @apply absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/10;
   }
 
   .tile-photo-container {
@@ -32,7 +32,7 @@ html {
   }
 
   .tile-button {
-    @apply my-2 p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white md:bg-white/75 md:hover:bg-white flex items-center justify-center cursor-pointer
+    @apply my-2 p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white md:bg-white/75 md:hover:bg-white flex items-center justify-center cursor-pointer;
   }
 
   .page-container {
@@ -50,6 +50,6 @@ html {
   }
 
   .about-title {
-    @apply text-lg w-[90vw] h-auto py-2 text-white bg-cvic-red flex justify-center items-center truncate
+    @apply text-lg w-[90vw] h-auto py-2 text-white bg-cvic-red flex justify-center items-center truncate;
   }
 }
