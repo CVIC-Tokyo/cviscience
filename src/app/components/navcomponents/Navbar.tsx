@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = () => {
       className={`w-auto fixed top-0 left-0 right-0 z-[100] ${showShadow ? `shadow-2xl bg-white/35` : "bg-white/0"}`}
     >
       {/* NAVBAR LOGO AND TOGGLE */}
-      <div className="max-w-[screen] flex md:justify-between items-center p-2">
+      <div className="max-w-[1240px] mx-auto flex md:justify-between items-center p-2">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
