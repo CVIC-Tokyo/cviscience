@@ -67,7 +67,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
             <Reveal>
               <Link
                 href={"/pages/doctors"}
-                className="my-2 p-2 h-[8px] w-auto md:h-[20px] lg:h-[30px] rounded bg-white/75 hover:bg-white flex items-center justify-center cursor-pointer"
+                className="tile-button"
               >
                 <p className="text-[4px] md:text-xs lg:text-xs">
                   {localeData.BASIC.DOCTORS}
