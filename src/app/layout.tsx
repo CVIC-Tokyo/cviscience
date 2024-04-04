@@ -17,7 +17,7 @@ export default function RootLayout({
         async
         src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBIC_MAPS_API_KEY}&loading=async`}
       />
-      <body className="noto-serif w-full h-full">
+      <body className="noto-serif w-full h-full text-center">
         <Providers>{children}</Providers>
       </body>
     </html>
