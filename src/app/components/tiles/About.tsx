@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useGlobalContext } from "../../context/store";
+import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
 import Image from "next/image";
@@ -7,7 +7,6 @@ import Link from "next/link";
 
 const About: React.FC<AboutProps> = () => {
   const boxLogo = "/logos/cvic_logo_box_red.png";
-  const boxLogoWhite = "/logos/cvic_logo_box.jpg";
   const [zoomOut, setZoomOut] = useState(false);
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);

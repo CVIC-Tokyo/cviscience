@@ -6,7 +6,7 @@ import { useGlobalContext } from "@/context/store";
 import { getLocaleData } from "@/utils/helpers";
 import Reveal from "@/app/Reveal";
 
-const AboutPage: React.FC<AboutPageProps> = () => {
+const ClinicInfo: React.FC<ClinicInfoProps> = () => {
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
 
@@ -51,4 +51,4 @@ const AboutPage: React.FC<AboutPageProps> = () => {
   );
 };
 
-export default AboutPage;
+export default ClinicInfo;

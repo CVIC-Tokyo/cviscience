@@ -2,10 +2,11 @@
 
 import "../styles/globals.css";
 import React from "react";
-import About from "./components/About";
+import About from "./components/tiles/About";
 import Equipments from "./components/tiles/Equipments";
 import Doctors from "./components/tiles/Doctors";
 import Services from "./components/tiles/Services";
+import ClinicInfo from "./components/information/ClinicInfo";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Equipments />
       <Doctors />
+      <ClinicInfo />
     </div>
   );
 }
