@@ -52,4 +52,8 @@ html {
   .about-title {
     @apply text-lg w-[90vw] h-auto py-2 text-white bg-cvic-red flex justify-center items-center truncate;
   }
+
+  .sns-logo {
+    @apply mx-2 hover:scale-125 cursor-pointer hover:shadow-2xl
+  }
 }
