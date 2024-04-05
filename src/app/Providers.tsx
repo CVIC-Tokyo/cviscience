@@ -7,6 +7,7 @@ import Navbar from "./components/navcomponents/Navbar";
 import Access from "./components/Access";
 import Footer from "./components/footercomponents/Footer";
 import Preloader from "./components/Preloader";
+import { useGlobalContext } from "@/context/store";
 
 export default function Providers({
   children,
@@ -14,14 +15,15 @@ export default function Providers({
   children: React.ReactNode;
 }>) {
   const [preload, setPreload] = useState(false);
+  const { locale } = useGlobalContext();
 
   useEffect(() => {
-    setPreload(false);
+    setPreload(true);
 
     setTimeout(() => {
       setPreload(false);
     }, 2000);
-  }, []);
+  }, [locale]);
 
   return (
     <NextUIProvider>
