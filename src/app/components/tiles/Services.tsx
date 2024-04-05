@@ -46,7 +46,7 @@ const Services: React.FC<ServicesProps> = () => {
           }}
           className="w-full h-[180px] md:h-[50vh] lg:h-[60vh] bg-services bg-cover bg-center"
         ></div>
-        <div className="tile-info-container">
+        <Link href={'/pages/services'} className="tile-info-container">
           <div
             className="w-[150px] md:w-auto h-auto flex flex-wrap flex-col items-center md:items-start justify-center"
             style={{
@@ -68,7 +68,7 @@ const Services: React.FC<ServicesProps> = () => {
                 <BiRightArrowAlt className="tile-arrow" />
             </Reveal>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

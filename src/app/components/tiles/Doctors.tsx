@@ -46,7 +46,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
           }}
           className="w-full h-[180px] md:h-[50vh] lg:h-[60vh] bg-doctors bg-cover bg-center"
         ></div>
-        <div className="tile-info-container">
+        <Link href={'/pages/doctors'} className="tile-info-container">
           <div
             className="w-[150px] md:w-auto h-auto flex flex-wrap flex-col items-center md:items-start justify-center"
             style={{
@@ -68,7 +68,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
               <BiRightArrowAlt className="tile-arrow" />
             </Reveal>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
