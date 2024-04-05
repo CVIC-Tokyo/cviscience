@@ -20,7 +20,7 @@ export default function Providers({
 
     setTimeout(() => {
       setPreload(false);
-    }, 3500);
+    }, 2000);
   }, [])
 
   return (
