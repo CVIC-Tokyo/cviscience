@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Reveal from "@/app/Reveal";
 
@@ -10,6 +11,7 @@ const Equipments: React.FC<EquipmentsProps> = () => {
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,17 +38,24 @@ const Equipments: React.FC<EquipmentsProps> = () => {
     };
   }, []);
 
+  const handleHover = () => {
+    setIsHovered(true);
+    setTimeout(() => {
+      setIsHovered(false);
+    }, 1000);
+  };
+
   return (
     <div className="tile-container" id="Equipments" ref={containerRef}>
-      <div className="tile-photo-container">
+      <div className="tile-photo-container" onMouseEnter={() => handleHover()}>
         <div
           style={{
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-[180px] md:h-[50vh] lg:h-[60vh] bg-equipments bg-cover bg-center"
+          className="w-full h-full bg-equipments bg-cover bg-center"
         ></div>
-        <div className="tile-info-container">
+        <Link href={"/pages/equipments"} className="tile-info-container">
           <div
             className="w-[150px] md:w-auto h-auto flex flex-wrap flex-col items-center md:items-start justify-center"
             style={{
@@ -55,25 +64,25 @@ const Equipments: React.FC<EquipmentsProps> = () => {
             }}
           >
             <Reveal>
-              <p className="md:my-2 text-white text-[10px] md:text-base lg:text-3xl font-bold h-[30px]">
+              <p className="md:my-2 text-white text-[10px] md:text-base font-bold h-[30px]">
                 {localeData.BASIC.EQUIPMENTS}
               </p>
             </Reveal>
             <Reveal>
-              <p className="md:my-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
+              <p className="md:my-2 text-white text-[4px] md:text-[9px] h-[20px]">
                 {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
               </p>
             </Reveal>
             <Reveal>
-              <Link href={"/pages/equipments"} className="tile-button">
-                <p className="text-[4px] md:text-xs lg:text-xs">
-                  {localeData.BASIC.EQUIPMENTS}
-                </p>
-                <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]" />
-              </Link>
+              <motion.div
+                className="w-[40px] md:w-[90px]"
+                animate={{ x: isHovered ? 20 : 0 }}
+              >
+                <BiRightArrowAlt className="tile-arrow" />
+              </motion.div>
             </Reveal>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

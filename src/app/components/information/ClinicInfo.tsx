@@ -12,7 +12,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
 
   return (
     <div className="flex items-center justify-center p-4 md:p-16 tracking-wide">
-      <div className="w-full h-auto p-2 md:p-12 flex flex-col items-center justify-center">
+      <div className="w-full max-w-[1500px] h-auto p-2 md:p-12 flex flex-col items-center justify-center">
         <Reveal>
           <h1 className="about-title">{localeData.ABOUT.MISSION_TITLE}</h1>
         </Reveal>

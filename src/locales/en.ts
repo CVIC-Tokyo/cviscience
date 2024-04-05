@@ -88,6 +88,9 @@ const en = {
   ACCESS: {
     ACCESS_TITLE: "Access Map",
   },
+  STAFF: {
+    STAFF: "Staff",
+  },
 };
 
 export default en;

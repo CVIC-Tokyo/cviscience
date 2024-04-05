@@ -23,6 +23,7 @@ const config: Config = {
         services: 'url("/images/services_image.JPG")',
         equipments: 'url("/images/vintage_titan.jpg")',
         doctors: 'url("/images/doctors_image.JPG")',
+        staff: 'url("/images/staff_image.png")',
         parallax_small: 'url("/images/access_image_sm.jpg")',
         logo_600: 'url("/logos/cvic_logo_600.png")',
       },
