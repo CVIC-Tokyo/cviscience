@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Reveal from "@/app/Reveal";
 
@@ -10,6 +11,7 @@ const Services: React.FC<ServicesProps> = () => {
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
   const containerRef = useRef<HTMLDivElement>(null);
+  const [ isHovered, setIsHovered ] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,9 +38,16 @@ const Services: React.FC<ServicesProps> = () => {
     };
   }, []);
 
+  const handleHover = () => {
+    setIsHovered(true);
+    setTimeout(() => {
+      setIsHovered(false);
+    }, 1000)
+  }
+
   return (
     <div className="tile-container" id="Services" ref={containerRef}>
-      <div className="tile-photo-container">
+      <div className="tile-photo-container" onMouseEnter={() => handleHover()}>
         <div
           style={{
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
@@ -65,7 +74,9 @@ const Services: React.FC<ServicesProps> = () => {
               </p>
             </Reveal>
             <Reveal>
-                <BiRightArrowAlt className="tile-arrow" />
+                <motion.div animate={{x: isHovered ? 20 : 0}} className="w-[40px] md:w-[90px]">
+                  <BiRightArrowAlt className="tile-arrow" />
+                </motion.div>
             </Reveal>
           </div>
         </Link>

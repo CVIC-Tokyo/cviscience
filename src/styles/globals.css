@@ -32,7 +32,7 @@ html {
   }
 
   .tile-arrow {
-    @apply size-[15px] md:size-[30px] text-white
+    @apply size-[15px] md:size-[30px] text-white w-[100%]
   }
 
   .page-container {
