@@ -20,6 +20,8 @@ interface DoctorsProps {}
 
 interface ServicesProps {}
 
+interface StaffProps {}
+
 interface AccessProps {}
 
 interface GoogleMapProps {}
