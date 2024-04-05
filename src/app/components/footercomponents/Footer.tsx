@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import cvic_logo_600 from "../../../public/logos/cvic_logo_box.jpg";
+import cvic_logo_600 from "../../../../public/logos/cvic_logo_box.jpg";
 import Image from "next/image";
-import { useGlobalContext } from "../../context/store";
+import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import Contact from "./Contact";
 

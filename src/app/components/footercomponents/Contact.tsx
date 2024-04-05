@@ -1,6 +1,6 @@
 import { getLocaleData } from "@/utils/helpers";
 import React from "react";
-import { useGlobalContext } from "../../context/store";
+import { useGlobalContext } from "../../../context/store";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { IoMailSharp } from "react-icons/io5";
 
