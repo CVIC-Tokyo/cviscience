@@ -90,7 +90,7 @@ const en = {
   },
   STAFF: {
     STAFF: "Staff",
-  }
+  },
 };
 
 export default en;

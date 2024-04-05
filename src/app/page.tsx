@@ -12,7 +12,7 @@ import Staff from "./components/tiles/Staff";
 export default function Home() {
   return (
     <div className="w-full h-auto snap-mandatory snap-y">
-        <About />
+      <About />
       <div className="w-full h-auto flex flex-col lg:grid grid-cols-2">
         <Services />
         <Equipments />

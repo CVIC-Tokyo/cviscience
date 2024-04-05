@@ -21,22 +21,22 @@ export default function Providers({
     setTimeout(() => {
       setPreload(false);
     }, 2000);
-  }, [])
+  }, []);
 
   return (
     <NextUIProvider>
       <GlobalContextProvider>
         <div className="w-full overflow-hidden">
-          {
-            preload ? <Preloader />
-            :
+          {preload ? (
+            <Preloader />
+          ) : (
             <React.Fragment>
               <Navbar />
               {children}
               <Access />
               <Footer />
             </React.Fragment>
-          }
+          )}
         </div>
       </GlobalContextProvider>
     </NextUIProvider>

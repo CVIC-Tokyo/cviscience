@@ -11,7 +11,7 @@ const Services: React.FC<ServicesProps> = () => {
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [ isHovered, setIsHovered ] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -42,8 +42,8 @@ const Services: React.FC<ServicesProps> = () => {
     setIsHovered(true);
     setTimeout(() => {
       setIsHovered(false);
-    }, 1000)
-  }
+    }, 1000);
+  };
 
   return (
     <div className="tile-container" id="Services" ref={containerRef}>
@@ -55,7 +55,7 @@ const Services: React.FC<ServicesProps> = () => {
           }}
           className="w-full h-full bg-services bg-cover bg-center"
         ></div>
-        <Link href={'/pages/services'} className="tile-info-container">
+        <Link href={"/pages/services"} className="tile-info-container">
           <div
             className="w-[150px] md:w-auto h-auto flex flex-wrap flex-col items-center md:items-start justify-center"
             style={{
@@ -74,9 +74,12 @@ const Services: React.FC<ServicesProps> = () => {
               </p>
             </Reveal>
             <Reveal>
-                <motion.div animate={{x: isHovered ? 20 : 0}} className="w-[40px] md:w-[90px]">
-                  <BiRightArrowAlt className="tile-arrow" />
-                </motion.div>
+              <motion.div
+                animate={{ x: isHovered ? 20 : 0 }}
+                className="w-[40px] md:w-[90px]"
+              >
+                <BiRightArrowAlt className="tile-arrow" />
+              </motion.div>
             </Reveal>
           </div>
         </Link>

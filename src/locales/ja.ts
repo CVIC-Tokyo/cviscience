@@ -85,7 +85,7 @@ const ja = {
   },
   STAFF: {
     STAFF: "スタッフ",
-  }
+  },
 };
 
 export default ja;
