@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import Contact from "./Contact";
+import SNS from "./SNS";
 
 const Footer: React.FC<FooterProps> = () => {
   const { locale } = useGlobalContext();
@@ -15,13 +16,13 @@ const Footer: React.FC<FooterProps> = () => {
     <div className="bg-cvic-dark text-white w-full h-auto p-3 flex justify-center items-center align-bottom">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <Image src={cvic_logo_600} width={75} height={75} alt="/CVIC logo" />
-
         <div className="flex flex-col items-center p-4 justify-center">
           <p className="footer-text">
             {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
           </p>
           <p className="footer-text">{localeData.CVIC_INFO.CLINIC_ADDRESS}</p>
         </div>
+        <SNS />
         <Contact />
         <p className="footer-text">
           {localeData.CVIC_INFO.CLINIC_RIGHTS_RESERVED}
