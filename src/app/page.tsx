@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="w-full h-auto snap-mandatory snap-y">
       <About />
-      <div className="w-full h-auto pb-10 flex flex-col lg:grid grid-cols-2 bg-parallax bg-fixed bg-cover">
+      <div className="w-full h-auto pb-10 flex flex-col lg:grid grid-cols-2">
         <Services />
         <Equipments />
         <Doctors />
