@@ -65,12 +65,7 @@ const Equipments: React.FC<EquipmentsProps> = () => {
               </p>
             </Reveal>
             <Reveal>
-              <Link href={"/pages/equipments"} className="tile-button">
-                <p className="text-[4px] md:text-xs lg:text-xs">
-                  {localeData.BASIC.EQUIPMENTS}
-                </p>
-                <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]" />
-              </Link>
+              <BiRightArrowAlt className="tile-arrow" />
             </Reveal>
           </div>
         </div>

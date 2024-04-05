@@ -65,12 +65,7 @@ const Services: React.FC<ServicesProps> = () => {
               </p>
             </Reveal>
             <Reveal>
-              <Link href={"/pages/services"} className="tile-button">
-                <p className="text-[4px] md:text-xs lg:text-xs">
-                  {localeData.BASIC.SERVICES}
-                </p>
-                <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]" />
-              </Link>
+                <BiRightArrowAlt className="tile-arrow" />
             </Reveal>
           </div>
         </div>
