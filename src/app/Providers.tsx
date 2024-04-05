@@ -5,7 +5,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/navcomponents/Navbar";
 import Access from "./components/Access";
-import Footer from "./components/Footer";
+import Footer from "./components/footercomponents/Footer";
 import Preloader from "./components/Preloader";
 
 export default function Providers({
@@ -16,7 +16,7 @@ export default function Providers({
   const [preload, setPreload] = useState(false);
 
   useEffect(() => {
-    setPreload(true);
+    setPreload(false);
 
     setTimeout(() => {
       setPreload(false);
@@ -26,7 +26,7 @@ export default function Providers({
   return (
     <NextUIProvider>
       <GlobalContextProvider>
-        <div className="w-full overflow-hidden">
+        <div className="w-full overflow-hidden bg-center bg-parallax bg-cover bg-fixed">
           {preload ? (
             <Preloader />
           ) : (
