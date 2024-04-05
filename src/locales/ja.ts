@@ -83,6 +83,9 @@ const ja = {
   ACCESS: {
     ACCESS_TITLE: "アクセス マップ",
   },
+  STAFF: {
+    STAFF: "スタッフ",
+  }
 };
 
 export default ja;
