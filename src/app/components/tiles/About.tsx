@@ -61,12 +61,6 @@ const About: React.FC<AboutProps> = () => {
           <p className="md:m-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
             {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
           </p>
-          <Link href={"/pages/about"} className="tile-button">
-            <p className="text-[4px] md:text-xs lg:text-xs">
-              {localeData.BASIC.ABOUT}
-            </p>
-            <BiRightArrowAlt className="size-[4px] md:size-[10px] lg:size-[15px]" />
-          </Link>
         </div>
       </div>
     </div>
