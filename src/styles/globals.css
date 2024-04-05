@@ -16,7 +16,7 @@ html {
   }
 
   .tile-container {
-    @apply w-full h-[40vh] md:h-screen flex items-center justify-center bg-center bg-fixed bg-parallax_sm md:bg-parallax bg-cover snap-center;
+    @apply w-full h-[40vh] md:h-[50vh] flex items-center justify-center bg-center bg-fixed bg-parallax_sm md:bg-parallax bg-cover py-10;
   }
 
   .tile-info-container {
@@ -24,7 +24,7 @@ html {
   }
 
   .tile-photo-container {
-    @apply w-full h-[250px] md:h-[70vh] overflow-hidden relative shadow-2xl before:bg-white/10 border-white/20 hover:border-white m-4 md:m-16 before:rounded-xl rounded-large;
+    @apply w-full h-full overflow-hidden relative shadow-2xl before:bg-white/10 border-white/20 hover:border-white m-4 md:m-16 before:rounded-xl rounded-large;
   }
 
   .tile-hidden-info {
@@ -32,7 +32,7 @@ html {
   }
 
   .tile-arrow {
-    @apply size-[15px] md:size-[30px] lg:size-[60px] text-white
+    @apply size-[15px] md:size-[30px] text-white
   }
 
   .page-container {

@@ -44,7 +44,7 @@ const Equipments: React.FC<EquipmentsProps> = () => {
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
             transition: "transform 2s ease-in-out", // Transition effect for scaling
           }}
-          className="w-full h-[180px] md:h-[50vh] lg:h-[60vh] bg-equipments bg-cover bg-center"
+          className="w-full h-full bg-equipments bg-cover bg-center"
         ></div>
         <Link href={'/pages/equipments'} className="tile-info-container">
           <div
@@ -55,12 +55,12 @@ const Equipments: React.FC<EquipmentsProps> = () => {
             }}
           >
             <Reveal>
-              <p className="md:my-2 text-white text-[10px] md:text-base lg:text-3xl font-bold h-[30px]">
+              <p className="md:my-2 text-white text-[10px] md:text-base font-bold h-[30px]">
                 {localeData.BASIC.EQUIPMENTS}
               </p>
             </Reveal>
             <Reveal>
-              <p className="md:my-2 text-white text-[4px] md:text-[9px] lg:text-sm h-[20px]">
+              <p className="md:my-2 text-white text-[4px] md:text-[9px] h-[20px]">
                 {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
               </p>
             </Reveal>
