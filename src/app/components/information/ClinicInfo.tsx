@@ -6,12 +6,12 @@ import { useGlobalContext } from "@/context/store";
 import { getLocaleData } from "@/utils/helpers";
 import Reveal from "@/app/Reveal";
 
-const AboutPage: React.FC<AboutPageProps> = () => {
+const ClinicInfo: React.FC<ClinicInfoProps> = () => {
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
 
   return (
-    <div className="page-container flex items-center justify-center p-4 md:p-16 tracking-wide">
+    <div className="flex items-center justify-center p-4 md:p-16 tracking-wide">
       <div className="w-full h-auto p-2 md:p-12 flex flex-col items-center justify-center">
         <Reveal>
           <h1 className="about-title">{localeData.ABOUT.MISSION_TITLE}</h1>
@@ -51,4 +51,4 @@ const AboutPage: React.FC<AboutPageProps> = () => {
   );
 };
 
-export default AboutPage;
+export default ClinicInfo;
