@@ -54,6 +54,6 @@ html {
   }
 
   .sns-logo {
-    @apply mx-2 hover:scale-125 cursor-pointer hover:shadow-2xl
+    @apply mx-2 hover:scale-125 cursor-pointer hover:shadow-2xl;
   }
 }
