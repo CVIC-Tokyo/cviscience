@@ -4,7 +4,7 @@ import { getLocaleData } from "@/utils/helpers";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Reveal from "@/app/Reveal";
+import Reveal from "../Reveal";
 
 const Equipments: React.FC<EquipmentsProps> = () => {
   const [zoomOut, setZoomOut] = useState(false);

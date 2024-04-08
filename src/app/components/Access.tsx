@@ -6,7 +6,7 @@ import { getLocaleData } from "@/utils/helpers";
 import GoogleMap from "./GoogleMap";
 import { MdPinDrop } from "react-icons/md";
 import { motion } from "framer-motion";
-import Reveal from "../Reveal";
+import Reveal from "./Reveal";
 
 const Access: React.FC<AccessProps> = () => {
   const { locale } = useGlobalContext();

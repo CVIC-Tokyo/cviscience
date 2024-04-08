@@ -4,7 +4,7 @@ import React from "react";
 import "../../../styles/globals.css";
 import { useGlobalContext } from "@/context/store";
 import { getLocaleData } from "@/utils/helpers";
-import Reveal from "@/app/Reveal";
+import Reveal from "../Reveal";
 
 const ClinicInfo: React.FC<ClinicInfoProps> = () => {
   const { locale } = useGlobalContext();
