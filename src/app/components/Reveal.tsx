@@ -16,12 +16,7 @@ const Reveal: React.FC<RevealProps> = ({ children }) => {
   return (
     <div
       ref={ref}
-      style={{
-        position: "relative",
-        width: "full",
-        height: "fit-content",
-        overflow: "hidden",
-      }}
+      className="relative w-full h-fit overflow-hidden"
     >
       <motion.div
         variants={{
