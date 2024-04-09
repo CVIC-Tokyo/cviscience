@@ -26,6 +26,8 @@ const config: Config = {
         staff: 'url("/images/staff_image.png")',
         parallax_small: 'url("/images/access_image_sm.jpg")',
         logo_600: 'url("/logos/cvic_logo_600.png")',
+        doctors_full: 'url("/images/doctors/CVIC_3.JPG")',
+        dr_Ito: 'url("/images/doctors/DrItoJ.jpg")',
       },
     },
   },
