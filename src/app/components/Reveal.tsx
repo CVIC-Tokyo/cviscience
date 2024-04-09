@@ -18,7 +18,7 @@ const Reveal: React.FC<RevealProps> = ({ children }) => {
       ref={ref}
       style={{
         position: "relative",
-        width: "fit-content",
+        width: "full",
         height: "fit-content",
         overflow: "hidden",
       }}
