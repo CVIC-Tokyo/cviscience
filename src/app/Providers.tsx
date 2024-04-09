@@ -28,7 +28,7 @@ export default function Providers({
   return (
     <NextUIProvider>
       <GlobalContextProvider>
-        <div className="w-full overflow-hidden bg-center bg-parallax bg-cover bg-fixed">
+        <div className="w-full overflow-hidden bg-center bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
           {preload ? (
             <Preloader />
           ) : (
