@@ -11,7 +11,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
   const localeData = getLocaleData(locale);
 
   return (
-    <div className="max-w-[1700px] flex items-center justify-center p-4 tracking-wide">
+    <div className="max-w-[1700px] w-full flex items-center justify-center md:p-4 tracking-wide">
       <div className="w-full h-auto p-2 flex flex-col items-center justify-center">
         <Reveal>
           <div className="bg-white md:bg-white/75 p-2 m-2 rounded-lg h-auto mx-auto">
@@ -34,7 +34,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
           </div>
         </Reveal>
         <Reveal>
-          <div className="bg-white md:bg-white/75 p-2 m-2 rounded-lg h-auto mx-auto items-center justify-center">
+          <div className="bg-white md:bg-white/75 p-2 m-2 rounded-lg h-auto mx-auto">
             <Reveal>
               <h1 className="about-title">{localeData.ABOUT.CSR_TITLE}</h1>
             </Reveal>
