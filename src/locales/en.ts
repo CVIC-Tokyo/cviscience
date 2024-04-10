@@ -98,7 +98,7 @@ const en = {
     ITOJ: "Junko Ito",
     WATANABE: "Yoshiko Watanabe",
     ITOM: "Miyuki Ito",
-    TABABE: "Sho Tanabe",
+    TANABE: "Sho Tanabe",
     TERASHIMA_TITLE: "Chairman",
     TAKAMURA_TITLE: "Director of Cardiac Imaging Clinic Iidabashi",
     ITOJ_TITLE: ["Cardiologist", "Internal Medicine Specialist"],
