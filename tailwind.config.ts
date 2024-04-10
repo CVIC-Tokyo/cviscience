@@ -30,7 +30,7 @@ const config: Config = {
         drIto: 'url("/images/doctors/DrItoJ.jpg")',
         drTerashima: 'url("/images/doctors/DrTerashima.jpg")',
         drItoJ: 'url("/images/doctors/DrItoM.jpg")',
-        drSato: 'url("/images/doctors/DrSato.jpg")',
+        drWatanabe: 'url("/images/doctors/DrWatanabe.jpg")',
         drTanabe: 'url("/images/doctors/DrTanabe.jpg")',
         drTakamura: 'url("/images/doctors/DrTakamura.jpg")',
       },
