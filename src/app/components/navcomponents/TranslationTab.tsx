@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaLanguage } from "react-icons/fa";
 import { useGlobalContext } from "@/context/store";
-import { Button } from "@nextui-org/react";
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 import { animate, motion } from "framer-motion";
 

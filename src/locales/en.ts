@@ -91,6 +91,21 @@ const en = {
   STAFF: {
     STAFF: "Staff",
   },
+  DOCTORS: {
+    TITLE: "CVIC Doctors",
+    TERASHIMA: "Masahiro Terashima",
+    TAKAMURA: "Chihiro Takamura",
+    ITOJ: "Junko Ito",
+    WATANABE: "Yoshiko Watanabe",
+    ITOM: "Miyuki Ito",
+    TANABE: "Sho Tanabe",
+    TERASHIMA_TITLE: "Chairman",
+    TAKAMURA_TITLE: "Director of Cardiac Imaging Clinic Iidabashi",
+    ITOJ_TITLE: ["Cardiologist", "Internal Medicine Specialist"],
+    WATANABE_TITLE: "Cardiologist",
+    ITOM_TITLE: "Cardiologist",
+    TANABE_TITLE: "Cardiologist",
+  }
 };
 
 export default en;

@@ -16,7 +16,7 @@ html {
   }
 
   .tile-container {
-    @apply w-full h-[20vh] md:h-[40vh] flex items-center justify-center p-4 md:p-6 lg:p-4;
+    @apply w-full h-[30vh] md:h-[40vh] flex items-center justify-center p-2 sm:py-4 md:p-6 lg:p-4;
   }
 
   .tile-info-container {
@@ -36,7 +36,7 @@ html {
   }
 
   .page-container {
-    @apply w-full h-auto mt-16 md:mt-40 scroll-my-16 md:scroll-my-44;
+    @apply w-full max-w-[1700px] h-auto mt-16 md:mt-40 scroll-my-16 md:scroll-my-44 p-2 md:p-4;
   }
 
   .noto-serif jp-white {
@@ -50,10 +50,10 @@ html {
   }
 
   .about-title {
-    @apply text-lg w-[90vw] h-auto py-2 text-white bg-cvic-red flex justify-center items-center truncate;
+    @apply text-lg w-full h-auto py-2 text-white bg-cvic-red flex justify-center items-center truncate rounded-t-lg;
   }
 
   .sns-logo {
-    @apply mx-2 hover:scale-125 cursor-pointer hover:shadow-2xl
+    @apply mx-2 hover:scale-125 cursor-pointer hover:shadow-2xl;
   }
 }

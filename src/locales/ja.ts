@@ -86,6 +86,21 @@ const ja = {
   STAFF: {
     STAFF: "スタッフ",
   },
+  DOCTORS: {
+    TITLE: "CVIC ドクターズ",
+    TERASHIMA: "寺島 正浩",
+    TAKAMURA: "髙村 千智",
+    ITOJ: "伊藤 順子",
+    WATANABE: "渡邊 蓉子 ",
+    ITOM: "伊藤 みゆき",
+    TANABE: "田邉 翔",
+    TERASHIMA_TITLE: "理事長",
+    TAKAMURA_TITLE: "心臓画像クリニック飯田橋院長",
+    ITOJ_TITLE: ["循環器専門医", "総合内科専門医"],
+    WATANABE_TITLE: "循環器専門医",
+    ITOM_TITLE: "循環器専門医",
+    TANABE_TITLE: "循環器専門医"
+  }
 };
 
 export default ja;
