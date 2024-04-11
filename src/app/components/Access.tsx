@@ -23,7 +23,11 @@ const Access: React.FC<AccessProps> = () => {
   };
 
   return (
-    <div className="tile-container h-[90vh] md:h-[80vh]" id="Access" ref={containerRef}>
+    <div
+      className="tile-container h-[90vh] md:h-[80vh]"
+      id="Access"
+      ref={containerRef}
+    >
       <div
         onMouseEnter={() => handleHover()}
         className="w-full h-full flex flex-col items-center justify-center"

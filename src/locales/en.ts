@@ -105,7 +105,7 @@ const en = {
     WATANABE_TITLE: "Cardiologist",
     ITOM_TITLE: "Cardiologist",
     TANABE_TITLE: "Cardiologist",
-  }
+  },
 };
 
 export default en;

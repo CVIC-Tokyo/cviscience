@@ -99,8 +99,8 @@ const ja = {
     ITOJ_TITLE: ["循環器専門医", "総合内科専門医"],
     WATANABE_TITLE: "循環器専門医",
     ITOM_TITLE: "循環器専門医",
-    TANABE_TITLE: "循環器専門医"
-  }
+    TANABE_TITLE: "循環器専門医",
+  },
 };
 
 export default ja;
