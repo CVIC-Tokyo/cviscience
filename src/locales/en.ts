@@ -28,6 +28,14 @@ const en = {
     CLINIC_DESCRIPTION:
       "Team of specialists for cardiovascular MRI examinations, heart check-ups and image diagnosis",
     CLINIC_RIGHTS_RESERVED: "© 2020 CVIC Allrights Reserved.",
+    CLINIC_MISSION:
+      "In cardiovascular imaging diagnosis, we contribute to the prevention and early detection of heart disease. Our dream is to share Japan's medical technology with the world.",
+    TERASHIMA_MESSAGE_P1:
+      "With the aim of realizing the desire to deliver the latest and best cardiovascular imaging diagnosis to as many patients as possible, we have decided to establish the 'Heart Imaging Clinic Iidabashi,' a specialized cardiovascular imaging diagnosis center in Iidabashi, Tokyo.",
+    TERASHIMA_MESSAGE_P2:
+      "In recent years, the technology for imaging diagnosis of the heart has made rapid progress. Using state-of-the-art imaging diagnostic techniques such as CT and MRI, it has become possible to conduct examinations with minimal exposure to radiation and discomfort. In outpatient settings, it is possible to perform three-dimensional imaging of the heart, including the coronary arteries (blood vessels surrounding the heart), in a short period of time. Previously, heart examinations relied on electrocardiograms and X-rays, but with the use of CT and MRI, it has become possible to accurately assess the heart's movements and three-dimensional (3D) morphology with minimal physical burden.",
+    TERASHIMA_MESSAGE_P3:
+      "Cardiovascular imaging diagnosis holds great potential for the prevention and early detection of heart disease. I have been engaged in clinical and research activities related to cardiovascular imaging diagnosis for seven and a half years at Stanford University in the United States, and I have great expectations and confidence in its potential. Therefore, I have returned to Japan with the intention of returning my experience and research results to Japanese medicine and solving the problems of cardiovascular imaging diagnosis. As a practical endeavor, I have established Japan's first and rare specialized cardiovascular imaging center. I believe that Japan's excellent medical technology can confidently expand overseas. While seeking the cooperation of a wide range of medical professionals, I am determined to work towards the goal of providing the latest and best cardiovascular imaging diagnosis to as many patients as possible, expanding this goal to the world.",
   },
   REACH: {
     NUMBER: "03-5206-5956",
