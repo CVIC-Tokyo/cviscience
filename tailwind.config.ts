@@ -33,6 +33,7 @@ const config: Config = {
         drWatanabe: 'url("/images/doctors/DrWatanabe.jpg")',
         drTanabe: 'url("/images/doctors/DrTanabe.jpg")',
         drTakamura: 'url("/images/doctors/DrTakamura.jpg")',
+        terashima_message: 'url("/images/terashima_sensei.jpg")',
       },
     },
   },
