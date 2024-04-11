@@ -19,7 +19,15 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
               <h1 className="about-title">{localeData.ABOUT.MISSION_TITLE}</h1>
             </Reveal>
             <Reveal>
-              <p className="p-4">{localeData.ABOUT.MISSION}</p>
+              <div className="p-4 text-[12px] md:text-base">
+                <div className="w-full h-[200px] md:h-[300px] lg:h-[500px] bg-terashima_message bg-cover bg-center" />
+                <p className="font-bold p-2 md:p-4">
+                  {localeData.CVIC_INFO.CLINIC_MISSION}
+                </p>
+                <p className="p-2 md:p-4">"{localeData.CVIC_INFO.TERASHIMA_MESSAGE_P1}</p>
+                <p className="p-2 md:p-4">{localeData.CVIC_INFO.TERASHIMA_MESSAGE_P2}</p>
+                <p className="p-2 md:p-4">{localeData.CVIC_INFO.TERASHIMA_MESSAGE_P3}"</p>
+              </div>
             </Reveal>
           </div>
         </Reveal>
