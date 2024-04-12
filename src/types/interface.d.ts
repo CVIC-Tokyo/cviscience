@@ -40,3 +40,7 @@ interface ClinicInfoProps {}
 interface RevealProps {
   children: JSX.Element;
 }
+
+interface CarouselProps {
+  locale: string;
+}

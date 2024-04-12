@@ -15,7 +15,7 @@ const SideBar: React.FC<SidebarProps> = ({
   showSidebar,
   setShowSidebar,
   handleSidebar,
-  locale
+  locale,
 }) => {
   const localeData = getLocaleData(locale);
 
