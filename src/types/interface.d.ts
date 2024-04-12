@@ -44,3 +44,7 @@ interface RevealProps {
 interface CarouselProps {
   locale: string;
 }
+
+interface EquipmentInfoProps {
+  locale: string;
+}
