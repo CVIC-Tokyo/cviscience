@@ -209,6 +209,14 @@ const ja = {
       ]
     },
   ],
+  FACILITIES: {
+    TITLES: {
+      MRI: "MRI (Magnetic Resonance Imaging) 磁気共鳴画像診断装置査",
+      CT: "CT (Computed Tomography) コンピュータ断層装置",
+      ZIO: '3D医用画像処理ワークステーション「Ziostation2」',
+      ECHO: "循環器用超音波診断装置 (心エコー)"
+    }
+  }
 };
 
 export default ja;

@@ -212,6 +212,14 @@ const en = {
       ],
     },
   ],
+  FACILITIES: {
+    TITLES: {
+      MRI: "MRI (Magnetic Resonance Imaging)",
+      CT: "CT (Computed Tomography)",
+      ZIO: '3D Medical Image Processing Workstation "Ziostation2"',
+      ECHO: "Echocardiography - Cardiovascular Ultrasound Dianostic Equipment"
+    }
+  }
 };
 
 export default en;
