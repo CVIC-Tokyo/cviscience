@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
 import TranslationTab from "./TranslationTab";
 import { getLocaleData } from "@/utils/helpers";
 import { useGlobalContext } from "../../../context/store";
@@ -88,6 +86,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         showSidebar={showSidebar}
         setShowSidebar={setShowSidebar}
         handleSidebar={handleSidebar}
+        locale={locale}
       />
     </div>
   );

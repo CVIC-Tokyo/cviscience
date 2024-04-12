@@ -6,6 +6,7 @@ interface SidebarProps {
   showSidebar: boolean;
   setShowSidebar: (arg: boolean) => void;
   handleSidebar: () => void;
+  locale: string;
 }
 
 interface HomeDropdownProps {}
