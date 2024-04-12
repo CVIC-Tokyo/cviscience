@@ -9,12 +9,12 @@ const History_Carousel: React.FC<CarouselProps> = ({ locale }) => {
   return (
     <div className="flex h-[500px] md:h-[900px] w-full items-center justify-center">
       <div className="w-full max-w-full">
-        <ul className="flex flex-col md:flex-row md:h-[840px] gap-1 md:gap-2">
+        <ul className="flex h-[450px] md:h-[840px] gap-1 md:gap-2 text-[10px] md:text-base overflow-y-scroll md:overflow-y-auto">
           {localeData.CAROUSEL.map((person, index) => {
             return (
               <li
                 aria-current={activeItem === index}
-                className="w-full h-[8%] md:w-[10%] md:h-full shadow-lg overflow-hidden bg-white [&[aria-current='true']]:h-[300px] md:[&[aria-current='true']]:w-[70%] md:[&[aria-current='true']]:h-[100%] rounded-xl md:hover:w-[12%] duration-500"
+                className="w-[6%] md:w-[10%] h-full shadow-lg overflow-hidden bg-white [&[aria-current='true']]:w-[65%] md:[&[aria-current='true']]:w-[70%] md:[&[aria-current='true']]:h-[100%] rounded-xl md:hover:w-[12%] duration-500"
                 key={person.name}
                 onClick={() => setActiveItem(index)}
               >
@@ -30,7 +30,7 @@ const History_Carousel: React.FC<CarouselProps> = ({ locale }) => {
                     {person.history.map((bullet, index) => (
                     <p key={index}>• {bullet}</p>
                   ))}
-                </div>
+                  </div>
                   </Reveal>
                 </div>
                 <img
@@ -41,7 +41,7 @@ const History_Carousel: React.FC<CarouselProps> = ({ locale }) => {
                 />
               </li>
             );
-          })}
+          })} 
         </ul>
       </div>
     </div>
