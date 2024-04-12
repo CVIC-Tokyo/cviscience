@@ -8,7 +8,6 @@ import {
   AiOutlineClose,
   AiOutlineMail,
 } from "react-icons/ai";
-import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
 import TranslationTab from "./TranslationTab";
 
@@ -16,8 +15,8 @@ const SideBar: React.FC<SidebarProps> = ({
   showSidebar,
   setShowSidebar,
   handleSidebar,
+  locale,
 }) => {
-  const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
 
   return (

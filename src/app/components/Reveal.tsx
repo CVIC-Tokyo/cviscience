@@ -14,10 +14,7 @@ const Reveal: React.FC<RevealProps> = ({ children }) => {
   }, [isInView]);
 
   return (
-    <div
-      ref={ref}
-      className="relative w-full h-fit overflow-hidden"
-    >
+    <div ref={ref} className="relative w-full h-fit overflow-hidden">
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },

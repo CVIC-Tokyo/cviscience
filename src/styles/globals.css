@@ -16,7 +16,7 @@ html {
   }
 
   .tile-container {
-    @apply w-full h-[30vh] md:h-[40vh] flex items-center justify-center p-2 sm:py-4 md:p-6 lg:p-4;
+    @apply w-full h-[30vh] md:h-[400px] flex items-center justify-center p-2 sm:py-4 md:p-6 lg:p-2;
   }
 
   .tile-info-container {
@@ -24,7 +24,7 @@ html {
   }
 
   .tile-photo-container {
-    @apply w-full h-full overflow-hidden relative shadow-2xl before:bg-white/10 border-white/20 hover:border-white before:rounded-xl rounded-large;
+    @apply w-full h-full overflow-hidden relative shadow-2xl before:bg-white/10 border-white/20 hover:border-white before:rounded-xl rounded-lg;
   }
 
   .tile-hidden-info {

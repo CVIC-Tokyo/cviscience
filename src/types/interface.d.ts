@@ -6,6 +6,7 @@ interface SidebarProps {
   showSidebar: boolean;
   setShowSidebar: (arg: boolean) => void;
   handleSidebar: () => void;
+  locale: string;
 }
 
 interface HomeDropdownProps {}
@@ -38,4 +39,8 @@ interface ClinicInfoProps {}
 
 interface RevealProps {
   children: JSX.Element;
+}
+
+interface CarouselProps {
+  locale: string;
 }

@@ -28,6 +28,14 @@ const en = {
     CLINIC_DESCRIPTION:
       "Team of specialists for cardiovascular MRI examinations, heart check-ups and image diagnosis",
     CLINIC_RIGHTS_RESERVED: "© 2020 CVIC Allrights Reserved.",
+    CLINIC_MISSION:
+      "In cardiovascular imaging diagnosis, we contribute to the prevention and early detection of heart disease. Our dream is to share Japan's medical technology with the world.",
+    TERASHIMA_MESSAGE_P1:
+      "With the aim of realizing the desire to deliver the latest and best cardiovascular imaging diagnosis to as many patients as possible, we have decided to establish the 'Heart Imaging Clinic Iidabashi,' a specialized cardiovascular imaging diagnosis center in Iidabashi, Tokyo.",
+    TERASHIMA_MESSAGE_P2:
+      "In recent years, the technology for imaging diagnosis of the heart has made rapid progress. Using state-of-the-art imaging diagnostic techniques such as CT and MRI, it has become possible to conduct examinations with minimal exposure to radiation and discomfort. In outpatient settings, it is possible to perform three-dimensional imaging of the heart, including the coronary arteries (blood vessels surrounding the heart), in a short period of time. Previously, heart examinations relied on electrocardiograms and X-rays, but with the use of CT and MRI, it has become possible to accurately assess the heart's movements and three-dimensional (3D) morphology with minimal physical burden.",
+    TERASHIMA_MESSAGE_P3:
+      "Cardiovascular imaging diagnosis holds great potential for the prevention and early detection of heart disease. I have been engaged in clinical and research activities related to cardiovascular imaging diagnosis for seven and a half years at Stanford University in the United States, and I have great expectations and confidence in its potential. Therefore, I have returned to Japan with the intention of returning my experience and research results to Japanese medicine and solving the problems of cardiovascular imaging diagnosis. As a practical endeavor, I have established Japan's first and rare specialized cardiovascular imaging center. I believe that Japan's excellent medical technology can confidently expand overseas. While seeking the cooperation of a wide range of medical professionals, I am determined to work towards the goal of providing the latest and best cardiovascular imaging diagnosis to as many patients as possible, expanding this goal to the world.",
   },
   REACH: {
     NUMBER: "03-5206-5956",
@@ -105,32 +113,105 @@ const en = {
     WATANABE_TITLE: "Cardiologist",
     ITOM_TITLE: "Cardiologist",
     TANABE_TITLE: "Cardiologist",
-  }
+  },
+  CAROUSEL: [
+    {
+      img: "/images/doctors/DrTerashima.jpg",
+      title: "Chairman",
+      name: "Masahiro Terashima",
+      history: [
+        "1993年: Graduated from Kobe University School of Medicine. Completed training at Kobe University School of Medicine Hospital and affiliated hospitals.",
+        "1996年: Entered Kobe University Graduate School of Medicine. Conducted translational research linking basic and clinical aspects of arteriosclerosis within the cardiovascular field.",
+        "March 2000: Obtained a medical doctorate degree.",
+        "July 2000: Studied as a postdoctoral fellow at the Department of Cardiovascular Medicine, Stanford University, USA, focusing on a new research theme of 'Arteriosclerotic Plaque Imaging by MRI.'",
+        "December 2001: Returned to Japan as a staff physician in the Department of Cardiovascular Medicine at the National Cerebral and Cardiovascular Center.",
+        "May 2003: Returned to Stanford University's Department of Cardiovascular Medicine for further studies. As Director of the Cardiac MRI Research Laboratory, engaged in cutting-edge research using the latest dedicated 3 Tesla MRI for cardiac and vascular MRI, as well as molecular imaging research on arteriosclerosis at Stanford University Molecular Imaging Center.",
+        "2008年: Became the first Japanese faculty (regular faculty member) in the Department of Cardiovascular Medicine at Stanford University.",
+        "August 2009: Returned to Japan to apply research findings from seven and a half years at Stanford University to clinical practice in Japan.",
+        "November 2009: Founded the Iidabashi Cardiac Imaging Clinic. Delivered 120 invited lectures (since 2005) and published 40 original articles (as of August 2019).",
+      ],
+    },
+    {
+      img: "/images/doctors/DrTakamura.jpg",
+      title: "Director of Cardiac Imaging Clinic Iidabashi",
+      name: "Chihiro Takamura",
+      history: [
+        "1993年: Graduated from Kobe University School of Medicine. Completed training at Kobe University School of Medicine Hospital and affiliated hospitals.",
+        "1996年: Entered Kobe University Graduate School of Medicine. Conducted translational research linking basic and clinical aspects of arteriosclerosis within the cardiovascular field.",
+        "March 2000: Obtained a medical doctorate degree.",
+        "July 2000: Studied as a postdoctoral fellow at the Department of Cardiovascular Medicine, Stanford University, USA, focusing on a new research theme of 'Arteriosclerotic Plaque Imaging by MRI.'",
+        "December 2001: Returned to Japan as a staff physician in the Department of Cardiovascular Medicine at the National Cerebral and Cardiovascular Center.",
+        "May 2003: Returned to Stanford University's Department of Cardiovascular Medicine for further studies. As Director of the Cardiac MRI Research Laboratory, engaged in cutting-edge research using the latest dedicated 3 Tesla MRI for cardiac and vascular MRI, as well as molecular imaging research on arteriosclerosis at Stanford University Molecular Imaging Center.",
+        "2008年: Became the first Japanese faculty (regular faculty member) in the Department of Cardiovascular Medicine at Stanford University.",
+        "August 2009: Returned to Japan to apply research findings from seven and a half years at Stanford University to clinical practice in Japan.",
+        "November 2009: Founded the Iidabashi Cardiac Imaging Clinic. Delivered 120 invited lectures (since 2005) and published 40 original articles (as of August 2019).",
+      ],
+    },
+    {
+      img: "/images/doctors/DrItoJ.jpg",
+      title: ["Cardiologist", "Internal Medicine Specialist"],
+      name: "Junko Ito",
+      history: [
+        "1993年: Graduated from Kobe University School of Medicine. Completed training at Kobe University School of Medicine Hospital and affiliated hospitals.",
+        "1996年: Entered Kobe University Graduate School of Medicine. Conducted translational research linking basic and clinical aspects of arteriosclerosis within the cardiovascular field.",
+        "March 2000: Obtained a medical doctorate degree.",
+        "July 2000: Studied as a postdoctoral fellow at the Department of Cardiovascular Medicine, Stanford University, USA, focusing on a new research theme of 'Arteriosclerotic Plaque Imaging by MRI.'",
+        "December 2001: Returned to Japan as a staff physician in the Department of Cardiovascular Medicine at the National Cerebral and Cardiovascular Center.",
+        "May 2003: Returned to Stanford University's Department of Cardiovascular Medicine for further studies. As Director of the Cardiac MRI Research Laboratory, engaged in cutting-edge research using the latest dedicated 3 Tesla MRI for cardiac and vascular MRI, as well as molecular imaging research on arteriosclerosis at Stanford University Molecular Imaging Center.",
+        "2008年: Became the first Japanese faculty (regular faculty member) in the Department of Cardiovascular Medicine at Stanford University.",
+        "August 2009: Returned to Japan to apply research findings from seven and a half years at Stanford University to clinical practice in Japan.",
+        "November 2009: Founded the Iidabashi Cardiac Imaging Clinic. Delivered 120 invited lectures (since 2005) and published 40 original articles (as of August 2019).",
+      ],
+    },
+    {
+      img: "/images/doctors/DrWatanabe.jpg",
+      title: "Cardiologist",
+      name: "Yoshiko Watanabe",
+      history: [
+        "1993年: Graduated from Kobe University School of Medicine. Completed training at Kobe University School of Medicine Hospital and affiliated hospitals.",
+        "1996年: Entered Kobe University Graduate School of Medicine. Conducted translational research linking basic and clinical aspects of arteriosclerosis within the cardiovascular field.",
+        "March 2000: Obtained a medical doctorate degree.",
+        "July 2000: Studied as a postdoctoral fellow at the Department of Cardiovascular Medicine, Stanford University, USA, focusing on a new research theme of 'Arteriosclerotic Plaque Imaging by MRI.'",
+        "December 2001: Returned to Japan as a staff physician in the Department of Cardiovascular Medicine at the National Cerebral and Cardiovascular Center.",
+        "May 2003: Returned to Stanford University's Department of Cardiovascular Medicine for further studies. As Director of the Cardiac MRI Research Laboratory, engaged in cutting-edge research using the latest dedicated 3 Tesla MRI for cardiac and vascular MRI, as well as molecular imaging research on arteriosclerosis at Stanford University Molecular Imaging Center.",
+        "2008年: Became the first Japanese faculty (regular faculty member) in the Department of Cardiovascular Medicine at Stanford University.",
+        "August 2009: Returned to Japan to apply research findings from seven and a half years at Stanford University to clinical practice in Japan.",
+        "November 2009: Founded the Iidabashi Cardiac Imaging Clinic. Delivered 120 invited lectures (since 2005) and published 40 original articles (as of August 2019).",
+      ],
+    },
+    {
+      img: "/images/doctors/DrItoM.jpg",
+      title: "Cardiologist",
+      name: "Miyuki Ito",
+      history: [
+        "1993年: Graduated from Kobe University School of Medicine. Completed training at Kobe University School of Medicine Hospital and affiliated hospitals.",
+        "1996年: Entered Kobe University Graduate School of Medicine. Conducted translational research linking basic and clinical aspects of arteriosclerosis within the cardiovascular field.",
+        "March 2000: Obtained a medical doctorate degree.",
+        "July 2000: Studied as a postdoctoral fellow at the Department of Cardiovascular Medicine, Stanford University, USA, focusing on a new research theme of 'Arteriosclerotic Plaque Imaging by MRI.'",
+        "December 2001: Returned to Japan as a staff physician in the Department of Cardiovascular Medicine at the National Cerebral and Cardiovascular Center.",
+        "May 2003: Returned to Stanford University's Department of Cardiovascular Medicine for further studies. As Director of the Cardiac MRI Research Laboratory, engaged in cutting-edge research using the latest dedicated 3 Tesla MRI for cardiac and vascular MRI, as well as molecular imaging research on arteriosclerosis at Stanford University Molecular Imaging Center.",
+        "2008年: Became the first Japanese faculty (regular faculty member) in the Department of Cardiovascular Medicine at Stanford University.",
+        "August 2009: Returned to Japan to apply research findings from seven and a half years at Stanford University to clinical practice in Japan.",
+        "November 2009: Founded the Iidabashi Cardiac Imaging Clinic. Delivered 120 invited lectures (since 2005) and published 40 original articles (as of August 2019).",
+      ],
+    },
+    {
+      img: "/images/doctors/DrTanabe.jpg",
+      title: "Cardiologist",
+      name: "Sho Tanabe",
+      history: [
+        "1993年: Graduated from Kobe University School of Medicine. Completed training at Kobe University School of Medicine Hospital and affiliated hospitals.",
+        "1996年: Entered Kobe University Graduate School of Medicine. Conducted translational research linking basic and clinical aspects of arteriosclerosis within the cardiovascular field.",
+        "March 2000: Obtained a medical doctorate degree.",
+        "July 2000: Studied as a postdoctoral fellow at the Department of Cardiovascular Medicine, Stanford University, USA, focusing on a new research theme of 'Arteriosclerotic Plaque Imaging by MRI.'",
+        "December 2001: Returned to Japan as a staff physician in the Department of Cardiovascular Medicine at the National Cerebral and Cardiovascular Center.",
+        "May 2003: Returned to Stanford University's Department of Cardiovascular Medicine for further studies. As Director of the Cardiac MRI Research Laboratory, engaged in cutting-edge research using the latest dedicated 3 Tesla MRI for cardiac and vascular MRI, as well as molecular imaging research on arteriosclerosis at Stanford University Molecular Imaging Center.",
+        "2008年: Became the first Japanese faculty (regular faculty member) in the Department of Cardiovascular Medicine at Stanford University.",
+        "August 2009: Returned to Japan to apply research findings from seven and a half years at Stanford University to clinical practice in Japan.",
+        "November 2009: Founded the Iidabashi Cardiac Imaging Clinic. Delivered 120 invited lectures (since 2005) and published 40 original articles (as of August 2019).",
+      ],
+    },
+  ],
 };
 
 export default en;
-
-// Introduction to CVIC
-
-// Background and Need:
-
-// Heart disease ranks as the second leading cause of death in Japan, following cancer. The demand for early detection and treatment is steadily increasing. Collaborating with radiologists and cardiologists, CVIC strives to extend its benefits to as many patients as possible. The objective is to enhance medical care in Japan through widespread adoption of cardiac imaging diagnosis and cutting-edge technological advancements.
-// What is CVIC?
-
-// CVIC, short for Cardiac Imaging Clinic Iidabashi, commenced operations in November 2009 as a specialized imaging diagnostic center utilizing advanced medical equipment like MRI and CT. It stands as Japan's pioneering facility, focusing on circulatory system testing, particularly heart-related diagnostics. In 2014, CVIC transitioned into a standalone medical corporation, emphasizing testing and treatment independence.
-// Early Detection through Visual Examination:
-
-// The human heart's continuous motion poses a challenge to clear imaging. However, recent advancements in diagnostic imaging technologies have enabled 3D visualization and video imaging of the heart, facilitating early detection of heart diseases.
-// Challenges in Adoption of Advanced Cardiac Imaging in Japan:
-
-// Despite the benefits, widespread adoption of cardiac imaging diagnosis, notably MRI, remains limited in Japan due to its complexity and the scarcity of proficient technicians. Consequently, many individuals succumb to sudden heart attacks without prior knowledge of their heart conditions.
-// Inspiration and Mission of CVIC:
-
-// Dr. Masahiro Terashima, inspired by disparities in cardiac imaging technologies between Japan and the US, envisioned delivering the latest and finest cardiac imaging diagnostics to Japanese patients. Thus, CVIC emerged as Japan's premier specialized cardiac imaging center, aiming to bridge this technological gap.
-// Addressing Clinical Needs and Enhancing Technology:
-
-// Unlike university and general hospitals' imaging departments, CVIC prioritizes cardiac testing, responding promptly to urgent cases. Its technical prowess continually evolves through handling challenging cases, resulting in clear and high-definition cardiac images, garnering acclaim from referring physicians.
-// Expansion and Advancements within CVIC Group:
-
-// CVIC Group's expansion includes the establishment of the CVIC Medical Corporation Group's Cardiac Imaging Clinic Iidabashi, equipped with state-of-the-art testing equipment. The group's medical department, Iidabashi Heart Clinic, offers detailed consultations and accurate image screenings in a spacious environment.
-// By addressing the introduction to CVIC in this structured flow, readers gain a comprehensive understanding of its origins, objectives, technological advancements, and contributions to cardiac healthcare in Japan.
