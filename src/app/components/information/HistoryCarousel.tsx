@@ -14,13 +14,13 @@ const History_Carousel: React.FC<CarouselProps> = ({ locale }) => {
             return (
               <li
                 aria-current={activeItem === index}
-                className="w-[6%] md:w-[10%] h-full shadow-lg overflow-hidden bg-white [&[aria-current='true']]:w-[65%] md:[&[aria-current='true']]:w-[70%] md:[&[aria-current='true']]:h-[100%] rounded-xl md:hover:w-[12%] duration-500"
+                className="w-[6%] md:w-[10%] flex flex-col items-center justify-center h-full shadow-lg overflow-hidden bg-white [&[aria-current='true']]:w-[65%] md:[&[aria-current='true']]:w-[70%] md:[&[aria-current='true']]:h-[100%] rounded-xl md:hover:w-[12%] duration-500"
                 key={person.name}
                 onClick={() => setActiveItem(index)}
               >
                 <div
                 aria-current={activeItem === index}
-                className="w-full h-full flex flex-col items-center justify-start [&[aria-current='false']]:hidden p-2"
+                className="md:w-[750px] h-full flex flex-col items-center justify-center [&[aria-current='false']]:hidden p-2"
                 >
                   <img src={person.img} alt={person.name} />
                   <p className="p-2 font-bold">{person.name}</p>
