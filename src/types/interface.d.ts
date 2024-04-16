@@ -56,3 +56,7 @@ interface DoctorsInfoProps {
   focus: number;
   setFocus: (index: number) => void;
 }
+
+interface HamburgerProps {
+  showSidebar: boolean;
+}
