@@ -20,7 +20,11 @@ const History_Carousel: React.FC<CarouselProps> = ({ locale, focus, setFocus }) 
                 aria-current={activeItem === index}
                 className="w-[6%] md:w-[10%] flex flex-col items-center justify-center h-full shadow-xl overflow-hidden bg-white [&[aria-current='true']]:w-[65%] md:[&[aria-current='true']]:w-[70%] md:[&[aria-current='true']]:h-[100%] rounded-xl md:hover:w-[12%] duration-500"
                 key={person.name}
-                onClick={() => setActiveItem(index)}
+                onClick={() => {
+                  setActiveItem(index);
+                  setFocus(index);
+                }
+              }
               >
                 <div
                   aria-current={activeItem === index}
