@@ -19,18 +19,18 @@ const History_Carousel: React.FC<CarouselProps> = ({ locale }) => {
                 onClick={() => setActiveItem(index)}
               >
                 <div
-                aria-current={activeItem === index}
-                className="md:w-[750px] h-full flex flex-col items-center justify-center [&[aria-current='false']]:hidden p-2"
+                  aria-current={activeItem === index}
+                  className="md:w-[750px] h-full flex flex-col items-center justify-center [&[aria-current='false']]:hidden p-2"
                 >
                   <img src={person.img} alt={person.name} />
                   <p className="p-2 font-bold">{person.name}</p>
                   <p>{person.title}</p>
                   <Reveal>
-                  <div className="p-4 md:p-8 text-start">
-                    {person.history.map((bullet, index) => (
-                    <p key={index}>• {bullet}</p>
-                  ))}
-                  </div>
+                    <div className="p-4 md:p-8 text-start">
+                      {person.history.map((bullet, index) => (
+                        <p key={index}>• {bullet}</p>
+                      ))}
+                    </div>
                   </Reveal>
                 </div>
                 <img
@@ -41,7 +41,7 @@ const History_Carousel: React.FC<CarouselProps> = ({ locale }) => {
                 />
               </li>
             );
-          })} 
+          })}
         </ul>
       </div>
     </div>
