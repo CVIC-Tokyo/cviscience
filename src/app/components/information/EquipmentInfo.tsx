@@ -20,7 +20,6 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           <p className="p-2 md:p-4 font-extrabold text-white text-[9px] md:text-base">{localeData.FACILITIES.TITLES.MRI.VINTAGE_TITAN.MAKER}</p>
         </div>
           <p className={`${focus === 1 ? 'flex' : 'hidden'} duration-500 p-8`}>
-          the Toshiba「Vantage Titan」1.5 Tesla MRI machine offers unparalleled imaging quality, thanks to its advanced technology and powerful magnet strength. Its versatility allows for a wide range of imaging exams, catering to various clinical needs. Patients benefit from a comfortable experience with features like a spacious bore and quiet operation. The machine's efficiency, with fast scan times and streamlined workflow, enhances productivity in busy clinical settings. Innovative technologies ensure diagnostic accuracy while Toshiba's reputation for reliability and ongoing support assures clients of a sound investment. Customization options allow for tailoring to specific needs, and success stories from satisfied users demonstrate its effectiveness in clinical practice.
           </p>
       </div>
       <div
