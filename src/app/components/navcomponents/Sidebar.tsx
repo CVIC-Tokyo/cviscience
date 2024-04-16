@@ -5,11 +5,12 @@ import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
 import {
   AiFillCalendar,
   AiFillPushpin,
-  AiOutlineClose,
   AiOutlineMail,
 } from "react-icons/ai";
 import { getLocaleData } from "@/utils/helpers";
 import TranslationTab from "./TranslationTab";
+import { motion } from "framer-motion";
+import HamburgerButton from "./HamburgerButton";
 
 const SideBar: React.FC<SidebarProps> = ({
   showSidebar,
@@ -23,15 +24,15 @@ const SideBar: React.FC<SidebarProps> = ({
     <div
       className={
         showSidebar
-          ? "md:hidden fixed left-0 top-0 w-full h-auto bg-black/70"
+          ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70"
           : ""
       }
     >
       <div
         className={
           showSidebar
-            ? "fixed left-0 top-0 w-full h-auto p-5 ease-in duration-500 bg-white"
-            : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+            ? "z-90 fixed left-0 top-0 w-full h-auto p-5 ease-in duration-500 bg-white"
+            : "z-90 fixed left-[-100%] top-0 p-10 ease-in duration-500 bg-white"
         }
       >
         <div className="">
@@ -40,33 +41,36 @@ const SideBar: React.FC<SidebarProps> = ({
             <Link className="scroll-false" onClick={handleSidebar} href="/">
               <Image src={cvic_logo_600} height="35" alt="/logo" />
             </Link>
-            <div
-              onClick={handleSidebar}
-              className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer bg-cvic-red text-white"
-            >
-              <AiOutlineClose />
-            </div>
+            <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          onClick={() => handleSidebar()}
+          className="w-14 h-14 md:hidden curser-pointer p-1"
+        >
+          <HamburgerButton showSidebar={showSidebar}/>
+        </motion.div>
           </div>
           {/* SIDE BAR BUTTONS */}
           <div className="py-4 flex flex-col w-full">
             <ul className="uppercase grid grid-cols-2 w-full">
               <Link
                 onClick={() => setShowSidebar(false)}
-                href="/#Services"
+                href="/pages/services"
                 className="sidebar-button"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.SERVICES}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
-                href="/#Equipments"
+                href="/pages/equipments"
                 className="sidebar-button"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.EQUIPMENTS}</li>
               </Link>
               <Link
                 onClick={() => setShowSidebar(false)}
-                href="/#Doctors"
+                href="/pages/doctors"
                 className="sidebar-button"
               >
                 <li className="py-4 text-sm">{localeData.BASIC.DOCTORS}</li>
