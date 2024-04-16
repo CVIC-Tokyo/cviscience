@@ -43,8 +43,16 @@ interface RevealProps {
 
 interface CarouselProps {
   locale: string;
+  focus: number;
+  setFocus: (index: number) => void;
 }
 
 interface EquipmentInfoProps {
   locale: string;
+}
+
+interface DoctorsInfoProps {
+  locale: string;
+  focus: number;
+  setFocus: (index: number) => void;
 }
