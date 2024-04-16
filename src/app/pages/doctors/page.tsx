@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import "../../../styles/globals.css";
 import DoctorsInfo from "@/app/components/information/DoctorsInfo";
 import { getLocaleData } from "@/utils/helpers";
@@ -10,6 +10,7 @@ import History_Carousel from "@/app/components/information/HistoryCarousel";
 const DoctorsPage: React.FC<DoctorsPageProps> = () => {
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
+  const [focus, setFocus] = useState(0);
 
   return (
     <div className="page-container">
@@ -20,8 +21,8 @@ const DoctorsPage: React.FC<DoctorsPageProps> = () => {
       </div>
       <div className="w-full h-full bg-white/20 p-2">
         <div className="w-full h-auto mb-4">
-          <DoctorsInfo />
-          <History_Carousel locale={locale} />
+          <DoctorsInfo locale={locale} focus={focus} setFocus={setFocus}/>
+          <History_Carousel locale={locale} focus={focus} setFocus={setFocus}/>
         </div>
       </div>
     </div>

@@ -1,36 +1,44 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { getLocaleData } from "@/utils/helpers";
 import Reveal from "../Reveal";
 
-const History_Carousel: React.FC<CarouselProps> = ({ locale }) => {
+const History_Carousel: React.FC<CarouselProps> = ({ locale, focus, setFocus }) => {
   const [activeItem, setActiveItem] = useState(0);
   const localeData = getLocaleData(locale);
 
+  useEffect(() => {
+    setActiveItem(focus);
+  },[focus])
+
   return (
-    <div className="flex h-[500px] md:h-[900px] w-full items-center justify-center">
+    <div className="flex h-[600px] md:h-[900px] w-full items-center justify-center">
       <div className="w-full max-w-full">
-        <ul className="flex h-[450px] md:h-[840px] gap-1 md:gap-2 text-[10px] md:text-base overflow-y-scroll md:overflow-y-auto">
+        <ul className="flex h-[590px] md:h-[890px] gap-1 md:gap-2 text-[10px] md:text-base overflow-y-scroll md:overflow-y-auto">
           {localeData.CAROUSEL.map((person, index) => {
             return (
               <li
                 aria-current={activeItem === index}
-                className="w-[6%] md:w-[10%] flex flex-col items-center justify-center h-full shadow-lg overflow-hidden bg-white [&[aria-current='true']]:w-[65%] md:[&[aria-current='true']]:w-[70%] md:[&[aria-current='true']]:h-[100%] rounded-xl md:hover:w-[12%] duration-500"
+                className="w-[6%] md:w-[10%] flex flex-col items-center justify-center h-full shadow-xl overflow-hidden bg-white [&[aria-current='true']]:w-[65%] md:[&[aria-current='true']]:w-[70%] md:[&[aria-current='true']]:h-[100%] rounded-xl md:hover:w-[12%] duration-500"
                 key={person.name}
-                onClick={() => setActiveItem(index)}
+                onClick={() => {
+                  setActiveItem(index);
+                  setFocus(index);
+                }
+              }
               >
                 <div
-                aria-current={activeItem === index}
-                className="md:w-[750px] h-full flex flex-col items-center justify-center [&[aria-current='false']]:hidden p-2"
+                  aria-current={activeItem === index}
+                  className="md:w-[750px] h-full flex flex-col items-center justify-center [&[aria-current='false']]:hidden p-2"
                 >
-                  <img src={person.img} alt={person.name} />
+                  <img className="shadow-xl" src={person.img} alt={person.name} />
                   <p className="p-2 font-bold">{person.name}</p>
                   <p>{person.title}</p>
                   <Reveal>
-                  <div className="p-4 md:p-8 text-start">
-                    {person.history.map((bullet, index) => (
-                    <p key={index}>• {bullet}</p>
-                  ))}
-                  </div>
+                    <div className="p-2 md:p-6 text-start h-[300px] md:h-auto overflow-y-scroll md:overflow-y-hidden">
+                      {person.history.map((bullet, index) => (
+                        <p key={index}>• {bullet}</p>
+                      ))}
+                    </div>
                   </Reveal>
                 </div>
                 <img
@@ -41,7 +49,7 @@ const History_Carousel: React.FC<CarouselProps> = ({ locale }) => {
                 />
               </li>
             );
-          })} 
+          })}
         </ul>
       </div>
     </div>

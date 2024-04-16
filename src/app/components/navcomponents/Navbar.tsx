@@ -5,9 +5,9 @@ import Link from "next/link";
 import TranslationTab from "./TranslationTab";
 import { getLocaleData } from "@/utils/helpers";
 import { useGlobalContext } from "../../../context/store";
-import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
 import { motion } from "framer-motion";
+import HamburgerButton from "./HamburgerButton";
 
 const Navbar: React.FC<NavbarProps> = () => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
@@ -39,21 +39,18 @@ const Navbar: React.FC<NavbarProps> = () => {
       className={`w-auto fixed top-0 left-0 right-0 z-[100] ${showShadow ? `shadow-2xl bg-white/35` : "bg-white/0"}`}
     >
       {/* NAVBAR LOGO AND TOGGLE */}
-      <div className="max-w-[1240px] mx-auto flex md:justify-between items-center p-2">
+      <div className="relative max-w-[1240px] mx-auto flex md:justify-between items-center p-2">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          onClick={handleSidebar}
-          className="flex md:hidden curser-pointer"
+          onClick={() => handleSidebar()}
+          className="absolute z-100 top-0 left-0 w-14 h-14 md:hidden curser-pointer p-1"
         >
-          <AiOutlineMenu
-            className="border-y-2 p-2 bg-cvic-red text-white"
-            size={45}
-          />
+          <HamburgerButton showSidebar={showShadow}/>
         </motion.div>
         <Link href={"/"}>
-          <div className="w-[280px] h-[39px] md:w-[600px] md:h-[75px] bg-logo_600 bg-contain"></div>
+          <div className="w-[280px] h-[39px] md:w-[600px] md:h-[75px] bg-logo_600 bg-contain ml-12"></div>
         </Link>
         <div className="hidden md:flex h-[10xpx]">
           <TranslationTab />
@@ -65,13 +62,13 @@ const Navbar: React.FC<NavbarProps> = () => {
           <Link href="/" className="navbar-button">
             {localeData.BASIC.HOME}
           </Link>
-          <Link href="/#Services" className="navbar-button">
+          <Link href="/pages/services" className="navbar-button">
             {localeData.BASIC.SERVICES}
           </Link>
-          <Link href="/#Equipments" className="navbar-button">
+          <Link href="/pages/equipments" className="navbar-button">
             {localeData.BASIC.EQUIPMENTS}
           </Link>
-          <Link href="/#Doctors" className="navbar-button">
+          <Link href="/pages/doctors" className="navbar-button">
             {localeData.BASIC.DOCTORS}
           </Link>
           <Link href="/#Access" className="navbar-button">

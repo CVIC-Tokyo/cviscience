@@ -1,3 +1,5 @@
+import EquipmentInfo from "@/app/components/information/EquipmentInfo";
+
 const en = {
   BASIC: {
     HOME: "Home",
@@ -212,6 +214,70 @@ const en = {
       ],
     },
   ],
+  EQUIPMENTS: [
+    {
+      TITLE: 'Vantage Titan',
+      D1: 'Toshiba 1.5 Tesla MRI',
+      D2: '',
+      IMG: '/images/tiles/vintage_titan.jpg',
+    },
+    {
+      TITLE: 'Achieva DS (Dual Speed)',
+      D1: 'Philips 1.5 Tesla MRI Machine',
+      D2: '',
+      IMG: '/images/equipments/achieva.jpg',
+    },
+    {
+      TITLE: 'Incisive CT',
+      D1: 'Philips CT Scanner',
+      D2: '',
+      IMG: '/images/equipments/incisive.jpg',
+    },
+    {
+      TITLE: 'Ziostation2',
+      D1: '3D Medical Image Processing Workstation',
+      D2: '',
+      IMG: '/images/equipments/ziostation2.png',
+    },
+  ],
+  FACILITIES: {
+    TITLES: {
+      MRI: {
+        TITLE: "MRI (Magnetic Resonance Imaging)",
+        VINTAGE_TITAN: {
+          TITLE: "Vantage Titan",
+          MAKER: "Toshiba 1.5 Tesla MRI"
+        },
+        ACHIEVA: {
+          TITLE: "Achieva DS (Dual Speed)",
+          MAKER: "Philips 1.5 Tesla MRI Machine",
+        },
+      },
+      CT: {
+        TITLE: "CT (Computed Tomography)",
+        INCISIVE: {
+          TITLE: "Incisive CT",
+          MAKER: "Philips CT Scanner",
+        },
+      },
+      ZIO: {
+        TITLE: "Ziostation2",
+        MAKER: "3D Medical Image Processing Workstation",
+      },
+      ECHO: "Echocardiography - Cardiovascular Ultrasound Dianostic Equipment",
+    },
+    DESCRIPTIONS: {
+      MRI: {
+        VINTAGE_TITAN:
+          "the Toshiba「Vantage Titan」1.5 Tesla MRI machine offers unparalleled imaging quality, thanks to its advanced technology and powerful magnet strength. Its versatility allows for a wide range of imaging exams, catering to various clinical needs. Patients benefit from a comfortable experience with features like a spacious bore and quiet operation. The machine's efficiency, with fast scan times and streamlined workflow, enhances productivity in busy clinical settings. Innovative technologies ensure diagnostic accuracy while Toshiba's reputation for reliability and ongoing support assures clients of a sound investment. Customization options allow for tailoring to specific needs, and success stories from satisfied users demonstrate its effectiveness in clinical practice.",
+      },
+      CT: {},
+      ZIO: {
+        D1: "Ziostation2 is a medical image processing workstation that powerfully supports daily diagnosis by processing volume data obtained from modalities such as CT and MRI, and performing 3D display and quantitative analysis. It has continued to evolve in pursuit of image quality and speed, and its advanced functions have been refined, making it possible to easily incorporate advanced image processing and analysis into daily inspections to suit the inspection and purpose.",
+      },
+      ECHO: {},
+    },
+  },
 };
 
 export default en;

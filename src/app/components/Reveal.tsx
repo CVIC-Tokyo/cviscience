@@ -3,7 +3,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 const Reveal: React.FC<RevealProps> = ({ children }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
 
   const mainControls = useAnimation();
 
