@@ -15,12 +15,12 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
       <div className="w-full h-auto p-2 flex flex-col items-center justify-center">
         <Reveal>
           <div className="bg-white md:bg-white/75 md:hover:bg-white p-2 m-2 rounded-lg h-auto mx-auto">
+            <div className="w-full h-[200px] md:h-[300px] lg:h-[500px] bg-terashima_message bg-cover bg-center" />
             <Reveal>
               <h1 className="about-title">{localeData.ABOUT.MISSION_TITLE}</h1>
             </Reveal>
             <Reveal>
               <div className="p-4 text-[12px] md:text-base">
-                <div className="w-full h-[200px] md:h-[300px] lg:h-[500px] bg-terashima_message bg-cover bg-center" />
                 <p className="font-bold p-2 md:p-4">
                   {localeData.CVIC_INFO.CLINIC_MISSION}
                 </p>

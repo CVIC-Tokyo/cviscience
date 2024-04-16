@@ -50,7 +50,7 @@ html {
   }
 
   .about-title {
-    @apply text-lg w-full h-auto py-2 text-white bg-cvic-red flex justify-center items-center truncate rounded-t-lg;
+    @apply text-lg w-full h-auto py-2 text-white bg-cvic-red flex justify-center items-center truncate;
   }
 
   .sns-logo {
