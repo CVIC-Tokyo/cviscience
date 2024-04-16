@@ -1,3 +1,5 @@
+import EquipmentInfo from "@/app/components/information/EquipmentInfo";
+
 const en = {
   BASIC: {
     HOME: "Home",
@@ -210,6 +212,32 @@ const en = {
         "August 2009: Returned to Japan to apply research findings from seven and a half years at Stanford University to clinical practice in Japan.",
         "November 2009: Founded the Iidabashi Cardiac Imaging Clinic. Delivered 120 invited lectures (since 2005) and published 40 original articles (as of August 2019).",
       ],
+    },
+  ],
+  EQUIPMENTS: [
+    {
+      TITLE: 'Vantage Titan',
+      D1: 'Toshiba 1.5 Tesla MRI',
+      D2: '',
+      IMG: '/images/tiles/vintage_titan.jpg',
+    },
+    {
+      TITLE: 'Achieva DS (Dual Speed)',
+      D1: 'Philips 1.5 Tesla MRI Machine',
+      D2: '',
+      IMG: '/images/equipments/achieva.jpg',
+    },
+    {
+      TITLE: 'Incisive CT',
+      D1: 'Philips CT Scanner',
+      D2: '',
+      IMG: '/images/equipments/incisive.jpg',
+    },
+    {
+      TITLE: 'Ziostation2',
+      D1: '3D Medical Image Processing Workstation',
+      D2: '',
+      IMG: '/images/equipments/ziostation2.png',
     },
   ],
   FACILITIES: {

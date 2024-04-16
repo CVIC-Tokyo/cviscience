@@ -210,6 +210,32 @@ const ja = {
       ],
     },
   ],
+  EQUIPMENTS: [
+    {
+      TITLE: 'バンテージ・タイタン',
+      D1: '東芝の 1.5 テスラMRIマシン',
+      D2: '',
+      IMG: 'equipments',
+    },
+    {
+      TITLE: 'アチーバ DS（デュアルスピード）',
+      D1: 'フィリップスの1.5テスラMRIマシン',
+      D2: '',
+      IMG: 'achieva',
+    },
+    {
+      TITLE: 'インシサイブ CT',
+      D1: 'フィリップスのCT スキャナー',
+      D2: '',
+      IMG: 'incisive',
+    },
+    {
+      TITLE: 'ザイオステーション 2',
+      D1: '3D医用画像処理ワークステーション',
+      D2: '',
+      IMG: 'zio',
+    },
+  ],
   FACILITIES: {
     TITLES: {
       MRI: {
