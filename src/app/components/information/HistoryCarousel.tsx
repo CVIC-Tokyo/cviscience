@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { getLocaleData } from "@/utils/helpers";
 import Reveal from "../Reveal";
 
-const History_Carousel: React.FC<CarouselProps> = ({ locale }) => {
+const History_Carousel: React.FC<CarouselProps> = ({ locale, focus, setFocus }) => {
   const [activeItem, setActiveItem] = useState(0);
   const localeData = getLocaleData(locale);
+
+  useEffect(() => {
+    setActiveItem(focus);
+  },[focus])
 
   return (
     <div className="flex h-[600px] md:h-[900px] w-full items-center justify-center">
