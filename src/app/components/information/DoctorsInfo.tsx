@@ -10,48 +10,17 @@ const DoctorsInfo = () => {
 
   return (
     <div className="w-full h-auto grid grid-cols-2 md:grid-cols-3 text-[10px] md:text-base">
-      <div className="w-full h-full p-2">
-        <div className="w-full flex flex-col md:flex-row items-center justify-start md:justify-stretch h-full p-2 rounded-lg shadow-xl bg-white hover:scale-105 duration-500">
-          <div className="w-[80px] h-[100px] md:w-[160px] md:h-[190px] bg-drTerashima bg-cover bg-center"></div>
-          <p className="p-4 font-bold">{localeData.DOCTORS.TERASHIMA}</p>
-          <p className="p-4">{localeData.DOCTORS.TERASHIMA_TITLE}</p>
-        </div>
-      </div>
-      <div className="w-full h-full p-2">
-        <div className="w-full flex flex-col md:flex-row items-center justify-start md:justify-stretch h-full p-2 rounded-lg shadow-xl bg-white hover:scale-105 duration-500">
-          <div className="w-[80px] h-[100px] md:w-[160px] md:h-[190px] bg-drTakamura bg-cover bg-center"></div>
-          <p className="p-4 font-bold">{localeData.DOCTORS.TAKAMURA}</p>
-          <p className="p-4">{localeData.DOCTORS.TAKAMURA_TITLE}</p>
-        </div>
-      </div>
-      <div className="w-full h-full p-2">
-        <div className="w-full flex flex-col md:flex-row items-center justify-start md:justify-stretch h-full p-2 rounded-lg shadow-xl bg-white hover:scale-105 duration-500">
-          <div className="w-[80px] h-[100px] md:w-[160px] md:h-[190px] bg-drItoJ bg-cover bg-center"></div>
-          <p className="p-4 font-bold">{localeData.DOCTORS.ITOJ}</p>
-          <p className="p-4">{localeData.DOCTORS.ITOJ_TITLE.join(" ,")}</p>
-        </div>
-      </div>
-      <div className="w-full h-full p-2">
-        <div className="w-full flex flex-col md:flex-row items-center justify-start md:justify-stretch h-full p-2 rounded-lg shadow-xl bg-white hover:scale-105 duration-500">
-          <div className="w-[80px] h-[100px] md:w-[160px] md:h-[190px] bg-drWatanabe bg-cover bg-center"></div>
-          <p className="p-4 font-bold">{localeData.DOCTORS.WATANABE}</p>
-          <p className="p-4">{localeData.DOCTORS.WATANABE_TITLE}</p>
-        </div>
-      </div>
-      <div className="w-full h-full p-2">
-        <div className="w-full flex flex-col md:flex-row items-center justify-start md:justify-stretch h-full p-2 rounded-lg shadow-xl bg-white hover:scale-105 duration-500">
-          <div className="w-[80px] h-[100px] md:w-[160px] md:h-[190px] bg-drIto bg-cover bg-center"></div>
-          <p className="p-4 font-bold">{localeData.DOCTORS.ITOM}</p>
-          <p className="p-4">{localeData.DOCTORS.ITOM_TITLE}</p>
-        </div>
-      </div>
-      <div className="w-full h-full p-2">
-        <div className="w-full flex flex-col md:flex-row items-center justify-start md:justify-stretch h-full p-2 rounded-lg shadow-xl bg-white hover:scale-105 duration-500">
-          <div className="w-[80px] h-[100px] md:w-[160px] md:h-[190px] bg-drTanabe bg-cover bg-center"></div>
-          <p className="p-4 font-bold">{localeData.DOCTORS.TANABE}</p>
-          <p className="p-4">{localeData.DOCTORS.TANABE_TITLE}</p>
-        </div>
-      </div>
+      {localeData.CAROUSEL.map((doctor, index) => {
+        return (
+          <div className="w-full h-full p-1 md:p-2" key={index}>
+            <div className="w-full flex flex-col md:flex-row items-center justify-start md:justify-stretch h-full p-1 md:p-2 rounded-lg shadow-xl bg-white hover:scale-105 duration-500">
+              <img src={doctor.img} className="w-[80px] h-[100px] md:w-[160px] md:h-[190px]"/>
+              <p className="p-2 md:p-4 font-bold">{doctor.name}</p>
+              <p className="p-2 md:p-4">{doctor.title}</p>
+            </div>
+          </div>
+        )
+      })}
     </div>
   );
 };
