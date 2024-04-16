@@ -35,6 +35,8 @@ const config: Config = {
         drTakamura: 'url("/images/doctors/DrTakamura.jpg")',
         terashima_message: 'url("/images/terashima_sensei.jpg")',
         zio: 'url("/images/equipments/ziostation2.png")',
+        achieva: 'url("/images/equipments/achieva.jpg")',
+        incisive: 'url("/images/equipments/incisive.jpg")',
       },
     },
   },
