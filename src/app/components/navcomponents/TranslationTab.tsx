@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { FaLanguage } from "react-icons/fa";
 import { useGlobalContext } from "@/context/store";
-import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { animate, motion } from "framer-motion";
 
 const TranslationTab: React.FC<TranslationTabProps> = () => {
@@ -66,7 +66,7 @@ const TranslationTab: React.FC<TranslationTabProps> = () => {
           <div className="flex uppercase">
             {locale}
             <FaLanguage className="mx-2" />
-            <TiArrowSortedDown className="dropdown-arrow" />
+            <MdOutlineKeyboardArrowDown className="dropdown-arrow" />
           </div>
         </div>
       </motion.div>
