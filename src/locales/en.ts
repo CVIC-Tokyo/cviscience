@@ -216,10 +216,26 @@ const en = {
     TITLES: {
       MRI: {
         TITLE: "MRI (Magnetic Resonance Imaging)",
-        VINTAGE_TITAN: " Toshiba「Vantage Titan」1.5 Tesla MRI ",
+        VINTAGE_TITAN: {
+          TITLE: "Vantage Titan",
+          MAKER: "Toshiba 1.5 Tesla MRI"
+        },
+        ACHIEVA: {
+          TITLE: "Achieva DS (Dual Speed)",
+          MAKER: "Philips 1.5 Tesla MRI Machine",
+        },
       },
-      CT: "CT (Computed Tomography)",
-      ZIO: '3D Medical Image Processing Workstation "Ziostation2"',
+      CT: {
+        TITLE: "CT (Computed Tomography)",
+        INCISIVE: {
+          TITLE: "Incisive CT",
+          MAKER: "Philips CT Scanner",
+        },
+      },
+      ZIO: {
+        TITLE: "Ziostation2",
+        MAKER: "3D Medical Image Processing Workstation",
+      },
       ECHO: "Echocardiography - Cardiovascular Ultrasound Dianostic Equipment",
     },
     DESCRIPTIONS: {

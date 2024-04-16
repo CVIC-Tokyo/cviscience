@@ -214,10 +214,26 @@ const ja = {
     TITLES: {
       MRI: {
         TITLE: "MRI (Magnetic Resonance Imaging) 磁気共鳴画像診断装置査",
-        VINTAGE_TITAN: "東芝の「Vantage Titan」1.5テスラMRIマシン",
+        VINTAGE_TITAN: {
+          TITLE: "バンテージ・タイタン",
+          MAKER: "東芝の 1.5 テスラMRIマシン"
+        },
+        ACHIEVA: {
+          TITLE: "アチーバ DS（デュアルスピード）",
+          MAKER: "フィリップスの1.5テスラMRIマシン",
+        },
       },
-      CT: "CT (Computed Tomography) コンピュータ断層装置",
-      ZIO: "3D医用画像処理ワークステーション「Ziostation2」",
+      CT: {
+        TITLE: "CT (Computed Tomography) コンピュータ断層装置",
+        INCISIVE: {
+          TITLE: "インシサイブ CT",
+          MAKER: "フィリップスのCT スキャナー",
+        },
+      },
+      ZIO: {
+        TITLE: "ザイオステーション 2",
+        MAKER: "3D医用画像処理ワークステーション",
+      },
       ECHO: "循環器用超音波診断装置 (心エコー)",
     },
     DESCRIPTIONS: {
