@@ -2,11 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
-import {
-  AiFillCalendar,
-  AiFillPushpin,
-  AiOutlineMail,
-} from "react-icons/ai";
+import { AiFillCalendar, AiFillPushpin, AiOutlineMail } from "react-icons/ai";
 import { getLocaleData } from "@/utils/helpers";
 import TranslationTab from "./TranslationTab";
 import { motion } from "framer-motion";
@@ -42,14 +38,14 @@ const SideBar: React.FC<SidebarProps> = ({
               <Image src={cvic_logo_600} height="35" alt="/logo" />
             </Link>
             <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          onClick={() => handleSidebar()}
-          className="w-14 h-14 md:hidden curser-pointer p-1"
-        >
-          <HamburgerButton showSidebar={showSidebar}/>
-        </motion.div>
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              onClick={() => handleSidebar()}
+              className="w-14 h-14 md:hidden curser-pointer p-1"
+            >
+              <HamburgerButton showSidebar={showSidebar} />
+            </motion.div>
           </div>
           {/* SIDE BAR BUTTONS */}
           <div className="py-4 flex flex-col w-full">
