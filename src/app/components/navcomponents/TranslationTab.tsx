@@ -56,7 +56,8 @@ const TranslationTab: React.FC<TranslationTabProps> = () => {
       transition={{ duration: 0.5 }}
     >
       <motion.div
-        onClick={() => {
+        onClick={(event: React.MouseEvent<HTMLDivElement>) => {
+          event.stopPropagation();
           handleRotation();
           setShowDropdown(!showDropdown);
         }}

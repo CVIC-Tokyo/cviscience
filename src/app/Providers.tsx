@@ -18,7 +18,7 @@ export default function Providers({
   const { locale } = useGlobalContext();
 
   useEffect(() => {
-    setPreload(true);
+    setPreload(false);
 
     setTimeout(() => {
       setPreload(false);

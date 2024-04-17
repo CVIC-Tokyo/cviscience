@@ -19,8 +19,8 @@ const SideBar: React.FC<SidebarProps> = ({
     <div
       className={
         showSidebar
-          ? "fixed left-0 top-0 w-full h-auto p-5 ease-in duration-500 bg-white"
-          : "hidden z-0 left-[-120%] top-0 p-10 ease-in-out duration-500 bg-white"
+        ? "fixed left-0 top-0 w-full h-auto p-5 ease-in duration-500 bg-white transform translate-y-0"
+        : "fixed z-0 left-0 top-[-120%] p-10 ease-out duration-500 bg-white transform -translate-y-full"
       }
     >
       <div className="">
@@ -29,14 +29,6 @@ const SideBar: React.FC<SidebarProps> = ({
           <Link className="scroll-false" onClick={handleSidebar} href="/">
             <Image src={cvic_logo_600} height="35" alt="/logo" />
           </Link>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            onClick={() => handleSidebar()}
-            className="w-14 h-14 md:hidden curser-pointer p-1"
-          >
-          </motion.div>
         </div>
         {/* SIDE BAR BUTTONS */}
         <div className="py-4 flex flex-col w-full">
@@ -77,7 +69,7 @@ const SideBar: React.FC<SidebarProps> = ({
               <li className="py-4 text-sm">More</li>
             </Link>
           </ul>
-          <div className="w-full flex items-center justify-start my-2">
+          <div className="absolute top-0 right-2 flex items-center justify-start my-2">
             <TranslationTab />
           </div>
           <div className="pt-10">

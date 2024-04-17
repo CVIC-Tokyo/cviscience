@@ -34,7 +34,7 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
             onClick={() => handleFocus(index)}
             className="relative w-full bg-white rounded-lg p-1 md:p-2 mb-4 md:mb-30 cursor-pointer"
           >
-            <div className={`absolute z-10 ${index % 2 === 0 ? "left-0" : "right-0"} bottom-0 text-2xl md:text-[70px] text-cvic-red font-extrabold p-2 md:p-4`}>
+            <div className={`absolute z-10 ${index % 2 === 0 ? "left-0" : "right-0"} bottom-0 text-2xl md:text-[70px] text-${focus === index ? "black" : "white"} font-extrabold p-2 md:p-4`}>
               <RiArrowDownDoubleLine style={{ transform: `rotate(${rotations[index]}deg)` }} />
             </div>
             <div className={`relative bg-${equipment.IMG} bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-${index % 2 === 0 ? "end" : "start"} justify-end`}>
