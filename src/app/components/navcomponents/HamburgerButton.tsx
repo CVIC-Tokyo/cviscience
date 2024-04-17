@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion, MotionConfig } from "framer-motion";
+import SideBar from "./Sidebar";
 
-const HamburgerButton: React.FC<HamburgerProps> = ({ showSidebar }) => {
+const HamburgerButton: React.FC<HamburgerProps> = ({ showSidebar, setShowSidebar, handleSidebar, locale }) => {
   const [active, setActive] = useState(false);
 
   const sidebar = {
@@ -21,7 +22,7 @@ const HamburgerButton: React.FC<HamburgerProps> = ({ showSidebar }) => {
       }}
     >
       <motion.div
-        className="relative w-full h-full rounded-lg bg-cvic-red transition-colors p-2"
+        className="z-10 relative w-full h-full rounded-lg bg-cvic-red transition-colors p-2"
         onClick={() => setActive(!active)}
         animate={showSidebar ? "open" : "closed"}
       >
@@ -81,6 +82,18 @@ const HamburgerButton: React.FC<HamburgerProps> = ({ showSidebar }) => {
           }}
         />
       </motion.div>
+      <div
+      className={
+        showSidebar
+          ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70"
+          : ""
+      }
+    >
+        <SideBar showSidebar={showSidebar}
+          setShowSidebar={setShowSidebar}
+          handleSidebar={handleSidebar}
+          locale={locale} />
+      </div>
     </MotionConfig>
   );
 };

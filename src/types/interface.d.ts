@@ -59,4 +59,7 @@ interface DoctorsInfoProps {
 
 interface HamburgerProps {
   showSidebar: boolean;
+  setShowSidebar: (arg: boolean) => void;
+  handleSidebar: () => void;
+  locale: string;
 }
