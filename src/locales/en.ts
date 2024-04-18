@@ -216,28 +216,28 @@ const en = {
   ],
   EQUIPMENTS: [
     {
-      TITLE: 'Vantage Titan',
-      D1: 'Toshiba 1.5 Tesla MRI',
-      D2: '',
-      IMG: '/images/tiles/vintage_titan.jpg',
+      TITLE: "Vantage Titan",
+      D1: "Toshiba 1.5 Tesla MRI",
+      D2: "",
+      IMG: "equipments",
     },
     {
-      TITLE: 'Achieva DS (Dual Speed)',
-      D1: 'Philips 1.5 Tesla MRI Machine',
-      D2: '',
-      IMG: '/images/equipments/achieva.jpg',
+      TITLE: "Achieva DS (Dual Speed)",
+      D1: "Philips 1.5 Tesla MRI Machine",
+      D2: "",
+      IMG: "achieva",
     },
     {
-      TITLE: 'Incisive CT',
-      D1: 'Philips CT Scanner',
-      D2: '',
-      IMG: '/images/equipments/incisive.jpg',
+      TITLE: "Incisive CT",
+      D1: "Philips CT Scanner",
+      D2: "",
+      IMG: "incisive",
     },
     {
-      TITLE: 'Ziostation2',
-      D1: '3D Medical Image Processing Workstation',
-      D2: '',
-      IMG: '/images/equipments/ziostation2.png',
+      TITLE: "Ziostation2",
+      D1: "3D Medical Image Processing Workstation",
+      D2: "",
+      IMG: "zio",
     },
   ],
   FACILITIES: {
@@ -246,7 +246,7 @@ const en = {
         TITLE: "MRI (Magnetic Resonance Imaging)",
         VINTAGE_TITAN: {
           TITLE: "Vantage Titan",
-          MAKER: "Toshiba 1.5 Tesla MRI"
+          MAKER: "Toshiba 1.5 Tesla MRI",
         },
         ACHIEVA: {
           TITLE: "Achieva DS (Dual Speed)",

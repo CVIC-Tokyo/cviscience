@@ -2,13 +2,17 @@ import React, { useEffect, useState } from "react";
 import { getLocaleData } from "@/utils/helpers";
 import Reveal from "../Reveal";
 
-const History_Carousel: React.FC<CarouselProps> = ({ locale, focus, setFocus }) => {
+const History_Carousel: React.FC<CarouselProps> = ({
+  locale,
+  focus,
+  setFocus,
+}) => {
   const [activeItem, setActiveItem] = useState(0);
   const localeData = getLocaleData(locale);
 
   useEffect(() => {
     setActiveItem(focus);
-  },[focus])
+  }, [focus]);
 
   return (
     <div className="flex h-[600px] md:h-[900px] w-full items-center justify-center">
@@ -23,14 +27,17 @@ const History_Carousel: React.FC<CarouselProps> = ({ locale, focus, setFocus }) 
                 onClick={() => {
                   setActiveItem(index);
                   setFocus(index);
-                }
-              }
+                }}
               >
                 <div
                   aria-current={activeItem === index}
                   className="md:w-[750px] h-full flex flex-col items-center justify-center [&[aria-current='false']]:hidden p-2"
                 >
-                  <img className="shadow-xl" src={person.img} alt={person.name} />
+                  <img
+                    className="shadow-xl"
+                    src={person.img}
+                    alt={person.name}
+                  />
                   <p className="p-2 font-bold">{person.name}</p>
                   <p>{person.title}</p>
                   <Reveal>

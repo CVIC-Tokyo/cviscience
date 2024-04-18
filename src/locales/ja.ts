@@ -212,28 +212,28 @@ const ja = {
   ],
   EQUIPMENTS: [
     {
-      TITLE: 'バンテージ・タイタン',
-      D1: '東芝の 1.5 テスラMRIマシン',
-      D2: '',
-      IMG: 'equipments',
+      TITLE: "バンテージ・タイタン",
+      D1: "東芝の 1.5 テスラMRIマシン",
+      D2: "",
+      IMG: "equipments",
     },
     {
-      TITLE: 'アチーバ DS（デュアルスピード）',
-      D1: 'フィリップスの1.5テスラMRIマシン',
-      D2: '',
-      IMG: 'achieva',
+      TITLE: "アチーバ DS（デュアルスピード）",
+      D1: "フィリップスの1.5テスラMRIマシン",
+      D2: "",
+      IMG: "achieva",
     },
     {
-      TITLE: 'インシサイブ CT',
-      D1: 'フィリップスのCT スキャナー',
-      D2: '',
-      IMG: 'incisive',
+      TITLE: "インシサイブ CT",
+      D1: "フィリップスのCT スキャナー",
+      D2: "",
+      IMG: "incisive",
     },
     {
-      TITLE: 'ザイオステーション 2',
-      D1: '3D医用画像処理ワークステーション',
-      D2: '',
-      IMG: 'zio',
+      TITLE: "ザイオステーション 2",
+      D1: "3D医用画像処理ワークステーション",
+      D2: "",
+      IMG: "zio",
     },
   ],
   FACILITIES: {
@@ -242,7 +242,7 @@ const ja = {
         TITLE: "MRI (Magnetic Resonance Imaging) 磁気共鳴画像診断装置査",
         VINTAGE_TITAN: {
           TITLE: "バンテージ・タイタン",
-          MAKER: "東芝の 1.5 テスラMRIマシン"
+          MAKER: "東芝の 1.5 テスラMRIマシン",
         },
         ACHIEVA: {
           TITLE: "アチーバ DS（デュアルスピード）",
