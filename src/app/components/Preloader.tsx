@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import loading_heartbeat from "../animations/loading_heartbeat.json";
 import Lottie from "lottie-react";
