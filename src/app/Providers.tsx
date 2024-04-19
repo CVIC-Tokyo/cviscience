@@ -2,12 +2,11 @@
 
 import { GlobalContextProvider } from "@/context/store";
 import { NextUIProvider } from "@nextui-org/react";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "./components/navcomponents/Navbar";
 import Access from "./components/Access";
 import Footer from "./components/footercomponents/Footer";
 import Preloader from "./components/Preloader";
-import loading from "../../public/animations/loading_heartbeat.json"
 
 export default function Providers({
   children,
@@ -20,6 +19,7 @@ export default function Providers({
       <GlobalContextProvider>
         <div className="w-full overflow-hidden bg-center bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
           <React.Fragment>
+            <Preloader />
             <Navbar />
             {children}
             <Access />
