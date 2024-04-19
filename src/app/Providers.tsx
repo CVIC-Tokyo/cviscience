@@ -7,38 +7,24 @@ import Navbar from "./components/navcomponents/Navbar";
 import Access from "./components/Access";
 import Footer from "./components/footercomponents/Footer";
 import Preloader from "./components/Preloader";
-import { useGlobalContext } from "@/context/store";
+import loading from "../../public/animations/loading_heartbeat.json"
 
 export default function Providers({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [preload, setPreload] = useState(false);
-  const { locale } = useGlobalContext();
-
-  useEffect(() => {
-    setPreload(false);
-
-    setTimeout(() => {
-      setPreload(false);
-    }, 2000);
-  }, [locale]);
 
   return (
     <NextUIProvider>
       <GlobalContextProvider>
         <div className="w-full overflow-hidden bg-center bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
-          {preload ? (
-            <Preloader />
-          ) : (
-            <React.Fragment>
-              <Navbar />
-              {children}
-              <Access />
-              <Footer />
-            </React.Fragment>
-          )}
+          <React.Fragment>
+            <Navbar />
+            {children}
+            <Access />
+            <Footer />
+          </React.Fragment>
         </div>
       </GlobalContextProvider>
     </NextUIProvider>
