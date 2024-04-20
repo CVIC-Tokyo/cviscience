@@ -14,7 +14,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
     <div className="max-w-[1700px] w-full flex items-center justify-center tracking-wide">
       <div className="w-full h-auto p-2 flex flex-col items-center justify-center">
         <Reveal>
-          <div className="bg-white md:bg-white/75 md:hover:bg-white p-2 m-2 rounded-lg h-auto mx-auto">
+          <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
             <div className="w-full h-[200px] md:h-[300px] lg:h-[500px] bg-terashima_message bg-cover bg-center" />
             <Reveal>
               <h1 className="about-title">{localeData.ABOUT.MISSION_TITLE}</h1>
@@ -38,7 +38,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
           </div>
         </Reveal>
         <Reveal>
-          <div className="bg-white md:bg-white/75 md:hover:bg-white p-2 m-2 rounded-lg h-auto mx-auto">
+          <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
             <Reveal>
               <h1 className="about-title">{localeData.ABOUT.VISION_TITLE}</h1>
             </Reveal>
@@ -50,7 +50,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
           </div>
         </Reveal>
         <Reveal>
-          <div className="bg-white md:bg-white/75 md:hover:bg-white p-2 m-2 rounded-lg h-auto mx-auto">
+          <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
             <Reveal>
               <h1 className="about-title">{localeData.ABOUT.CSR_TITLE}</h1>
             </Reveal>
