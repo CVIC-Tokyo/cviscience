@@ -47,7 +47,14 @@ const Staff: React.FC<StaffProps> = () => {
 
   return (
     <div className="tile-container" id="staff" ref={containerRef}>
-      <div className="tile-photo-container" onMouseEnter={() => handleHover()}>
+      <div
+        className="tile-photo-container"
+        onMouseEnter={() => {
+          handleHover();
+          setZoomOut(false); // Ensure zoom out on hover
+        }}
+        onMouseLeave={() => setZoomOut(true)} // Zoom out when leaving hover
+      >
         <div
           style={{
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
