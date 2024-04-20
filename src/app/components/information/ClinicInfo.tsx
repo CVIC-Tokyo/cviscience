@@ -33,6 +33,12 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                 <p className="p-2 md:p-4">
                   {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P3}
                 </p>
+                <p className="p-2 pb-0 md:p-4 md:pb-0 font-bold">
+                  {localeData.DOCTORS.TERASHIMA}
+                </p>
+                <p className="">
+                  {localeData.DOCTORS.TERASHIMA_TITLE}
+                </p>
               </div>
             </Reveal>
           </div>
