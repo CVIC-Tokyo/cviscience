@@ -9,9 +9,11 @@ const EquipmentsPage: React.FC<EquipmentsPageProps> = () => {
   const { locale } = useGlobalContext();
 
   return (
-    <div className="page-container">
-      <div>
-        <EquipmentInfo locale={locale} />
+    <div className="w-full h-full">
+      <div className="page-container">
+        <div className="w-full h-full">
+          <EquipmentInfo locale={locale} />
+        </div>
       </div>
     </div>
   );
