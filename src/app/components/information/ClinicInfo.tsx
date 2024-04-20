@@ -40,18 +40,6 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
         <Reveal>
           <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
             <Reveal>
-              <h1 className="about-title">{localeData.ABOUT.VISION_TITLE}</h1>
-            </Reveal>
-            <Reveal>
-              <p className="p-4 text-[12px] md:text-base">
-                {localeData.ABOUT.VISION}
-              </p>
-            </Reveal>
-          </div>
-        </Reveal>
-        <Reveal>
-          <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
-            <Reveal>
               <h1 className="about-title">{localeData.ABOUT.CSR_TITLE}</h1>
             </Reveal>
             <Reveal>
