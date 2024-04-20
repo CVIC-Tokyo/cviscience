@@ -83,7 +83,7 @@ const Services: React.FC<ServicesProps> = () => {
             <Reveal>
               <motion.div
                 animate={{ x: isHovered ? 20 : 0 }}
-                className="w-[40px] md:w-[90px]"
+                className="w-full flex items-center justify-center"
               >
                 <BiRightArrowAlt className="tile-arrow" />
               </motion.div>

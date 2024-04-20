@@ -82,7 +82,7 @@ const Equipments: React.FC<EquipmentsProps> = () => {
             </Reveal>
             <Reveal>
               <motion.div
-                className="w-[40px] md:w-[90px]"
+                className="w-full flex items-center justify-center"
                 animate={{ x: isHovered ? 20 : 0 }}
               >
                 <BiRightArrowAlt className="tile-arrow" />
