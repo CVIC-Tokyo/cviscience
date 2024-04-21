@@ -14,7 +14,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
     <div className="max-w-[1700px] w-full flex items-center justify-center tracking-wide">
       <div className="w-full h-auto p-2 flex flex-col items-center justify-center">
         <Reveal>
-          <div className="bg-white md:bg-white/75 md:hover:bg-white p-2 m-2 rounded-lg h-auto mx-auto">
+          <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
             <div className="w-full h-[200px] md:h-[300px] lg:h-[500px] bg-terashima_message bg-cover bg-center" />
             <Reveal>
               <h1 className="about-title">{localeData.ABOUT.MISSION_TITLE}</h1>
@@ -33,24 +33,18 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                 <p className="p-2 md:p-4">
                   {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P3}
                 </p>
+                <p className="p-2 pb-0 md:p-4 md:pb-0 font-bold">
+                  {localeData.DOCTORS.TERASHIMA}
+                </p>
+                <p className="">
+                  {localeData.DOCTORS.TERASHIMA_TITLE}
+                </p>
               </div>
             </Reveal>
           </div>
         </Reveal>
         <Reveal>
-          <div className="bg-white md:bg-white/75 md:hover:bg-white p-2 m-2 rounded-lg h-auto mx-auto">
-            <Reveal>
-              <h1 className="about-title">{localeData.ABOUT.VISION_TITLE}</h1>
-            </Reveal>
-            <Reveal>
-              <p className="p-4 text-[12px] md:text-base">
-                {localeData.ABOUT.VISION}
-              </p>
-            </Reveal>
-          </div>
-        </Reveal>
-        <Reveal>
-          <div className="bg-white md:bg-white/75 md:hover:bg-white p-2 m-2 rounded-lg h-auto mx-auto">
+          <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
             <Reveal>
               <h1 className="about-title">{localeData.ABOUT.CSR_TITLE}</h1>
             </Reveal>

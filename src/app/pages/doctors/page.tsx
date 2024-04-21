@@ -13,18 +13,16 @@ const DoctorsPage: React.FC<DoctorsPageProps> = () => {
   const [focus, setFocus] = useState(0);
 
   return (
-    <div className="w-full h-full">
-      <div className="page-container">
-        <div className="w-full h-[150px] md:h-[250px] lg:h-[500px] bg-doctors_full bg-center bg-cover">
-          <div className="w-full h-full flex justify-center items-center text-cvic-red font-bold text-2xl md:text-4xl">
-            {localeData.DOCTORS.TITLE}
-          </div>
+    <div className="page-container">
+      <div className="w-full h-[150px] md:h-[250px] lg:h-[500px] bg-doctors_full bg-center bg-cover">
+        <div className="w-full h-full flex justify-center items-center text-cvic-red font-bold text-2xl md:text-4xl">
+          {localeData.DOCTORS.TITLE}
         </div>
-        <div className="w-full h-full bg-white/20 p-2">
-          <div className="w-full h-auto mb-4">
-            <DoctorsInfo locale={locale} focus={focus} setFocus={setFocus} />
-            <History_Carousel locale={locale} focus={focus} setFocus={setFocus} />
-          </div>
+      </div>
+      <div className="w-f ull h-full bg-white/20 p-2">
+        <div className="w-full h-auto mb-4">
+          <DoctorsInfo locale={locale} focus={focus} setFocus={setFocus} />
+          <History_Carousel locale={locale} focus={focus} setFocus={setFocus} />
         </div>
       </div>
     </div>

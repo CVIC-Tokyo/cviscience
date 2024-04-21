@@ -11,7 +11,7 @@ import Staff from "./components/tiles/Staff";
 
 export default function Home() {
   return (
-    <div className="w-full h-auto snap-mandatory flex flex-col items-center justify-center">
+    <div className="w-full h-auto flex flex-col items-center justify-center">
       <About />
       <div className="w-full max-w-[1700px] h-auto mb-10 md:mb-32 flex flex-col lg:grid grid-cols-2">
         <Services />

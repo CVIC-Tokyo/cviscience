@@ -1,5 +1,3 @@
-import EquipmentInfo from "@/app/components/information/EquipmentInfo";
-
 const en = {
   BASIC: {
     HOME: "Home",

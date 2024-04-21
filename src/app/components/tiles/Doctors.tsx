@@ -47,7 +47,14 @@ const Doctors: React.FC<DoctorsProps> = () => {
 
   return (
     <div className="tile-container" id="Doctors" ref={containerRef}>
-      <div className="tile-photo-container" onMouseEnter={() => handleHover()}>
+      <div
+        className="tile-photo-container"
+        onMouseEnter={() => {
+          handleHover();
+          setZoomOut(false); // Ensure zoom out on hover
+        }}
+        onMouseLeave={() => setZoomOut(true)} // Zoom out when leaving hover
+      >
         <div
           style={{
             transform: zoomOut ? "scale(2)" : "scale(2.5)", // Zoom-out effect
@@ -75,7 +82,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
             </Reveal>
             <Reveal>
               <motion.div
-                className="w-[40px] md:w-[90px]"
+                className="w-full flex items-center justify-center"
                 animate={{ x: isHovered ? 20 : 0 }}
               >
                 <BiRightArrowAlt className="tile-arrow" />

@@ -10,7 +10,7 @@ const EquipmentsPage: React.FC<EquipmentsPageProps> = () => {
 
   return (
     <div className="page-container">
-      <div>
+      <div className="w-full h-full">
         <EquipmentInfo locale={locale} />
       </div>
     </div>
