@@ -279,104 +279,129 @@ const en = {
   DOCK_PLANS: [
     {
       TITLE: "Premium Dock Plus",
-      PRICE: "$253,000 ($278,300)",
+      PRICE: "¥253,000 (*¥278,300)",
     },
     {
       TITLE: "Heart + Brain Dock Plus",
-      PRICE: "$180,000 ($198,000)",
+      PRICE: "¥180,000 (*¥198,000)",
     },
     {
       TITLE: "Heart Dock Plus",
-      PRICE: "$155,000 ($170,500)",
+      PRICE: "¥155,000 (*¥170,500)",
     },
     {
       TITLE: "Premium Brain Dock",
-      PRICE: "$68,000 ($74,800)",
+      PRICE: "¥68,000 (*¥74,800)",
     },
     {
       TITLE: "Brain + AI Dock",
-      PRICE: "$61,800 ($67,980)",
+      PRICE: "¥61,800 (*¥67,980)",
     },
     {
       TITLE: "Basic Brain Dock",
-      PRICE: "$36,000 ($39,600)",
+      PRICE: "¥36,000 (*¥39,600)",
     },
     {
       TITLE: "Brain Dock",
-      PRICE: "$29,800 ($32,780)",
+      PRICE: "¥29,800 (*¥32,780)",
     },
   ],
 
   OPTIONAL_TESTS: [
     {
       TITLE: "Pericardial Fat Measurement",
-      PRICE: "$40,000 (*$44,000)",
+      PRICE: "¥40,000 (*¥44,000)",
     },
     {
       TITLE: "Aortic Examination",
-      PRICE: "$44,000 (*$48,400)",
+      PRICE: "¥44,000 (*¥48,400)",
     },
     {
       TITLE: "Lumbar and Lower Extremity Vascular Examination",
-      PRICE: "$84,000 (*$92,400)",
+      PRICE: "¥84,000 (*¥92,400)",
     },
     {
       TITLE: "Brain AI (Artificial Intelligence) Diagnosis",
-      PRICE: "$50,000 (*$55,000)",
+      PRICE: "¥50,000 (*¥55,000)",
     },
     {
       TITLE: "Body Fat (Visceral and Subcutaneous Fat Measurement)",
-      PRICE: "$20,000 ($22,000)",
+      PRICE: "¥20,000 (*¥22,000)",
     },
     {
       TITLE: "Lung Examination",
-      PRICE: "$22,000 (*$24,200)",
+      PRICE: "¥22,000 (*¥24,200)",
     },
     {
       TITLE: "Cardiac Echo",
-      PRICE: "$16,000 (*$17,600)",
+      PRICE: "¥16,000 (*¥17,600)",
     },
     {
       TITLE: "Neck Echo",
-      PRICE: "$10,000 ($11,000)",
+      PRICE: "¥10,000 (*¥11,000)",
     },
     {
       TITLE: "ABI (Arterial Stiffness Measurement)",
-      PRICE: "$6,000 ($6,600)",
+      PRICE: "¥6,000 (*¥6,600)",
     },
     {
       TITLE: "CVIC Blood Test Set",
-      PRICE: "$49,800 ($54,780)",
+      PRICE: "¥49,800 (*¥54,780)",
     },
     {
       TITLE: "CVIC Blood Test Set+",
-      PRICE: "$32,800 ($36,080)",
+      PRICE: "¥32,800 (*¥36,080)",
     },
     {
       TITLE: "Simple Cancer Tumor Marker Set",
-      PRICE: "$10,000 ($11,000)",
+      PRICE: "¥10,000 (*¥11,000)",
     },
     {
       TITLE: "Full Body Cancer Tumor Marker Set",
-      PRICE: "# 78,000 (*$85,800)",
+      PRICE: "¥78,000 (*¥85,800)",
     },
     {
       TITLE: "MCI Screening Test",
-      PRICE: "$30,000 ($33,000)",
+      PRICE: "¥30,000 (*¥33,000)",
     },
     {
       TITLE: "Holter Electrocardiogram",
-      PRICE: "$30,000 (*$33,000)",
+      PRICE: "¥30,000 (*¥33,000)",
     },
     {
       TITLE: "Af・SAS Screening Test",
-      PRICE: "$40,000 (*$44,000)",
+      PRICE: "¥40,000 (*¥44,000)",
     },
     {
       TITLE: "I would like recommendations",
       PRICE: "",
     },
   ],
+  CONSULTATION: {
+    NAME: "Name",
+    SURNAME: "Surname",
+    FURIGANA_NAME: "Furigana: Name",
+    FURIGANA_SURNAME: "Furigana: Surname",
+    PHONE: "Phone",
+    EMAIL: "Email",
+    PREFERRED_CONTACT: "Preferred Contact",
+    CONSULTATION_HISTORY: "Consultation History",
+    PRESENCE_OF_METAL: "Presence of Metal in the Body due to Surgery",
+    TERMS_OF_USE: "I Agree to the Terms of Use. (Privacy Policy)",
+    CONSULTATION_DATES_AND_DETAILS: "Consultation Dates and Details",
+    DATE_OF_BIRTH: "Date of Birth",
+    ADDRESS: "Address",
+    TIME_SLOT: "Time Slot",
+    PREFFERED_TIME: "Enter a preferred time slot",
+    SUBMIT: "Submit",
+    FORM_ERROR: "Please fill in all required fields.",
+    FIRST_TIME_VISITING: "First time visiting",
+    HAVE_VISITED_BEFORE: "Have visited in the past",
+    YES: "Yes",
+    NO: "No",
+    INQUIRIES: "Please write down any request/inquiries",
+    DETAILS_OF_METAL_AND_DATE_OF_SURGERY: "Please write down the details of metal and date of surgery",
+  },
 };
 
 export default en;

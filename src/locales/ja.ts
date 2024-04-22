@@ -356,7 +356,7 @@ const ja = {
     },
     {
       TITLE: "全身・ガン腫瘍マーカーセット",
-      PRICE: "# 78,000 (*¥85,800)",
+      PRICE: "¥78,000 (*¥85,800)",
     },
     {
       TITLE: "MCIスクリーニング検査",
@@ -375,6 +375,31 @@ const ja = {
       PRICE: "",
     },
   ],
+  CONSULTATION: {
+    NAME: "名前",
+    SURNAME: "苗字",
+    FURIGANA_NAME: "フリガナ：名前",
+    FURIGANA_SURNAME: "フリガナ：苗字",
+    PHONE: "電話",
+    EMAIL: "メール",
+    PREFERRED_CONTACT: "希望連絡方法",
+    CONSULTATION_HISTORY: "来院歴",
+    PRESENCE_OF_METAL: "手術による体内金属の有無",
+    TERMS_OF_USE: "利用規約に同意します（プライバシーポリシー）",
+    CONSULTATION_DATES_AND_DETAILS: "予約日時と詳細",
+    DATE_OF_BIRTH: "生年月日",
+    ADDRESS: "住所",
+    TIME_SLOT: "時間帯",
+    PREFFERED_TIME: "希望する時間帯を入力してください。",
+    SUBMIT: "送信",
+    FORM_ERROR: "必須項目をすべて入力してください。",
+    FIRST_TIME_VISITING: "初診",
+    HAVE_VISITED_BEFORE: "過去に来院済み",
+    YES: "はい",
+    NO: "いいえ",
+    INQUIRIES: "お問い合わせやリクエストをご記入ください。",
+    DETAILS_OF_METAL_AND_DATE_OF_SURGERY: "金属の詳細と手術日を記入してください。",
+  },
 };
 
 export default ja;
