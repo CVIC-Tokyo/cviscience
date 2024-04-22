@@ -63,10 +63,10 @@ const SideBar: React.FC<SidebarProps> = ({
             </Link>
             <Link
               onClick={() => setShowSidebar(false)}
-              href="/"
+              href="/pages/reservation"
               className="sidebar-button"
             >
-              <li className="py-4 text-sm">More</li>
+              <li className="py-4 text-sm">{localeData.RESERVATION.TITLE}</li>
             </Link>
           </ul>
           <div className="absolute top-0 right-2 flex items-center justify-start my-2">
@@ -82,7 +82,7 @@ const SideBar: React.FC<SidebarProps> = ({
                 <AiFillCalendar />
               </div>
               <Link
-                href="/#contact"
+                href="/pages/reservation"
                 className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
                 onClick={() => setShowSidebar(false)}
               >
