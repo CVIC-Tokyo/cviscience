@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { getLocaleData } from "@/utils/helpers";
+import ReservationModal from "@/app/modals/ReservationModal";
 
 const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
     const localeData = getLocaleData(locale);
@@ -29,6 +30,18 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
   const [preferredContactTime, setPreferredContactTime] = useState("");
   const [formError, setFormError] = useState("");
 
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleRevise = () => {
+    setModalOpen(false);
+    // Additional logic to handle revise if needed
+  };
+
+  const handleConfirmSubmit = () => {
+    // Additional logic to handle form submission
+  };
+
+
   const handleConsultationDateChange = (index: number, date: string) => {
     const updatedDates = [...consultationDates];
     updatedDates[index] = date;
@@ -43,6 +56,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
+    setModalOpen(true);
     // Check if any required fields are empty
     if (
       name.trim() === "" ||
@@ -296,6 +310,31 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
           {localeData.CONSULTATION.SUBMIT}
         </button>
       </form>
+      <ReservationModal 
+  isOpen={modalOpen}
+  onClose={() => setModalOpen(false)}
+  onSubmit={handleConfirmSubmit}
+  locale={locale}
+  formData={{ 
+    consultationDates,
+    selectedTimeSlots,
+    name,
+    nameFurigana,
+    surname,
+    surnameFurigana,
+    dateOfBirth,
+    address,
+    email,
+    phoneNumber,
+    preferredContact,
+    consultationHistory,
+    metalInBody,
+    metalDetails,
+    preferredContactTime,
+  }}
+>
+  {/* Content of the modal */}
+</ReservationModal>
     </div>
   );
 };
