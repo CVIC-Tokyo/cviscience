@@ -67,3 +67,7 @@ interface HamburgerProps {
 interface ConsultationProps {
   locale: string;
 }
+
+interface ReservationModalProps {
+  
+}
