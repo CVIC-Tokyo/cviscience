@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import { getLocaleData } from "@/utils/helpers";
 import ReservationModal from "@/app/modals/ReservationModal";
+import PrivacyPolicyModal from "@/app/modals/PrivacyPolicyModal";
 
 const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
     const localeData = getLocaleData(locale);
+    const [privacyPolicyModalOpen, setPrivacyPolicyModalOpen] = useState(false);
+    const handlePrivacyPolicyModalClose = () => {
+      setPrivacyPolicyModalOpen(false);
+    };
+  
+    const handlePrivacyPolicyClick = () => {
+      setPrivacyPolicyModalOpen(true);
+    };
   const [consultationDates, setConsultationDates] = useState<string[]>([
     "",
     "",
@@ -299,7 +308,13 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
             checked={termsAgreed}
             onChange={() => setTermsAgreed(!termsAgreed)}
           />
-          <label className="block font-semibold  p-1 md:p-2">{localeData.CONSULTATION.TERMS_OF_USE}</label>
+          <button
+          type="button"
+          className="text-blue-500 underline cursor-pointer"
+          onClick={handlePrivacyPolicyClick}
+        >
+          {localeData.CONSULTATION.TERMS_OF_USE}
+        </button>
         </div>
         {formError && <div className="text-cvic-red p-1 md:p-2">{formError}</div>}
         <button
@@ -335,6 +350,11 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
 >
   {/* Content of the modal */}
 </ReservationModal>
+<PrivacyPolicyModal
+        isOpen={privacyPolicyModalOpen}
+        onClose={handlePrivacyPolicyModalClose}
+        locale={locale}
+      ></PrivacyPolicyModal>
     </div>
   );
 };
