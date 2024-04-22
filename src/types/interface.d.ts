@@ -108,3 +108,9 @@ interface FormData extends globalThis.FormData {
   metalDetails: string;
   preferredContactTime: string;
 }
+
+interface PrivacyPolicyModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  locale: string;
+}
