@@ -375,6 +375,10 @@ const ja = {
       PRICE: "",
     },
   ],
+  RESERVATION: {
+    DOCK: "ドック基本プラン",
+    INSPECTION: "オプション検査",
+  },
   CONSULTATION: {
     NAME: "名前",
     SURNAME: "苗字",

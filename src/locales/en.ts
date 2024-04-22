@@ -377,6 +377,10 @@ const en = {
       PRICE: "",
     },
   ],
+  RESERVATION: {
+    DOCK: "Dock Basic Plan",
+    INSPECTION: "Optional Inspection",
+  },
   CONSULTATION: {
     NAME: "Name",
     SURNAME: "Surname",
