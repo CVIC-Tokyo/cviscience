@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { getLocaleData } from "@/utils/helpers";
 import { useGlobalContext } from "@/context/store";
 import "../../../styles/globals.css";
+import ConsultationForm from "@/app/components/information/ConsultaionForm";
 
 const DockSelector: React.FC = () => {
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
@@ -12,7 +13,10 @@ const DockSelector: React.FC = () => {
   const localeData = getLocaleData(locale);
 
   const selectPlan = (plan: string) => {
-    setSelectedPlan(plan);
+    if (plan === selectedPlan) {
+        setSelectedPlan(null)
+    }
+    else setSelectedPlan(plan);
   };
 
   const toggleTest = (test: string) => {
@@ -26,48 +30,57 @@ const DockSelector: React.FC = () => {
 
   return (
     <div className="page-container">
-      <div></div>
-      <div className="bg-white flex flex-col items-center justify-center">
-        <div className="p-4">
-          <h2 className="text-lg font-bold mb-2">Select Dock Plan</h2>
-          <div className="space-y-2">
-            {localeData.DOCK_PLANS.map((plan) => (
-              <div
-                key={plan.TITLE}
-                className={`cursor-pointer p-2 rounded-lg ${
-                  selectedPlan === plan.TITLE
-                    ? "bg-cvic-red text-white"
-                    : "bg-gray-200"
-                }`}
-                onClick={() => selectPlan(plan.TITLE)}
-              >
-                {plan.TITLE} - {plan.PRICE}
-              </div>
-            ))}
+      <div className="bg-white/25 flex flex-col items-center justify-around md:flex-row md:items-start md:justify-around p-2">
+        <div className="w-full">
+          <div className="bg-white rounded-lg p-4 m-2">
+            <h2 className="text-base md:text-lg font-bold mb-2">Select Dock Plan</h2>
+            <div className="space-y-2">
+              {localeData.DOCK_PLANS.map((plan) => (
+                <div
+                  key={plan.TITLE}
+                  className={`cursor-pointer hover:bg-cvic-red hover:text-white text-xs md:text-base p-2 rounded-lg ${
+                    selectedPlan === plan.TITLE
+                      ? "bg-cvic-red text-white"
+                      : "bg-gray-200"
+                  }`}
+                  onClick={() => selectPlan(plan.TITLE)}
+                >
+                  {plan.TITLE} - {plan.PRICE}
+                </div>
+              ))}
+            </div>
           </div>
-
-          <h2 className="text-lg font-bold mt-4 mb-2">Select Optional Tests</h2>
-          <div className="space-y-2">
-            {localeData.OPTIONAL_TESTS.map((test) => (
-              <div
-                key={test.TITLE}
-                className={`flex items-center cursor-pointer p-2 rounded-lg ${
-                  selectedTests.includes(test.TITLE)
-                    ? "bg-cvic-red text-white"
-                    : "bg-gray-200"
-                }`}
-                onClick={() => toggleTest(test.TITLE)}
-              >
-                <input
-                  type="checkbox"
-                  className="mr-2"
-                  checked={selectedTests.includes(test.TITLE)}
-                  readOnly
-                />
-                {test.TITLE} - {test.PRICE}
+          <div>
+            <div className="bg-white rounded-lg p-4 m-2">
+              <h2 className="text-base md:text-lg font-bold mt-4 mb-2">
+                Select Optional Tests
+              </h2>
+              <div className="space-y-2">
+                {localeData.OPTIONAL_TESTS.map((test) => (
+                  <div
+                    key={test.TITLE}
+                    className={`flex items-center hover:bg-cvic-red hover:text-white text-xs md:text-base cursor-pointer p-2 rounded-lg ${
+                      selectedTests.includes(test.TITLE)
+                        ? "bg-cvic-red text-white"
+                        : "bg-gray-200"
+                    }`}
+                    onClick={() => toggleTest(test.TITLE)}
+                  >
+                    <input
+                      type="checkbox"
+                      className="mr-2"
+                      checked={selectedTests.includes(test.TITLE)}
+                      readOnly
+                    />
+                    {test.TITLE} - {test.PRICE}
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
+        </div>
+        <div className="w-full m-2">
+          <ConsultationForm locale={locale}/>
         </div>
       </div>
     </div>
