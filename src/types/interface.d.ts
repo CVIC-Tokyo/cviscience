@@ -69,5 +69,42 @@ interface ConsultationProps {
 }
 
 interface ReservationModalProps {
-  
+  isOpen: boolean;
+  onClose: () => void;
+  onSubmit: () => void;
+  formData: {
+    consultationDates: string[];
+    selectedTimeSlots: string[];
+    name: string;
+    nameFurigana: string;
+    surname: string;
+    surnameFurigana: string;
+    dateOfBirth: string;
+    address: string;
+    email: string;
+    phoneNumber: string;
+    preferredContact: string;
+    consultationHistory: string;
+    metalInBody: string;
+    metalDetails: string;
+    preferredContactTime: string;
+  };
+  locale: string;
+}
+interface FormData extends globalThis.FormData {
+  consultationDates: string[];
+  selectedTimeSlots: string[];
+  name: string;
+  nameFurigana: string;
+  surname: string;
+  surnameFurigana: string;
+  dateOfBirth: string;
+  address: string;
+  email: string;
+  phoneNumber: string;
+  preferredContact: string;
+  consultationHistory: string;
+  metalInBody: string;
+  metalDetails: string;
+  preferredContactTime: string;
 }
