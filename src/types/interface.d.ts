@@ -114,3 +114,7 @@ interface PrivacyPolicyModalProps {
   onClose: () => void;
   locale: string;
 }
+
+interface ReservationProcessProps {
+  locale: string;
+}
