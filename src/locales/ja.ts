@@ -302,7 +302,7 @@ const ja = {
     {
       TITLE: "脳ドック",
       PRICE: "￥29,800（￥32,780）",
-    }
+    },
   ],
 
   OPTIONAL_TESTS: [
@@ -373,9 +373,8 @@ const ja = {
     {
       TITLE: "おすすめを教えてほしい",
       PRICE: "",
-    }
-  ]
-
+    },
+  ],
 };
 
 export default ja;

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState, useEffect } from "react";
 
@@ -14,7 +14,9 @@ const Preloader = () => {
   }, []);
 
   return (
-    <div className={`absolute inset-0 z-50 bg-white flex items-center justify-center ${visible ? '' : 'hidden'}`}>
+    <div
+      className={`absolute inset-0 z-50 bg-white flex items-center justify-center ${visible ? "" : "hidden"}`}
+    >
       <div className="w-[300px] h-auto flex flex-col items-center justify-center">
         <img src="/animations/loading_heartbeat.gif" alt="Loading animation" />
         <p className="text-cvic-red">Loading...</p>

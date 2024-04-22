@@ -304,7 +304,7 @@ const en = {
     {
       TITLE: "Brain Dock",
       PRICE: "$29,800 ($32,780)",
-    }
+    },
   ],
 
   OPTIONAL_TESTS: [
@@ -375,9 +375,8 @@ const en = {
     {
       TITLE: "I would like recommendations",
       PRICE: "",
-    }
-  ]
-
+    },
+  ],
 };
 
 export default en;

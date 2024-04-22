@@ -13,7 +13,6 @@ export default function Providers({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <NextUIProvider>
       <GlobalContextProvider>

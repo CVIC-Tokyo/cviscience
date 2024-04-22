@@ -46,11 +46,12 @@ const Navbar: React.FC<NavbarProps> = () => {
           onClick={() => handleSidebar()}
           className="absolute z-100 top-0 left-0 w-14 h-14 md:hidden curser-pointer p-1"
         >
-          <HamburgerButton 
-          showSidebar={showSidebar}
-          setShowSidebar={setShowSidebar}
-          handleSidebar={handleSidebar}
-          locale={locale} />
+          <HamburgerButton
+            showSidebar={showSidebar}
+            setShowSidebar={setShowSidebar}
+            handleSidebar={handleSidebar}
+            locale={locale}
+          />
         </motion.div>
         <Link href={"/"}>
           <div className="w-[280px] h-[39px] md:w-[600px] md:h-[75px] bg-logo_600 bg-contain ml-12"></div>
