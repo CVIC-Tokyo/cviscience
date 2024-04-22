@@ -5,6 +5,7 @@ import { getLocaleData } from "@/utils/helpers";
 import { useGlobalContext } from "@/context/store";
 import "../../../styles/globals.css";
 import ConsultationForm from "@/app/components/information/ConsultaionForm";
+import ReservationProcess from "@/app/components/information/ReservationProcess";
 
 const DockSelector: React.FC = () => {
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
@@ -82,6 +83,9 @@ const DockSelector: React.FC = () => {
         <div className="w-full m-2">
           <ConsultationForm locale={locale}/>
         </div>
+      </div>
+      <div className="py-2">
+        <ReservationProcess locale={locale} />
       </div>
     </div>
   );
