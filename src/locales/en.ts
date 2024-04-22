@@ -453,6 +453,25 @@ const en = {
     CLOSE: "Close",
     CONFIRM: "Confirm",
   },
+  RESERVATION_PROCESS: {
+    TITLE: "Reservation Process",
+    CONTENT: [
+      "Reservations can be made by phone or through the reservation form on our website.",
+      "TEL: 03-5206-5956",
+      "Phone reception hours: 8:00 AM to 7:00 PM",
+      "We accept reservations online 24/7.",
+      "Please use the reservation form here (Please fill in the required information and submit)",
+      "For inquiries via email, please note that it may take several days to receive a response.",
+      "If you require urgent assistance, please contact us by phone.",
+      "We will contact you to confirm your reservation details.",
+      "Please note:",
+      "- Responses to inquiries received after 5:30 PM will be sent the following day.",
+      "- Responses to inquiries received outside of office hours on the day before a non-business day will be sent on the next business day.",
+      "Closure: None / New Year Holidays (December 30th to January 4th)"
+    ],
+    NOTE: "*Please note that the information provided here is subject to change. For the most accurate and up-to-date information, please contact us directly."
+  },
+  
 };
 
 export default en;
