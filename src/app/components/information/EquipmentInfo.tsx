@@ -34,12 +34,15 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           onClick={() => handleFocus(1)}
           className="relative w-full bg-white rounded-lg p-1 md:p-2 mb-4 md:mb-30 cursor-pointer"
         >
-          <div className={`absolute z-10 left-0 bottom-0 text-2xl md:text-[70px] text-${focus === 1 ? "black" : "white"} font-extrabold p-2 md:p-4`}>
-            <RiArrowDownDoubleLine style={{ transform: `rotate(${rotations[0]}deg)` }} /> {/* Adjust index here */}
-          </div>
           <div
-            className="relative bg-equipments bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-end justify-end"
+            className={`absolute z-10 left-0 bottom-0 text-2xl md:text-[70px] text-${focus === 1 ? "black" : "white"} font-extrabold p-2 md:p-4`}
           >
+            <RiArrowDownDoubleLine
+              style={{ transform: `rotate(${rotations[0]}deg)` }}
+            />{" "}
+            {/* Adjust index here */}
+          </div>
+          <div className="relative bg-equipments bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-end justify-end">
             <p className="text-base md:text-[50px] text-white font-extrabold p-2 md:p-4">
               Vantage Titan
             </p>
@@ -57,12 +60,15 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           onClick={() => handleFocus(2)}
           className="relative w-full bg-white rounded-lg p-1 md:p-2 mb-4 md:mb-30 cursor-pointer"
         >
-          <div className={`absolute z-10 right-0 bottom-0 text-2xl md:text-[70px] text-${focus === 2 ? "black" : "white"} font-extrabold p-2 md:p-4`}>
-            <RiArrowDownDoubleLine style={{ transform: `rotate(${rotations[1]}deg)` }} /> {/* Adjust index here */}
-          </div>
           <div
-            className="relative bg-achieva bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-start justify-end"
+            className={`absolute z-10 right-0 bottom-0 text-2xl md:text-[70px] text-${focus === 2 ? "black" : "white"} font-extrabold p-2 md:p-4`}
           >
+            <RiArrowDownDoubleLine
+              style={{ transform: `rotate(${rotations[1]}deg)` }}
+            />{" "}
+            {/* Adjust index here */}
+          </div>
+          <div className="relative bg-achieva bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-start justify-end">
             <p className="text-base md:text-[50px] text-white font-extrabold p-2 md:p-4">
               Achieva DS (Dual Speed)
             </p>
@@ -80,12 +86,15 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           onClick={() => handleFocus(3)}
           className="relative w-full bg-white rounded-lg p-1 md:p-2 mb-4 md:mb-30 cursor-pointer"
         >
-          <div className={`absolute z-10 left-0 bottom-0 text-2xl md:text-[70px] text-${focus === 3 ? "black" : "white"} font-extrabold p-2 md:p-4`}>
-            <RiArrowDownDoubleLine style={{ transform: `rotate(${rotations[2]}deg)` }} /> {/* Adjust index here */}
-          </div>
           <div
-            className="relative bg-incisive bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-end justify-end"
+            className={`absolute z-10 left-0 bottom-0 text-2xl md:text-[70px] text-${focus === 3 ? "black" : "white"} font-extrabold p-2 md:p-4`}
           >
+            <RiArrowDownDoubleLine
+              style={{ transform: `rotate(${rotations[2]}deg)` }}
+            />{" "}
+            {/* Adjust index here */}
+          </div>
+          <div className="relative bg-incisive bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-end justify-end">
             <p className="text-base md:text-[50px] text-white font-extrabold p-2 md:p-4">
               Incisive CT
             </p>
@@ -103,12 +112,15 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           onClick={() => handleFocus(4)}
           className="relative w-full bg-white rounded-lg p-1 md:p-2 mb-4 md:mb-30 cursor-pointer"
         >
-          <div className={`absolute z-10 right-0 bottom-0 text-2xl md:text-[70px] text-${focus === 4 ? "black" : "white"} font-extrabold p-2 md:p-4`}>
-            <RiArrowDownDoubleLine style={{ transform: `rotate(${rotations[3]}deg)` }} /> {/* Adjust index here */}
-          </div>
           <div
-            className="relative bg-zio bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-start justify-end"
+            className={`absolute z-10 right-0 bottom-0 text-2xl md:text-[70px] text-${focus === 4 ? "black" : "white"} font-extrabold p-2 md:p-4`}
           >
+            <RiArrowDownDoubleLine
+              style={{ transform: `rotate(${rotations[3]}deg)` }}
+            />{" "}
+            {/* Adjust index here */}
+          </div>
+          <div className="relative bg-zio bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-start justify-end">
             <p className="text-base md:text-[50px] text-white font-extrabold p-2 md:p-4">
               Ziostation2
             </p>

@@ -7,7 +7,7 @@ import Equipments from "./components/tiles/Equipments";
 import Doctors from "./components/tiles/Doctors";
 import Services from "./components/tiles/Services";
 import ClinicInfo from "./components/information/ClinicInfo";
-import Staff from "./components/tiles/Staff";
+import Staff from "./components/tiles/Reservationn";
 
 export default function Home() {
   return (

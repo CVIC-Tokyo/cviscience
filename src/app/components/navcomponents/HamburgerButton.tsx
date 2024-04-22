@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { motion, MotionConfig } from "framer-motion";
 import SideBar from "./Sidebar";
 
-const HamburgerButton: React.FC<HamburgerProps> = ({ showSidebar, setShowSidebar, handleSidebar, locale }) => {
+const HamburgerButton: React.FC<HamburgerProps> = ({
+  showSidebar,
+  setShowSidebar,
+  handleSidebar,
+  locale,
+}) => {
   const [active, setActive] = useState(false);
 
   const sidebar = {
@@ -83,16 +88,18 @@ const HamburgerButton: React.FC<HamburgerProps> = ({ showSidebar, setShowSidebar
         />
       </motion.div>
       <div
-      className={
-        showSidebar
-          ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70"
-          : ""
-      }
-    >
-        <SideBar showSidebar={showSidebar}
+        className={
+          showSidebar
+            ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70"
+            : ""
+        }
+      >
+        <SideBar
+          showSidebar={showSidebar}
           setShowSidebar={setShowSidebar}
           handleSidebar={handleSidebar}
-          locale={locale} />
+          locale={locale}
+        />
       </div>
     </MotionConfig>
   );

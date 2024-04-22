@@ -16,7 +16,7 @@ html {
   }
 
   .tile-container {
-    @apply w-full h-[30vh] md:h-[400px] flex items-center justify-center p-2 sm:py-4 md:p-6 lg:p-2;
+    @apply w-full h-[25vh] md:h-[400px] flex items-center justify-center p-2 sm:py-4 md:p-6 lg:p-2;
   }
 
   .tile-info-container {

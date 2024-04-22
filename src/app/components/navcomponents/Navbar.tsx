@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <div
-      className={`w-auto fixed top-0 left-0 right-0 z-[100] ${showShadow ? `shadow-2xl bg-white/35` : "bg-white/0"}`}
+      className={`w-auto fixed top-0 left-0 right-0 z-[90] ${showShadow ? `shadow-2xl bg-white/35` : "bg-white/0"}`}
     >
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="relative max-w-[1240px] mx-auto flex md:justify-between items-center p-2">
@@ -46,11 +46,12 @@ const Navbar: React.FC<NavbarProps> = () => {
           onClick={() => handleSidebar()}
           className="absolute z-100 top-0 left-0 w-14 h-14 md:hidden curser-pointer p-1"
         >
-          <HamburgerButton 
-          showSidebar={showSidebar}
-          setShowSidebar={setShowSidebar}
-          handleSidebar={handleSidebar}
-          locale={locale} />
+          <HamburgerButton
+            showSidebar={showSidebar}
+            setShowSidebar={setShowSidebar}
+            handleSidebar={handleSidebar}
+            locale={locale}
+          />
         </motion.div>
         <Link href={"/"}>
           <div className="w-[280px] h-[39px] md:w-[600px] md:h-[75px] bg-logo_600 bg-contain ml-12"></div>

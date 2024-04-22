@@ -276,6 +276,183 @@ const en = {
       ECHO: {},
     },
   },
+  DOCK_PLANS: [
+    {
+      TITLE: "Premium Dock Plus",
+      PRICE: "¥253,000 (*¥278,300)",
+    },
+    {
+      TITLE: "Heart + Brain Dock Plus",
+      PRICE: "¥180,000 (*¥198,000)",
+    },
+    {
+      TITLE: "Heart Dock Plus",
+      PRICE: "¥155,000 (*¥170,500)",
+    },
+    {
+      TITLE: "Premium Brain Dock",
+      PRICE: "¥68,000 (*¥74,800)",
+    },
+    {
+      TITLE: "Brain + AI Dock",
+      PRICE: "¥61,800 (*¥67,980)",
+    },
+    {
+      TITLE: "Basic Brain Dock",
+      PRICE: "¥36,000 (*¥39,600)",
+    },
+    {
+      TITLE: "Brain Dock",
+      PRICE: "¥29,800 (*¥32,780)",
+    },
+  ],
+
+  OPTIONAL_TESTS: [
+    {
+      TITLE: "Pericardial Fat Measurement",
+      PRICE: "¥40,000 (*¥44,000)",
+    },
+    {
+      TITLE: "Aortic Examination",
+      PRICE: "¥44,000 (*¥48,400)",
+    },
+    {
+      TITLE: "Lumbar and Lower Extremity Vascular Examination",
+      PRICE: "¥84,000 (*¥92,400)",
+    },
+    {
+      TITLE: "Brain AI (Artificial Intelligence) Diagnosis",
+      PRICE: "¥50,000 (*¥55,000)",
+    },
+    {
+      TITLE: "Body Fat (Visceral and Subcutaneous Fat Measurement)",
+      PRICE: "¥20,000 (*¥22,000)",
+    },
+    {
+      TITLE: "Lung Examination",
+      PRICE: "¥22,000 (*¥24,200)",
+    },
+    {
+      TITLE: "Cardiac Echo",
+      PRICE: "¥16,000 (*¥17,600)",
+    },
+    {
+      TITLE: "Neck Echo",
+      PRICE: "¥10,000 (*¥11,000)",
+    },
+    {
+      TITLE: "ABI (Arterial Stiffness Measurement)",
+      PRICE: "¥6,000 (*¥6,600)",
+    },
+    {
+      TITLE: "CVIC Blood Test Set",
+      PRICE: "¥49,800 (*¥54,780)",
+    },
+    {
+      TITLE: "CVIC Blood Test Set+",
+      PRICE: "¥32,800 (*¥36,080)",
+    },
+    {
+      TITLE: "Simple Cancer Tumor Marker Set",
+      PRICE: "¥10,000 (*¥11,000)",
+    },
+    {
+      TITLE: "Full Body Cancer Tumor Marker Set",
+      PRICE: "¥78,000 (*¥85,800)",
+    },
+    {
+      TITLE: "MCI Screening Test",
+      PRICE: "¥30,000 (*¥33,000)",
+    },
+    {
+      TITLE: "Holter Electrocardiogram",
+      PRICE: "¥30,000 (*¥33,000)",
+    },
+    {
+      TITLE: "Af・SAS Screening Test",
+      PRICE: "¥40,000 (*¥44,000)",
+    },
+    {
+      TITLE: "I would like recommendations",
+      PRICE: "",
+    },
+  ],
+  RESERVATION: {
+    TITLE: "Reservation",
+    DOCK: "Dock Basic Plan",
+    INSPECTION: "Optional Inspection",
+  },
+  CONSULTATION: {
+    NAME: "Name",
+    SURNAME: "Surname",
+    FURIGANA_NAME: "Furigana: Name",
+    FURIGANA_SURNAME: "Furigana: Surname",
+    PHONE: "Phone",
+    EMAIL: "Email",
+    PREFERRED_CONTACT: "Preferred Contact",
+    CONSULTATION_HISTORY: "Consultation History",
+    PRESENCE_OF_METAL: "Presence of Metal in the Body due to Surgery",
+    TERMS_OF_USE: "I Agree to the Terms of Use. (Privacy Policy)",
+    CONSULTATION_DATES_AND_DETAILS: "Consultation Dates and Details",
+    DATE_OF_BIRTH: "Date of Birth",
+    ADDRESS: "Address",
+    TIME_SLOT: "Time Slot",
+    PREFFERED_TIME: "Enter a preferred time slot",
+    SUBMIT: "Submit",
+    FORM_ERROR: "Please fill in all required fields.",
+    FIRST_TIME_VISITING: "First time visiting",
+    HAVE_VISITED_BEFORE: "Have visited in the past",
+    YES: "Yes",
+    NO: "No",
+    INQUIRIES: "Please write down any request/inquiries",
+    DETAILS_OF_METAL_AND_DATE_OF_SURGERY: "Please write down the details of metal and date of surgery",
+  },
+  PRIVACY_POLICY: {
+    TITLE: "Personal Information Protection Policy (Privacy Policy)",
+    CONTENT: [
+      "Cardiac Imaging Clinic Iidabashi will comply with Japanese laws and regulations regarding the protection of personal information, national guidelines, and other norms, and will establish the following policies.",
+      "Privacy Policy",
+      "We will limit the collection of personal information to what we deem necessary.",
+      "We will manage personal information accurately and safely.",
+      "The purpose of use of personal information will be determined separately.",
+      "In addition to the above purposes, we will ask for the consent of the examinee in advance when collecting, using, or disclosing personal information.",
+      "We will respond to requests for disclosure of personal information.",
+      "If you have any questions about personal information, we will respond politely."
+    ],
+    NOTE: "Note: Article 2 of the Act on the Protection of Personal Information (Act No. 57 of May 30, 2005) In this Act, 'personal information' is information about living individuals, and is included in the information. Items that can identify a specific individual by the included name, date of birth, or other description (things that can be easily collated with other information and thereby identify a specific individual) Including.)",
+    PURPOSE_OF_USE: "Purpose of use of personal information",
+    PURPOSE_CONTENT: [
+      "1. Use in the clinic",
+      "(1) Provision of medical services",
+      "(2) Office work for billing medical expenses. Office work related to medical care, long-term care, workers' accident compensation insurance, and publicly funded medical care.",
+      "(3) Management and operation of this clinic. Accounting / accounting, internal reporting, basic materials for maintaining / improving medical services, cooperation in medical training, in-hospital case studies aimed at improving the quality of medical care and returning medical information to society, etc.",
+      "2. Use as information provision outside the hospital",
+      "(1) Cooperation with other hospitals, clinics, pharmacies, home-visit nursing stations, etc. Registration of image information etc. in the data center for that purpose.",
+      "(2) Answers to inquiries from other medical institutions, etc.",
+      "(3) When seeking the opinions and advice of an outside doctor, etc. for the purpose of medical treatment of the examinee",
+      "(4) Outsourcing of sample testing, etc., and other outsourcing",
+      "(5) Explanation of medical condition to family",
+      "(6) Outsourcing of insurance affairs",
+      "(7) Submission of receipt to examination and payment institution",
+      "(8) Examination payment period or response to inquiries from the insurer",
+      "(9) Notification of the results to the business operator regarding the health examination entrusted by the business operator, etc.",
+      "(10) Consultation or notification to medical organizations and insurance companies related to medical compensation insurance, etc.",
+      "(11) In addition, medical provision to examinees",
+      "3. Other uses",
+      "(1) Use medical treatment details and treatment progress for surveys and research",
+      "(2) Present the results of the survey / research at academic conferences / treatises, etc.",
+      "(3) Subject to surveys and audits by the Ministry of Health, Labor and Welfare and local governments",
+      "(4) Basic materials for maintenance and improvement of medical / nursing services and operations",
+      "(5) Providing information to external auditing organizations"
+    ],
+    ADDITIONAL_INFO: "If you have any of the above items that you do not agree with, please apply to the consultation desk to that effect. If you do not apply, we will treat it as if you agree. These offers can be withdrawn or changed at any time later. We will inform you when the purpose of use changes.",
+    CLOSING: "Cardiac Imaging Clinic Iidabashi will comply with Japanese laws and regulations regarding the protection of personal information, national guidelines, and other norms, and will establish the following policies. We respect the privacy of patients and strive for proper management and use. Thank you in advance for your understanding and cooperation."
+  },
+  RESERVATION_MODAL: {
+    TITLE: "Confirm Details:",
+    CLOSE: "Close",
+    CONFIRM: "Confirm",
+  },
 };
 
 export default en;
