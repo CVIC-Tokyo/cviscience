@@ -63,3 +63,7 @@ interface HamburgerProps {
   handleSidebar: () => void;
   locale: string;
 }
+
+interface ConsultationProps {
+  locale: string;
+}
