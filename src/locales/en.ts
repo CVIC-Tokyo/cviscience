@@ -471,7 +471,37 @@ const en = {
     ],
     NOTE: "*Please note that the information provided here is subject to change. For the most accurate and up-to-date information, please contact us directly."
   },
-  
+  LOCATION_INFORMATION: {
+    JR_CHUO_SOBU_LINE: {
+      TITLE: "JR Chuo/Sobu Line (Local Stops)",
+      DESCRIPTION: [
+        "5-10 minutes walk from the east exit of JR Chuo/Sobu Line, Iidabashi Station",
+        "① Turn left immediately after exiting the east exit ticket gate.",
+        "② Climb the stairs of the pedestrian bridge in front of you and go straight until you reach the end without turning.",
+        "③ Go down the stairs at the end, and you will be in front of Matsuya.",
+        "④ Go straight for about 2 to 3 minutes until you reach the building one place past Family Mart (it's the building on the corner of a large intersection).",
+        "⑤ There are 4 stairs under the building. Go through the automatic doors and take the elevator to the 4th floor reception."
+      ]
+    },
+    TOKYO_METRO_LINES: {
+      TITLE: "Tokyo Metro Tozai Line, Namboku Line, Yurakucho Line, Toei Oedo Line",
+      DESCRIPTION: [
+        "5-10 minutes walk from Exit B1 of Iidabashi Station for Tokyo Metro Tozai Line, Namboku Line, Yurakucho Line, Toei Oedo Line",
+        "① Turn left as soon as you reach the ground level from Exit B1.",
+        "② Cross the crosswalk towards Doutor and go straight along the flow under the pedestrian bridge stairs until you see Matsuya.",
+        "③ Go straight for about 2 to 3 minutes until you reach the building one block past Family Mart (it's the building on the corner of a large intersection).",
+        "④ There are 4 stairs under the building. Go through the automatic doors and take the elevator to the 4th floor reception."
+      ]
+    },
+    TAXI: {
+      TITLE: "Taxi",
+      DESCRIPTION: "There is a taxi stand right next to the east exit of JR Iidabashi Station."
+    },
+    CAR: {
+      TITLE: "Car",
+      DESCRIPTION: "There is no contracted parking lot. If you are in a wheelchair and are coming to the clinic by car, please use the coin parking lots around the clinic."
+    }
+  },
 };
 
 export default en;
