@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <div
-      className={`w-auto fixed top-0 left-0 right-0 z-[100] ${showShadow ? `shadow-2xl bg-white/35` : "bg-white/0"}`}
+      className={`w-auto fixed top-0 left-0 right-0 z-[90] ${showShadow ? `shadow-2xl bg-white/35` : "bg-white/0"}`}
     >
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="relative max-w-[1240px] mx-auto flex md:justify-between items-center p-2">
