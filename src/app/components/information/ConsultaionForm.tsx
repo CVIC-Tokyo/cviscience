@@ -268,7 +268,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
             </label>
           </div>
           {metalInBody === "yes" && (
-            <div className="p-1 md:p-2 lg:w-[75%]">
+            <div className="p-1 md:p-2 w-full lg:w-[75%]">
               <textarea
                 value={metalDetails}
                 placeholder={localeData.CONSULTATION.DETAILS_OF_METAL_AND_DATE_OF_SURGERY}
