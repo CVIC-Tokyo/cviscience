@@ -18,7 +18,7 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        parallax_sm: 'url("/images/home/access_sm.jpeg")',
+        parallax_sm: 'url("/images/home/blue-wallpaper.jpg")',
         parallax: 'url("/images/home/access_image.png")',
         services: 'url("/images/tiles/services_image.JPG")',
         equipments: 'url("/images/tiles/vintage_titan.jpg")',
