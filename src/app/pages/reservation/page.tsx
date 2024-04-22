@@ -33,7 +33,7 @@ const DockSelector: React.FC = () => {
       <div className="bg-white/25 flex flex-col items-center justify-around md:flex-row md:items-start md:justify-around p-2">
         <div className="w-full">
           <div className="bg-white rounded-lg p-4 m-2">
-            <h2 className="text-base md:text-lg font-bold mb-2">Select Dock Plan</h2>
+            <h2 className="text-base text-cvic-red md:text-lg font-bold mb-2">{localeData.RESERVATION.DOCK}</h2>
             <div className="space-y-2">
               {localeData.DOCK_PLANS.map((plan) => (
                 <div
@@ -52,8 +52,8 @@ const DockSelector: React.FC = () => {
           </div>
           <div>
             <div className="bg-white rounded-lg p-4 m-2">
-              <h2 className="text-base md:text-lg font-bold mt-4 mb-2">
-                Select Optional Tests
+              <h2 className="text-base text-cvic-red md:text-lg font-bold mt-4 mb-2">
+                {localeData.RESERVATION.INSPECTION}
               </h2>
               <div className="space-y-2">
                 {localeData.OPTIONAL_TESTS.map((test) => (

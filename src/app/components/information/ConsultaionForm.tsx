@@ -43,7 +43,6 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-
     // Check if any required fields are empty
     if (
       name.trim() === "" ||
@@ -60,7 +59,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
       !termsAgreed
     ) {
       // Set form error message
-      setFormError("Please fill in all required fields.");
+      setFormError(localeData.CONSULTATION.FORM_ERROR);
       return;
     }
 
@@ -79,7 +78,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
   return (
     <div className="bg-white rounded-lg m-2 md:m-0 text-xs md:text-base">
       <form onSubmit={handleSubmit} className="p-4">
-        <h2 className="text-base md:text-lg font-bold mb-4">
+        <h2 className="text-base text-cvic-red md:text-lg font-bold mb-4">
           {localeData.CONSULTATION.CONSULTATION_DATES_AND_DETAILS}
         </h2>
         <div className="flex w-full justify-center">
@@ -246,7 +245,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
           </div>
           </div>
         </div>
-        <div className="flex flex-col w-full justify-center">
+        <div className="flex flex-col w-full justify-center items-center">
           <div className="p-1 md:p-2 lg-[75%]">
             <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.PRESENCE_OF_METAL}</label>
             <label className="inline-flex items-center mt-1">
@@ -269,7 +268,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
             </label>
           </div>
           {metalInBody === "yes" && (
-            <div className="p-1 md:p-2">
+            <div className="p-1 md:p-2 lg:w-[75%]">
               <textarea
                 value={metalDetails}
                 placeholder={localeData.CONSULTATION.DETAILS_OF_METAL_AND_DATE_OF_SURGERY}
