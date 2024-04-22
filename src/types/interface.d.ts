@@ -21,7 +21,7 @@ interface DoctorsProps {}
 
 interface ServicesProps {}
 
-interface StaffProps {}
+interface ReservationProps {}
 
 interface AccessProps {}
 
