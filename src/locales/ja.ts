@@ -376,6 +376,7 @@ const ja = {
     },
   ],
   RESERVATION: {
+    TITLE: "予約",
     DOCK: "ドック基本プラン",
     INSPECTION: "オプション検査",
   },

@@ -378,6 +378,7 @@ const en = {
     },
   ],
   RESERVATION: {
+    TITLE: "Reservation",
     DOCK: "Dock Basic Plan",
     INSPECTION: "Optional Inspection",
   },
