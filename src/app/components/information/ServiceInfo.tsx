@@ -42,7 +42,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, price, in
         <h2 className="text-2xl text-white font-bold mb-4">{title}</h2>
         <Image src={image} alt="title"/>
       </div>
-      <div className='p-4 flex flex-col items-center justify-center'>
+      <div className='p-4'>
         <p className="text-sm md:text-base mb-4 p-2">{description}</p>
         {price ? (
           typeof price === 'string' ? (
@@ -58,9 +58,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, price, in
           <p className="text-lg font-semibold mb-2">Price not available</p>
         )}
         {inclusions && inclusions.length > 0 && (
-          <ul className="list-disc pl-5 mb-4 px-16">
+          <ul className="list-disc pl-5 mb-4">
             {inclusions.map((item: string, index: number) => (
-              <li key={index} className="text-gray-600 text-sm md:text-base lg:text-lg">{item}</li>
+              <li key={index} className="text-gray-600 text-sm md:text-base lg:text-lg px-4">{item}</li>
             ))}
           </ul>
         )}
