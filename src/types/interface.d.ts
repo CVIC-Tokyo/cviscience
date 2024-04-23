@@ -118,3 +118,7 @@ interface PrivacyPolicyModalProps {
 interface ReservationProcessProps {
   locale: string;
 }
+
+interface OptionalServicesInfoProps{
+  locale: string;
+}
