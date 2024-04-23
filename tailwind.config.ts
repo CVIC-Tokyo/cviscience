@@ -9,14 +9,12 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      "cvic-dark": "#820000",
-      "cvic-red": "#8C1515",
-      "cvic-light": "#B83A4B",
-      white: "#FFFFFF",
-      black: "#000000",
-    },
     extend: {
+      colors: {
+        "cvic-dark": "#820000",
+        "cvic-red": "#8C1515",
+        "cvic-light": "#B83A4B",
+      },
       backgroundImage: {
         parallax_sm: 'url("/images/home/blue-wallpaper.jpg")',
         parallax: 'url("/images/home/access_image.png")',

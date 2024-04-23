@@ -46,7 +46,11 @@ const Reservation: React.FC<ReservationProps> = () => {
   };
 
   return (
-    <div className="tile-container" id="staff" ref={containerRef}>
+    <div
+      className="tile-container bg-white/25 p-4"
+      id="staff"
+      ref={containerRef}
+    >
       <div
         className="tile-photo-container"
         onMouseEnter={() => {

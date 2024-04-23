@@ -2,10 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
-import { AiFillCalendar, AiFillPushpin, AiOutlineMail } from "react-icons/ai";
 import { getLocaleData } from "@/utils/helpers";
 import TranslationTab from "./TranslationTab";
-import { motion } from "framer-motion";
+import SNS from "../footercomponents/SNS";
 
 const SideBar: React.FC<SidebarProps> = ({
   showSidebar,
@@ -35,6 +34,13 @@ const SideBar: React.FC<SidebarProps> = ({
           <ul className="uppercase grid grid-cols-2 w-full">
             <Link
               onClick={() => setShowSidebar(false)}
+              href="/"
+              className="sidebar-button"
+            >
+              <li className="py-4 text-sm">{localeData.BASIC.HOME}</li>
+            </Link>
+            <Link
+              onClick={() => setShowSidebar(false)}
               href="/pages/services"
               className="sidebar-button"
             >
@@ -56,17 +62,17 @@ const SideBar: React.FC<SidebarProps> = ({
             </Link>
             <Link
               onClick={() => setShowSidebar(false)}
-              href="/#Access"
+              href="/pages/access"
               className="sidebar-button"
             >
               <li className="py-4 text-sm">{localeData.BASIC.ACCESS}</li>
             </Link>
             <Link
               onClick={() => setShowSidebar(false)}
-              href="/"
+              href="/pages/reservation"
               className="sidebar-button"
             >
-              <li className="py-4 text-sm">More</li>
+              <li className="py-4 text-sm">{localeData.RESERVATION.TITLE}</li>
             </Link>
           </ul>
           <div className="absolute top-0 right-2 flex items-center justify-start my-2">
@@ -74,20 +80,8 @@ const SideBar: React.FC<SidebarProps> = ({
           </div>
           <div className="pt-10">
             <p className="uppercase">{localeData.CONTACT.GET_IN_TOUCH}</p>
-            <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-              <div className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
-                <AiFillPushpin />
-              </div>
-              <div className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
-                <AiFillCalendar />
-              </div>
-              <Link
-                href="/#contact"
-                className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
-                onClick={() => setShowSidebar(false)}
-              >
-                <AiOutlineMail />
-              </Link>
+            <div className="pt-2">
+              <SNS />
             </div>
           </div>
           <div className="border-b border-grey-300 my-4"></div>

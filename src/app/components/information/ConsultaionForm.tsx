@@ -4,15 +4,15 @@ import ReservationModal from "@/app/modals/ReservationModal";
 import PrivacyPolicyModal from "@/app/modals/PrivacyPolicyModal";
 
 const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
-    const localeData = getLocaleData(locale);
-    const [privacyPolicyModalOpen, setPrivacyPolicyModalOpen] = useState(false);
-    const handlePrivacyPolicyModalClose = () => {
-      setPrivacyPolicyModalOpen(false);
-    };
-  
-    const handlePrivacyPolicyClick = () => {
-      setPrivacyPolicyModalOpen(true);
-    };
+  const localeData = getLocaleData(locale);
+  const [privacyPolicyModalOpen, setPrivacyPolicyModalOpen] = useState(false);
+  const handlePrivacyPolicyModalClose = () => {
+    setPrivacyPolicyModalOpen(false);
+  };
+
+  const handlePrivacyPolicyClick = () => {
+    setPrivacyPolicyModalOpen(true);
+  };
   const [consultationDates, setConsultationDates] = useState<string[]>([
     "",
     "",
@@ -49,7 +49,6 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
   const handleConfirmSubmit = () => {
     // Additional logic to handle form submission
   };
-
 
   const handleConsultationDateChange = (index: number, date: string) => {
     const updatedDates = [...consultationDates];
@@ -93,7 +92,6 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
     // Your form submission logic here
   };
 
-
   const currentDate = new Date();
   const oneYearFromNow = new Date();
   oneYearFromNow.setFullYear(currentDate.getFullYear() + 1);
@@ -106,7 +104,9 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
         </h2>
         <div className="flex w-full justify-center">
           <div className="p-1 md:p-2 mb-4">
-            <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.NAME}</label>
+            <label className="block font-semibold text-xs md:text-base">
+              {localeData.CONSULTATION.NAME}
+            </label>
             <input
               type="text"
               value={name}
@@ -115,7 +115,9 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
             />
           </div>
           <div className="mb-4 p-1 md:p-2">
-            <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.SURNAME}</label>
+            <label className="block font-semibold text-xs md:text-base">
+              {localeData.CONSULTATION.SURNAME}
+            </label>
             <input
               type="text"
               value={surname}
@@ -126,7 +128,9 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
         </div>
         <div className="flex w-full justify-center">
           <div className="p-1 md:p-2 mb-4">
-            <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.FURIGANA_NAME}</label>
+            <label className="block font-semibold text-xs md:text-base">
+              {localeData.CONSULTATION.FURIGANA_NAME}
+            </label>
             <input
               type="text"
               value={nameFurigana}
@@ -135,7 +139,9 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
             />
           </div>
           <div className="mb-4 p-1 md:p-2">
-            <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.FURIGANA_SURNAME}</label>
+            <label className="block font-semibold text-xs md:text-base">
+              {localeData.CONSULTATION.FURIGANA_SURNAME}
+            </label>
             <input
               type="text"
               value={surnameFurigana}
@@ -146,7 +152,9 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
         </div>
         <div className="flex w-full justify-center">
           <div className="p-1 md:p-2">
-            <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.PHONE}</label>
+            <label className="block font-semibold text-xs md:text-base">
+              {localeData.CONSULTATION.PHONE}
+            </label>
             <input
               type="text"
               value={phoneNumber}
@@ -155,7 +163,9 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
             />
           </div>
           <div className="p-1 md:p-2">
-            <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.EMAIL}</label>
+            <label className="block font-semibold text-xs md:text-base">
+              {localeData.CONSULTATION.EMAIL}
+            </label>
             <input
               type="email"
               value={email}
@@ -166,15 +176,19 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
         </div>
         <div className="flex w-full justify-center">
           <div className="flex items-center justify-start p-1 md:p-2 mb-4 text-xs md:text-base">
-            <label className="block font-semibold  p-1 md:p-2">{localeData.CONSULTATION.PREFERRED_CONTACT}</label>
+            <label className="block font-semibold  p-1 md:p-2">
+              {localeData.CONSULTATION.PREFERRED_CONTACT}
+            </label>
             <label className="inline-flex items-center mt-1">
               <input
                 type="checkbox"
                 className="form-checkbox md:h-5 md:w-5 text-cvic-red"
                 checked={preferredContact === "phone"}
-                onChange={() => setPreferredContact('phone')}
+                onChange={() => setPreferredContact("phone")}
               />
-              <span className="ml-2 text-gray-700">{localeData.CONSULTATION.PHONE}</span>
+              <span className="ml-2 text-gray-700">
+                {localeData.CONSULTATION.PHONE}
+              </span>
             </label>
             <label className="inline-flex items-center mt-1">
               <input
@@ -183,22 +197,28 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
                 checked={preferredContact === "email"}
                 onChange={() => setPreferredContact("email")}
               />
-              <span className="ml-2 text-gray-700">{localeData.CONSULTATION.EMAIL}</span>
+              <span className="ml-2 text-gray-700">
+                {localeData.CONSULTATION.EMAIL}
+              </span>
             </label>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center p-2">
-          <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.DATE_OF_BIRTH}</label>
+          <label className="block font-semibold text-xs md:text-base">
+            {localeData.CONSULTATION.DATE_OF_BIRTH}
+          </label>
           <input
             type="date"
             value={dateOfBirth}
-            max={currentDate.toISOString().split('T')[0]} // Set maximum date to current date
+            max={currentDate.toISOString().split("T")[0]} // Set maximum date to current date
             onChange={(e) => setDateOfBirth(e.target.value)}
             className="block w-full lg:w-[75%] border border-gray-300 rounded-md px-3 py-2 mt-1"
           />
         </div>
         <div className="flex flex-col items-center justify-center p-2">
-          <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.ADDRESS}</label>
+          <label className="block font-semibold text-xs md:text-base">
+            {localeData.CONSULTATION.ADDRESS}
+          </label>
           <input
             type="text"
             value={address}
@@ -207,17 +227,21 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
           />
         </div>
         {[0, 1, 2].map((index) => (
-          <div key={index} className="flex flex-col md:flex-row mb-4 md:items-center md:justify-center text-xs md:text-base">
+          <div
+            key={index}
+            className="flex flex-col md:flex-row mb-4 md:items-center md:justify-center text-xs md:text-base"
+          >
             <div className="p-1 md:p-2">
               <label className="block font-semibold text-sm md:text-base">
-                {localeData.CONSULTATION.CONSULTATION_DATES_AND_DETAILS} {index + 1}
+                {localeData.CONSULTATION.CONSULTATION_DATES_AND_DETAILS}{" "}
+                {index + 1}
                 {index === 0 ? "st" : index === 1 ? "nd" : "rd"} choice
               </label>
               <input
                 type="date"
                 value={consultationDates[index]}
-                min={currentDate.toISOString().split('T')[0]} // Set minimum date to current date
-                max={oneYearFromNow.toISOString().split('T')[0]} // Set maximum date to one year from now
+                min={currentDate.toISOString().split("T")[0]} // Set minimum date to current date
+                max={oneYearFromNow.toISOString().split("T")[0]} // Set maximum date to one year from now
                 onChange={(e) =>
                   handleConsultationDateChange(index, e.target.value)
                 }
@@ -225,7 +249,9 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
               />
             </div>
             <div className="p-1 md:p-2">
-              <label className="block mt-2 font-semibold text-xs md:text-sm">{localeData.CONSULTATION.TIME_SLOT}</label>
+              <label className="block mt-2 font-semibold text-xs md:text-sm">
+                {localeData.CONSULTATION.TIME_SLOT}
+              </label>
               <input
                 type="text"
                 value={selectedTimeSlots[index]}
@@ -239,15 +265,19 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
 
         <div className="flex flex-col w-full justify-center items-center text-xs md:text-base">
           <div className="p-1 md:p-2 lg:w-[75%]">
-            <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.CONSULTATION_HISTORY}</label>
+            <label className="block font-semibold text-xs md:text-base">
+              {localeData.CONSULTATION.CONSULTATION_HISTORY}
+            </label>
             <label className="inline-flex items-center mt-1">
               <input
                 type="checkbox"
                 className="form-checkbox md:h-5 md:w-5 text-cvic-red"
                 checked={consultationHistory === "firstTime"}
-                onChange={() => setConsultationHistory('firstTime')}
+                onChange={() => setConsultationHistory("firstTime")}
               />
-              <span className="ml-2 text-gray-700">{localeData.CONSULTATION.FIRST_TIME_VISITING}</span>
+              <span className="ml-2 text-gray-700">
+                {localeData.CONSULTATION.FIRST_TIME_VISITING}
+              </span>
             </label>
             <label className="inline-flex items-center mt-1">
               <input
@@ -256,29 +286,35 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
                 checked={consultationHistory === "visitedBefore"}
                 onChange={() => setConsultationHistory("visitedBefore")}
               />
-              <span className="ml-2 text-gray-700">{localeData.CONSULTATION.HAVE_VISITED_BEFORE}</span>
+              <span className="ml-2 text-gray-700">
+                {localeData.CONSULTATION.HAVE_VISITED_BEFORE}
+              </span>
             </label>
-          <div className="p-1 md:p-2">
-            <textarea
-              value={preferredContactTime}
-              placeholder={localeData.CONSULTATION.INQUIRIES}
-              onChange={(e) => setPreferredContactTime(e.target.value)}
-              className="block w-full border border-gray-300 rounded-md px-3 py-2 mt-1"
-            />
-          </div>
+            <div className="p-1 md:p-2">
+              <textarea
+                value={preferredContactTime}
+                placeholder={localeData.CONSULTATION.INQUIRIES}
+                onChange={(e) => setPreferredContactTime(e.target.value)}
+                className="block w-full border border-gray-300 rounded-md px-3 py-2 mt-1"
+              />
+            </div>
           </div>
         </div>
         <div className="flex flex-col w-full justify-center items-center">
           <div className="p-1 md:p-2 lg-[75%]">
-            <label className="block font-semibold text-xs md:text-base">{localeData.CONSULTATION.PRESENCE_OF_METAL}</label>
+            <label className="block font-semibold text-xs md:text-base">
+              {localeData.CONSULTATION.PRESENCE_OF_METAL}
+            </label>
             <label className="inline-flex items-center mt-1">
               <input
                 type="checkbox"
                 className="form-checkbox md:h-5 md:w-5 text-cvic-red"
                 checked={metalInBody === "yes"}
-                onChange={() => setMetalInBody('yes')}
+                onChange={() => setMetalInBody("yes")}
               />
-              <span className="ml-2 text-gray-700">{localeData.CONSULTATION.YES}</span>
+              <span className="ml-2 text-gray-700">
+                {localeData.CONSULTATION.YES}
+              </span>
             </label>
             <label className="inline-flex items-center mt-1">
               <input
@@ -287,14 +323,18 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
                 checked={metalInBody === "no"}
                 onChange={() => setMetalInBody("no")}
               />
-              <span className="ml-2 text-gray-700">{localeData.CONSULTATION.NO}</span>
+              <span className="ml-2 text-gray-700">
+                {localeData.CONSULTATION.NO}
+              </span>
             </label>
           </div>
           {metalInBody === "yes" && (
             <div className="p-1 md:p-2 w-full lg:w-[75%]">
               <textarea
                 value={metalDetails}
-                placeholder={localeData.CONSULTATION.DETAILS_OF_METAL_AND_DATE_OF_SURGERY}
+                placeholder={
+                  localeData.CONSULTATION.DETAILS_OF_METAL_AND_DATE_OF_SURGERY
+                }
                 onChange={(e) => setMetalDetails(e.target.value)}
                 className="block w-full border border-gray-300 rounded-md px-3 py-2 mt-1"
               />
@@ -309,14 +349,16 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
             onChange={() => setTermsAgreed(!termsAgreed)}
           />
           <button
-          type="button"
-          className="text-blue-500 underline cursor-pointer"
-          onClick={handlePrivacyPolicyClick}
-        >
-          {localeData.CONSULTATION.TERMS_OF_USE}
-        </button>
+            type="button"
+            className="text-blue-500 underline cursor-pointer"
+            onClick={handlePrivacyPolicyClick}
+          >
+            {localeData.CONSULTATION.TERMS_OF_USE}
+          </button>
         </div>
-        {formError && <div className="text-cvic-red p-1 md:p-2">{formError}</div>}
+        {formError && (
+          <div className="text-cvic-red p-1 md:p-2">{formError}</div>
+        )}
         <button
           type="submit"
           className="bg-cvic-red text-white px-4 py-2 rounded-md"
@@ -325,32 +367,32 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
           {localeData.CONSULTATION.SUBMIT}
         </button>
       </form>
-      <ReservationModal 
-  isOpen={modalOpen}
-  onClose={() => setModalOpen(false)}
-  onSubmit={handleConfirmSubmit}
-  locale={locale}
-  formData={{ 
-    consultationDates,
-    selectedTimeSlots,
-    name,
-    nameFurigana,
-    surname,
-    surnameFurigana,
-    dateOfBirth,
-    address,
-    email,
-    phoneNumber,
-    preferredContact,
-    consultationHistory,
-    metalInBody,
-    metalDetails,
-    preferredContactTime,
-  }}
->
-  {/* Content of the modal */}
-</ReservationModal>
-<PrivacyPolicyModal
+      <ReservationModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        onSubmit={handleConfirmSubmit}
+        locale={locale}
+        formData={{
+          consultationDates,
+          selectedTimeSlots,
+          name,
+          nameFurigana,
+          surname,
+          surnameFurigana,
+          dateOfBirth,
+          address,
+          email,
+          phoneNumber,
+          preferredContact,
+          consultationHistory,
+          metalInBody,
+          metalDetails,
+          preferredContactTime,
+        }}
+      >
+        {/* Content of the modal */}
+      </ReservationModal>
+      <PrivacyPolicyModal
         isOpen={privacyPolicyModalOpen}
         onClose={handlePrivacyPolicyModalClose}
         locale={locale}

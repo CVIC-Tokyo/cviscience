@@ -92,6 +92,133 @@ const en = {
         4: "Diagnosis Results: 1 week",
       },
     },
+    DOCK: {
+      PREMIUM_PLUS_DOCK: {
+        TITLE: "Premium Dock Plus",
+        DESCRIPTION:
+          "The state-of-the-art dock package combines heart and brain checks with arterial sclerosis measurements for detailed future risk diagnosis using high-sensitivity blood tests.",
+        NO_CONTRAST: "<No contrast agent, low radiation exposure>",
+        TIME_REQUIRED:
+          "Duration: Approximately 4 hours (From check-in and reception to result explanation and billing)",
+        PRICE: "◆ Premium Plus: ¥253,000 (Tax included: ¥278,300)",
+        INCLUSIONS: [
+          " Includes 'comprehensive result explanation' on the same day and 'follow-up' thereafter.",
+          " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
+        ],
+        TARGET:
+          "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, cardiovascular anomalies, strokes, cerebral infarctions, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, cerebral vascular anomalies, and more.",
+        RECOMMENDATION: "We recommend this for your first CVIC heart test.",
+      },
+      HEART_BRAIN_PLUS_DOCK: {
+        TITLE: "Heart + Brain Dock Plus",
+        DESCRIPTION:
+          "This examination set examines the most important brain vessels along with non-contrast (CT/MRI) heart examination menus provided by CVIC. The heart and brain are closely related to common arterial sclerosis. This is an efficient cardiovascular dock that allows for common examination items for both heart and brain at once. The previously used blood vessel calcium score measurement has been improved to more detailed measurements. In addition, a new high-sensitivity blood test has been added, and a comprehensive result explanation is provided based on more comprehensive data.",
+        NO_CONTRAST: "<No contrast agent, low radiation exposure>",
+        TIME_REQUIRED:
+          "Duration: Approximately 3 hours and 30 minutes (From check-in and reception to result explanation and billing)",
+        PRICE: "◆ Heart + Brain Plus: ¥180,000 (Tax included: ¥198,000)",
+        INCLUSIONS: [
+          " Includes 'comprehensive result explanation' on the same day and 'follow-up' thereafter.",
+          " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
+        ],
+        TARGET:
+          "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, cardiovascular anomalies, strokes, cerebral infarctions, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, cerebral vascular anomalies, and more.",
+        RADIATION_CONCERN:
+          "If you are concerned about radiation exposure, CT examination is also possible (However, there are no changes in the amount of money, etc.)",
+        RECOMMENDATION: "For  minimum heart imaging examination, this is recommended.",
+      },
+      HEART_DOCK_PLUS: {
+        RECOMMENDATION: "Combining CT and MRI unique to CVIC",
+        TITLE: "Heart Dock Plus",
+        DESCRIPTION:
+          "It covers the minimum contents of heart imaging examinations performed at CVIC. It is recommended to choose this for the purpose of knowing the current status. However, it is recommended to consider comprehensively with brain examination for early changes and signs that cannot be captured by images alone. Similar to other heart examination courses, the previously used blood vessel calcium score measurement has been improved to more detailed measurements, and a new high-sensitivity blood test has been added to measure risks from more comprehensive data and provide comprehensive result explanations. If you have undergone past CVIC premium docks, etc., or if you have been recommended follow-up with this course by our doctor without abnormalities in the brain, please select this course.",
+        NO_CONTRAST: "<No contrast agent, low radiation exposure>",
+        TIME_REQUIRED:
+          "Duration: Approximately 3 hours (From check-in and reception to result explanation and billing)",
+        PRICE: "◆ Heart Dock Plus: ¥155,000 (Tax included: ¥170,500)",
+        INCLUSIONS: [
+          " Includes 'comprehensive result explanation' on the same day and 'follow-up' thereafter.",
+          " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
+        ],
+        TARGET: "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, and anomalies.",
+        RADIATION_CONCERN: "If you are concerned about radiation exposure, CT examination is also possible (However, there are no changes in the amount of money, etc.)",
+      },
+      BRAIN_CHECKUP: {
+        TITLE: "Brain Dock",
+        DESCRIPTION:
+          "CVIC's unique brain dock combines the expertise of brain imaging specialists with closely related cardiovascular specialists in brain vessel examination to examine asymptomatic small lesions (asymptomatic cerebral infarctions, white matter lesions, microbleeds, etc.). Although it is still an imaging examination to know the current general state, we provide a brain dock that can only be provided by CVIC, which has examined a large number of combinations of brains and blood vessels. Also, a new course with added 'cervical ultrasonography' and 'AI image diagnosis' has been established this time. We will use ultrasonography useful for finding early plaques and the latest AI image analysis to assess brain health.",
+        NO_CONTRAST: "<No contrast agent, no exposure>",
+        TIME_REQUIRED:
+          "Duration: Approximately 2 hours (From check-in and reception to result explanation and billing)",
+        PRICE: {
+          PREMIUM_BRAIN: "◆ Premium Brain Dock: ¥68,000 (Tax included: ¥74,800)",
+          AI_BRAIN: "◆ Brain / AI Dock: ¥61,800 (Tax included: ¥67,980)",
+          BASIC_BRAIN: "◆ Basic Brain Dock: ¥36,000 (Tax included: ¥39,600)",
+          REGULAR_BRAIN: "◆ Brain Dock: ¥29,800 (Tax included: ¥32,780)",
+        },
+        NOTICE:
+          " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
+        TARGET: "Target: Stroke, cerebral infarction, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, anomalies, and more",
+        RECOMMENDATION: "Provided by a cardiologist who examines the blood vessels of the heart.",
+      },
+    },    
+    CVIC_EXAMS: {
+      HEART_MRI_CORONARY_MRA: {
+        TITLE: "Pericardial Fat Measurement",
+        DESCRIPTION: "Diagnoses abnormalities in the shape and function of the heart, as well as clogged coronary arteries, without using contrast agents.",
+        PRICE: "¥40,000 (*¥44,000)",
+      },
+      BRAIN_MRI_CEREBRAL_MRA: {
+        TITLE: "Aortic Examination",
+        DESCRIPTION: "It has a higher ability to detect minute intracerebral hemorrhages than CT, and takes 3D images of blood vessels in the brain to diagnose cerebral aneurysms and clogged blood vessels. Also diagnoses clogged blood vessels in the neck that can cause cerebral infarction.",
+        PRICE: "¥44,000 (*¥48,400)",
+      },
+      BRAIN_AI_ANALYSIS: {
+        TITLE: "Brain AI (artificial intelligence) analysis",
+        DESCRIPTION: "Measuring brain atrophy and cerebrovascular health using AI (artificial intelligence). Analyzing risk management for brain changes due to aging.",
+        PRICE: "¥50,000 (*¥55,000)",
+      },
+      CALC: {
+        TITLE: "Brain AI (Artificial Intelligence) Diagnosis",
+        DESCRIPTION: "The total amount of calcium in the coronary arteries is examined using CT without using a contrast agent. Can predict the possibility of sudden death in the future.",
+        PRICE: "¥50,000 (*¥55,000)",
+      },
+      FAT_MEASUREMENT: {
+        TITLE: "Body Fat (Visceral and Subcutaneous Fat Measurement)",
+        DESCRIPTION: "We use CT to accurately measure visceral fat, which cannot be detected by metabolic measurement during general medical examinations. Recently, it has become a hot topic that even thin people have increased visceral fat, which can also pose a risk for cardiovascular disease and cancer.",
+        PRICE: "¥20,000 (*¥22,000)",
+      },
+      ECHO: {
+        TITLE: "Lung Examination",
+        DESCRIPTION: "By applying ultrasound to the heart and capturing the reflected waves as images, we examine abnormalities in shape and movement in each part of the heart. By performing this in conjunction with an MRI scan, it is possible to diagnose things such as the opening and closing movements of valves, blood flow, and blood regurgitation.",
+        PRICE: "¥22,000 (*¥24,200)",
+      },
+      NECK_ECHO: {
+        TITLE: "Cardiac Echo",
+        DESCRIPTION: "This is a sensitive method for examining arteriosclerosis in the neck blood vessels, and is excellent at detecting plaque in its early stages. Since arteriosclerosis in the carotid arteries reflects arteriosclerosis throughout the body, we diagnose the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
+        PRICE: "¥16,000 (*¥17,600)",
+      },
+      ECG: {
+        TITLE: "Neck Echo",
+        DESCRIPTION: "We perform basic tests to check for heart disease and arrhythmia based on the electrical flow in the heart.",
+        PRICE: "¥10,000 (*¥11,000)",
+      },
+      ABI: {
+        TITLE: "ABI (Arterial Stiffness Measurement)",
+        DESCRIPTION: "By comparing blood pressure in the hands and feet and examining the way pulse waves travel, it detects the degree of arteriosclerosis (aging of blood vessels, etc.) and early vascular disorders, and measures the age of blood vessels.",
+        PRICE: "¥6,000 (*¥6,600)",
+      },
+      CVIC_BLOOD_TEST_SET: {
+        TITLE: "CVIC Blood Test Set",
+        DESCRIPTION: "In addition to conventional heart health tests, CVIC has uniquely set high-sensitivity cardiovascular markers based on global evidence. We evaluate the risk level by subdividing normal values, and provide information on how to reduce risk through lifestyle changes and medication treatment, as well as quantify and visualize the improvement effects, along with the results of image diagnosis.",
+        PRICE: "¥49,800 (*¥54,780)",
+      },
+      COMPREHENSIVE_RESULT_EXPLANATION: {
+        TITLE: "CVIC Blood Test Set+",
+        DESCRIPTION: "In addition to cardiac imaging diagnosis, we use the new CVIC blood test set (biomarker set) to provide comprehensive results explanations, detect early signs, and support your lifestyle to avoid getting sick. After all test results are available, this will be done at a later date in the clinic or online.",
+        PRICE: "¥32,800 (*¥36,080)",
+      },
+    },
   },
   ACCESS: {
     ACCESS_TITLE: "Access Map",
@@ -133,7 +260,7 @@ const en = {
     },
     {
       img: "/images/doctors/DrTakamura.jpg",
-      title: "Director of Cardiac Imaging Clinic Iidabashi",
+      title: "Director",
       name: "Chihiro Takamura",
       history: [
         "1993年: Graduated from Kobe University School of Medicine. Completed training at Kobe University School of Medicine Hospital and affiliated hospitals.",
@@ -149,7 +276,7 @@ const en = {
     },
     {
       img: "/images/doctors/DrItoJ.jpg",
-      title: ["Cardiologist", "Internal Medicine Specialist"],
+      title: "Cardiologist and Internal Medicine Specialist",
       name: "Junko Ito",
       history: [
         "1993年: Graduated from Kobe University School of Medicine. Completed training at Kobe University School of Medicine Hospital and affiliated hospitals.",
@@ -405,7 +532,8 @@ const en = {
     YES: "Yes",
     NO: "No",
     INQUIRIES: "Please write down any request/inquiries",
-    DETAILS_OF_METAL_AND_DATE_OF_SURGERY: "Please write down the details of metal and date of surgery",
+    DETAILS_OF_METAL_AND_DATE_OF_SURGERY:
+      "Please write down the details of metal and date of surgery",
   },
   PRIVACY_POLICY: {
     TITLE: "Personal Information Protection Policy (Privacy Policy)",
@@ -417,7 +545,7 @@ const en = {
       "The purpose of use of personal information will be determined separately.",
       "In addition to the above purposes, we will ask for the consent of the examinee in advance when collecting, using, or disclosing personal information.",
       "We will respond to requests for disclosure of personal information.",
-      "If you have any questions about personal information, we will respond politely."
+      "If you have any questions about personal information, we will respond politely.",
     ],
     NOTE: "Note: Article 2 of the Act on the Protection of Personal Information (Act No. 57 of May 30, 2005) In this Act, 'personal information' is information about living individuals, and is included in the information. Items that can identify a specific individual by the included name, date of birth, or other description (things that can be easily collated with other information and thereby identify a specific individual) Including.)",
     PURPOSE_OF_USE: "Purpose of use of personal information",
@@ -443,15 +571,84 @@ const en = {
       "(2) Present the results of the survey / research at academic conferences / treatises, etc.",
       "(3) Subject to surveys and audits by the Ministry of Health, Labor and Welfare and local governments",
       "(4) Basic materials for maintenance and improvement of medical / nursing services and operations",
-      "(5) Providing information to external auditing organizations"
+      "(5) Providing information to external auditing organizations",
     ],
-    ADDITIONAL_INFO: "If you have any of the above items that you do not agree with, please apply to the consultation desk to that effect. If you do not apply, we will treat it as if you agree. These offers can be withdrawn or changed at any time later. We will inform you when the purpose of use changes.",
-    CLOSING: "Cardiac Imaging Clinic Iidabashi will comply with Japanese laws and regulations regarding the protection of personal information, national guidelines, and other norms, and will establish the following policies. We respect the privacy of patients and strive for proper management and use. Thank you in advance for your understanding and cooperation."
+    ADDITIONAL_INFO:
+      "If you have any of the above items that you do not agree with, please apply to the consultation desk to that effect. If you do not apply, we will treat it as if you agree. These offers can be withdrawn or changed at any time later. We will inform you when the purpose of use changes.",
+    CLOSING:
+      "Cardiac Imaging Clinic Iidabashi will comply with Japanese laws and regulations regarding the protection of personal information, national guidelines, and other norms, and will establish the following policies. We respect the privacy of patients and strive for proper management and use. Thank you in advance for your understanding and cooperation.",
   },
   RESERVATION_MODAL: {
     TITLE: "Confirm Details:",
     CLOSE: "Close",
     CONFIRM: "Confirm",
+  },
+  RESERVATION_PROCESS: {
+    TITLE: "Reservation Process",
+    CONTENT: [
+      "Reservations can be made by phone or through the reservation form on our website.",
+      "TEL: 03-5206-5956",
+      "Phone reception hours: 8:00 AM to 7:00 PM",
+      "We accept reservations online 24/7.",
+      "Please use the reservation form here (Please fill in the required information and submit)",
+      "For inquiries via email, please note that it may take several days to receive a response.",
+      "If you require urgent assistance, please contact us by phone.",
+      "We will contact you to confirm your reservation details.",
+      "Please note:",
+      "- Responses to inquiries received after 5:30 PM will be sent the following day.",
+      "- Responses to inquiries received outside of office hours on the day before a non-business day will be sent on the next business day.",
+      "Closure: None / New Year Holidays (December 30th to January 4th)",
+    ],
+    NOTE: "*Please note that the information provided here is subject to change. For the most accurate and up-to-date information, please contact us directly.",
+  },
+  LOCATION_INFORMATION: {
+    JR_CHUO_SOBU_LINE: {
+      TITLE: "JR Chuo/Sobu Line (Local Stops)",
+      DESCRIPTION: [
+        "5-10 minutes walk from the east exit of JR Chuo/Sobu Line, Iidabashi Station",
+        "① Turn left immediately after exiting the east exit ticket gate.",
+        "② Climb the stairs of the pedestrian bridge in front of you and go straight until you reach the end without turning.",
+        "③ Go down the stairs at the end, and you will be in front of Matsuya.",
+        "④ Go straight for about 2 to 3 minutes until you reach the building one place past Family Mart (it's the building on the corner of a large intersection).",
+        "⑤ There are 4 stairs under the building. Go through the automatic doors and take the elevator to the 4th floor reception.",
+      ],
+    },
+    TOKYO_METRO_LINES: {
+      TITLE:
+        "Tokyo Metro Tozai Line, Namboku Line, Yurakucho Line, Toei Oedo Line",
+      DESCRIPTION: [
+        "5-10 minutes walk from Exit B1 of Iidabashi Station for Tokyo Metro Tozai Line, Namboku Line, Yurakucho Line, Toei Oedo Line",
+        "① Turn left as soon as you reach the ground level from Exit B1.",
+        "② Cross the crosswalk towards Doutor and go straight along the flow under the pedestrian bridge stairs until you see Matsuya.",
+        "③ Go straight for about 2 to 3 minutes until you reach the building one block past Family Mart (it's the building on the corner of a large intersection).",
+        "④ There are 4 stairs under the building. Go through the automatic doors and take the elevator to the 4th floor reception.",
+      ],
+    },
+    TAXI: {
+      TITLE: "Taxi",
+      DESCRIPTION:
+        "There is a taxi stand right next to the east exit of JR Iidabashi Station.",
+    },
+    CAR: {
+      TITLE: "Car",
+      DESCRIPTION:
+        "There is no contracted parking lot. If you are in a wheelchair and are coming to the clinic by car, please use the coin parking lots around the clinic.",
+    },
+    WHEELCHAIR: {
+      TITLE: "Wheelchair",
+      DESCRIPTION:
+        "If you are planning to visit us in a wheelchair: There are no slopes on the stairs under the building, so if you need assistance, please use the intercom (401) to call for a staff member.",
+    },
+  },
+  HEART_MRI_SCAN: {
+    TITLE: "Heart MRI Scan",
+    DESCRIPTION: [
+      "MRI, in simple terms, is a method of creating images of the state of hydrogen nuclei abundant in water and fat in the body using magnets and radio waves. In MRI, a cylindrical device is required to generate a uniform magnetic field, equipped with magnets thousands of times stronger than the Earth's magnetic field (Figure A). It requires highly skilled techniques to create this uniform magnetic field, which is why MRI devices are expensive. Additionally, to receive signals of radio waves generated from the body, receiver coils tailored to each part of the body are necessary. For the heart, dedicated receiver coils are used (B). The body is placed inside the cylindrical magnet with a uniform magnetic field, radio waves are irradiated for a short period, and images are created by receiving radio waves emitted from the body when the radio waves are stopped (C). Looking more closely, it visualizes the behavior of hydrogen nuclei spins (rotation) in the body (D).",
+      "",
+      "First, hydrogen nuclei are aligned in a certain direction in a strong magnetic field. Next, weak radio waves in the frequency band of radio are irradiated, allowing hydrogen nuclei contained in a cross-section of the body to absorb the energy of the radio waves. When the radio wave irradiation is stopped, the absorbed energy is released back, and the signal of the radio waves obtained at that time is visualized by a computer. Note that each time radio waves are irradiated in MRI, the machine generates vibration sounds, which can be quite loud. This is the main cause of the loud noises heard during MRI scans. A major advantage of MRI scans is that they do not use radiation, so there is no concern about 'exposure.'",
+      "",
+      "Furthermore, in heart MRI scans, it is possible to depict coronary arteries without radiation exposure or the use of contrast agents. Simultaneously, evaluation of cardiac pump function (cardiac function) is possible, and the evaluation of cardiac function by heart MRI is considered to be the most reliable and is adopted in various clinical studies on cardiac function. Moreover, contrast-enhanced heart MRI scans using contrast agents have a high potential to obtain all information separately obtained from conventional cardiac image diagnostics such as echocardiography, myocardial scintigraphy, and coronary angiography in about one hour. Therefore, it is called a 'one-stop shop' overseas.",
+    ],
   },
 };
 

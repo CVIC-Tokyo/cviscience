@@ -75,11 +75,11 @@ const Navbar: React.FC<NavbarProps> = () => {
           <Link href="/pages/doctors" className="navbar-button">
             {localeData.BASIC.DOCTORS}
           </Link>
-          <Link href="/#Access" className="navbar-button">
+          <Link href="/pages/access" className="navbar-button">
             {localeData.BASIC.ACCESS}
           </Link>
-          <Link href="/" className="navbar-button border-r-0">
-            {localeData.BASIC.MORE}
+          <Link href="/pages/reservation" className="navbar-button border-r-0">
+            {localeData.RESERVATION.TITLE}
           </Link>
         </div>
       </div>
