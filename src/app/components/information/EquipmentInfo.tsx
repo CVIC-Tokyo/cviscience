@@ -11,7 +11,7 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
 
   const transition = { type: "ease", ease: "easeInOut", duration: 0.5 };
   const focused = {
-    open: { height: "1000px" },
+    open: { height: "70vh" },
     closed: { height: "auto" },
   };
 
@@ -45,19 +45,19 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           </div>
           <div className="relative bg-equipments bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-end justify-end">
             <p className="text-base md:text-[50px] text-white font-extrabold p-2 md:p-4">
-              Vantage Titan
+              {localeData.FACILITIES.TITLES.MRI.VINTAGE_TITAN.TITLE}
             </p>
             <p className="p-2 md:p-4 font-extrabold text-white text-[9px] md:text-base">
-              Toshiba 1.5 Tesla MRI
+              {localeData.FACILITIES.TITLES.MRI.VINTAGE_TITAN.MAKER}
             </p>
           </div>
           <Reveal>
-            <div className={`${focus === 1 ? "flex flex-col" : "hidden"}`}>
-              <h2 className="text-xl font-bold mb-4">
+            <div className={`${focus === 1 ? "flex flex-col h-[50vh] overflow-x-scroll" : "hidden"}`}>
+              <h2 className="text-sm md:text-base lg:text-lg font-bold mb-4 p-2 md:p-4">
                 {localeData.HEART_MRI_SCAN.TITLE}
               </h2>
               {localeData.HEART_MRI_SCAN.DESCRIPTION.map((paragraph, index) => (
-                <p key={index} className="mb-4">
+                <p key={index} className="mb-4 text-xs md:text-base lg:text-lg px-4">
                   {paragraph}
                 </p>
               ))}
@@ -65,7 +65,7 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           </Reveal>
         </motion.div>
 
-        {/* Equipment 2 */}
+        {/* Equipment 2 */} 
         <motion.div
           key={2}
           variants={focused}
@@ -83,10 +83,10 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           </div>
           <div className="relative bg-achieva bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-start justify-end">
             <p className="text-base md:text-[50px] text-white font-extrabold p-2 md:p-4">
-              Achieva DS (Dual Speed)
+              {localeData.FACILITIES.TITLES.MRI.ACHIEVA.TITLE}
             </p>
             <p className="p-2 md:p-4 font-extrabold text-white text-[9px] md:text-base">
-              Philips 1.5 Tesla MRI Machine
+              {localeData.FACILITIES.TITLES.MRI.ACHIEVA.MAKER}
             </p>
           </div>
         </motion.div>
@@ -109,10 +109,10 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           </div>
           <div className="relative bg-incisive bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-end justify-end">
             <p className="text-base md:text-[50px] text-white font-extrabold p-2 md:p-4">
-              Incisive CT
+              {localeData.FACILITIES.TITLES.CT.INCISIVE.TITLE}
             </p>
             <p className="p-2 md:p-4 font-extrabold text-white text-[9px] md:text-base">
-              Philips CT Scanner
+              {localeData.FACILITIES.TITLES.CT.INCISIVE.MAKER}
             </p>
           </div>
         </motion.div>
@@ -135,10 +135,10 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           </div>
           <div className="relative bg-zio bg-cover bg-center h-[140px] md:h-[500px] w-full flex flex-col items-start justify-end">
             <p className="text-base md:text-[50px] text-white font-extrabold p-2 md:p-4">
-              Ziostation2
+              {localeData.FACILITIES.TITLES.ZIO.TITLE}
             </p>
             <p className="p-2 md:p-4 font-extrabold text-white text-[9px] md:text-base">
-              3D Medical Image Processing Workstation
+              {localeData.FACILITIES.TITLES.ZIO.MAKER}
             </p>
           </div>
         </motion.div>
