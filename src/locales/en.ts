@@ -500,6 +500,10 @@ const en = {
     CAR: {
       TITLE: "Car",
       DESCRIPTION: "There is no contracted parking lot. If you are in a wheelchair and are coming to the clinic by car, please use the coin parking lots around the clinic."
+    },
+    WHEELCHAIR: {
+      TITLE: "Wheelchair",
+      DESCRIPTION: "If you are planning to visit us in a wheelchair: There are no slopes on the stairs under the building, so if you need assistance, please use the intercom (401) to call for a staff member."
     }
   },
 };
