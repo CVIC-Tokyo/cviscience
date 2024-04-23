@@ -133,7 +133,7 @@ const en = {
     },
     {
       img: "/images/doctors/DrTakamura.jpg",
-      title: "Director of Cardiac Imaging Clinic Iidabashi",
+      title: "Director",
       name: "Chihiro Takamura",
       history: [
         "1993年: Graduated from Kobe University School of Medicine. Completed training at Kobe University School of Medicine Hospital and affiliated hospitals.",
@@ -149,7 +149,7 @@ const en = {
     },
     {
       img: "/images/doctors/DrItoJ.jpg",
-      title: ["Cardiologist", "Internal Medicine Specialist"],
+      title: "Cardiologist and Internal Medicine Specialist",
       name: "Junko Ito",
       history: [
         "1993年: Graduated from Kobe University School of Medicine. Completed training at Kobe University School of Medicine Hospital and affiliated hospitals.",
@@ -506,6 +506,17 @@ const en = {
       DESCRIPTION: "If you are planning to visit us in a wheelchair: There are no slopes on the stairs under the building, so if you need assistance, please use the intercom (401) to call for a staff member."
     }
   },
+  HEART_MRI_SCAN: {
+    "TITLE": "Heart MRI Scan",
+    "DESCRIPTION": [
+      "MRI, in simple terms, is a method of creating images of the state of hydrogen nuclei abundant in water and fat in the body using magnets and radio waves. In MRI, a cylindrical device is required to generate a uniform magnetic field, equipped with magnets thousands of times stronger than the Earth's magnetic field (Figure A). It requires highly skilled techniques to create this uniform magnetic field, which is why MRI devices are expensive. Additionally, to receive signals of radio waves generated from the body, receiver coils tailored to each part of the body are necessary. For the heart, dedicated receiver coils are used (B). The body is placed inside the cylindrical magnet with a uniform magnetic field, radio waves are irradiated for a short period, and images are created by receiving radio waves emitted from the body when the radio waves are stopped (C). Looking more closely, it visualizes the behavior of hydrogen nuclei spins (rotation) in the body (D).",
+      "",
+      "First, hydrogen nuclei are aligned in a certain direction in a strong magnetic field. Next, weak radio waves in the frequency band of radio are irradiated, allowing hydrogen nuclei contained in a cross-section of the body to absorb the energy of the radio waves. When the radio wave irradiation is stopped, the absorbed energy is released back, and the signal of the radio waves obtained at that time is visualized by a computer. Note that each time radio waves are irradiated in MRI, the machine generates vibration sounds, which can be quite loud. This is the main cause of the loud noises heard during MRI scans. A major advantage of MRI scans is that they do not use radiation, so there is no concern about 'exposure.'",
+      "",
+      "Furthermore, in heart MRI scans, it is possible to depict coronary arteries without radiation exposure or the use of contrast agents. Simultaneously, evaluation of cardiac pump function (cardiac function) is possible, and the evaluation of cardiac function by heart MRI is considered to be the most reliable and is adopted in various clinical studies on cardiac function. Moreover, contrast-enhanced heart MRI scans using contrast agents have a high potential to obtain all information separately obtained from conventional cardiac image diagnostics such as echocardiography, myocardial scintigraphy, and coronary angiography in about one hour. Therefore, it is called a 'one-stop shop' overseas."
+    ]
+  },
+  
 };
 
 export default en;
