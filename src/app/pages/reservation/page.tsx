@@ -6,6 +6,7 @@ import { useGlobalContext } from "@/context/store";
 import "../../../styles/globals.css";
 import ConsultationForm from "@/app/components/information/ConsultaionForm";
 import ReservationProcess from "@/app/components/information/ReservationProcess";
+import ReservationNotice from "@/app/components/information/ReservationNotice";
 
 const DockSelector: React.FC = () => {
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
@@ -88,6 +89,9 @@ const DockSelector: React.FC = () => {
           <ConsultationForm locale={locale} />
         </div>
       </div>
+        <div className="w-full my-4">
+                <ReservationNotice locale={locale} />
+        </div>
     </div>
   );
 };

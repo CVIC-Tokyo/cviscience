@@ -9,6 +9,8 @@ const en = {
     CONTACT: "Contact",
     ACCESS: "Access",
     MORE: "More",
+    TYPE: "Type",
+    REQUIRED_TIME: "Required Time",
   },
   CONTACT: {
     GET_IN_TOUCH: "Get in Touch!",
@@ -437,73 +439,118 @@ const en = {
   OPTIONAL_TESTS: [
     {
       TITLE: "Pericardial Fat Measurement",
+      TYPE: "MRI",
+      TIME: "15 minutes",
       PRICE: "¥40,000 (*¥44,000)",
+      DESCRIPTION: "A test to examine the fat around the heart (risk of myocardial infarction) that accumulates regardless of age or obesity.",
     },
     {
       TITLE: "Aortic Examination",
+      TYPE: "MRI",
+      TIME: "30 minutes",
       PRICE: "¥44,000 (*¥48,400)",
+      DESCRIPTION: "3D imaging of the thoracic and abdominal aorta. Early detection of aortic aneurysms and aortic dissections, which are life-threatening if ruptured.",
     },
     {
       TITLE: "Lumbar and Lower Extremity Vascular Examination",
+      TYPE: "MRI",
+      TIME: "1 hour",
       PRICE: "¥84,000 (*¥92,400)",
+      DESCRIPTION: "Symptoms such as pain and numbness in the legs when walking, which disappear after a short rest, are caused by lumbar spine or lower extremity arterial sclerosis.",
     },
     {
       TITLE: "Brain AI (Artificial Intelligence) Diagnosis",
+      TYPE: "MRI",
+      TIME: "Not specified",
       PRICE: "¥50,000 (*¥55,000)",
+      DESCRIPTION: "Measurement of brain atrophy and brain vascular health using artificial intelligence. Analysis of age-related brain changes and risk management.",
     },
     {
       TITLE: "Body Fat (Visceral and Subcutaneous Fat Measurement)",
+      TYPE: "CT",
+      TIME: "5 minutes",
       PRICE: "¥20,000 (*¥22,000)",
+      DESCRIPTION: "Accurate measurement of visceral fat that cannot be measured in general examinations. Recommended even for thin people to check for metabolic syndrome.",
     },
     {
       TITLE: "Lung Examination",
+      TYPE: "CT",
+      TIME: "10 minutes",
       PRICE: "¥22,000 (*¥24,200)",
+      DESCRIPTION: "CT examination for risks of emphysema, chronic bronchitis, chronic asthma, pneumonia, and lung cancer. Recommended for smokers and former smokers.",
     },
     {
-      TITLE: "Cardiac Echo",
+      TITLE: "Blood Pressure Pulse Wave",
+      TYPE: "Ultrasound",
+      TIME: "30 minutes",
       PRICE: "¥16,000 (*¥17,600)",
+      DESCRIPTION: "Ultrasound examination of the heart to diagnose valve opening and closing movements, blood flow rate, and blood reflux.",
     },
     {
       TITLE: "Neck Echo",
+      TYPE: "Ultrasound",
+      TIME: "30 minutes",
       PRICE: "¥10,000 (*¥11,000)",
+      DESCRIPTION: "Ultrasound examination of the neck blood vessels to diagnose arteriosclerosis. Determines the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
     },
     {
       TITLE: "ABI (Arterial Stiffness Measurement)",
+      TYPE: "Blood Pressure Pulse Wave",
+      TIME: "10 minutes",
       PRICE: "¥6,000 (*¥6,600)",
+      DESCRIPTION: "Examines the comparison of blood pressure between the hands and feet and the transmission of pulse waves to determine arterial stiffness and vascular age. Reveals the risk of cerebral infarction and myocardial infarction.",
     },
     {
       TITLE: "CVIC Blood Test Set",
+      TYPE: "Blood Draw",
+      TIME: "10 minutes",
       PRICE: "¥49,800 (*¥54,780)",
+      DESCRIPTION: "Includes high-sensitivity CRP, heart failure markers, and troponin, as well as advanced blood markers that cannot be performed under insurance. A set of 30 items selected by the clinic's doctor (21 items in 2021).",
     },
     {
-      TITLE: "CVIC Blood Test Set+",
+      TITLE: "CVIC Blood Test Set++",
+      TYPE: "Blood Draw",
+      TIME: "10 minutes",
       PRICE: "¥32,800 (*¥36,080)",
+      DESCRIPTION: "A set of 8 carefully selected items including secondary hypertension and thyroid.",
     },
     {
       TITLE: "Simple Cancer Tumor Marker Set",
+      TYPE: "Blood Draw",
+      TIME: "10 minutes",
       PRICE: "¥10,000 (*¥11,000)",
+      DESCRIPTION: "When cancer develops in the body, special substances may increase abnormally in the blood. This set indicates the possibility of cancer.",
     },
     {
       TITLE: "Full Body Cancer Tumor Marker Set",
+      TYPE: "Blood Draw",
+      TIME: "10 minutes",
       PRICE: "¥78,000 (*¥85,800)",
+      DESCRIPTION: "A set of cancer tumor markers for the entire body, including the esophagus, lungs, stomach, bile ducts, pancreas, large intestine, bladder, kidneys, liver cells, testicles, breast cancer, ovaries, and uterus.",
     },
     {
       TITLE: "MCI Screening Test",
+      TYPE: "Blood Draw",
+      TIME: "10 minutes",
       PRICE: "¥30,000 (*¥33,000)",
+      DESCRIPTION: "MCI (mild cognitive impairment) screening test measures the amount of proteins in the blood involved in the progression of Alzheimer's disease.",
     },
     {
       TITLE: "Holter Electrocardiogram",
+      TYPE: "Electrocardiogram",
+      TIME: "24-hour measurement Return visit or consultation included",
       PRICE: "¥30,000 (*¥33,000)",
+      DESCRIPTION: "Records electrocardiograms over a long period of time (24 hours) using a portable miniature electrocardiograph to examine heartbeats during daily activities.",
     },
     {
       TITLE: "Af・SAS Screening Test",
+      TYPE: "Electrocardiogram",
+      TIME: "3-day measurement *Return kit included",
       PRICE: "¥40,000 (*¥44,000)",
-    },
-    {
-      TITLE: "I would like recommendations",
-      PRICE: "",
+      DESCRIPTION: "Convenient health check for trends in atrial fibrillation (Af) and sleep apnea syndrome (SAS) and obstructive sleep apnea syndrome (OSA) using an electrocardiograph.",
     },
   ],
+  
   RESERVATION: {
     TITLE: "Reservation",
     DOCK: "Dock Basic Plan",
@@ -650,6 +697,15 @@ const en = {
       "Furthermore, in heart MRI scans, it is possible to depict coronary arteries without radiation exposure or the use of contrast agents. Simultaneously, evaluation of cardiac pump function (cardiac function) is possible, and the evaluation of cardiac function by heart MRI is considered to be the most reliable and is adopted in various clinical studies on cardiac function. Moreover, contrast-enhanced heart MRI scans using contrast agents have a high potential to obtain all information separately obtained from conventional cardiac image diagnostics such as echocardiography, myocardial scintigraphy, and coronary angiography in about one hour. Therefore, it is called a 'one-stop shop' overseas.",
     ],
   },
+  RESERVATION_NOTICE: {
+    TITLE: "For those who live in Japan but do not have a Japanese insurance card, those wishing to receive medical treatment from overseas, and agents on their behalf",
+    CONTENT: "For reservations made by individuals or their representatives, in addition to the above amount,",
+    DETAILS: [
+      "① Interpretation fees and translation fees are required separately (costs vary depending on the plan, so please check the plan for details and we will provide a quote after the plan is determined).",
+      "② Separate fees will be charged for plans and contents not listed in the above price list.",
+      "※ Please note that the specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services."
+    ]
+  }
 };
 
 export default en;
