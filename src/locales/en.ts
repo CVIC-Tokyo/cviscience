@@ -697,6 +697,15 @@ const en = {
       "Furthermore, in heart MRI scans, it is possible to depict coronary arteries without radiation exposure or the use of contrast agents. Simultaneously, evaluation of cardiac pump function (cardiac function) is possible, and the evaluation of cardiac function by heart MRI is considered to be the most reliable and is adopted in various clinical studies on cardiac function. Moreover, contrast-enhanced heart MRI scans using contrast agents have a high potential to obtain all information separately obtained from conventional cardiac image diagnostics such as echocardiography, myocardial scintigraphy, and coronary angiography in about one hour. Therefore, it is called a 'one-stop shop' overseas.",
     ],
   },
+  RESERVATION_NOTICE: {
+    TITLE: "For those who live in Japan but do not have a Japanese insurance card, those wishing to receive medical treatment from overseas, and agents on their behalf",
+    CONTENT: "For reservations made by individuals or their representatives, in addition to the above amount,",
+    DETAILS: [
+      "① Interpretation fees and translation fees are required separately (costs vary depending on the plan, so please check the plan for details and we will provide a quote after the plan is determined).",
+      "② Separate fees will be charged for plans and contents not listed in the above price list.",
+      "※ Please note that the specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services."
+    ]
+  }
 };
 
 export default en;
