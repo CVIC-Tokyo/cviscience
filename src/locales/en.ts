@@ -92,74 +92,76 @@ const en = {
         4: "Diagnosis Results: 1 week",
       },
     },
-    PREMIUM_PLUS_DOCK: {
-      TITLE: "Premium Dock Plus",
-      DESCRIPTION:
-        "This is a state-of-the-art medical check-up that combines a heart check-up, a brain check-up, and a ''blood biomarker test'' that combines high-sensitivity blood tests with arteriosclerosis measurements to diagnose future risks in more detail.",
-      RECOMMENDATION: "We recommend this for your first CVIC heart test.",
-      NO_CONTRAST: "<No contrast agent, low exposure>",
-      TIME_REQUIRED:
-        "Approximately 4 hours (approximate time from visit/reception to explanation of results and payment)",
-      PRICE: "¥253,000 (¥278,300 including tax)",
-      INCLUSIONS: [
-        "In addition to the explanation of the results on the day, ''comprehensive results explanation later'' and ''follow-up'' are included.",
-        "Please note that the specifications, provision items, prices, etc. of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
-      ],
-      TARGET:
-        "Target: myocardial infarction, angina pectoris, cardiomyopathy, Kawasaki disease, valvular heart disease, dangerous arrhythmia, cardiovascular malformations, stroke, cerebral infarction, arteriosclerosis, asymptomatic, unruptured aneurysm, cerebrovascular stenosis, brain tumor. , cerebrovascular malformations, and other symptoms at an earlier stage and provide further follow-up.",
-    },
-    HEART_BRAIN_PLUS_DOCK: {
-      TITLE: "Heart + Brain Dock Plus",
-      DESCRIPTION:
-        "This is a comprehensive cardiovascular system check-up offered by CVIC. It includes a non-contrast (CT/MRI) heart examination menu, as well as an examination set that investigates the most important blood vessels in the heart and brain. The heart and brain are deeply related to common arteriosclerosis. It is an efficient cardiovascular system dock that allows you to perform common examination items for them at once. You can now check the vascular calcium score measurement in more detail than ever before. In addition, a new high-sensitivity blood test has been added to measure risks from more comprehensive data and provide comprehensive result explanations.",
-      RECOMMENDATION:
-        "It's essential to have a heart imaging test like no other.",
-      NO_CONTRAST: "<No contrast agent, low exposure>",
-      TIME_REQUIRED:
-        "Approximately 3 hours and 30 minutes (estimated time from visit/reception to explanation of results and payment)",
-      PRICE: "◆ Heart + Brain Plus: ¥180,000 (¥198,000 including tax)",
-      INCLUSIONS: [
-        "* In addition to explanation of results on the day, comprehensive result explanation later is included.",
-        "* Please note that specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
-      ],
-      TARGET:
-        "Target: myocardial infarction, angina pectoris, cardiomyopathy, Kawasaki disease, valvular heart disease, dangerous arrhythmia, cardiovascular malformations, stroke, cerebral infarction, arteriosclerosis, asymptomatic, unruptured aneurysm, cerebrovascular stenosis, brain tumor, cerebrovascular malformations, and more.",
-      RADIATION_CONCERN:
-        "For those concerned about radiation exposure, CT examination without contrast is also possible (however, there will be no changes in fees, etc.).",
-    },
-    HEART_DOCK_PLUS: {
-      TITLE: "Heart Dock Plus",
-      DESCRIPTION:
-        "It covers the minimum content of heart imaging tests performed by CVIC, providing an overview of the current state. It is recommended for those who choose to know their current status first. However, for early changes or signs that cannot be captured by images alone, it is recommended to comprehensively assess them together with brain examinations. Similar to other heart examination courses, it allows for checking the vascular calcium score measurement in more detail than ever before, and additionally, a new high-sensitivity blood test has been added to measure risks from more comprehensive data and provide comprehensive result explanations. Those who have undergone previous CVIC premium docks or have been recommended follow-up with this course by our physicians due to no abnormalities in the brain are encouraged to select this course.",
-      NO_CONTRAST: "<No contrast agent, low exposure>",
-      TIME_REQUIRED:
-        "Approximately 3 hours (estimated time from visit/reception to explanation of results and payment)",
-      PRICE: "◆ Heart Dock Plus: ¥155,000 (¥170,500 including tax)",
-      INCLUSIONS: [
-        "* In addition to explanation of results on the day, comprehensive result explanation later is included.",
-        "* Please note that specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
-      ],
-      TARGET:
-        "Target: myocardial infarction, angina pectoris, cardiomyopathy, Kawasaki disease, valvular heart disease, dangerous arrhythmia, malformations, and more.",
-      RADIATION_CONCERN:
-        "For those concerned about radiation exposure, CT examination without contrast is also possible (however, there will be no changes in fees, etc.).",
-    },
-    BRAIN_CHECKUP: {
-      TITLE: "Brain Checkup",
-      DESCRIPTION:
-        "A unique brain checkup offered by CVIC, combining the expertise of specialists in brain imaging and the intricate evaluation of brain and heart blood vessels by cardiovascular specialists. This comprehensive checkup examines asymptomatic minor lesions such as silent cerebral infarction, cerebral white matter lesions, and microbleeds. While it remains an imaging test to understand the current state, this brain checkup by CVIC, with its extensive experience in assessing brain and vascular conditions, offers a unique insight. Additionally, a new course has been introduced, incorporating carotid ultrasound and AI image diagnosis. Utilizing ultrasound for early plaque detection and the latest AI image analysis, we assess brain health.",
-      NO_CONTRAST: "<No contrast agent, no radiation exposure>",
-      TIME_REQUIRED:
-        "Approximately 2 hours (time from visit/reception to explanation of results and payment)",
-      PREMIUM_BRAIN: "◆ Premium Brain Checkup: ¥68,000 (¥74,800 including tax)",
-      AI_BRAIN: "◆ Brain + AI Dock: ¥61,800 (¥67,980 including tax)",
-      BASIC_BRAIN: "◆ Basic Brain Checkup: ¥36,000 (¥39,600 including tax)",
-      REGULAR_BRAIN: "◆ Regular Brain Checkup: ¥29,800 (¥32,780 including tax)",
-      NOTICE:
-        "※ Specifications, provision items, prices, etc. of the listed checkups may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
-      TARGET:
-        "Target: Stroke, cerebral infarction, arteriosclerosis, asymptomatic, unruptured aneurysm, cerebral vascular stenosis, brain tumor, malformations, and others",
-    },
+    DOCK: {
+      PREMIUM_PLUS_DOCK: {
+        TITLE: "Premium Dock Plus",
+        DESCRIPTION:
+          "The state-of-the-art dock package combines heart and brain checks with arterial sclerosis measurements for detailed future risk diagnosis using high-sensitivity blood tests.",
+        NO_CONTRAST: "<No contrast agent, low radiation exposure>",
+        TIME_REQUIRED:
+          "Duration: Approximately 4 hours (From check-in and reception to result explanation and billing)",
+        PRICE: "◆ Premium Plus: ¥253,000 (Tax included: ¥278,300)",
+        INCLUSIONS: [
+          " Includes 'comprehensive result explanation' on the same day and 'follow-up' thereafter.",
+          " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
+        ],
+        TARGET:
+          "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, cardiovascular anomalies, strokes, cerebral infarctions, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, cerebral vascular anomalies, and more.",
+        RECOMMENDATION: "We recommend this for your first CVIC heart test.",
+      },
+      HEART_BRAIN_PLUS_DOCK: {
+        TITLE: "Heart + Brain Dock Plus",
+        DESCRIPTION:
+          "This examination set examines the most important brain vessels along with non-contrast (CT/MRI) heart examination menus provided by CVIC. The heart and brain are closely related to common arterial sclerosis. This is an efficient cardiovascular dock that allows for common examination items for both heart and brain at once. The previously used blood vessel calcium score measurement has been improved to more detailed measurements. In addition, a new high-sensitivity blood test has been added, and a comprehensive result explanation is provided based on more comprehensive data.",
+        NO_CONTRAST: "<No contrast agent, low radiation exposure>",
+        TIME_REQUIRED:
+          "Duration: Approximately 3 hours and 30 minutes (From check-in and reception to result explanation and billing)",
+        PRICE: "◆ Heart + Brain Plus: ¥180,000 (Tax included: ¥198,000)",
+        INCLUSIONS: [
+          " Includes 'comprehensive result explanation' on the same day and 'follow-up' thereafter.",
+          " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
+        ],
+        TARGET:
+          "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, cardiovascular anomalies, strokes, cerebral infarctions, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, cerebral vascular anomalies, and more.",
+        RADIATION_CONCERN:
+          "If you are concerned about radiation exposure, CT examination is also possible (However, there are no changes in the amount of money, etc.)",
+        RECOMMENDATION: "For  minimum heart imaging examination, this is recommended.",
+      },
+      HEART_DOCK_PLUS: {
+        RECOMMENDATION: "Combining CT and MRI unique to CVIC",
+        TITLE: "Heart Dock Plus",
+        DESCRIPTION:
+          "It covers the minimum contents of heart imaging examinations performed at CVIC. It is recommended to choose this for the purpose of knowing the current status. However, it is recommended to consider comprehensively with brain examination for early changes and signs that cannot be captured by images alone. Similar to other heart examination courses, the previously used blood vessel calcium score measurement has been improved to more detailed measurements, and a new high-sensitivity blood test has been added to measure risks from more comprehensive data and provide comprehensive result explanations. If you have undergone past CVIC premium docks, etc., or if you have been recommended follow-up with this course by our doctor without abnormalities in the brain, please select this course.",
+        NO_CONTRAST: "<No contrast agent, low radiation exposure>",
+        TIME_REQUIRED:
+          "Duration: Approximately 3 hours (From check-in and reception to result explanation and billing)",
+        PRICE: "◆ Heart Dock Plus: ¥155,000 (Tax included: ¥170,500)",
+        INCLUSIONS: [
+          " Includes 'comprehensive result explanation' on the same day and 'follow-up' thereafter.",
+          " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
+        ],
+        TARGET: "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, and anomalies.",
+        RADIATION_CONCERN: "If you are concerned about radiation exposure, CT examination is also possible (However, there are no changes in the amount of money, etc.)",
+      },
+      BRAIN_CHECKUP: {
+        TITLE: "Brain Dock",
+        DESCRIPTION:
+          "CVIC's unique brain dock combines the expertise of brain imaging specialists with closely related cardiovascular specialists in brain vessel examination to examine asymptomatic small lesions (asymptomatic cerebral infarctions, white matter lesions, microbleeds, etc.). Although it is still an imaging examination to know the current general state, we provide a brain dock that can only be provided by CVIC, which has examined a large number of combinations of brains and blood vessels. Also, a new course with added 'cervical ultrasonography' and 'AI image diagnosis' has been established this time. We will use ultrasonography useful for finding early plaques and the latest AI image analysis to assess brain health.",
+        NO_CONTRAST: "<No contrast agent, no exposure>",
+        TIME_REQUIRED:
+          "Duration: Approximately 2 hours (From check-in and reception to result explanation and billing)",
+        PRICE: {
+          PREMIUM_BRAIN: "◆ Premium Brain Dock: ¥68,000 (Tax included: ¥74,800)",
+          AI_BRAIN: "◆ Brain / AI Dock: ¥61,800 (Tax included: ¥67,980)",
+          BASIC_BRAIN: "◆ Basic Brain Dock: ¥36,000 (Tax included: ¥39,600)",
+          REGULAR_BRAIN: "◆ Brain Dock: ¥29,800 (Tax included: ¥32,780)",
+        },
+        NOTICE:
+          " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
+        TARGET: "Target: Stroke, cerebral infarction, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, anomalies, and more",
+        RECOMMENDATION: "Provided by a cardiologist who examines the blood vessels of the heart.",
+      },
+    },    
     CVIC_EXAMS: {
       HEART_MRI_CORONARY_MRA: {
         ENGLISH: "① Heart MRI & Coronary MRA",
