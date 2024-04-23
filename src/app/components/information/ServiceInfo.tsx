@@ -37,7 +37,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, price, in
   const image = imageMap[title];
 
   return (
-    <div className=" bg-white h-auto rounded-lg shadow-md">
+    <div className=" bg-white h-auto rounded-lg shadow-md pb-8 relative">
       <div className='bg-cvic-red p-1 md:p-2 rounded-t-lg flex flex-col items-center justify-center shadow-lg'>
         <h2 className="text-2xl text-white font-bold mb-4">{title}</h2>
         <Image src={image} alt="title"/>
@@ -46,11 +46,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, price, in
         <p className="text-sm md:text-base mb-4 p-2">{description}</p>
         {price ? (
           typeof price === 'string' ? (
-            <p className="font-semibold text-base md:text-lg mb-2">{price}</p>
+            <p className="font-semibold text-sm md:text-base lg:text-lg mb-2">{price}</p>
           ) : (
-            <div className="text-base md:text-lg mb-2">
+            <div className="text-sm md:text-base lg:text-lg mb-2">
               {Object.entries(price).map(([key, value], index) => (
-                <p key={index}><span className="font-bold"></span> <span className="font-semibold mb-2">{value}</span></p>
+                <p key={index}> <span className="font-semibold text-sm md:text-base lg:text-lg mb-2">{value}</span></p>
               ))}
             </div>
           )
@@ -60,19 +60,21 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, price, in
         {inclusions && inclusions.length > 0 && (
           <ul className="list-disc pl-5 mb-4">
             {inclusions.map((item: string, index: number) => (
-              <li key={index} className="text-gray-600">{item}</li>
+              <li key={index} className="text-gray-600 text-sm md:text-base lg:text-lg">{item}</li>
             ))}
           </ul>
         )}
-        <p className="text-gray-600 mb-2 text-xs md:text-sm">{target}</p>
-        <p className="mb-2 text-xs md:text-sm italic text-cvic-red">{recommendation ? recommendation : null}</p>
-        <div className='w-full flex items-end justify-end'>
-          <Link className='bg-cvic-red text-white px-4 py-2 rounded-md'
-          href={'/pages/reservation'} >
-            {localeData.RESERVATION.TITLE}
-          </Link>
+        <div className='w-full p-8 '>
+          <p className="text-black mb-2 text-[10px] md:text-sm">{target}</p>
         </div>
+        
+        
+      <p className="mb-2 text-[10px] md:text-xs italic text-cvic-red">{recommendation ? recommendation : null}</p>
       </div>
+          <Link className='absolute bottom-2 right-2 bg-cvic-red text-white px-4 py-2 rounded-md'
+          href={'/pages/reservation'} >
+            <p className='text-xs md:text-base'>{localeData.RESERVATION.TITLE}</p>
+          </Link>
     </div>
   );
 };
