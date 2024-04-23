@@ -6,6 +6,7 @@ import { AiFillCalendar, AiFillPushpin, AiOutlineMail } from "react-icons/ai";
 import { getLocaleData } from "@/utils/helpers";
 import TranslationTab from "./TranslationTab";
 import { motion } from "framer-motion";
+import SNS from "../footercomponents/SNS";
 
 const SideBar: React.FC<SidebarProps> = ({
   showSidebar,
@@ -34,6 +35,13 @@ const SideBar: React.FC<SidebarProps> = ({
         <div className="py-4 flex flex-col w-full">
           <ul className="uppercase grid grid-cols-2 w-full">
             <Link
+            onClick={() => setShowSidebar(false)}
+            href="/"
+            className="sidebar-button"
+            >
+              <li className="py-4 text-sm">{localeData.BASIC.HOME}</li>
+            </Link>
+            <Link
               onClick={() => setShowSidebar(false)}
               href="/pages/services"
               className="sidebar-button"
@@ -56,7 +64,7 @@ const SideBar: React.FC<SidebarProps> = ({
             </Link>
             <Link
               onClick={() => setShowSidebar(false)}
-              href="/#Access"
+              href="/pages/access"
               className="sidebar-button"
             >
               <li className="py-4 text-sm">{localeData.BASIC.ACCESS}</li>
@@ -74,20 +82,8 @@ const SideBar: React.FC<SidebarProps> = ({
           </div>
           <div className="pt-10">
             <p className="uppercase">{localeData.CONTACT.GET_IN_TOUCH}</p>
-            <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-              <div className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
-                <AiFillPushpin />
-              </div>
-              <div className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
-                <AiFillCalendar />
-              </div>
-              <Link
-                href="/pages/reservation"
-                className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
-                onClick={() => setShowSidebar(false)}
-              >
-                <AiOutlineMail />
-              </Link>
+            <div className="pt-2">
+              <SNS />
             </div>
           </div>
           <div className="border-b border-grey-300 my-4"></div>
