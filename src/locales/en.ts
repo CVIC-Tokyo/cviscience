@@ -92,6 +92,131 @@ const en = {
         4: "Diagnosis Results: 1 week",
       },
     },
+    PREMIUM_PLUS_DOCK: {
+      TITLE: "Premium Dock Plus",
+      DESCRIPTION:
+        "This is a state-of-the-art medical check-up that combines a heart check-up, a brain check-up, and a ''blood biomarker test'' that combines high-sensitivity blood tests with arteriosclerosis measurements to diagnose future risks in more detail.",
+      RECOMMENDATION: "We recommend this for your first CVIC heart test.",
+      NO_CONTRAST: "<No contrast agent, low exposure>",
+      TIME_REQUIRED:
+        "Approximately 4 hours (approximate time from visit/reception to explanation of results and payment)",
+      PRICE: "¥253,000 (¥278,300 including tax)",
+      INCLUSIONS: [
+        "In addition to the explanation of the results on the day, ''comprehensive results explanation later'' and ''follow-up'' are included.",
+        "Please note that the specifications, provision items, prices, etc. of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
+      ],
+      TARGET:
+        "Target: myocardial infarction, angina pectoris, cardiomyopathy, Kawasaki disease, valvular heart disease, dangerous arrhythmia, cardiovascular malformations, stroke, cerebral infarction, arteriosclerosis, asymptomatic, unruptured aneurysm, cerebrovascular stenosis, brain tumor. , cerebrovascular malformations, and other symptoms at an earlier stage and provide further follow-up.",
+    },
+    HEART_BRAIN_PLUS_DOCK: {
+      TITLE: "Heart + Brain Dock Plus",
+      DESCRIPTION:
+        "This is a comprehensive cardiovascular system check-up offered by CVIC. It includes a non-contrast (CT/MRI) heart examination menu, as well as an examination set that investigates the most important blood vessels in the heart and brain. The heart and brain are deeply related to common arteriosclerosis. It is an efficient cardiovascular system dock that allows you to perform common examination items for them at once. You can now check the vascular calcium score measurement in more detail than ever before. In addition, a new high-sensitivity blood test has been added to measure risks from more comprehensive data and provide comprehensive result explanations.",
+      RECOMMENDATION:
+        "It's essential to have a heart imaging test like no other.",
+      NO_CONTRAST: "<No contrast agent, low exposure>",
+      TIME_REQUIRED:
+        "Approximately 3 hours and 30 minutes (estimated time from visit/reception to explanation of results and payment)",
+      PRICE: "◆ Heart + Brain Plus: ¥180,000 (¥198,000 including tax)",
+      INCLUSIONS: [
+        "* In addition to explanation of results on the day, comprehensive result explanation later is included.",
+        "* Please note that specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
+      ],
+      TARGET:
+        "Target: myocardial infarction, angina pectoris, cardiomyopathy, Kawasaki disease, valvular heart disease, dangerous arrhythmia, cardiovascular malformations, stroke, cerebral infarction, arteriosclerosis, asymptomatic, unruptured aneurysm, cerebrovascular stenosis, brain tumor, cerebrovascular malformations, and more.",
+      RADIATION_CONCERN:
+        "For those concerned about radiation exposure, CT examination without contrast is also possible (however, there will be no changes in fees, etc.).",
+    },
+    HEART_DOCK_PLUS: {
+      TITLE: "Heart Dock Plus",
+      DESCRIPTION:
+        "It covers the minimum content of heart imaging tests performed by CVIC, providing an overview of the current state. It is recommended for those who choose to know their current status first. However, for early changes or signs that cannot be captured by images alone, it is recommended to comprehensively assess them together with brain examinations. Similar to other heart examination courses, it allows for checking the vascular calcium score measurement in more detail than ever before, and additionally, a new high-sensitivity blood test has been added to measure risks from more comprehensive data and provide comprehensive result explanations. Those who have undergone previous CVIC premium docks or have been recommended follow-up with this course by our physicians due to no abnormalities in the brain are encouraged to select this course.",
+      NO_CONTRAST: "<No contrast agent, low exposure>",
+      TIME_REQUIRED:
+        "Approximately 3 hours (estimated time from visit/reception to explanation of results and payment)",
+      PRICE: "◆ Heart Dock Plus: ¥155,000 (¥170,500 including tax)",
+      INCLUSIONS: [
+        "* In addition to explanation of results on the day, comprehensive result explanation later is included.",
+        "* Please note that specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
+      ],
+      TARGET:
+        "Target: myocardial infarction, angina pectoris, cardiomyopathy, Kawasaki disease, valvular heart disease, dangerous arrhythmia, malformations, and more.",
+      RADIATION_CONCERN:
+        "For those concerned about radiation exposure, CT examination without contrast is also possible (however, there will be no changes in fees, etc.).",
+    },
+    BRAIN_CHECKUP: {
+      TITLE: "Brain Checkup",
+      DESCRIPTION:
+        "A unique brain checkup offered by CVIC, combining the expertise of specialists in brain imaging and the intricate evaluation of brain and heart blood vessels by cardiovascular specialists. This comprehensive checkup examines asymptomatic minor lesions such as silent cerebral infarction, cerebral white matter lesions, and microbleeds. While it remains an imaging test to understand the current state, this brain checkup by CVIC, with its extensive experience in assessing brain and vascular conditions, offers a unique insight. Additionally, a new course has been introduced, incorporating carotid ultrasound and AI image diagnosis. Utilizing ultrasound for early plaque detection and the latest AI image analysis, we assess brain health.",
+      NO_CONTRAST: "<No contrast agent, no radiation exposure>",
+      TIME_REQUIRED:
+        "Approximately 2 hours (time from visit/reception to explanation of results and payment)",
+      PREMIUM_BRAIN: "◆ Premium Brain Checkup: ¥68,000 (¥74,800 including tax)",
+      AI_BRAIN: "◆ Brain + AI Dock: ¥61,800 (¥67,980 including tax)",
+      BASIC_BRAIN: "◆ Basic Brain Checkup: ¥36,000 (¥39,600 including tax)",
+      REGULAR_BRAIN: "◆ Regular Brain Checkup: ¥29,800 (¥32,780 including tax)",
+      NOTICE:
+        "※ Specifications, provision items, prices, etc. of the listed checkups may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
+      TARGET:
+        "Target: Stroke, cerebral infarction, arteriosclerosis, asymptomatic, unruptured aneurysm, cerebral vascular stenosis, brain tumor, malformations, and others",
+    },
+    CVIC_EXAMS: {
+      HEART_MRI_CORONARY_MRA: {
+        ENGLISH: "① Heart MRI & Coronary MRA",
+        DESCRIPTION:
+          "Diagnoses abnormalities, functions, and blockages in the coronary arteries without using contrast agents.",
+      },
+      BRAIN_MRI_CEREBRAL_MRA: {
+        ENGLISH: "② Brain MRI & Cerebral MRA",
+        DESCRIPTION:
+          "Captures smaller brain lesions like microbleeds more effectively than CT scans, diagnoses conditions such as brain aneurysms and blockages in the blood vessels. Also diagnoses blockages in neck arteries that may cause strokes.",
+      },
+      BRAIN_AI_ANALYSIS: {
+        ENGLISH: "③ Brain AI Analysis",
+        DESCRIPTION:
+          "Measures brain atrophy and vascular health using artificial intelligence, analyzing risk management for age-related brain changes.",
+      },
+      CALC: {
+        ENGLISH: "④ CALC (Coronary Artery Calcification Score)",
+        DESCRIPTION:
+          "Uses CT without contrast agents to examine the total amount of calcium in the coronary arteries. Provides the only index for predicting the risk of sudden death in the future.",
+      },
+      FAT_MEASUREMENT: {
+        ENGLISH: "⑤ Fat Measurement (Visceral & Subcutaneous Fat)",
+        DESCRIPTION:
+          "Accurately measures visceral fat using CT, which cannot be measured in general metabolic measurements. The increase in visceral fat, even in thin individuals, is a topic of discussion and poses risks of cardiovascular disease and cancer.",
+      },
+      ECHO: {
+        ENGLISH: "⑥ Echocardiogram",
+        DESCRIPTION:
+          "Uses ultrasound to capture reflected waves to examine abnormalities and movements in each part of the heart. When combined with MRI, it diagnoses valve movements, blood flow rates, and blood backflow.",
+      },
+      NECK_ECHO: {
+        ENGLISH: "⑦ Neck Ultrasound",
+        DESCRIPTION:
+          "Sensitively examines arterial sclerosis in neck blood vessels, excelling in detecting early plaques. Arterial sclerosis in neck arteries reflects arterial sclerosis throughout the body, diagnosing risk factors for myocardial infarction and cerebral infarction.",
+      },
+      ECG: {
+        ENGLISH: "⑧ Electrocardiogram (ECG)",
+        DESCRIPTION:
+          "Conducts basic tests to examine heart diseases and arrhythmias based on the flow of electricity in the heart.",
+      },
+      ABI: {
+        ENGLISH: "⑨ ABI (Ankle-Brachial Index)",
+        DESCRIPTION:
+          "Measures the degree of arterial sclerosis (aging of blood vessels) and detects early vascular disorders by comparing blood pressure in the hands and feet and the propagation of pulse waves, measuring vascular age.",
+      },
+      CVIC_BLOOD_TEST_SET: {
+        ENGLISH: "⑩ CVIC Blood Test Set (New)",
+        DESCRIPTION:
+          "In addition to the general heart health examination, it includes high-sensitivity cardiovascular markers set by CVIC based on global evidence. Evaluates risk levels based on detailed normal values, provides risk reduction through lifestyle improvements and medication, and quantifies and visualizes improvement effects along with image diagnosis results.",
+      },
+      COMPREHENSIVE_RESULT_EXPLANATION: {
+        ENGLISH: "⑪ Comprehensive Result Explanation / Follow-up (New)",
+        DESCRIPTION:
+          "In addition to cardiac imaging diagnosis, provides comprehensive result explanations and captures early signs with the new CVIC blood test set (biomarker set). Conducted at the clinic or online after all examination results are available.",
+      },
+    },
   },
   ACCESS: {
     ACCESS_TITLE: "Access Map",
@@ -405,7 +530,8 @@ const en = {
     YES: "Yes",
     NO: "No",
     INQUIRIES: "Please write down any request/inquiries",
-    DETAILS_OF_METAL_AND_DATE_OF_SURGERY: "Please write down the details of metal and date of surgery",
+    DETAILS_OF_METAL_AND_DATE_OF_SURGERY:
+      "Please write down the details of metal and date of surgery",
   },
   PRIVACY_POLICY: {
     TITLE: "Personal Information Protection Policy (Privacy Policy)",
@@ -417,7 +543,7 @@ const en = {
       "The purpose of use of personal information will be determined separately.",
       "In addition to the above purposes, we will ask for the consent of the examinee in advance when collecting, using, or disclosing personal information.",
       "We will respond to requests for disclosure of personal information.",
-      "If you have any questions about personal information, we will respond politely."
+      "If you have any questions about personal information, we will respond politely.",
     ],
     NOTE: "Note: Article 2 of the Act on the Protection of Personal Information (Act No. 57 of May 30, 2005) In this Act, 'personal information' is information about living individuals, and is included in the information. Items that can identify a specific individual by the included name, date of birth, or other description (things that can be easily collated with other information and thereby identify a specific individual) Including.)",
     PURPOSE_OF_USE: "Purpose of use of personal information",
@@ -443,10 +569,12 @@ const en = {
       "(2) Present the results of the survey / research at academic conferences / treatises, etc.",
       "(3) Subject to surveys and audits by the Ministry of Health, Labor and Welfare and local governments",
       "(4) Basic materials for maintenance and improvement of medical / nursing services and operations",
-      "(5) Providing information to external auditing organizations"
+      "(5) Providing information to external auditing organizations",
     ],
-    ADDITIONAL_INFO: "If you have any of the above items that you do not agree with, please apply to the consultation desk to that effect. If you do not apply, we will treat it as if you agree. These offers can be withdrawn or changed at any time later. We will inform you when the purpose of use changes.",
-    CLOSING: "Cardiac Imaging Clinic Iidabashi will comply with Japanese laws and regulations regarding the protection of personal information, national guidelines, and other norms, and will establish the following policies. We respect the privacy of patients and strive for proper management and use. Thank you in advance for your understanding and cooperation."
+    ADDITIONAL_INFO:
+      "If you have any of the above items that you do not agree with, please apply to the consultation desk to that effect. If you do not apply, we will treat it as if you agree. These offers can be withdrawn or changed at any time later. We will inform you when the purpose of use changes.",
+    CLOSING:
+      "Cardiac Imaging Clinic Iidabashi will comply with Japanese laws and regulations regarding the protection of personal information, national guidelines, and other norms, and will establish the following policies. We respect the privacy of patients and strive for proper management and use. Thank you in advance for your understanding and cooperation.",
   },
   RESERVATION_MODAL: {
     TITLE: "Confirm Details:",
@@ -467,9 +595,9 @@ const en = {
       "Please note:",
       "- Responses to inquiries received after 5:30 PM will be sent the following day.",
       "- Responses to inquiries received outside of office hours on the day before a non-business day will be sent on the next business day.",
-      "Closure: None / New Year Holidays (December 30th to January 4th)"
+      "Closure: None / New Year Holidays (December 30th to January 4th)",
     ],
-    NOTE: "*Please note that the information provided here is subject to change. For the most accurate and up-to-date information, please contact us directly."
+    NOTE: "*Please note that the information provided here is subject to change. For the most accurate and up-to-date information, please contact us directly.",
   },
   LOCATION_INFORMATION: {
     JR_CHUO_SOBU_LINE: {
@@ -480,43 +608,46 @@ const en = {
         "② Climb the stairs of the pedestrian bridge in front of you and go straight until you reach the end without turning.",
         "③ Go down the stairs at the end, and you will be in front of Matsuya.",
         "④ Go straight for about 2 to 3 minutes until you reach the building one place past Family Mart (it's the building on the corner of a large intersection).",
-        "⑤ There are 4 stairs under the building. Go through the automatic doors and take the elevator to the 4th floor reception."
-      ]
+        "⑤ There are 4 stairs under the building. Go through the automatic doors and take the elevator to the 4th floor reception.",
+      ],
     },
     TOKYO_METRO_LINES: {
-      TITLE: "Tokyo Metro Tozai Line, Namboku Line, Yurakucho Line, Toei Oedo Line",
+      TITLE:
+        "Tokyo Metro Tozai Line, Namboku Line, Yurakucho Line, Toei Oedo Line",
       DESCRIPTION: [
         "5-10 minutes walk from Exit B1 of Iidabashi Station for Tokyo Metro Tozai Line, Namboku Line, Yurakucho Line, Toei Oedo Line",
         "① Turn left as soon as you reach the ground level from Exit B1.",
         "② Cross the crosswalk towards Doutor and go straight along the flow under the pedestrian bridge stairs until you see Matsuya.",
         "③ Go straight for about 2 to 3 minutes until you reach the building one block past Family Mart (it's the building on the corner of a large intersection).",
-        "④ There are 4 stairs under the building. Go through the automatic doors and take the elevator to the 4th floor reception."
-      ]
+        "④ There are 4 stairs under the building. Go through the automatic doors and take the elevator to the 4th floor reception.",
+      ],
     },
     TAXI: {
       TITLE: "Taxi",
-      DESCRIPTION: "There is a taxi stand right next to the east exit of JR Iidabashi Station."
+      DESCRIPTION:
+        "There is a taxi stand right next to the east exit of JR Iidabashi Station.",
     },
     CAR: {
       TITLE: "Car",
-      DESCRIPTION: "There is no contracted parking lot. If you are in a wheelchair and are coming to the clinic by car, please use the coin parking lots around the clinic."
+      DESCRIPTION:
+        "There is no contracted parking lot. If you are in a wheelchair and are coming to the clinic by car, please use the coin parking lots around the clinic.",
     },
     WHEELCHAIR: {
       TITLE: "Wheelchair",
-      DESCRIPTION: "If you are planning to visit us in a wheelchair: There are no slopes on the stairs under the building, so if you need assistance, please use the intercom (401) to call for a staff member."
-    }
+      DESCRIPTION:
+        "If you are planning to visit us in a wheelchair: There are no slopes on the stairs under the building, so if you need assistance, please use the intercom (401) to call for a staff member.",
+    },
   },
   HEART_MRI_SCAN: {
-    "TITLE": "Heart MRI Scan",
-    "DESCRIPTION": [
+    TITLE: "Heart MRI Scan",
+    DESCRIPTION: [
       "MRI, in simple terms, is a method of creating images of the state of hydrogen nuclei abundant in water and fat in the body using magnets and radio waves. In MRI, a cylindrical device is required to generate a uniform magnetic field, equipped with magnets thousands of times stronger than the Earth's magnetic field (Figure A). It requires highly skilled techniques to create this uniform magnetic field, which is why MRI devices are expensive. Additionally, to receive signals of radio waves generated from the body, receiver coils tailored to each part of the body are necessary. For the heart, dedicated receiver coils are used (B). The body is placed inside the cylindrical magnet with a uniform magnetic field, radio waves are irradiated for a short period, and images are created by receiving radio waves emitted from the body when the radio waves are stopped (C). Looking more closely, it visualizes the behavior of hydrogen nuclei spins (rotation) in the body (D).",
       "",
       "First, hydrogen nuclei are aligned in a certain direction in a strong magnetic field. Next, weak radio waves in the frequency band of radio are irradiated, allowing hydrogen nuclei contained in a cross-section of the body to absorb the energy of the radio waves. When the radio wave irradiation is stopped, the absorbed energy is released back, and the signal of the radio waves obtained at that time is visualized by a computer. Note that each time radio waves are irradiated in MRI, the machine generates vibration sounds, which can be quite loud. This is the main cause of the loud noises heard during MRI scans. A major advantage of MRI scans is that they do not use radiation, so there is no concern about 'exposure.'",
       "",
-      "Furthermore, in heart MRI scans, it is possible to depict coronary arteries without radiation exposure or the use of contrast agents. Simultaneously, evaluation of cardiac pump function (cardiac function) is possible, and the evaluation of cardiac function by heart MRI is considered to be the most reliable and is adopted in various clinical studies on cardiac function. Moreover, contrast-enhanced heart MRI scans using contrast agents have a high potential to obtain all information separately obtained from conventional cardiac image diagnostics such as echocardiography, myocardial scintigraphy, and coronary angiography in about one hour. Therefore, it is called a 'one-stop shop' overseas."
-    ]
+      "Furthermore, in heart MRI scans, it is possible to depict coronary arteries without radiation exposure or the use of contrast agents. Simultaneously, evaluation of cardiac pump function (cardiac function) is possible, and the evaluation of cardiac function by heart MRI is considered to be the most reliable and is adopted in various clinical studies on cardiac function. Moreover, contrast-enhanced heart MRI scans using contrast agents have a high potential to obtain all information separately obtained from conventional cardiac image diagnostics such as echocardiography, myocardial scintigraphy, and coronary angiography in about one hour. Therefore, it is called a 'one-stop shop' overseas.",
+    ],
   },
-  
 };
 
 export default en;
