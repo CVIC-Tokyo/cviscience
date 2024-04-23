@@ -46,7 +46,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
   };
 
   return (
-    <div className="tile-container" id="Doctors" ref={containerRef}>
+    <div className="tile-container bg-white/25 p-4" id="Doctors" ref={containerRef}>
       <div
         className="tile-photo-container"
         onMouseEnter={() => {

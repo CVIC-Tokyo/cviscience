@@ -46,7 +46,7 @@ const Services: React.FC<ServicesProps> = () => {
   };
 
   return (
-    <div className="tile-container" id="Services" ref={containerRef}>
+    <div className="tile-container bg-white/25 p-4" id="Services" ref={containerRef}>
       <div
         className="tile-photo-container"
         onMouseEnter={() => {
