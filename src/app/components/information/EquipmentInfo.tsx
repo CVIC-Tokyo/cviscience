@@ -52,11 +52,15 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
             </p>
           </div>
           <Reveal>
-            <div className={`${focus === 1 ? 'flex flex-col' : 'hidden'}`}>
-              <h2 className="text-xl font-bold mb-4">{localeData.HEART_MRI_SCAN.TITLE}</h2>
-                {localeData.HEART_MRI_SCAN.DESCRIPTION.map((paragraph, index) => (
-                  <p key={index} className="mb-4">{paragraph}</p>
-                ))}
+            <div className={`${focus === 1 ? "flex flex-col" : "hidden"}`}>
+              <h2 className="text-xl font-bold mb-4">
+                {localeData.HEART_MRI_SCAN.TITLE}
+              </h2>
+              {localeData.HEART_MRI_SCAN.DESCRIPTION.map((paragraph, index) => (
+                <p key={index} className="mb-4">
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </Reveal>
         </motion.div>

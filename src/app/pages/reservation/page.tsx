@@ -15,9 +15,8 @@ const DockSelector: React.FC = () => {
 
   const selectPlan = (plan: string) => {
     if (plan === selectedPlan) {
-        setSelectedPlan(null)
-    }
-    else setSelectedPlan(plan);
+      setSelectedPlan(null);
+    } else setSelectedPlan(plan);
   };
 
   const toggleTest = (test: string) => {
@@ -37,7 +36,9 @@ const DockSelector: React.FC = () => {
       <div className="bg-white/25 flex flex-col items-center justify-around md:flex-row md:items-start md:justify-around p-2">
         <div className="w-full">
           <div className="bg-white rounded-lg p-4 m-2">
-            <h2 className="text-base text-cvic-red md:text-lg font-bold mb-2">{localeData.RESERVATION.DOCK}</h2>
+            <h2 className="text-base text-cvic-red md:text-lg font-bold mb-2">
+              {localeData.RESERVATION.DOCK}
+            </h2>
             <div className="space-y-2">
               {localeData.DOCK_PLANS.map((plan) => (
                 <div
@@ -84,7 +85,7 @@ const DockSelector: React.FC = () => {
           </div>
         </div>
         <div className="w-full m-2">
-          <ConsultationForm locale={locale}/>
+          <ConsultationForm locale={locale} />
         </div>
       </div>
     </div>

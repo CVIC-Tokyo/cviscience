@@ -33,9 +33,9 @@ const SideBar: React.FC<SidebarProps> = ({
         <div className="py-4 flex flex-col w-full">
           <ul className="uppercase grid grid-cols-2 w-full">
             <Link
-            onClick={() => setShowSidebar(false)}
-            href="/"
-            className="sidebar-button"
+              onClick={() => setShowSidebar(false)}
+              href="/"
+              className="sidebar-button"
             >
               <li className="py-4 text-sm">{localeData.BASIC.HOME}</li>
             </Link>

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import { useGlobalContext } from "@/context/store";
@@ -15,38 +15,62 @@ const Access = () => {
         <div className="p-1 md:p-4 text-xs md:text-base">
           {/* JR Chuo/Sobu Line */}
           <div className="access-info flex flex-col p-1 bg-white rounded-lg my-2">
-            <h3 className="font-semibold text-lg text-cvic-red mb-2">{localeData.LOCATION_INFORMATION.JR_CHUO_SOBU_LINE.TITLE}</h3>
+            <h3 className="font-semibold text-lg text-cvic-red mb-2">
+              {localeData.LOCATION_INFORMATION.JR_CHUO_SOBU_LINE.TITLE}
+            </h3>
             <ul className="list-disc list-inside flex flex-col items-start p-2">
-              {localeData.LOCATION_INFORMATION.JR_CHUO_SOBU_LINE.DESCRIPTION.map((item, index) => (
-                <li key={index} className="mb-1">{item}</li>
-              ))}
+              {localeData.LOCATION_INFORMATION.JR_CHUO_SOBU_LINE.DESCRIPTION.map(
+                (item, index) => (
+                  <li key={index} className="mb-1">
+                    {item}
+                  </li>
+                ),
+              )}
             </ul>
           </div>
 
           {/* Tokyo Metro Lines */}
           <div className="access-info flex flex-col p-1 bg-white rounded-lg my-2">
-            <h3 className="font-semibold text-lg text-cvic-red mb-2">{localeData.LOCATION_INFORMATION.TOKYO_METRO_LINES.TITLE}</h3>
+            <h3 className="font-semibold text-lg text-cvic-red mb-2">
+              {localeData.LOCATION_INFORMATION.TOKYO_METRO_LINES.TITLE}
+            </h3>
             <ul className="list-disc list-inside flex flex-col items-start p-2">
-              {localeData.LOCATION_INFORMATION.TOKYO_METRO_LINES.DESCRIPTION.map((item, index) => (
-                <li key={index} className="mb-1">{item}</li>
-              ))}
+              {localeData.LOCATION_INFORMATION.TOKYO_METRO_LINES.DESCRIPTION.map(
+                (item, index) => (
+                  <li key={index} className="mb-1">
+                    {item}
+                  </li>
+                ),
+              )}
             </ul>
           </div>
 
           {/* Taxi */}
           <div className="access-info flex flex-col p-1 bg-white rounded-lg my-2">
-            <h3 className="font-semibold text-lg text-cvic-red mb-2">{localeData.LOCATION_INFORMATION.TAXI.TITLE}</h3>
-            <p className="mb-2">{localeData.LOCATION_INFORMATION.TAXI.DESCRIPTION}</p>
+            <h3 className="font-semibold text-lg text-cvic-red mb-2">
+              {localeData.LOCATION_INFORMATION.TAXI.TITLE}
+            </h3>
+            <p className="mb-2">
+              {localeData.LOCATION_INFORMATION.TAXI.DESCRIPTION}
+            </p>
           </div>
 
           {/* Car */}
           <div className="access-info flex flex-col p-1 bg-white rounded-lg my-2">
-            <h3 className="font-semibold text-lg text-cvic-red mb-2">{localeData.LOCATION_INFORMATION.CAR.TITLE}</h3>
-            <p className="mb-2">{localeData.LOCATION_INFORMATION.CAR.DESCRIPTION}</p>
+            <h3 className="font-semibold text-lg text-cvic-red mb-2">
+              {localeData.LOCATION_INFORMATION.CAR.TITLE}
+            </h3>
+            <p className="mb-2">
+              {localeData.LOCATION_INFORMATION.CAR.DESCRIPTION}
+            </p>
           </div>
           <div className="access-info flex flex-col p-1 bg-white rounded-lg my-2">
-            <h3 className="font-semibold text-lg text-cvic-red mb-2">{localeData.LOCATION_INFORMATION.WHEELCHAIR.TITLE}</h3>
-            <p className="mb-2">{localeData.LOCATION_INFORMATION.WHEELCHAIR.DESCRIPTION}</p>
+            <h3 className="font-semibold text-lg text-cvic-red mb-2">
+              {localeData.LOCATION_INFORMATION.WHEELCHAIR.TITLE}
+            </h3>
+            <p className="mb-2">
+              {localeData.LOCATION_INFORMATION.WHEELCHAIR.DESCRIPTION}
+            </p>
           </div>
         </div>
       </div>
