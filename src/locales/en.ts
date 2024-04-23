@@ -164,59 +164,59 @@ const en = {
     },    
     CVIC_EXAMS: {
       HEART_MRI_CORONARY_MRA: {
-        ENGLISH: "① Heart MRI & Coronary MRA",
-        DESCRIPTION:
-          "Diagnoses abnormalities, functions, and blockages in the coronary arteries without using contrast agents.",
+        TITLE: "Pericardial Fat Measurement",
+        DESCRIPTION: "Diagnoses abnormalities in the shape and function of the heart, as well as clogged coronary arteries, without using contrast agents.",
+        PRICE: "¥40,000 (*¥44,000)",
       },
       BRAIN_MRI_CEREBRAL_MRA: {
-        ENGLISH: "② Brain MRI & Cerebral MRA",
-        DESCRIPTION:
-          "Captures smaller brain lesions like microbleeds more effectively than CT scans, diagnoses conditions such as brain aneurysms and blockages in the blood vessels. Also diagnoses blockages in neck arteries that may cause strokes.",
+        TITLE: "Aortic Examination",
+        DESCRIPTION: "It has a higher ability to detect minute intracerebral hemorrhages than CT, and takes 3D images of blood vessels in the brain to diagnose cerebral aneurysms and clogged blood vessels. Also diagnoses clogged blood vessels in the neck that can cause cerebral infarction.",
+        PRICE: "¥44,000 (*¥48,400)",
       },
       BRAIN_AI_ANALYSIS: {
-        ENGLISH: "③ Brain AI Analysis",
-        DESCRIPTION:
-          "Measures brain atrophy and vascular health using artificial intelligence, analyzing risk management for age-related brain changes.",
+        TITLE: "Brain AI (artificial intelligence) analysis",
+        DESCRIPTION: "Measuring brain atrophy and cerebrovascular health using AI (artificial intelligence). Analyzing risk management for brain changes due to aging.",
+        PRICE: "¥50,000 (*¥55,000)",
       },
       CALC: {
-        ENGLISH: "④ CALC (Coronary Artery Calcification Score)",
-        DESCRIPTION:
-          "Uses CT without contrast agents to examine the total amount of calcium in the coronary arteries. Provides the only index for predicting the risk of sudden death in the future.",
+        TITLE: "Brain AI (Artificial Intelligence) Diagnosis",
+        DESCRIPTION: "The total amount of calcium in the coronary arteries is examined using CT without using a contrast agent. Can predict the possibility of sudden death in the future.",
+        PRICE: "¥50,000 (*¥55,000)",
       },
       FAT_MEASUREMENT: {
-        ENGLISH: "⑤ Fat Measurement (Visceral & Subcutaneous Fat)",
-        DESCRIPTION:
-          "Accurately measures visceral fat using CT, which cannot be measured in general metabolic measurements. The increase in visceral fat, even in thin individuals, is a topic of discussion and poses risks of cardiovascular disease and cancer.",
+        TITLE: "Body Fat (Visceral and Subcutaneous Fat Measurement)",
+        DESCRIPTION: "We use CT to accurately measure visceral fat, which cannot be detected by metabolic measurement during general medical examinations. Recently, it has become a hot topic that even thin people have increased visceral fat, which can also pose a risk for cardiovascular disease and cancer.",
+        PRICE: "¥20,000 (*¥22,000)",
       },
       ECHO: {
-        ENGLISH: "⑥ Echocardiogram",
-        DESCRIPTION:
-          "Uses ultrasound to capture reflected waves to examine abnormalities and movements in each part of the heart. When combined with MRI, it diagnoses valve movements, blood flow rates, and blood backflow.",
+        TITLE: "Lung Examination",
+        DESCRIPTION: "By applying ultrasound to the heart and capturing the reflected waves as images, we examine abnormalities in shape and movement in each part of the heart. By performing this in conjunction with an MRI scan, it is possible to diagnose things such as the opening and closing movements of valves, blood flow, and blood regurgitation.",
+        PRICE: "¥22,000 (*¥24,200)",
       },
       NECK_ECHO: {
-        ENGLISH: "⑦ Neck Ultrasound",
-        DESCRIPTION:
-          "Sensitively examines arterial sclerosis in neck blood vessels, excelling in detecting early plaques. Arterial sclerosis in neck arteries reflects arterial sclerosis throughout the body, diagnosing risk factors for myocardial infarction and cerebral infarction.",
+        TITLE: "Cardiac Echo",
+        DESCRIPTION: "This is a sensitive method for examining arteriosclerosis in the neck blood vessels, and is excellent at detecting plaque in its early stages. Since arteriosclerosis in the carotid arteries reflects arteriosclerosis throughout the body, we diagnose the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
+        PRICE: "¥16,000 (*¥17,600)",
       },
       ECG: {
-        ENGLISH: "⑧ Electrocardiogram (ECG)",
-        DESCRIPTION:
-          "Conducts basic tests to examine heart diseases and arrhythmias based on the flow of electricity in the heart.",
+        TITLE: "Neck Echo",
+        DESCRIPTION: "We perform basic tests to check for heart disease and arrhythmia based on the electrical flow in the heart.",
+        PRICE: "¥10,000 (*¥11,000)",
       },
       ABI: {
-        ENGLISH: "⑨ ABI (Ankle-Brachial Index)",
-        DESCRIPTION:
-          "Measures the degree of arterial sclerosis (aging of blood vessels) and detects early vascular disorders by comparing blood pressure in the hands and feet and the propagation of pulse waves, measuring vascular age.",
+        TITLE: "ABI (Arterial Stiffness Measurement)",
+        DESCRIPTION: "By comparing blood pressure in the hands and feet and examining the way pulse waves travel, it detects the degree of arteriosclerosis (aging of blood vessels, etc.) and early vascular disorders, and measures the age of blood vessels.",
+        PRICE: "¥6,000 (*¥6,600)",
       },
       CVIC_BLOOD_TEST_SET: {
-        ENGLISH: "⑩ CVIC Blood Test Set (New)",
-        DESCRIPTION:
-          "In addition to the general heart health examination, it includes high-sensitivity cardiovascular markers set by CVIC based on global evidence. Evaluates risk levels based on detailed normal values, provides risk reduction through lifestyle improvements and medication, and quantifies and visualizes improvement effects along with image diagnosis results.",
+        TITLE: "CVIC Blood Test Set",
+        DESCRIPTION: "In addition to conventional heart health tests, CVIC has uniquely set high-sensitivity cardiovascular markers based on global evidence. We evaluate the risk level by subdividing normal values, and provide information on how to reduce risk through lifestyle changes and medication treatment, as well as quantify and visualize the improvement effects, along with the results of image diagnosis.",
+        PRICE: "¥49,800 (*¥54,780)",
       },
       COMPREHENSIVE_RESULT_EXPLANATION: {
-        ENGLISH: "⑪ Comprehensive Result Explanation / Follow-up (New)",
-        DESCRIPTION:
-          "In addition to cardiac imaging diagnosis, provides comprehensive result explanations and captures early signs with the new CVIC blood test set (biomarker set). Conducted at the clinic or online after all examination results are available.",
+        TITLE: "CVIC Blood Test Set+",
+        DESCRIPTION: "In addition to cardiac imaging diagnosis, we use the new CVIC blood test set (biomarker set) to provide comprehensive results explanations, detect early signs, and support your lifestyle to avoid getting sick. After all test results are available, this will be done at a later date in the clinic or online.",
+        PRICE: "¥32,800 (*¥36,080)",
       },
     },
   },
