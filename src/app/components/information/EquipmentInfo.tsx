@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 import { MotionConfig, motion } from "framer-motion";
 import { getLocaleData } from "@/utils/helpers";
+import Reveal from "../Reveal";
 
 const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
   const localeData = getLocaleData(locale);
@@ -50,6 +51,14 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
               Toshiba 1.5 Tesla MRI
             </p>
           </div>
+          <Reveal>
+            <div className={`${focus === 1 ? 'flex flex-col' : 'hidden'}`}>
+              <h2 className="text-xl font-bold mb-4">{localeData.HEART_MRI_SCAN.TITLE}</h2>
+                {localeData.HEART_MRI_SCAN.DESCRIPTION.map((paragraph, index) => (
+                  <p key={index} className="mb-4">{paragraph}</p>
+                ))}
+            </div>
+          </Reveal>
         </motion.div>
 
         {/* Equipment 2 */}
