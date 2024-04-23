@@ -86,11 +86,11 @@ const DockSelector: React.FC = () => {
           </div>
         </div>
         <div className="w-full m-2">
-          <ConsultationForm locale={locale} />
+          <ConsultationForm locale={locale} selectedPlan={selectedPlan} selectedTests={selectedTests} />
         </div>
       </div>
         <div className="w-full my-4">
-                <ReservationNotice locale={locale} />
+          <ReservationNotice locale={locale} />
         </div>
     </div>
   );

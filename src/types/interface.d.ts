@@ -66,6 +66,8 @@ interface HamburgerProps {
 
 interface ConsultationProps {
   locale: string;
+  selectedPlan: string | null;
+  selectedTests: string[];
 }
 
 interface ReservationModalProps {
@@ -90,6 +92,8 @@ interface ReservationModalProps {
     preferredContactTime: string;
   };
   locale: string;
+  selectedPlan: string | null;
+  selectedTests: string[];
 }
 interface FormData extends globalThis.FormData {
   consultationDates: string[];
