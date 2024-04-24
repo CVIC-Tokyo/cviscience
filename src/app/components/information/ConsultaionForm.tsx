@@ -96,6 +96,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
     // Check if any required fields are empty
     if (
       name.trim() === "" ||
+      selectedPlan === null ||
       surname.trim() === "" ||
       nameFurigana.trim() === "" ||
       surnameFurigana.trim() === "" ||
