@@ -5,6 +5,7 @@ import "../../../styles/globals.css";
 import { useGlobalContext } from "@/context/store";
 import { getLocaleData } from "@/utils/helpers";
 import Reveal from "../Reveal";
+import { ClinicInfoProps } from "@/types/interface";
 
 const ClinicInfo: React.FC<ClinicInfoProps> = () => {
   const { locale } = useGlobalContext();
@@ -44,7 +45,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
         <Reveal>
           <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
             <Reveal>
-              <h1 className="about-title">{localeData.ABOUT.CSR_TITLE}</h1>
+              <h1 className="about-title text-sm md:text-base">{localeData.ABOUT.CSR_TITLE}</h1>
             </Reveal>
             <Reveal>
               <h2 className="font-bold p-2">
@@ -52,7 +53,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
               </h2>
             </Reveal>
             <Reveal>
-              <p className="p-4">{localeData.ABOUT.CSR.ONE}</p>
+              <p className="p-4 text-[12px] md:text-sm">{localeData.ABOUT.CSR.ONE}</p>
             </Reveal>
             <Reveal>
               <h2 className="font-bold p-2">
@@ -60,7 +61,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
               </h2>
             </Reveal>
             <Reveal>
-              <p className="p-4">{localeData.ABOUT.CSR.TWO}</p>
+              <p className="p-4 text-[12px] md:text-sm">{localeData.ABOUT.CSR.TWO}</p>
             </Reveal>
             <Reveal>
               <h2 className="font-bold p-2">
@@ -68,7 +69,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
               </h2>
             </Reveal>
             <Reveal>
-              <p className="p-4">{localeData.ABOUT.CSR.THREE}</p>
+              <p className="p-4 text-[12px] md:text-sm">{localeData.ABOUT.CSR.THREE}</p>
             </Reveal>
           </div>
         </Reveal>
