@@ -413,13 +413,30 @@ const en = {
     {
       TITLE: "Achieva DS (Dual Speed)",
       D1: "Philips 1.5 Tesla MRI Machine",
-      D2: "",
+      D2: "Discover Precision Imaging with Philips Incisive CT",
       IMG: "achieva",
     },
     {
       TITLE: "Incisive CT",
       D1: "Philips CT Scanner",
-      D2: "",
+      D2: `
+        Experience the next evolution in computed tomography (CT) technology with Philips Incisive CT. Designed to deliver exceptional image quality, diagnostic confidence, and operational efficiency, Incisive CT sets a new standard in patient care.
+  
+        Key Features:
+        1. High-Resolution Imaging: Achieve unparalleled clarity and detail with advanced imaging algorithms and detector technology.
+        2. SmartWorkflow: Streamline your workflow with intuitive software tools, automated protocols, and seamless integration with your existing systems.
+        3. DoseWise: Prioritize patient safety with dose management features that optimize radiation exposure without compromising image quality.
+        4. Adaptive Intelligence: Harness the power of artificial intelligence to enhance image reconstruction, improve diagnostic accuracy, and accelerate interpretation.
+  
+        Benefits:
+        - Enhanced Clinical Confidence: Empower your clinicians with superior image quality and diagnostic insights for confident decision-making.
+        - Increased Productivity: Maximize your efficiency with fast scan times, automated processes, and user-friendly interface design.
+        - Patient-Centric Care: Prioritize patient comfort and safety with dose optimization techniques and personalized imaging protocols.
+  
+        Applications:
+        From routine diagnostic imaging to complex interventional procedures, Philips Incisive CT is versatile enough to meet the diverse needs of modern healthcare facilities. Whether you're performing cardiac assessments, neurological studies, or oncological evaluations, Incisive CT delivers consistent performance and exceptional results.
+  
+        Transform your imaging capabilities with Philips Incisive CT and elevate your standard of care today.`,
       IMG: "incisive",
     },
     {

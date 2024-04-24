@@ -101,16 +101,13 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
               className={`${focus === 3 ? "flex flex-col h-[50vh] md:h-[350px] overflow-y-scroll" : "hidden"}`}
             >
               <h2 className="text-sm md:text-base lg:text-lg font-bold mb-4 p-2 md:p-4 text-cvic-red">
-                {localeData.HEART_MRI_SCAN.TITLE}
+                {localeData.EQUIPMENTS[2].TITLE}
               </h2>
-              {localeData.HEART_MRI_SCAN.DESCRIPTION.map((paragraph, index) => (
                 <p
-                  key={index}
                   className="mb-4 text-xs md:text-base lg:text-lg px-4"
                 >
-                  {paragraph}
+                  {localeData.EQUIPMENTS[2].D2}
                 </p>
-              ))}
             </div>
           </Reveal>
         </motion.div>
