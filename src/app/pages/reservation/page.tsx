@@ -93,6 +93,9 @@ const DockSelector: React.FC = () => {
             locale={locale}
             selectedPlan={selectedPlan}
             selectedTests={selectedTests}
+            setSelectedPlan={setSelectedPlan}
+            setSelectedTests={setSelectedTests}
+            
           />
         </div>
       </div>

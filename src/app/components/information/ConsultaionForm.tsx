@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import { getLocaleData } from "@/utils/helpers";
 import ReservationModal from "@/app/modals/ReservationModal";
 import PrivacyPolicyModal from "@/app/modals/PrivacyPolicyModal";
+import { ConsultationProps } from "@/types/interface";
 
 const ConsultationForm: React.FC<ConsultationProps> = ({
   locale,
   selectedPlan,
   selectedTests,
+  setSelectedPlan,
+  setSelectedTests,
 }) => {
   const localeData = getLocaleData(locale);
   const [privacyPolicyModalOpen, setPrivacyPolicyModalOpen] = useState(false);
@@ -72,6 +75,8 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
     setTermsAgreed(false);
     setPreferredContactTime("");
     setModalOpen(false)
+    setSelectedPlan(null);
+    setSelectedTests([]);
   };
 
   const handleConsultationDateChange = (index: number, date: string) => {

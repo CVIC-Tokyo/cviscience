@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from "react";
+
 interface NavbarProps {}
 
 interface TranslationTabProps {}
@@ -68,6 +70,8 @@ interface ConsultationProps {
   locale: string;
   selectedPlan: string | null;
   selectedTests: string[];
+  setSelectedPlan: Dispatch<SetStateAction<string | null>>
+  setSelectedTests: Dispatch<SetStateActionstring[]>
 }
 
 interface ReservationModalProps {

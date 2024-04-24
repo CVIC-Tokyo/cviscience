@@ -1,5 +1,6 @@
 import React from "react";
 import { getLocaleData } from "@/utils/helpers";
+import { ReservationModalProps } from "@/types/interface";
 
 const ReservationModal: React.FC<ReservationModalProps> = ({
   isOpen,
