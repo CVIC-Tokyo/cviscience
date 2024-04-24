@@ -794,6 +794,9 @@ const en = {
     "12:00 - 14:00",
     "14:30 ~",
   ],
+  ZIOSTATION: {
+    DESCRIPTION: ""
+  },
 };
 
 export default en;
