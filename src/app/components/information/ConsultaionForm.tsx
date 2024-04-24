@@ -44,6 +44,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
   const [termsAgreed, setTermsAgreed] = useState(false);
   const [preferredContactTime, setPreferredContactTime] = useState("");
   const [formError, setFormError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -56,8 +57,8 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
     setDateOfBirth("");
     setAddress("");
     setConsultationDates(["", "", ""]),
-      setSelectedTimeSlots(["", "", ""]),
-      setEmail("");
+    setSelectedTimeSlots(["", "", ""]),
+    setEmail("");
     setPhoneNumber("");
     setPreferredContact("");
     setConsultationHistory("");
@@ -65,9 +66,13 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
     setMetalDetails("");
     setTermsAgreed(false);
     setPreferredContactTime("");
-    setModalOpen(false);
     setSelectedPlan(null);
     setSelectedTests([]);
+
+    setTimeout(() => {
+      setModalOpen(false);
+
+    }, 1000);
   };
 
   const handleConsultationDateChange = (index: number, date: string) => {

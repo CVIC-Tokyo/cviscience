@@ -1,4 +1,39 @@
 const en = {
+  INTRODUCTION: {
+    TITLE: "Introduction to CVIC",
+    CONTENT:
+      "For early detection and treatment of heart disease. Heart disease is the second leading cause of death among Japanese people, following cancer, emphasizing the increasing importance of early detection and treatment. CVIC strives to serve as many patients as possible, collaborating with radiologists and cardiologists while working tirelessly every day. Through the widespread adoption of cardiac imaging diagnostics and further technological innovation, we aim to contribute to the advancement of healthcare in Japan."
+  },
+  CVIC_DESCRIPTION: {
+    TITLE: "What is Cardiovascular Imaging Clinic Iidabashi (CVIC)?",
+    CONTENT:
+      "CVIC is a specialized facility focused on cardiovascular imaging examinations, utilizing advanced medical equipment such as MRI and CT to visualize the body's internal structures in 3D. Established in November 2009, it is Japan's first and a rare global facility dedicated to cardiovascular imaging diagnostics. In November 2014, the examination and medical departments were separated, and CVIC began anew as a medical corporation."
+  },
+  EARLY_DETECTION: {
+    TITLE: "Early Detection of Heart Disease through Visual Examination",
+    CONTENT:
+      "Among the body's organs, visualizing the constantly pulsating heart with clarity has historically been challenging, with this technology only recently being developed. However, advancements in imaging diagnostics now allow for the three-dimensional visualization and diagnosis of the heart, enabling early detection of heart disease."
+  },
+  ADVANCED_IMAGING: {
+    TITLE: "Limited Adoption of Advanced Cardiac Imaging in Japan",
+    CONTENT:
+      "Unfortunately, the widespread adoption of cardiac imaging diagnostics, particularly using MRI, is lagging in Japan. This is primarily due to the highly advanced and labor-intensive nature of this technology, resulting in a shortage of qualified technicians. Consequently, many individuals remain unaware of their heart condition until experiencing a sudden heart attack."
+  },
+  ADDRESSING_NEEDS: {
+    TITLE: "Rapid Response to Clinical Needs",
+    CONTENT:
+      "University and general hospitals' imaging departments must accommodate examinations from all medical specialties, not just the heart. Prioritizing the challenging and time-consuming cardiac examinations is difficult in such settings. However, CVIC has responded to the clinical needs by providing rapid examination services, addressing requests for urgent examinations."
+  },
+  CONTINUOUS_IMPROVEMENT: {
+    TITLE: "Continuous Improvement through Experience",
+    CONTENT:
+      "Many cases referred from university and general hospitals present challenging examinations and diagnoses. By accurately conducting and diagnosing 2,680 cardiac MRI examinations annually, CVIC's technical and diagnostic capabilities continue to improve. Recognized for producing highly detailed and high-quality cardiac images, CVIC receives high praise from referring physicians at nearby university and core hospitals. By specializing solely in cardiac imaging and continuously honing our skills, we are able to perform advanced cardiac imaging diagnostics swiftly and accurately."
+  },
+  NEW_CVIC_GROUP: {
+    TITLE: "As the New CVIC Group",
+    CONTENT:
+      "The ground floor operates as the independent examination department of the newly formed medical corporation CVIC Group's 'Cardiovascular Imaging Clinic Iidabashi,' with the establishment of a solid examination system using state-of-the-art imaging equipment, including two MRI machines and one CT scanner. The fourth floor is opened as the medical practice department of the CVIC Group, 'Iidabashi Heart Clinic,' providing a spacious environment for detailed explanations by physicians and accurate screening of examination images. As the newly formed CVIC Group, both the ground floor and the fourth floor are committed to delivering even more precise examinations and diagnoses than before."
+  },
   BASIC: {
     HOME: "Home",
     ABOUT: "About CVIC",
