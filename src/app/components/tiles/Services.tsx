@@ -81,7 +81,6 @@ const Services: React.FC<ServicesProps> = () => {
             </Reveal>
             <Reveal>
               <p className="md:my-2 text-white text-[4px] md:text-[9px]">
-                {localeData.CVIC_INFO.CLINIC_DESCRIPTION}
               </p>
             </Reveal>
             <Reveal>
