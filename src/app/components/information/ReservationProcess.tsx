@@ -1,6 +1,5 @@
 import React from "react";
 import { getLocaleData } from "@/utils/helpers";
-import { ReservationProcessProps } from "@/types/interface";
 
 const ReservationProcess: React.FC<ReservationProcessProps> = ({ locale }) => {
   const localeData = getLocaleData(locale);

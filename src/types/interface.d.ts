@@ -1,5 +1,3 @@
-import { Dispatch, SetStateAction } from "react";
-
 interface NavbarProps {}
 
 interface TranslationTabProps {}
