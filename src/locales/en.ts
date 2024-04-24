@@ -740,6 +740,7 @@ const en = {
       "② Separate fees will be charged for plans and contents not listed in the above price list.",
       "※ Please note that the specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
     ],
+    SUNDAY: "Sunday is dedicated to Dock patients!"
   },
   TIME_OPTIONS: [
     "Select Time Slot",
