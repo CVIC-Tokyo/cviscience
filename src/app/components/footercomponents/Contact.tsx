@@ -3,6 +3,7 @@ import React from "react";
 import { useGlobalContext } from "../../../context/store";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { IoMailSharp } from "react-icons/io5";
+import Link from "next/link";
 
 const Contact: React.FC<ContactProps> = () => {
   const { locale } = useGlobalContext();
@@ -19,10 +20,10 @@ const Contact: React.FC<ContactProps> = () => {
           </div>
         </div>
         <div className="col-span-1 flex items-center justify-center p-2 text:xs md:text-xl text-black">
-          <div className="w-full h-full tracking-wide bg-white hover:bg-white/75 font-bold p-4 flex flex-col items-center cursor-pointer">
+          <Link href='/pages/reservation' className="w-full h-full tracking-wide bg-white hover:bg-white/75 font-bold p-4 flex flex-col items-center cursor-pointer">
             {localeData.REACH.APPLY_ONLINE}
             <IoMailSharp />
-          </div>
+          </Link>
         </div>
       </div>
     </div>
