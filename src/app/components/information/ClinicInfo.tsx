@@ -45,7 +45,6 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
         </Reveal>
       </div>
     </div>
-  );
         <Reveal>
           <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
             <div className="w-full h-[200px] md:h-[300px] lg:h-[500px] bg-terashima_message bg-cover bg-center" />
