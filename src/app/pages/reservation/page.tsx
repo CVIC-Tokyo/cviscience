@@ -95,7 +95,6 @@ const DockSelector: React.FC = () => {
             selectedTests={selectedTests}
             setSelectedPlan={setSelectedPlan}
             setSelectedTests={setSelectedTests}
-            
           />
         </div>
       </div>

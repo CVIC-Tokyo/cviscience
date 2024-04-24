@@ -33,9 +33,11 @@ const ReservationProcess: React.FC<ReservationProcessProps> = ({ locale }) => {
             ))}
           </ul>
         </div>
-          <div className="w-full p-2">
-            <p className="text-white bg-cvic-red rounded-md p-2 font-semibold">{localeData.RESERVATION_NOTICE.SUNDAY}</p>
-          </div>
+        <div className="w-full p-2">
+          <p className="text-white bg-cvic-red rounded-md p-2 font-semibold">
+            {localeData.RESERVATION_NOTICE.SUNDAY}
+          </p>
+        </div>
         <div className="w-full flex items-center justify-center">
           <ul className="content flex flex-col items-start w-full md:w-[60%]">
             {/* Other lines */}

@@ -55,17 +55,9 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
     setSurnameFurigana("");
     setDateOfBirth("");
     setAddress("");
-    setConsultationDates([
-      "",
-      "",
-      "",
-    ]),
-    setSelectedTimeSlots([
-      "",
-      "",
-      "",
-    ]),
-    setEmail("");
+    setConsultationDates(["", "", ""]),
+      setSelectedTimeSlots(["", "", ""]),
+      setEmail("");
     setPhoneNumber("");
     setPreferredContact("");
     setConsultationHistory("");
@@ -73,7 +65,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
     setMetalDetails("");
     setTermsAgreed(false);
     setPreferredContactTime("");
-    setModalOpen(false)
+    setModalOpen(false);
     setSelectedPlan(null);
     setSelectedTests([]);
   };
@@ -110,13 +102,13 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
     ) {
       // Set form error message
       setFormError(localeData.CONSULTATION.FORM_ERROR);
-      return
+      return;
     } else setModalOpen(true);
 
     // Clear form error message if all required fields are filled
     setFormError("");
-    console.log(formError)
-    return
+    console.log(formError);
+    return;
 
     // Handle form submission if all required fields are filled
     // Your form submission logic here
@@ -283,16 +275,16 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
                 {localeData.CONSULTATION.TIME_SLOT}
               </label>
               <select
-          value={selectedTimeSlots[index]}
-          onChange={(e) => handleTimeSlotChange(index, e.target.value)}
-          className="block w-full border border-gray-300 rounded-b-md px-3 py-2 mt-1"
-        >
-          {localeData.TIME_OPTIONS.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
+                value={selectedTimeSlots[index]}
+                onChange={(e) => handleTimeSlotChange(index, e.target.value)}
+                className="block w-full border border-gray-300 rounded-b-md px-3 py-2 mt-1"
+              >
+                {localeData.TIME_OPTIONS.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
         ))}

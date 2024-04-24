@@ -68,8 +68,8 @@ interface ConsultationProps {
   locale: string;
   selectedPlan: string | null;
   selectedTests: string[];
-  setSelectedPlan: Dispatch<SetStateAction<string | null>>
-  setSelectedTests: Dispatch<SetStateActionstring[]>
+  setSelectedPlan: Dispatch<SetStateAction<string | null>>;
+  setSelectedTests: Dispatch<SetStateActionstring[]>;
 }
 
 interface ReservationModalProps {
