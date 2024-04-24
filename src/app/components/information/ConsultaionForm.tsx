@@ -47,6 +47,31 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
 
   const handleConfirmSubmit = () => {
     // Additional logic to handle form submission
+    setName("");
+    setNameFurigana("");
+    setSurname("");
+    setSurnameFurigana("");
+    setDateOfBirth("");
+    setAddress("");
+    setConsultationDates([
+      "",
+      "",
+      "",
+    ]),
+    setSelectedTimeSlots([
+      "",
+      "",
+      "",
+    ]),
+    setEmail("");
+    setPhoneNumber("");
+    setPreferredContact("");
+    setConsultationHistory("");
+    setMetalInBody("");
+    setMetalDetails("");
+    setTermsAgreed(false);
+    setPreferredContactTime("");
+    setModalOpen(false)
   };
 
   const handleConsultationDateChange = (index: number, date: string) => {
