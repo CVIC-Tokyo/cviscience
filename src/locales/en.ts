@@ -741,6 +741,13 @@ const en = {
       "※ Please note that the specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
     ],
   },
+  TIME_OPTIONS: [
+    "Select Time Slot",
+    "8:30 - 9:30",
+    "10-00 - 11:30",
+    "12:00 - 14:00",
+    "14:30 ~" 
+  ],
 };
 
 export default en;

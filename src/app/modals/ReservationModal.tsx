@@ -53,13 +53,13 @@ const ReservationModal: React.FC<ReservationModalProps> = ({
         <div className="flex justify-end mt-4">
           <button
             onClick={onClose}
-            className="bg-cvic-red text-white px-4 py-2 rounded-md mr-2"
+            className="bg-gray-500 text-white px-4 py-2 rounded-md mr-2 hover:scale-105 duration-500"
           >
             {localeData.RESERVATION_MODAL.CLOSE}
           </button>
           <button
             onClick={onSubmit}
-            className="bg-cvic-red text-white px-4 py-2 rounded-md"
+            className="bg-cvic-red text-white px-4 py-2 rounded-md hover:scale-105 duration-500"
           >
             {localeData.RESERVATION_MODAL.CONFIRM}
           </button>
