@@ -34,6 +34,16 @@ const en = {
     CONTENT:
       "The ground floor operates as the independent examination department of the newly formed medical corporation CVIC Group's 'Cardiovascular Imaging Clinic Iidabashi,' with the establishment of a solid examination system using state-of-the-art imaging equipment, including two MRI machines and one CT scanner. The fourth floor is opened as the medical practice department of the CVIC Group, 'Iidabashi Heart Clinic,' providing a spacious environment for detailed explanations by physicians and accurate screening of examination images. As the newly formed CVIC Group, both the ground floor and the fourth floor are committed to delivering even more precise examinations and diagnoses than before."
   },
+  CVIC_DOCK: {
+    TITLE: "New Cardiovascular and Brain Checkups Offered by CVIC",
+    CONTENT:
+      "Since its opening in 2009, the CVIC Cardiovascular Imaging Clinic Iidabashi has conducted over 73,000 MRI and CT examinations of patients' hearts, making it Japan's first and rare global specialized heart imaging center. The number of heart MRI examinations accounts for about 10% of the total in Japan and ranks among the top five in the world. Through heart imaging examinations at CVIC, we have discovered severe heart diseases that were previously unnoticed and detected early-stage heart diseases, facilitating appropriate treatment and preventive medicine. CVIC's efforts have garnered attention domestically and internationally, and are frequently covered by the domestic media. Based on this wealth of experience in heart imaging diagnostics, we have come to realize the need for a new framework for cardiovascular imaging examinations to further demonstrate their usefulness."
+  },
+  NEW_CHECKUP_MENU: {
+    TITLE: "Introduction of New Cardiovascular and Brain Checkup Menu",
+    CONTENT:
+      "The newly introduced menu consists of two components: 'Blood Biomarker Testing' combining high-sensitivity blood tests and 'Personalized Cardiovascular Testing' tailored to individual heart disease risks and physical conditions. 'Blood Biomarker Testing' includes comprehensive result explanations and specific advice online or via phone, as well as follow-ups three months later. Advances in high-sensitivity blood testing allow for further subdivision of normal values rather than simply categorizing as normal or abnormal, enabling predictions of future risks. Merely undergoing examinations is not meaningful; it is only when the examination results are utilized in daily lifestyle habits and future disease prevention that their usefulness can be demonstrated. Through 'Blood Biomarker Testing,' we aim to set specific target values and consider individual measures to contribute to maintaining cardiovascular health for everyone."
+  },
   BASIC: {
     HOME: "Home",
     ABOUT: "About CVIC",
