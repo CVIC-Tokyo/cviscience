@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { getLocaleData } from "@/utils/helpers";
 import ReservationModal from "@/app/modals/ReservationModal";
 import PrivacyPolicyModal from "@/app/modals/PrivacyPolicyModal";
-import { ConsultationProps } from "@/types/interface";
 
 const ConsultationForm: React.FC<ConsultationProps> = ({
   locale,
