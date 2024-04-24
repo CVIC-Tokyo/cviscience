@@ -52,12 +52,17 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
             </p>
           </div>
           <Reveal>
-            <div className={`${focus === 1 ? "flex flex-col h-[50vh] overflow-x-scroll" : "hidden"}`}>
+            <div
+              className={`${focus === 1 ? "flex flex-col h-[50vh] overflow-x-scroll" : "hidden"}`}
+            >
               <h2 className="text-sm md:text-base lg:text-lg font-bold mb-4 p-2 md:p-4">
                 {localeData.HEART_MRI_SCAN.TITLE}
               </h2>
               {localeData.HEART_MRI_SCAN.DESCRIPTION.map((paragraph, index) => (
-                <p key={index} className="mb-4 text-xs md:text-base lg:text-lg px-4">
+                <p
+                  key={index}
+                  className="mb-4 text-xs md:text-base lg:text-lg px-4"
+                >
                   {paragraph}
                 </p>
               ))}
@@ -65,7 +70,7 @@ const EquipmentInfo: React.FC<EquipmentInfoProps> = ({ locale }) => {
           </Reveal>
         </motion.div>
 
-        {/* Equipment 2 */} 
+        {/* Equipment 2 */}
         <motion.div
           key={2}
           variants={focused}

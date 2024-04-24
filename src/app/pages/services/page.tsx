@@ -16,7 +16,7 @@ const ServicesPage: React.FC<ServicesPageProps> = () => {
       <div className="bg-white/25 flex flex-col items-center justify-center">
         <div className="w-full">
           <div className="rounded-lg p-4">
-            <ServicesInfo services={localeData.SERVICES.DOCK}/>
+            <ServicesInfo services={localeData.SERVICES.DOCK} />
           </div>
         </div>
       </div>

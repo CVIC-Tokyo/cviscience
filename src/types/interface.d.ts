@@ -123,11 +123,10 @@ interface ReservationProcessProps {
   locale: string;
 }
 
-interface OptionalServicesInfoProps{
+interface OptionalServicesInfoProps {
   locale: string;
 }
 
 interface ReservationNoticeProps {
-
   locale: string;
 }

@@ -127,7 +127,8 @@ const en = {
           "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, cardiovascular anomalies, strokes, cerebral infarctions, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, cerebral vascular anomalies, and more.",
         RADIATION_CONCERN:
           "If you are concerned about radiation exposure, CT examination is also possible (However, there are no changes in the amount of money, etc.)",
-        RECOMMENDATION: "For  minimum heart imaging examination, this is recommended.",
+        RECOMMENDATION:
+          "For  minimum heart imaging examination, this is recommended.",
       },
       HEART_DOCK_PLUS: {
         RECOMMENDATION: "Combining CT and MRI unique to CVIC",
@@ -142,8 +143,10 @@ const en = {
           " Includes 'comprehensive result explanation' on the same day and 'follow-up' thereafter.",
           " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
         ],
-        TARGET: "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, and anomalies.",
-        RADIATION_CONCERN: "If you are concerned about radiation exposure, CT examination is also possible (However, there are no changes in the amount of money, etc.)",
+        TARGET:
+          "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, and anomalies.",
+        RADIATION_CONCERN:
+          "If you are concerned about radiation exposure, CT examination is also possible (However, there are no changes in the amount of money, etc.)",
       },
       BRAIN_CHECKUP: {
         TITLE: "Brain Dock",
@@ -153,71 +156,85 @@ const en = {
         TIME_REQUIRED:
           "Duration: Approximately 2 hours (From check-in and reception to result explanation and billing)",
         PRICE: {
-          PREMIUM_BRAIN: "◆ Premium Brain Dock: ¥68,000 (Tax included: ¥74,800)",
+          PREMIUM_BRAIN:
+            "◆ Premium Brain Dock: ¥68,000 (Tax included: ¥74,800)",
           AI_BRAIN: "◆ Brain / AI Dock: ¥61,800 (Tax included: ¥67,980)",
           BASIC_BRAIN: "◆ Basic Brain Dock: ¥36,000 (Tax included: ¥39,600)",
           REGULAR_BRAIN: "◆ Brain Dock: ¥29,800 (Tax included: ¥32,780)",
         },
         NOTICE:
           " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
-        TARGET: "Target: Stroke, cerebral infarction, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, anomalies, and more",
-        RECOMMENDATION: "Provided by a cardiologist who examines the blood vessels of the heart.",
+        TARGET:
+          "Target: Stroke, cerebral infarction, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, anomalies, and more",
+        RECOMMENDATION:
+          "Provided by a cardiologist who examines the blood vessels of the heart.",
       },
-    },    
+    },
     CVIC_EXAMS: {
       HEART_MRI_CORONARY_MRA: {
         TITLE: "Pericardial Fat Measurement",
-        DESCRIPTION: "Diagnoses abnormalities in the shape and function of the heart, as well as clogged coronary arteries, without using contrast agents.",
+        DESCRIPTION:
+          "Diagnoses abnormalities in the shape and function of the heart, as well as clogged coronary arteries, without using contrast agents.",
         PRICE: "¥40,000 (*¥44,000)",
       },
       BRAIN_MRI_CEREBRAL_MRA: {
         TITLE: "Aortic Examination",
-        DESCRIPTION: "It has a higher ability to detect minute intracerebral hemorrhages than CT, and takes 3D images of blood vessels in the brain to diagnose cerebral aneurysms and clogged blood vessels. Also diagnoses clogged blood vessels in the neck that can cause cerebral infarction.",
+        DESCRIPTION:
+          "It has a higher ability to detect minute intracerebral hemorrhages than CT, and takes 3D images of blood vessels in the brain to diagnose cerebral aneurysms and clogged blood vessels. Also diagnoses clogged blood vessels in the neck that can cause cerebral infarction.",
         PRICE: "¥44,000 (*¥48,400)",
       },
       BRAIN_AI_ANALYSIS: {
         TITLE: "Brain AI (artificial intelligence) analysis",
-        DESCRIPTION: "Measuring brain atrophy and cerebrovascular health using AI (artificial intelligence). Analyzing risk management for brain changes due to aging.",
+        DESCRIPTION:
+          "Measuring brain atrophy and cerebrovascular health using AI (artificial intelligence). Analyzing risk management for brain changes due to aging.",
         PRICE: "¥50,000 (*¥55,000)",
       },
       CALC: {
         TITLE: "Brain AI (Artificial Intelligence) Diagnosis",
-        DESCRIPTION: "The total amount of calcium in the coronary arteries is examined using CT without using a contrast agent. Can predict the possibility of sudden death in the future.",
+        DESCRIPTION:
+          "The total amount of calcium in the coronary arteries is examined using CT without using a contrast agent. Can predict the possibility of sudden death in the future.",
         PRICE: "¥50,000 (*¥55,000)",
       },
       FAT_MEASUREMENT: {
         TITLE: "Body Fat (Visceral and Subcutaneous Fat Measurement)",
-        DESCRIPTION: "We use CT to accurately measure visceral fat, which cannot be detected by metabolic measurement during general medical examinations. Recently, it has become a hot topic that even thin people have increased visceral fat, which can also pose a risk for cardiovascular disease and cancer.",
+        DESCRIPTION:
+          "We use CT to accurately measure visceral fat, which cannot be detected by metabolic measurement during general medical examinations. Recently, it has become a hot topic that even thin people have increased visceral fat, which can also pose a risk for cardiovascular disease and cancer.",
         PRICE: "¥20,000 (*¥22,000)",
       },
       ECHO: {
         TITLE: "Lung Examination",
-        DESCRIPTION: "By applying ultrasound to the heart and capturing the reflected waves as images, we examine abnormalities in shape and movement in each part of the heart. By performing this in conjunction with an MRI scan, it is possible to diagnose things such as the opening and closing movements of valves, blood flow, and blood regurgitation.",
+        DESCRIPTION:
+          "By applying ultrasound to the heart and capturing the reflected waves as images, we examine abnormalities in shape and movement in each part of the heart. By performing this in conjunction with an MRI scan, it is possible to diagnose things such as the opening and closing movements of valves, blood flow, and blood regurgitation.",
         PRICE: "¥22,000 (*¥24,200)",
       },
       NECK_ECHO: {
         TITLE: "Cardiac Echo",
-        DESCRIPTION: "This is a sensitive method for examining arteriosclerosis in the neck blood vessels, and is excellent at detecting plaque in its early stages. Since arteriosclerosis in the carotid arteries reflects arteriosclerosis throughout the body, we diagnose the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
+        DESCRIPTION:
+          "This is a sensitive method for examining arteriosclerosis in the neck blood vessels, and is excellent at detecting plaque in its early stages. Since arteriosclerosis in the carotid arteries reflects arteriosclerosis throughout the body, we diagnose the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
         PRICE: "¥16,000 (*¥17,600)",
       },
       ECG: {
         TITLE: "Neck Echo",
-        DESCRIPTION: "We perform basic tests to check for heart disease and arrhythmia based on the electrical flow in the heart.",
+        DESCRIPTION:
+          "We perform basic tests to check for heart disease and arrhythmia based on the electrical flow in the heart.",
         PRICE: "¥10,000 (*¥11,000)",
       },
       ABI: {
         TITLE: "ABI (Arterial Stiffness Measurement)",
-        DESCRIPTION: "By comparing blood pressure in the hands and feet and examining the way pulse waves travel, it detects the degree of arteriosclerosis (aging of blood vessels, etc.) and early vascular disorders, and measures the age of blood vessels.",
+        DESCRIPTION:
+          "By comparing blood pressure in the hands and feet and examining the way pulse waves travel, it detects the degree of arteriosclerosis (aging of blood vessels, etc.) and early vascular disorders, and measures the age of blood vessels.",
         PRICE: "¥6,000 (*¥6,600)",
       },
       CVIC_BLOOD_TEST_SET: {
         TITLE: "CVIC Blood Test Set",
-        DESCRIPTION: "In addition to conventional heart health tests, CVIC has uniquely set high-sensitivity cardiovascular markers based on global evidence. We evaluate the risk level by subdividing normal values, and provide information on how to reduce risk through lifestyle changes and medication treatment, as well as quantify and visualize the improvement effects, along with the results of image diagnosis.",
+        DESCRIPTION:
+          "In addition to conventional heart health tests, CVIC has uniquely set high-sensitivity cardiovascular markers based on global evidence. We evaluate the risk level by subdividing normal values, and provide information on how to reduce risk through lifestyle changes and medication treatment, as well as quantify and visualize the improvement effects, along with the results of image diagnosis.",
         PRICE: "¥49,800 (*¥54,780)",
       },
       COMPREHENSIVE_RESULT_EXPLANATION: {
         TITLE: "CVIC Blood Test Set+",
-        DESCRIPTION: "In addition to cardiac imaging diagnosis, we use the new CVIC blood test set (biomarker set) to provide comprehensive results explanations, detect early signs, and support your lifestyle to avoid getting sick. After all test results are available, this will be done at a later date in the clinic or online.",
+        DESCRIPTION:
+          "In addition to cardiac imaging diagnosis, we use the new CVIC blood test set (biomarker set) to provide comprehensive results explanations, detect early signs, and support your lifestyle to avoid getting sick. After all test results are available, this will be done at a later date in the clinic or online.",
         PRICE: "¥32,800 (*¥36,080)",
       },
     },
@@ -442,115 +459,131 @@ const en = {
       TYPE: "MRI",
       TIME: "15 minutes",
       PRICE: "¥40,000 (*¥44,000)",
-      DESCRIPTION: "A test to examine the fat around the heart (risk of myocardial infarction) that accumulates regardless of age or obesity.",
+      DESCRIPTION:
+        "A test to examine the fat around the heart (risk of myocardial infarction) that accumulates regardless of age or obesity.",
     },
     {
       TITLE: "Aortic Examination",
       TYPE: "MRI",
       TIME: "30 minutes",
       PRICE: "¥44,000 (*¥48,400)",
-      DESCRIPTION: "3D imaging of the thoracic and abdominal aorta. Early detection of aortic aneurysms and aortic dissections, which are life-threatening if ruptured.",
+      DESCRIPTION:
+        "3D imaging of the thoracic and abdominal aorta. Early detection of aortic aneurysms and aortic dissections, which are life-threatening if ruptured.",
     },
     {
       TITLE: "Lumbar and Lower Extremity Vascular Examination",
       TYPE: "MRI",
       TIME: "1 hour",
       PRICE: "¥84,000 (*¥92,400)",
-      DESCRIPTION: "Symptoms such as pain and numbness in the legs when walking, which disappear after a short rest, are caused by lumbar spine or lower extremity arterial sclerosis.",
+      DESCRIPTION:
+        "Symptoms such as pain and numbness in the legs when walking, which disappear after a short rest, are caused by lumbar spine or lower extremity arterial sclerosis.",
     },
     {
       TITLE: "Brain AI (Artificial Intelligence) Diagnosis",
       TYPE: "MRI",
       TIME: "Not specified",
       PRICE: "¥50,000 (*¥55,000)",
-      DESCRIPTION: "Measurement of brain atrophy and brain vascular health using artificial intelligence. Analysis of age-related brain changes and risk management.",
+      DESCRIPTION:
+        "Measurement of brain atrophy and brain vascular health using artificial intelligence. Analysis of age-related brain changes and risk management.",
     },
     {
       TITLE: "Body Fat (Visceral and Subcutaneous Fat Measurement)",
       TYPE: "CT",
       TIME: "5 minutes",
       PRICE: "¥20,000 (*¥22,000)",
-      DESCRIPTION: "Accurate measurement of visceral fat that cannot be measured in general examinations. Recommended even for thin people to check for metabolic syndrome.",
+      DESCRIPTION:
+        "Accurate measurement of visceral fat that cannot be measured in general examinations. Recommended even for thin people to check for metabolic syndrome.",
     },
     {
       TITLE: "Lung Examination",
       TYPE: "CT",
       TIME: "10 minutes",
       PRICE: "¥22,000 (*¥24,200)",
-      DESCRIPTION: "CT examination for risks of emphysema, chronic bronchitis, chronic asthma, pneumonia, and lung cancer. Recommended for smokers and former smokers.",
+      DESCRIPTION:
+        "CT examination for risks of emphysema, chronic bronchitis, chronic asthma, pneumonia, and lung cancer. Recommended for smokers and former smokers.",
     },
     {
       TITLE: "Blood Pressure Pulse Wave",
       TYPE: "Ultrasound",
       TIME: "30 minutes",
       PRICE: "¥16,000 (*¥17,600)",
-      DESCRIPTION: "Ultrasound examination of the heart to diagnose valve opening and closing movements, blood flow rate, and blood reflux.",
+      DESCRIPTION:
+        "Ultrasound examination of the heart to diagnose valve opening and closing movements, blood flow rate, and blood reflux.",
     },
     {
       TITLE: "Neck Echo",
       TYPE: "Ultrasound",
       TIME: "30 minutes",
       PRICE: "¥10,000 (*¥11,000)",
-      DESCRIPTION: "Ultrasound examination of the neck blood vessels to diagnose arteriosclerosis. Determines the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
+      DESCRIPTION:
+        "Ultrasound examination of the neck blood vessels to diagnose arteriosclerosis. Determines the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
     },
     {
       TITLE: "ABI (Arterial Stiffness Measurement)",
       TYPE: "Blood Pressure Pulse Wave",
       TIME: "10 minutes",
       PRICE: "¥6,000 (*¥6,600)",
-      DESCRIPTION: "Examines the comparison of blood pressure between the hands and feet and the transmission of pulse waves to determine arterial stiffness and vascular age. Reveals the risk of cerebral infarction and myocardial infarction.",
+      DESCRIPTION:
+        "Examines the comparison of blood pressure between the hands and feet and the transmission of pulse waves to determine arterial stiffness and vascular age. Reveals the risk of cerebral infarction and myocardial infarction.",
     },
     {
       TITLE: "CVIC Blood Test Set",
       TYPE: "Blood Draw",
       TIME: "10 minutes",
       PRICE: "¥49,800 (*¥54,780)",
-      DESCRIPTION: "Includes high-sensitivity CRP, heart failure markers, and troponin, as well as advanced blood markers that cannot be performed under insurance. A set of 30 items selected by the clinic's doctor (21 items in 2021).",
+      DESCRIPTION:
+        "Includes high-sensitivity CRP, heart failure markers, and troponin, as well as advanced blood markers that cannot be performed under insurance. A set of 30 items selected by the clinic's doctor (21 items in 2021).",
     },
     {
       TITLE: "CVIC Blood Test Set++",
       TYPE: "Blood Draw",
       TIME: "10 minutes",
       PRICE: "¥32,800 (*¥36,080)",
-      DESCRIPTION: "A set of 8 carefully selected items including secondary hypertension and thyroid.",
+      DESCRIPTION:
+        "A set of 8 carefully selected items including secondary hypertension and thyroid.",
     },
     {
       TITLE: "Simple Cancer Tumor Marker Set",
       TYPE: "Blood Draw",
       TIME: "10 minutes",
       PRICE: "¥10,000 (*¥11,000)",
-      DESCRIPTION: "When cancer develops in the body, special substances may increase abnormally in the blood. This set indicates the possibility of cancer.",
+      DESCRIPTION:
+        "When cancer develops in the body, special substances may increase abnormally in the blood. This set indicates the possibility of cancer.",
     },
     {
       TITLE: "Full Body Cancer Tumor Marker Set",
       TYPE: "Blood Draw",
       TIME: "10 minutes",
       PRICE: "¥78,000 (*¥85,800)",
-      DESCRIPTION: "A set of cancer tumor markers for the entire body, including the esophagus, lungs, stomach, bile ducts, pancreas, large intestine, bladder, kidneys, liver cells, testicles, breast cancer, ovaries, and uterus.",
+      DESCRIPTION:
+        "A set of cancer tumor markers for the entire body, including the esophagus, lungs, stomach, bile ducts, pancreas, large intestine, bladder, kidneys, liver cells, testicles, breast cancer, ovaries, and uterus.",
     },
     {
       TITLE: "MCI Screening Test",
       TYPE: "Blood Draw",
       TIME: "10 minutes",
       PRICE: "¥30,000 (*¥33,000)",
-      DESCRIPTION: "MCI (mild cognitive impairment) screening test measures the amount of proteins in the blood involved in the progression of Alzheimer's disease.",
+      DESCRIPTION:
+        "MCI (mild cognitive impairment) screening test measures the amount of proteins in the blood involved in the progression of Alzheimer's disease.",
     },
     {
       TITLE: "Holter Electrocardiogram",
       TYPE: "Electrocardiogram",
       TIME: "24-hour measurement Return visit or consultation included",
       PRICE: "¥30,000 (*¥33,000)",
-      DESCRIPTION: "Records electrocardiograms over a long period of time (24 hours) using a portable miniature electrocardiograph to examine heartbeats during daily activities.",
+      DESCRIPTION:
+        "Records electrocardiograms over a long period of time (24 hours) using a portable miniature electrocardiograph to examine heartbeats during daily activities.",
     },
     {
       TITLE: "Af・SAS Screening Test",
       TYPE: "Electrocardiogram",
       TIME: "3-day measurement *Return kit included",
       PRICE: "¥40,000 (*¥44,000)",
-      DESCRIPTION: "Convenient health check for trends in atrial fibrillation (Af) and sleep apnea syndrome (SAS) and obstructive sleep apnea syndrome (OSA) using an electrocardiograph.",
+      DESCRIPTION:
+        "Convenient health check for trends in atrial fibrillation (Af) and sleep apnea syndrome (SAS) and obstructive sleep apnea syndrome (OSA) using an electrocardiograph.",
     },
   ],
-  
+
   RESERVATION: {
     TITLE: "Reservation",
     DOCK: "Dock Basic Plan",
@@ -698,14 +731,16 @@ const en = {
     ],
   },
   RESERVATION_NOTICE: {
-    TITLE: "For those who live in Japan but do not have a Japanese insurance card, those wishing to receive medical treatment from overseas, and agents on their behalf",
-    CONTENT: "For reservations made by individuals or their representatives, in addition to the above amount,",
+    TITLE:
+      "For those who live in Japan but do not have a Japanese insurance card, those wishing to receive medical treatment from overseas, and agents on their behalf",
+    CONTENT:
+      "For reservations made by individuals or their representatives, in addition to the above amount,",
     DETAILS: [
       "① Interpretation fees and translation fees are required separately (costs vary depending on the plan, so please check the plan for details and we will provide a quote after the plan is determined).",
       "② Separate fees will be charged for plans and contents not listed in the above price list.",
-      "※ Please note that the specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services."
-    ]
-  }
+      "※ Please note that the specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
+    ],
+  },
 };
 
 export default en;

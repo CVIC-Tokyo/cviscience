@@ -3,7 +3,11 @@ import { getLocaleData } from "@/utils/helpers";
 import ReservationModal from "@/app/modals/ReservationModal";
 import PrivacyPolicyModal from "@/app/modals/PrivacyPolicyModal";
 
-const ConsultationForm: React.FC<ConsultationProps> = ({ locale, selectedPlan, selectedTests }) => {
+const ConsultationForm: React.FC<ConsultationProps> = ({
+  locale,
+  selectedPlan,
+  selectedTests,
+}) => {
   const localeData = getLocaleData(locale);
   const [privacyPolicyModalOpen, setPrivacyPolicyModalOpen] = useState(false);
   const handlePrivacyPolicyModalClose = () => {
