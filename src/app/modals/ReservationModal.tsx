@@ -7,9 +7,16 @@ const ReservationModal: React.FC<ReservationModalProps> = ({
   onSubmit,
   formData,
   locale,
+  selectedPlan,
+  selectedTests,
 }) => {
   if (!isOpen) return null;
   const localeData = getLocaleData(locale);
+
+  const getCurrentDateTime = () => {
+    const currentDate = new Date();
+    return currentDate.toLocaleString(); // You can adjust the format as needed
+  };
 
   return (
     <div className="fixed z-[100] inset-0 overflow-y-auto flex items-center justify-center">
@@ -23,6 +30,10 @@ const ReservationModal: React.FC<ReservationModalProps> = ({
           <h2 className="text-lg font-bold mb-4">
             {localeData.RESERVATION_MODAL.TITLE}
           </h2>
+          <div className="grid-cols-2 p-2">
+            <p className="font-semibold">{selectedPlan}</p>
+            <p>{selectedTests.join(", ")}</p>
+          </div>
           <div className="grid grid-cols-2 gap-y-2">
             {Object.entries(formData).map(([key, value]) => (
               <div key={key} className="mb-4">
@@ -34,17 +45,21 @@ const ReservationModal: React.FC<ReservationModalProps> = ({
             ))}
           </div>
         </div>
+        {/* Display timestamp */}
+        <div className="text-right text-xs text-gray-500 mt-2">
+          {getCurrentDateTime()}
+        </div>
         {/* Buttons for submit or revise */}
         <div className="flex justify-end mt-4">
           <button
             onClick={onClose}
-            className="bg-cvic-red text-white px-4 py-2 rounded-md mr-2"
+            className="bg-gray-500 text-white px-4 py-2 rounded-md mr-2 hover:scale-105 duration-500"
           >
             {localeData.RESERVATION_MODAL.CLOSE}
           </button>
           <button
             onClick={onSubmit}
-            className="bg-cvic-red text-white px-4 py-2 rounded-md"
+            className="bg-cvic-red text-white px-4 py-2 rounded-md hover:scale-105 duration-500"
           >
             {localeData.RESERVATION_MODAL.CONFIRM}
           </button>

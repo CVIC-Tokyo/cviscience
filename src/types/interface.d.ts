@@ -66,6 +66,10 @@ interface HamburgerProps {
 
 interface ConsultationProps {
   locale: string;
+  selectedPlan: string | null;
+  selectedTests: string[];
+  setSelectedPlan: Dispatch<SetStateAction<string | null>>;
+  setSelectedTests: Dispatch<SetStateActionstring[]>;
 }
 
 interface ReservationModalProps {
@@ -90,6 +94,8 @@ interface ReservationModalProps {
     preferredContactTime: string;
   };
   locale: string;
+  selectedPlan: string | null;
+  selectedTests: string[];
 }
 interface FormData extends globalThis.FormData {
   consultationDates: string[];
@@ -119,11 +125,10 @@ interface ReservationProcessProps {
   locale: string;
 }
 
-interface OptionalServicesInfoProps{
+interface OptionalServicesInfoProps {
   locale: string;
 }
 
 interface ReservationNoticeProps {
-
   locale: string;
 }

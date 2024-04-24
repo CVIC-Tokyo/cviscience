@@ -3,7 +3,13 @@ import { getLocaleData } from "@/utils/helpers";
 import ReservationModal from "@/app/modals/ReservationModal";
 import PrivacyPolicyModal from "@/app/modals/PrivacyPolicyModal";
 
-const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
+const ConsultationForm: React.FC<ConsultationProps> = ({
+  locale,
+  selectedPlan,
+  selectedTests,
+  setSelectedPlan,
+  setSelectedTests,
+}) => {
   const localeData = getLocaleData(locale);
   const [privacyPolicyModalOpen, setPrivacyPolicyModalOpen] = useState(false);
   const handlePrivacyPolicyModalClose = () => {
@@ -38,16 +44,35 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
   const [termsAgreed, setTermsAgreed] = useState(false);
   const [preferredContactTime, setPreferredContactTime] = useState("");
   const [formError, setFormError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const [modalOpen, setModalOpen] = useState(false);
 
-  const handleRevise = () => {
-    setModalOpen(false);
-    // Additional logic to handle revise if needed
-  };
-
   const handleConfirmSubmit = () => {
     // Additional logic to handle form submission
+    setName("");
+    setNameFurigana("");
+    setSurname("");
+    setSurnameFurigana("");
+    setDateOfBirth("");
+    setAddress("");
+    setConsultationDates(["", "", ""]),
+    setSelectedTimeSlots(["", "", ""]),
+    setEmail("");
+    setPhoneNumber("");
+    setPreferredContact("");
+    setConsultationHistory("");
+    setMetalInBody("");
+    setMetalDetails("");
+    setTermsAgreed(false);
+    setPreferredContactTime("");
+    setSelectedPlan(null);
+    setSelectedTests([]);
+
+    setTimeout(() => {
+      setModalOpen(false);
+
+    }, 1000);
   };
 
   const handleConsultationDateChange = (index: number, date: string) => {
@@ -64,10 +89,10 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    setModalOpen(true);
     // Check if any required fields are empty
     if (
       name.trim() === "" ||
+      selectedPlan === null ||
       surname.trim() === "" ||
       nameFurigana.trim() === "" ||
       surnameFurigana.trim() === "" ||
@@ -83,10 +108,12 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
       // Set form error message
       setFormError(localeData.CONSULTATION.FORM_ERROR);
       return;
-    }
+    } else setModalOpen(true);
 
     // Clear form error message if all required fields are filled
     setFormError("");
+    console.log(formError);
+    return;
 
     // Handle form submission if all required fields are filled
     // Your form submission logic here
@@ -212,7 +239,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
             value={dateOfBirth}
             max={currentDate.toISOString().split("T")[0]} // Set maximum date to current date
             onChange={(e) => setDateOfBirth(e.target.value)}
-            className="block w-full lg:w-[75%] border border-gray-300 rounded-md px-3 py-2 mt-1"
+            className="block w-full lg:w-[75%] border border-gray-300 rounded-b-md px-3 py-2 mt-1"
           />
         </div>
         <div className="flex flex-col items-center justify-center p-2">
@@ -245,20 +272,24 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
                 onChange={(e) =>
                   handleConsultationDateChange(index, e.target.value)
                 }
-                className="block w-full border border-gray-300 rounded-md px-3 py-2 mt-1"
+                className="block w-full border border-gray-300 rounded-b-md px-3 py-2 mt-1"
               />
             </div>
             <div className="p-1 md:p-2">
               <label className="block mt-2 font-semibold text-xs md:text-sm">
                 {localeData.CONSULTATION.TIME_SLOT}
               </label>
-              <input
-                type="text"
+              <select
                 value={selectedTimeSlots[index]}
                 onChange={(e) => handleTimeSlotChange(index, e.target.value)}
-                placeholder={localeData.CONSULTATION.PREFFERED_TIME}
-                className="block w-full border border-gray-300 rounded-md px-3 py-2 mt-1"
-              />
+                className="block w-full border border-gray-300 rounded-b-md px-3 py-2 mt-1"
+              >
+                {localeData.TIME_OPTIONS.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
         ))}
@@ -357,7 +388,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
           </button>
         </div>
         {formError && (
-          <div className="text-cvic-red p-1 md:p-2">{formError}</div>
+          <div className="text-red-500 p-1 md:p-2">{formError}</div>
         )}
         <button
           type="submit"
@@ -372,6 +403,8 @@ const ConsultationForm: React.FC<ConsultationProps> = ({ locale }) => {
         onClose={() => setModalOpen(false)}
         onSubmit={handleConfirmSubmit}
         locale={locale}
+        selectedPlan={selectedPlan}
+        selectedTests={selectedTests}
         formData={{
           consultationDates,
           selectedTimeSlots,

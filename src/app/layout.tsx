@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
 import Providers from "./Providers";
+import { sendMail } from "@/utils/mail";
 
 export const metadata: Metadata = {
   title: "Cardiovascular Imaging Clinic",
   description: "CVIC Iidabashi",
 };
+
+export const send = async() => {
+  "use server"
+  await sendMail({to:"gardocaves@gmail.com", name:"Buddy", subject: "Test Mail",
+    body: `<h1>Hello world</h1>`
+  })
+}
+
 
 export default function RootLayout({
   children,

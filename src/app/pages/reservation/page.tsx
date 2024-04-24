@@ -34,6 +34,9 @@ const DockSelector: React.FC = () => {
       <div className="py-2">
         <ReservationProcess locale={locale} />
       </div>
+      <div className="w-full my-4">
+        <ReservationNotice locale={locale} />
+      </div>
       <div className="bg-white/25 flex flex-col items-center justify-around md:flex-row md:items-start md:justify-around p-2">
         <div className="w-full">
           <div className="bg-white rounded-lg p-4 m-2">
@@ -86,12 +89,15 @@ const DockSelector: React.FC = () => {
           </div>
         </div>
         <div className="w-full m-2">
-          <ConsultationForm locale={locale} />
+          <ConsultationForm
+            locale={locale}
+            selectedPlan={selectedPlan}
+            selectedTests={selectedTests}
+            setSelectedPlan={setSelectedPlan}
+            setSelectedTests={setSelectedTests}
+          />
         </div>
       </div>
-        <div className="w-full my-4">
-                <ReservationNotice locale={locale} />
-        </div>
     </div>
   );
 };

@@ -28,7 +28,9 @@ const SNS = () => {
         width={55}
         className="sns-logo"
         onClick={() =>
-          "https://www.youtube.com/channel/UCiU_fpZA-P_VNvwwn8ESrLw"
+          opneLinkInNewTab(
+            "https://www.youtube.com/channel/UCiU_fpZA-P_VNvwwn8ESrLw",
+          )
         }
       />
       <Image

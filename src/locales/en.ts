@@ -1,4 +1,49 @@
 const en = {
+  INTRODUCTION: {
+    TITLE: "Introduction to CVIC",
+    CONTENT:
+      "For early detection and treatment of heart disease. Heart disease is the second leading cause of death among Japanese people, following cancer, emphasizing the increasing importance of early detection and treatment. CVIC strives to serve as many patients as possible, collaborating with radiologists and cardiologists while working tirelessly every day. Through the widespread adoption of cardiac imaging diagnostics and further technological innovation, we aim to contribute to the advancement of healthcare in Japan."
+  },
+  CVIC_DESCRIPTION: {
+    TITLE: "What is Cardiovascular Imaging Clinic Iidabashi (CVIC)?",
+    CONTENT:
+      "CVIC is a specialized facility focused on cardiovascular imaging examinations, utilizing advanced medical equipment such as MRI and CT to visualize the body's internal structures in 3D. Established in November 2009, it is Japan's first and a rare global facility dedicated to cardiovascular imaging diagnostics. In November 2014, the examination and medical departments were separated, and CVIC began anew as a medical corporation."
+  },
+  EARLY_DETECTION: {
+    TITLE: "Early Detection of Heart Disease through Visual Examination",
+    CONTENT:
+      "Among the body's organs, visualizing the constantly pulsating heart with clarity has historically been challenging, with this technology only recently being developed. However, advancements in imaging diagnostics now allow for the three-dimensional visualization and diagnosis of the heart, enabling early detection of heart disease."
+  },
+  ADVANCED_IMAGING: {
+    TITLE: "Limited Adoption of Advanced Cardiac Imaging in Japan",
+    CONTENT:
+      "Unfortunately, the widespread adoption of cardiac imaging diagnostics, particularly using MRI, is lagging in Japan. This is primarily due to the highly advanced and labor-intensive nature of this technology, resulting in a shortage of qualified technicians. Consequently, many individuals remain unaware of their heart condition until experiencing a sudden heart attack."
+  },
+  ADDRESSING_NEEDS: {
+    TITLE: "Rapid Response to Clinical Needs",
+    CONTENT:
+      "University and general hospitals' imaging departments must accommodate examinations from all medical specialties, not just the heart. Prioritizing the challenging and time-consuming cardiac examinations is difficult in such settings. However, CVIC has responded to the clinical needs by providing rapid examination services, addressing requests for urgent examinations."
+  },
+  CONTINUOUS_IMPROVEMENT: {
+    TITLE: "Continuous Improvement through Experience",
+    CONTENT:
+      "Many cases referred from university and general hospitals present challenging examinations and diagnoses. By accurately conducting and diagnosing 2,680 cardiac MRI examinations annually, CVIC's technical and diagnostic capabilities continue to improve. Recognized for producing highly detailed and high-quality cardiac images, CVIC receives high praise from referring physicians at nearby university and core hospitals. By specializing solely in cardiac imaging and continuously honing our skills, we are able to perform advanced cardiac imaging diagnostics swiftly and accurately."
+  },
+  NEW_CVIC_GROUP: {
+    TITLE: "As the New CVIC Group",
+    CONTENT:
+      "The ground floor operates as the independent examination department of the newly formed medical corporation CVIC Group's 'Cardiovascular Imaging Clinic Iidabashi,' with the establishment of a solid examination system using state-of-the-art imaging equipment, including two MRI machines and one CT scanner. The fourth floor is opened as the medical practice department of the CVIC Group, 'Iidabashi Heart Clinic,' providing a spacious environment for detailed explanations by physicians and accurate screening of examination images. As the newly formed CVIC Group, both the ground floor and the fourth floor are committed to delivering even more precise examinations and diagnoses than before."
+  },
+  CVIC_DOCK: {
+    TITLE: "New Cardiovascular and Brain Checkups Offered by CVIC",
+    CONTENT:
+      "Since its opening in 2009, the CVIC Cardiovascular Imaging Clinic Iidabashi has conducted over 73,000 MRI and CT examinations of patients' hearts, making it Japan's first and rare global specialized heart imaging center. The number of heart MRI examinations accounts for about 10% of the total in Japan and ranks among the top five in the world. Through heart imaging examinations at CVIC, we have discovered severe heart diseases that were previously unnoticed and detected early-stage heart diseases, facilitating appropriate treatment and preventive medicine. CVIC's efforts have garnered attention domestically and internationally, and are frequently covered by the domestic media. Based on this wealth of experience in heart imaging diagnostics, we have come to realize the need for a new framework for cardiovascular imaging examinations to further demonstrate their usefulness."
+  },
+  NEW_CHECKUP_MENU: {
+    TITLE: "Introduction of New Cardiovascular and Brain Checkup Menu",
+    CONTENT:
+      "The newly introduced menu consists of two components: 'Blood Biomarker Testing' combining high-sensitivity blood tests and 'Personalized Cardiovascular Testing' tailored to individual heart disease risks and physical conditions. 'Blood Biomarker Testing' includes comprehensive result explanations and specific advice online or via phone, as well as follow-ups three months later. Advances in high-sensitivity blood testing allow for further subdivision of normal values rather than simply categorizing as normal or abnormal, enabling predictions of future risks. Merely undergoing examinations is not meaningful; it is only when the examination results are utilized in daily lifestyle habits and future disease prevention that their usefulness can be demonstrated. Through 'Blood Biomarker Testing,' we aim to set specific target values and consider individual measures to contribute to maintaining cardiovascular health for everyone."
+  },
   BASIC: {
     HOME: "Home",
     ABOUT: "About CVIC",
@@ -127,7 +172,8 @@ const en = {
           "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, cardiovascular anomalies, strokes, cerebral infarctions, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, cerebral vascular anomalies, and more.",
         RADIATION_CONCERN:
           "If you are concerned about radiation exposure, CT examination is also possible (However, there are no changes in the amount of money, etc.)",
-        RECOMMENDATION: "For  minimum heart imaging examination, this is recommended.",
+        RECOMMENDATION:
+          "For  minimum heart imaging examination, this is recommended.",
       },
       HEART_DOCK_PLUS: {
         RECOMMENDATION: "Combining CT and MRI unique to CVIC",
@@ -142,8 +188,10 @@ const en = {
           " Includes 'comprehensive result explanation' on the same day and 'follow-up' thereafter.",
           " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
         ],
-        TARGET: "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, and anomalies.",
-        RADIATION_CONCERN: "If you are concerned about radiation exposure, CT examination is also possible (However, there are no changes in the amount of money, etc.)",
+        TARGET:
+          "Target: Myocardial infarction, angina pectoris, myocarditis, Kawasaki disease, valve disease, dangerous arrhythmias, and anomalies.",
+        RADIATION_CONCERN:
+          "If you are concerned about radiation exposure, CT examination is also possible (However, there are no changes in the amount of money, etc.)",
       },
       BRAIN_CHECKUP: {
         TITLE: "Brain Dock",
@@ -153,71 +201,85 @@ const en = {
         TIME_REQUIRED:
           "Duration: Approximately 2 hours (From check-in and reception to result explanation and billing)",
         PRICE: {
-          PREMIUM_BRAIN: "◆ Premium Brain Dock: ¥68,000 (Tax included: ¥74,800)",
+          PREMIUM_BRAIN:
+            "◆ Premium Brain Dock: ¥68,000 (Tax included: ¥74,800)",
           AI_BRAIN: "◆ Brain / AI Dock: ¥61,800 (Tax included: ¥67,980)",
           BASIC_BRAIN: "◆ Basic Brain Dock: ¥36,000 (Tax included: ¥39,600)",
           REGULAR_BRAIN: "◆ Brain Dock: ¥29,800 (Tax included: ¥32,780)",
         },
         NOTICE:
           " Specifications, service items, prices, etc. of the dock provided may be changed or discontinued without notice due to advances in medical technology and the provision of the best medical services, so please understand.",
-        TARGET: "Target: Stroke, cerebral infarction, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, anomalies, and more",
-        RECOMMENDATION: "Provided by a cardiologist who examines the blood vessels of the heart.",
+        TARGET:
+          "Target: Stroke, cerebral infarction, arterial sclerosis, asymptomatic, unruptured intracranial aneurysms, narrowing of cerebral vessels, brain tumors, anomalies, and more",
+        RECOMMENDATION:
+          "Provided by a cardiologist who examines the blood vessels of the heart.",
       },
-    },    
+    },
     CVIC_EXAMS: {
       HEART_MRI_CORONARY_MRA: {
         TITLE: "Pericardial Fat Measurement",
-        DESCRIPTION: "Diagnoses abnormalities in the shape and function of the heart, as well as clogged coronary arteries, without using contrast agents.",
+        DESCRIPTION:
+          "Diagnoses abnormalities in the shape and function of the heart, as well as clogged coronary arteries, without using contrast agents.",
         PRICE: "¥40,000 (*¥44,000)",
       },
       BRAIN_MRI_CEREBRAL_MRA: {
         TITLE: "Aortic Examination",
-        DESCRIPTION: "It has a higher ability to detect minute intracerebral hemorrhages than CT, and takes 3D images of blood vessels in the brain to diagnose cerebral aneurysms and clogged blood vessels. Also diagnoses clogged blood vessels in the neck that can cause cerebral infarction.",
+        DESCRIPTION:
+          "It has a higher ability to detect minute intracerebral hemorrhages than CT, and takes 3D images of blood vessels in the brain to diagnose cerebral aneurysms and clogged blood vessels. Also diagnoses clogged blood vessels in the neck that can cause cerebral infarction.",
         PRICE: "¥44,000 (*¥48,400)",
       },
       BRAIN_AI_ANALYSIS: {
         TITLE: "Brain AI (artificial intelligence) analysis",
-        DESCRIPTION: "Measuring brain atrophy and cerebrovascular health using AI (artificial intelligence). Analyzing risk management for brain changes due to aging.",
+        DESCRIPTION:
+          "Measuring brain atrophy and cerebrovascular health using AI (artificial intelligence). Analyzing risk management for brain changes due to aging.",
         PRICE: "¥50,000 (*¥55,000)",
       },
       CALC: {
         TITLE: "Brain AI (Artificial Intelligence) Diagnosis",
-        DESCRIPTION: "The total amount of calcium in the coronary arteries is examined using CT without using a contrast agent. Can predict the possibility of sudden death in the future.",
+        DESCRIPTION:
+          "The total amount of calcium in the coronary arteries is examined using CT without using a contrast agent. Can predict the possibility of sudden death in the future.",
         PRICE: "¥50,000 (*¥55,000)",
       },
       FAT_MEASUREMENT: {
         TITLE: "Body Fat (Visceral and Subcutaneous Fat Measurement)",
-        DESCRIPTION: "We use CT to accurately measure visceral fat, which cannot be detected by metabolic measurement during general medical examinations. Recently, it has become a hot topic that even thin people have increased visceral fat, which can also pose a risk for cardiovascular disease and cancer.",
+        DESCRIPTION:
+          "We use CT to accurately measure visceral fat, which cannot be detected by metabolic measurement during general medical examinations. Recently, it has become a hot topic that even thin people have increased visceral fat, which can also pose a risk for cardiovascular disease and cancer.",
         PRICE: "¥20,000 (*¥22,000)",
       },
       ECHO: {
         TITLE: "Lung Examination",
-        DESCRIPTION: "By applying ultrasound to the heart and capturing the reflected waves as images, we examine abnormalities in shape and movement in each part of the heart. By performing this in conjunction with an MRI scan, it is possible to diagnose things such as the opening and closing movements of valves, blood flow, and blood regurgitation.",
+        DESCRIPTION:
+          "By applying ultrasound to the heart and capturing the reflected waves as images, we examine abnormalities in shape and movement in each part of the heart. By performing this in conjunction with an MRI scan, it is possible to diagnose things such as the opening and closing movements of valves, blood flow, and blood regurgitation.",
         PRICE: "¥22,000 (*¥24,200)",
       },
       NECK_ECHO: {
         TITLE: "Cardiac Echo",
-        DESCRIPTION: "This is a sensitive method for examining arteriosclerosis in the neck blood vessels, and is excellent at detecting plaque in its early stages. Since arteriosclerosis in the carotid arteries reflects arteriosclerosis throughout the body, we diagnose the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
+        DESCRIPTION:
+          "This is a sensitive method for examining arteriosclerosis in the neck blood vessels, and is excellent at detecting plaque in its early stages. Since arteriosclerosis in the carotid arteries reflects arteriosclerosis throughout the body, we diagnose the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
         PRICE: "¥16,000 (*¥17,600)",
       },
       ECG: {
         TITLE: "Neck Echo",
-        DESCRIPTION: "We perform basic tests to check for heart disease and arrhythmia based on the electrical flow in the heart.",
+        DESCRIPTION:
+          "We perform basic tests to check for heart disease and arrhythmia based on the electrical flow in the heart.",
         PRICE: "¥10,000 (*¥11,000)",
       },
       ABI: {
         TITLE: "ABI (Arterial Stiffness Measurement)",
-        DESCRIPTION: "By comparing blood pressure in the hands and feet and examining the way pulse waves travel, it detects the degree of arteriosclerosis (aging of blood vessels, etc.) and early vascular disorders, and measures the age of blood vessels.",
+        DESCRIPTION:
+          "By comparing blood pressure in the hands and feet and examining the way pulse waves travel, it detects the degree of arteriosclerosis (aging of blood vessels, etc.) and early vascular disorders, and measures the age of blood vessels.",
         PRICE: "¥6,000 (*¥6,600)",
       },
       CVIC_BLOOD_TEST_SET: {
         TITLE: "CVIC Blood Test Set",
-        DESCRIPTION: "In addition to conventional heart health tests, CVIC has uniquely set high-sensitivity cardiovascular markers based on global evidence. We evaluate the risk level by subdividing normal values, and provide information on how to reduce risk through lifestyle changes and medication treatment, as well as quantify and visualize the improvement effects, along with the results of image diagnosis.",
+        DESCRIPTION:
+          "In addition to conventional heart health tests, CVIC has uniquely set high-sensitivity cardiovascular markers based on global evidence. We evaluate the risk level by subdividing normal values, and provide information on how to reduce risk through lifestyle changes and medication treatment, as well as quantify and visualize the improvement effects, along with the results of image diagnosis.",
         PRICE: "¥49,800 (*¥54,780)",
       },
       COMPREHENSIVE_RESULT_EXPLANATION: {
         TITLE: "CVIC Blood Test Set+",
-        DESCRIPTION: "In addition to cardiac imaging diagnosis, we use the new CVIC blood test set (biomarker set) to provide comprehensive results explanations, detect early signs, and support your lifestyle to avoid getting sick. After all test results are available, this will be done at a later date in the clinic or online.",
+        DESCRIPTION:
+          "In addition to cardiac imaging diagnosis, we use the new CVIC blood test set (biomarker set) to provide comprehensive results explanations, detect early signs, and support your lifestyle to avoid getting sick. After all test results are available, this will be done at a later date in the clinic or online.",
         PRICE: "¥32,800 (*¥36,080)",
       },
     },
@@ -351,13 +413,30 @@ const en = {
     {
       TITLE: "Achieva DS (Dual Speed)",
       D1: "Philips 1.5 Tesla MRI Machine",
-      D2: "",
+      D2: "Discover Precision Imaging with Philips Incisive CT",
       IMG: "achieva",
     },
     {
       TITLE: "Incisive CT",
       D1: "Philips CT Scanner",
-      D2: "",
+      D2: `
+        Experience the next evolution in computed tomography (CT) technology with Philips Incisive CT. Designed to deliver exceptional image quality, diagnostic confidence, and operational efficiency, Incisive CT sets a new standard in patient care.
+  
+        Key Features:
+        1. High-Resolution Imaging: Achieve unparalleled clarity and detail with advanced imaging algorithms and detector technology.
+        2. SmartWorkflow: Streamline your workflow with intuitive software tools, automated protocols, and seamless integration with your existing systems.
+        3. DoseWise: Prioritize patient safety with dose management features that optimize radiation exposure without compromising image quality.
+        4. Adaptive Intelligence: Harness the power of artificial intelligence to enhance image reconstruction, improve diagnostic accuracy, and accelerate interpretation.
+  
+        Benefits:
+        - Enhanced Clinical Confidence: Empower your clinicians with superior image quality and diagnostic insights for confident decision-making.
+        - Increased Productivity: Maximize your efficiency with fast scan times, automated processes, and user-friendly interface design.
+        - Patient-Centric Care: Prioritize patient comfort and safety with dose optimization techniques and personalized imaging protocols.
+  
+        Applications:
+        From routine diagnostic imaging to complex interventional procedures, Philips Incisive CT is versatile enough to meet the diverse needs of modern healthcare facilities. Whether you're performing cardiac assessments, neurological studies, or oncological evaluations, Incisive CT delivers consistent performance and exceptional results.
+  
+        Transform your imaging capabilities with Philips Incisive CT and elevate your standard of care today.`,
       IMG: "incisive",
     },
     {
@@ -442,115 +521,131 @@ const en = {
       TYPE: "MRI",
       TIME: "15 minutes",
       PRICE: "¥40,000 (*¥44,000)",
-      DESCRIPTION: "A test to examine the fat around the heart (risk of myocardial infarction) that accumulates regardless of age or obesity.",
+      DESCRIPTION:
+        "A test to examine the fat around the heart (risk of myocardial infarction) that accumulates regardless of age or obesity.",
     },
     {
       TITLE: "Aortic Examination",
       TYPE: "MRI",
       TIME: "30 minutes",
       PRICE: "¥44,000 (*¥48,400)",
-      DESCRIPTION: "3D imaging of the thoracic and abdominal aorta. Early detection of aortic aneurysms and aortic dissections, which are life-threatening if ruptured.",
+      DESCRIPTION:
+        "3D imaging of the thoracic and abdominal aorta. Early detection of aortic aneurysms and aortic dissections, which are life-threatening if ruptured.",
     },
     {
       TITLE: "Lumbar and Lower Extremity Vascular Examination",
       TYPE: "MRI",
       TIME: "1 hour",
       PRICE: "¥84,000 (*¥92,400)",
-      DESCRIPTION: "Symptoms such as pain and numbness in the legs when walking, which disappear after a short rest, are caused by lumbar spine or lower extremity arterial sclerosis.",
+      DESCRIPTION:
+        "Symptoms such as pain and numbness in the legs when walking, which disappear after a short rest, are caused by lumbar spine or lower extremity arterial sclerosis.",
     },
     {
       TITLE: "Brain AI (Artificial Intelligence) Diagnosis",
       TYPE: "MRI",
       TIME: "Not specified",
       PRICE: "¥50,000 (*¥55,000)",
-      DESCRIPTION: "Measurement of brain atrophy and brain vascular health using artificial intelligence. Analysis of age-related brain changes and risk management.",
+      DESCRIPTION:
+        "Measurement of brain atrophy and brain vascular health using artificial intelligence. Analysis of age-related brain changes and risk management.",
     },
     {
       TITLE: "Body Fat (Visceral and Subcutaneous Fat Measurement)",
       TYPE: "CT",
       TIME: "5 minutes",
       PRICE: "¥20,000 (*¥22,000)",
-      DESCRIPTION: "Accurate measurement of visceral fat that cannot be measured in general examinations. Recommended even for thin people to check for metabolic syndrome.",
+      DESCRIPTION:
+        "Accurate measurement of visceral fat that cannot be measured in general examinations. Recommended even for thin people to check for metabolic syndrome.",
     },
     {
       TITLE: "Lung Examination",
       TYPE: "CT",
       TIME: "10 minutes",
       PRICE: "¥22,000 (*¥24,200)",
-      DESCRIPTION: "CT examination for risks of emphysema, chronic bronchitis, chronic asthma, pneumonia, and lung cancer. Recommended for smokers and former smokers.",
+      DESCRIPTION:
+        "CT examination for risks of emphysema, chronic bronchitis, chronic asthma, pneumonia, and lung cancer. Recommended for smokers and former smokers.",
     },
     {
       TITLE: "Blood Pressure Pulse Wave",
       TYPE: "Ultrasound",
       TIME: "30 minutes",
       PRICE: "¥16,000 (*¥17,600)",
-      DESCRIPTION: "Ultrasound examination of the heart to diagnose valve opening and closing movements, blood flow rate, and blood reflux.",
+      DESCRIPTION:
+        "Ultrasound examination of the heart to diagnose valve opening and closing movements, blood flow rate, and blood reflux.",
     },
     {
       TITLE: "Neck Echo",
       TYPE: "Ultrasound",
       TIME: "30 minutes",
       PRICE: "¥10,000 (*¥11,000)",
-      DESCRIPTION: "Ultrasound examination of the neck blood vessels to diagnose arteriosclerosis. Determines the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
+      DESCRIPTION:
+        "Ultrasound examination of the neck blood vessels to diagnose arteriosclerosis. Determines the presence or absence of risk factors for myocardial infarction and cerebral infarction.",
     },
     {
       TITLE: "ABI (Arterial Stiffness Measurement)",
       TYPE: "Blood Pressure Pulse Wave",
       TIME: "10 minutes",
       PRICE: "¥6,000 (*¥6,600)",
-      DESCRIPTION: "Examines the comparison of blood pressure between the hands and feet and the transmission of pulse waves to determine arterial stiffness and vascular age. Reveals the risk of cerebral infarction and myocardial infarction.",
+      DESCRIPTION:
+        "Examines the comparison of blood pressure between the hands and feet and the transmission of pulse waves to determine arterial stiffness and vascular age. Reveals the risk of cerebral infarction and myocardial infarction.",
     },
     {
       TITLE: "CVIC Blood Test Set",
       TYPE: "Blood Draw",
       TIME: "10 minutes",
       PRICE: "¥49,800 (*¥54,780)",
-      DESCRIPTION: "Includes high-sensitivity CRP, heart failure markers, and troponin, as well as advanced blood markers that cannot be performed under insurance. A set of 30 items selected by the clinic's doctor (21 items in 2021).",
+      DESCRIPTION:
+        "Includes high-sensitivity CRP, heart failure markers, and troponin, as well as advanced blood markers that cannot be performed under insurance. A set of 30 items selected by the clinic's doctor (21 items in 2021).",
     },
     {
       TITLE: "CVIC Blood Test Set++",
       TYPE: "Blood Draw",
       TIME: "10 minutes",
       PRICE: "¥32,800 (*¥36,080)",
-      DESCRIPTION: "A set of 8 carefully selected items including secondary hypertension and thyroid.",
+      DESCRIPTION:
+        "A set of 8 carefully selected items including secondary hypertension and thyroid.",
     },
     {
       TITLE: "Simple Cancer Tumor Marker Set",
       TYPE: "Blood Draw",
       TIME: "10 minutes",
       PRICE: "¥10,000 (*¥11,000)",
-      DESCRIPTION: "When cancer develops in the body, special substances may increase abnormally in the blood. This set indicates the possibility of cancer.",
+      DESCRIPTION:
+        "When cancer develops in the body, special substances may increase abnormally in the blood. This set indicates the possibility of cancer.",
     },
     {
       TITLE: "Full Body Cancer Tumor Marker Set",
       TYPE: "Blood Draw",
       TIME: "10 minutes",
       PRICE: "¥78,000 (*¥85,800)",
-      DESCRIPTION: "A set of cancer tumor markers for the entire body, including the esophagus, lungs, stomach, bile ducts, pancreas, large intestine, bladder, kidneys, liver cells, testicles, breast cancer, ovaries, and uterus.",
+      DESCRIPTION:
+        "A set of cancer tumor markers for the entire body, including the esophagus, lungs, stomach, bile ducts, pancreas, large intestine, bladder, kidneys, liver cells, testicles, breast cancer, ovaries, and uterus.",
     },
     {
       TITLE: "MCI Screening Test",
       TYPE: "Blood Draw",
       TIME: "10 minutes",
       PRICE: "¥30,000 (*¥33,000)",
-      DESCRIPTION: "MCI (mild cognitive impairment) screening test measures the amount of proteins in the blood involved in the progression of Alzheimer's disease.",
+      DESCRIPTION:
+        "MCI (mild cognitive impairment) screening test measures the amount of proteins in the blood involved in the progression of Alzheimer's disease.",
     },
     {
       TITLE: "Holter Electrocardiogram",
       TYPE: "Electrocardiogram",
       TIME: "24-hour measurement Return visit or consultation included",
       PRICE: "¥30,000 (*¥33,000)",
-      DESCRIPTION: "Records electrocardiograms over a long period of time (24 hours) using a portable miniature electrocardiograph to examine heartbeats during daily activities.",
+      DESCRIPTION:
+        "Records electrocardiograms over a long period of time (24 hours) using a portable miniature electrocardiograph to examine heartbeats during daily activities.",
     },
     {
       TITLE: "Af・SAS Screening Test",
       TYPE: "Electrocardiogram",
       TIME: "3-day measurement *Return kit included",
       PRICE: "¥40,000 (*¥44,000)",
-      DESCRIPTION: "Convenient health check for trends in atrial fibrillation (Af) and sleep apnea syndrome (SAS) and obstructive sleep apnea syndrome (OSA) using an electrocardiograph.",
+      DESCRIPTION:
+        "Convenient health check for trends in atrial fibrillation (Af) and sleep apnea syndrome (SAS) and obstructive sleep apnea syndrome (OSA) using an electrocardiograph.",
     },
   ],
-  
+
   RESERVATION: {
     TITLE: "Reservation",
     DOCK: "Dock Basic Plan",
@@ -698,14 +793,27 @@ const en = {
     ],
   },
   RESERVATION_NOTICE: {
-    TITLE: "For those who live in Japan but do not have a Japanese insurance card, those wishing to receive medical treatment from overseas, and agents on their behalf",
-    CONTENT: "For reservations made by individuals or their representatives, in addition to the above amount,",
+    TITLE:
+      "For those who live in Japan but do not have a Japanese insurance card, those wishing to receive medical treatment from overseas, and agents on their behalf",
+    CONTENT:
+      "For reservations made by individuals or their representatives, in addition to the above amount,",
     DETAILS: [
       "① Interpretation fees and translation fees are required separately (costs vary depending on the plan, so please check the plan for details and we will provide a quote after the plan is determined).",
       "② Separate fees will be charged for plans and contents not listed in the above price list.",
-      "※ Please note that the specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services."
-    ]
-  }
+      "※ Please note that the specifications, provision items, prices, etc., of the listed docks may change or be discontinued without notice due to the development of medical technology, etc., in order to provide the best medical services.",
+    ],
+    SUNDAY: "Sunday is dedicated to Dock patients!",
+  },
+  TIME_OPTIONS: [
+    "Select Time Slot",
+    "8:30 - 9:30",
+    "10-00 - 11:30",
+    "12:00 - 14:00",
+    "14:30 ~",
+  ],
+  ZIOSTATION: {
+    DESCRIPTION: ""
+  },
 };
 
 export default en;

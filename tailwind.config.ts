@@ -35,6 +35,7 @@ const config: Config = {
         zio: 'url("/images/equipments/ziostation2.png")',
         achieva: 'url("/images/equipments/achieva.jpg")',
         incisive: 'url("/images/equipments/incisive.jpg")',
+        maps: 'url("/images/access/maps.webp")',
       },
     },
   },
