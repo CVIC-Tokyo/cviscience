@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { getLocaleData } from "@/utils/helpers";
 import ReservationModal from "@/app/modals/ReservationModal";
 import PrivacyPolicyModal from "@/app/modals/PrivacyPolicyModal";
+import axios from "axios";
 
 const ConsultationForm: React.FC<ConsultationProps> = ({
   locale,
@@ -45,34 +46,54 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
   const [preferredContactTime, setPreferredContactTime] = useState("");
   const [formError, setFormError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [subject, setSubject] = useState('');
+  const [body, setBody] = useState('');
+  const [isSending, setIsSending] = useState(false);
+  
+  const [to, setTo] = useState('');
+
 
   const [modalOpen, setModalOpen] = useState(false);
 
-  const handleConfirmSubmit = () => {
-    // Additional logic to handle form submission
-    setName("");
-    setNameFurigana("");
-    setSurname("");
-    setSurnameFurigana("");
-    setDateOfBirth("");
-    setAddress("");
-    setConsultationDates(["", "", ""]),
-    setSelectedTimeSlots(["", "", ""]),
-    setEmail("");
-    setPhoneNumber("");
-    setPreferredContact("");
-    setConsultationHistory("");
-    setMetalInBody("");
-    setMetalDetails("");
-    setTermsAgreed(false);
-    setPreferredContactTime("");
-    setSelectedPlan(null);
-    setSelectedTests([]);
+  const handleConfirmSubmit = async function() {
 
-    setTimeout(() => {
-      setModalOpen(false);
+    try {
+      setTo(`${process.env.SMTP_EMAIL}`);
+      await axios.post('/api', { to, name, subject, body });
+      console.log('Email sent successfully!');
+      // Reset form fields
+      setName('');
+      setSubject('');
+      setBody('');
+      setTimeout(() => {
+        setModalOpen(false);
+        setName("");
+        setNameFurigana(""); 
+        setSurname("");
+        setSurnameFurigana("");
+        setDateOfBirth("");
+        setAddress("");
+        setConsultationDates(["", "", ""]),
+        setSelectedTimeSlots(["", "", ""]),
+        setEmail("");
+        setPhoneNumber("");
+        setPreferredContact("");
+        setConsultationHistory("");
+        setMetalInBody("");
+        setMetalDetails("");
+        setTermsAgreed(false);
+        setPreferredContactTime("");
+        setSelectedPlan(null);
+        setSelectedTests([]);
+  
+      }, 1000);
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      // Handle error
+    } finally {
+      setIsSending(false);
+    }
 
-    }, 1000);
   };
 
   const handleConsultationDateChange = (index: number, date: string) => {
