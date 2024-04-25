@@ -77,8 +77,7 @@ interface ReservationModalProps {
   onClose: () => void;
   onSubmit: () => void;
   formData: {
-    consultationDates: string[];
-    selectedTimeSlots: string[];
+    consultationData: consultationData[];
     name: string;
     nameFurigana: string;
     surname: string;
@@ -91,11 +90,17 @@ interface ReservationModalProps {
     consultationHistory: string;
     metalInBody: string;
     metalDetails: string;
-    preferredContactTime: string;
+    requests: string;
+    selectedPlan: string | null;
+    selectedTests: string[];
   };
   locale: string;
-  selectedPlan: string | null;
-  selectedTests: string[];
+}
+
+
+interface consultationData {
+  date: string;
+  timeSlot: string;
 }
 interface FormData extends globalThis.FormData {
   consultationDates: string[];

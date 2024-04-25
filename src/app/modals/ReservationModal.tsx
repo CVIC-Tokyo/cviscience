@@ -7,16 +7,9 @@ const ReservationModal: React.FC<ReservationModalProps> = ({
   onSubmit,
   formData,
   locale,
-  selectedPlan,
-  selectedTests,
 }) => {
   if (!isOpen) return null;
   const localeData = getLocaleData(locale);
-
-  const getCurrentDateTime = () => {
-    const currentDate = new Date();
-    return currentDate.toLocaleString(); // You can adjust the format as needed
-  };
 
   return (
     <div className="fixed z-[100] inset-0 overflow-y-auto flex items-center justify-center">
@@ -27,28 +20,40 @@ const ReservationModal: React.FC<ReservationModalProps> = ({
       <div className="z-50 bg-white rounded-lg p-4 w-[90%] md:w-[600px] lg:w-[800px]">
         {/* Display user input for confirmation */}
         <div>
-          <h2 className="text-lg font-bold mb-4">
+          <h2 className="text-lg md:text-xl text-2xl font-bold mb-4">
             {localeData.RESERVATION_MODAL.TITLE}
           </h2>
-          <div className="grid-cols-2 p-2">
-            <p className="font-semibold">{selectedPlan}</p>
-            <p>{selectedTests.join(", ")}</p>
-          </div>
           <div className="grid grid-cols-2 gap-y-2">
             {Object.entries(formData).map(([key, value]) => (
               <div key={key} className="mb-4">
                 <label className="block font-semibold text-xs md:text-base">
                   {key.charAt(0).toUpperCase() + key.slice(1)}:
                 </label>
-                <p className="text-xs lg:text-base">{value}</p>
+                {Array.isArray(value) ? (
+                  // If it's an array, render each element
+                  value.map((item: any, index: number) => (
+                    <p key={index} className="text-xs lg:text-base">
+                      {typeof item === "object" ? (
+                        // If it's an object, render its properties
+                        <div className="flex items-center justify-center gap-1 md:gap-2">
+                          <p>{item.date}</p>
+                          <p>|| {item.timeSlot}</p>
+                        </div>
+                      ) : (
+                        // If it's a string, render it directly
+                        item
+                      )}
+                    </p>
+                  ))
+                ) : (
+                  // If it's a string, render it directly
+                  <p className="text-xs lg:text-base">{value}</p>
+                )}
               </div>
             ))}
           </div>
         </div>
         {/* Display timestamp */}
-        <div className="text-right text-xs text-gray-500 mt-2">
-          {getCurrentDateTime()}
-        </div>
         {/* Buttons for submit or revise */}
         <div className="flex justify-end mt-4">
           <button

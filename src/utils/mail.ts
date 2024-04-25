@@ -15,7 +15,7 @@ export async function sendMail({
   const transport = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user:SMTP_EMAIL,
+      user: SMTP_EMAIL,
       pass: SMTP_PASSWORD,
     },
   });
