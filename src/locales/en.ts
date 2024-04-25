@@ -835,6 +835,7 @@ const en = {
     allRightsReserved: "© 2024 HP. All rights reserved.",
     metalDetails: "Metal details",
     preferredContact: "Preferred form of contact",
+    nameFurigana: "Name (Furigana)",
   },
 };
 

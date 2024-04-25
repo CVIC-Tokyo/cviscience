@@ -826,6 +826,7 @@ const ja = {
     allRightsReserved: "© 2024 HP. 全著作権所有。",
     metalDetails: "金属の詳細：",
     preferredContact: "優先連絡手段：",
+    nameFurigana: "名前 ()",
   },
 };
 
