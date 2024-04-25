@@ -20,7 +20,7 @@ const ReservationModal: React.FC<ReservationModalProps> = ({
       <div className="z-50 bg-white rounded-lg p-4 w-[90%] md:w-[600px] lg:w-[800px]">
         {/* Display user input for confirmation */}
         <div>
-          <h2 className="text-lg md:text-xl text-2xl font-bold mb-4">
+          <h2 className="text-lg md:text-xl lg:text-2xl font-bold mb-4">
             {localeData.RESERVATION_MODAL.TITLE}
           </h2>
           <div className="grid grid-cols-2 gap-y-2">
