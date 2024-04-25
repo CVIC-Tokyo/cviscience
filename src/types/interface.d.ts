@@ -97,7 +97,6 @@ interface ReservationModalProps {
   locale: string;
 }
 
-
 interface consultationData {
   date: string;
   timeSlot: string;

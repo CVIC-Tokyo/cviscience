@@ -7,7 +7,7 @@ import axios from "axios";
 const initialConsultationData = [
   { date: "", timeSlot: "" },
   { date: "", timeSlot: "" },
-  { date: "", timeSlot: "" }
+  { date: "", timeSlot: "" },
 ];
 
 const ConsultationForm: React.FC<ConsultationProps> = ({
@@ -19,7 +19,9 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
 }) => {
   const localeData = getLocaleData(locale);
   const [privacyPolicyModalOpen, setPrivacyPolicyModalOpen] = useState(false);
-  const [consultationData, setConsultationData] = useState(initialConsultationData);
+  const [consultationData, setConsultationData] = useState(
+    initialConsultationData,
+  );
   // Other state variables...
 
   const handleConsultationDateChange = (index: number, date: string) => {
@@ -71,19 +73,22 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
   function calculateAge(dateOfBirth: string) {
     // Parse the date of birth string into a Date object
     const dob = new Date(dateOfBirth);
-    
+
     // Get the current date
     const currentDate = new Date();
-    
+
     // Calculate the difference in years
     let age = currentDate.getFullYear() - dob.getFullYear();
-    
+
     // Adjust the age if the current date is before the birthday
-    if (currentDate.getMonth() < dob.getMonth() || 
-        (currentDate.getMonth() === dob.getMonth() && currentDate.getDate() < dob.getDate())) {
+    if (
+      currentDate.getMonth() < dob.getMonth() ||
+      (currentDate.getMonth() === dob.getMonth() &&
+        currentDate.getDate() < dob.getDate())
+    ) {
       age--;
     }
-    
+
     return age;
   }
   const getCurrentDateTime = () => {
@@ -111,19 +116,18 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
     metalDetails,
     requests,
     consultationData,
-  }
+  };
 
-
-  const handleConfirmSubmit = async function() {
+  const handleConfirmSubmit = async function () {
     try {
       const timestamp = getCurrentDateTime();
-      await axios.post('/api', { formData, timestamp });
-      console.log('Email sent successfully!');
+      await axios.post("/api", { formData, timestamp });
+      console.log("Email sent successfully!");
       // Reset form fields
       setTimeout(() => {
         setModalOpen(false);
         setName("");
-        setNameFurigana(""); 
+        setNameFurigana("");
         setSurname("");
         setSurnameFurigana("");
         setDateOfBirth("");
@@ -139,20 +143,18 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
         setRequests("");
         setSelectedPlan(null);
         setSelectedTests([]);
-  
       }, 1000);
     } catch (error) {
-      console.error('Failed to send email:', error);
+      console.error("Failed to send email:", error);
       // Handle error
     } finally {
       setIsSending(false);
     }
-
   };
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    setModalOpen(true)
+    setModalOpen(true);
     // Check if any required fields are empty
     if (
       name.trim() === "" ||

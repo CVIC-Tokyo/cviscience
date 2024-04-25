@@ -1,4 +1,4 @@
-import { sendMail } from '../../utils/mail';
+import { sendMail } from "../../utils/mail";
 
 export const POST = async (req: Request) => {
   const { formData, timestamp } = await req.json();
@@ -24,7 +24,7 @@ export const POST = async (req: Request) => {
     reservedBy: "HPによって予約済み",
     allRightsReserved: "© 2024 HP. 全著作権所有。",
     metalDetails: "金属の詳細：",
-    preferredContact: "優先連絡手段："
+    preferredContact: "優先連絡手段：",
   };
 
   const subject = "HP Reservation";
@@ -41,8 +41,8 @@ export const POST = async (req: Request) => {
       }
     })
     .join("<br>");
-  
-    const body = `
+
+  const body = `
     <div style="font-family: 'Arial', sans-serif; max-width: 600px; margin: 0 auto; color: #333; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
       <h1 style="color: #8C1515; font-size: 28px; text-align: center; margin-bottom: 20px;">🎉 ${localeDataJP.reservedBy} 🎉</h1>
       
@@ -84,15 +84,13 @@ export const POST = async (req: Request) => {
       <p style="color: #333; font-size: 14px; text-align: center; margin-top: 20px;">${localeDataJP.allRightsReserved}</p>
     </div>
   `;
-  
 
-  
   try {
     await sendMail({ to: `${SMTP_EMAIL}`, name, subject, body });
     return Response.json({ success: true });
   } catch (e) {
     return new Response(JSON.stringify({ success: false }), {
-      status: 500
+      status: 500,
     });
   }
-}
+};
