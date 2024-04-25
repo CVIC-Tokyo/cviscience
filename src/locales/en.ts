@@ -2,47 +2,47 @@ const en = {
   INTRODUCTION: {
     TITLE: "Introduction to CVIC",
     CONTENT:
-      "For early detection and treatment of heart disease. Heart disease is the second leading cause of death among Japanese people, following cancer, emphasizing the increasing importance of early detection and treatment. CVIC strives to serve as many patients as possible, collaborating with radiologists and cardiologists while working tirelessly every day. Through the widespread adoption of cardiac imaging diagnostics and further technological innovation, we aim to contribute to the advancement of healthcare in Japan."
+      "For early detection and treatment of heart disease. Heart disease is the second leading cause of death among Japanese people, following cancer, emphasizing the increasing importance of early detection and treatment. CVIC strives to serve as many patients as possible, collaborating with radiologists and cardiologists while working tirelessly every day. Through the widespread adoption of cardiac imaging diagnostics and further technological innovation, we aim to contribute to the advancement of healthcare in Japan.",
   },
   CVIC_DESCRIPTION: {
     TITLE: "What is Cardiovascular Imaging Clinic Iidabashi (CVIC)?",
     CONTENT:
-      "CVIC is a specialized facility focused on cardiovascular imaging examinations, utilizing advanced medical equipment such as MRI and CT to visualize the body's internal structures in 3D. Established in November 2009, it is Japan's first and a rare global facility dedicated to cardiovascular imaging diagnostics. In November 2014, the examination and medical departments were separated, and CVIC began anew as a medical corporation."
+      "CVIC is a specialized facility focused on cardiovascular imaging examinations, utilizing advanced medical equipment such as MRI and CT to visualize the body's internal structures in 3D. Established in November 2009, it is Japan's first and a rare global facility dedicated to cardiovascular imaging diagnostics. In November 2014, the examination and medical departments were separated, and CVIC began anew as a medical corporation.",
   },
   EARLY_DETECTION: {
     TITLE: "Early Detection of Heart Disease through Visual Examination",
     CONTENT:
-      "Among the body's organs, visualizing the constantly pulsating heart with clarity has historically been challenging, with this technology only recently being developed. However, advancements in imaging diagnostics now allow for the three-dimensional visualization and diagnosis of the heart, enabling early detection of heart disease."
+      "Among the body's organs, visualizing the constantly pulsating heart with clarity has historically been challenging, with this technology only recently being developed. However, advancements in imaging diagnostics now allow for the three-dimensional visualization and diagnosis of the heart, enabling early detection of heart disease.",
   },
   ADVANCED_IMAGING: {
     TITLE: "Limited Adoption of Advanced Cardiac Imaging in Japan",
     CONTENT:
-      "Unfortunately, the widespread adoption of cardiac imaging diagnostics, particularly using MRI, is lagging in Japan. This is primarily due to the highly advanced and labor-intensive nature of this technology, resulting in a shortage of qualified technicians. Consequently, many individuals remain unaware of their heart condition until experiencing a sudden heart attack."
+      "Unfortunately, the widespread adoption of cardiac imaging diagnostics, particularly using MRI, is lagging in Japan. This is primarily due to the highly advanced and labor-intensive nature of this technology, resulting in a shortage of qualified technicians. Consequently, many individuals remain unaware of their heart condition until experiencing a sudden heart attack.",
   },
   ADDRESSING_NEEDS: {
     TITLE: "Rapid Response to Clinical Needs",
     CONTENT:
-      "University and general hospitals' imaging departments must accommodate examinations from all medical specialties, not just the heart. Prioritizing the challenging and time-consuming cardiac examinations is difficult in such settings. However, CVIC has responded to the clinical needs by providing rapid examination services, addressing requests for urgent examinations."
+      "University and general hospitals' imaging departments must accommodate examinations from all medical specialties, not just the heart. Prioritizing the challenging and time-consuming cardiac examinations is difficult in such settings. However, CVIC has responded to the clinical needs by providing rapid examination services, addressing requests for urgent examinations.",
   },
   CONTINUOUS_IMPROVEMENT: {
     TITLE: "Continuous Improvement through Experience",
     CONTENT:
-      "Many cases referred from university and general hospitals present challenging examinations and diagnoses. By accurately conducting and diagnosing 2,680 cardiac MRI examinations annually, CVIC's technical and diagnostic capabilities continue to improve. Recognized for producing highly detailed and high-quality cardiac images, CVIC receives high praise from referring physicians at nearby university and core hospitals. By specializing solely in cardiac imaging and continuously honing our skills, we are able to perform advanced cardiac imaging diagnostics swiftly and accurately."
+      "Many cases referred from university and general hospitals present challenging examinations and diagnoses. By accurately conducting and diagnosing 2,680 cardiac MRI examinations annually, CVIC's technical and diagnostic capabilities continue to improve. Recognized for producing highly detailed and high-quality cardiac images, CVIC receives high praise from referring physicians at nearby university and core hospitals. By specializing solely in cardiac imaging and continuously honing our skills, we are able to perform advanced cardiac imaging diagnostics swiftly and accurately.",
   },
   NEW_CVIC_GROUP: {
     TITLE: "As the New CVIC Group",
     CONTENT:
-      "The ground floor operates as the independent examination department of the newly formed medical corporation CVIC Group's 'Cardiovascular Imaging Clinic Iidabashi,' with the establishment of a solid examination system using state-of-the-art imaging equipment, including two MRI machines and one CT scanner. The fourth floor is opened as the medical practice department of the CVIC Group, 'Iidabashi Heart Clinic,' providing a spacious environment for detailed explanations by physicians and accurate screening of examination images. As the newly formed CVIC Group, both the ground floor and the fourth floor are committed to delivering even more precise examinations and diagnoses than before."
+      "The ground floor operates as the independent examination department of the newly formed medical corporation CVIC Group's 'Cardiovascular Imaging Clinic Iidabashi,' with the establishment of a solid examination system using state-of-the-art imaging equipment, including two MRI machines and one CT scanner. The fourth floor is opened as the medical practice department of the CVIC Group, 'Iidabashi Heart Clinic,' providing a spacious environment for detailed explanations by physicians and accurate screening of examination images. As the newly formed CVIC Group, both the ground floor and the fourth floor are committed to delivering even more precise examinations and diagnoses than before.",
   },
   CVIC_DOCK: {
     TITLE: "New Cardiovascular and Brain Checkups Offered by CVIC",
     CONTENT:
-      "Since its opening in 2009, the CVIC Cardiovascular Imaging Clinic Iidabashi has conducted over 73,000 MRI and CT examinations of patients' hearts, making it Japan's first and rare global specialized heart imaging center. The number of heart MRI examinations accounts for about 10% of the total in Japan and ranks among the top five in the world. Through heart imaging examinations at CVIC, we have discovered severe heart diseases that were previously unnoticed and detected early-stage heart diseases, facilitating appropriate treatment and preventive medicine. CVIC's efforts have garnered attention domestically and internationally, and are frequently covered by the domestic media. Based on this wealth of experience in heart imaging diagnostics, we have come to realize the need for a new framework for cardiovascular imaging examinations to further demonstrate their usefulness."
+      "Since its opening in 2009, the CVIC Cardiovascular Imaging Clinic Iidabashi has conducted over 73,000 MRI and CT examinations of patients' hearts, making it Japan's first and rare global specialized heart imaging center. The number of heart MRI examinations accounts for about 10% of the total in Japan and ranks among the top five in the world. Through heart imaging examinations at CVIC, we have discovered severe heart diseases that were previously unnoticed and detected early-stage heart diseases, facilitating appropriate treatment and preventive medicine. CVIC's efforts have garnered attention domestically and internationally, and are frequently covered by the domestic media. Based on this wealth of experience in heart imaging diagnostics, we have come to realize the need for a new framework for cardiovascular imaging examinations to further demonstrate their usefulness.",
   },
   NEW_CHECKUP_MENU: {
     TITLE: "Introduction of New Cardiovascular and Brain Checkup Menu",
     CONTENT:
-      "The newly introduced menu consists of two components: 'Blood Biomarker Testing' combining high-sensitivity blood tests and 'Personalized Cardiovascular Testing' tailored to individual heart disease risks and physical conditions. 'Blood Biomarker Testing' includes comprehensive result explanations and specific advice online or via phone, as well as follow-ups three months later. Advances in high-sensitivity blood testing allow for further subdivision of normal values rather than simply categorizing as normal or abnormal, enabling predictions of future risks. Merely undergoing examinations is not meaningful; it is only when the examination results are utilized in daily lifestyle habits and future disease prevention that their usefulness can be demonstrated. Through 'Blood Biomarker Testing,' we aim to set specific target values and consider individual measures to contribute to maintaining cardiovascular health for everyone."
+      "The newly introduced menu consists of two components: 'Blood Biomarker Testing' combining high-sensitivity blood tests and 'Personalized Cardiovascular Testing' tailored to individual heart disease risks and physical conditions. 'Blood Biomarker Testing' includes comprehensive result explanations and specific advice online or via phone, as well as follow-ups three months later. Advances in high-sensitivity blood testing allow for further subdivision of normal values rather than simply categorizing as normal or abnormal, enabling predictions of future risks. Merely undergoing examinations is not meaningful; it is only when the examination results are utilized in daily lifestyle habits and future disease prevention that their usefulness can be demonstrated. Through 'Blood Biomarker Testing,' we aim to set specific target values and consider individual measures to contribute to maintaining cardiovascular health for everyone.",
   },
   BASIC: {
     HOME: "Home",
@@ -126,7 +126,7 @@ const en = {
         2: "Examination Time: 40 to 60 minutes",
         3: "Diagnosis Results: Same day (30 minutes to 1 hour after the end of the examination)",
       },
-      POINT: "In many medical facilities:",
+      POINT: "In many medical facilities",
       POINT_CT: {
         1: "Examination Reservation: 1 month wait",
         2: "Examination Time: 15 minutes",
@@ -721,7 +721,7 @@ const en = {
       "Cardiac Imaging Clinic Iidabashi will comply with Japanese laws and regulations regarding the protection of personal information, national guidelines, and other norms, and will establish the following policies. We respect the privacy of patients and strive for proper management and use. Thank you in advance for your understanding and cooperation.",
   },
   RESERVATION_MODAL: {
-    TITLE: "Confirm Details:",
+    TITLE: "Confirm Details",
     CLOSE: "Close",
     CONFIRM: "Confirm",
   },
@@ -736,7 +736,7 @@ const en = {
       "For inquiries via email, please note that it may take several days to receive a response.",
       "If you require urgent assistance, please contact us by phone.",
       "We will contact you to confirm your reservation details.",
-      "Please note:",
+      "Please note",
       "- Responses to inquiries received after 5:30 PM will be sent the following day.",
       "- Responses to inquiries received outside of office hours on the day before a non-business day will be sent on the next business day.",
       "Closure: None / New Year Holidays (December 30th to January 4th)",
@@ -812,7 +812,30 @@ const en = {
     "14:30 ~",
   ],
   ZIOSTATION: {
-    DESCRIPTION: ""
+    DESCRIPTION: "",
+  },
+  RESERVATION_FORM: {
+    selectedPlan: "Selected Plan",
+    selectedTests: "Selected Tests",
+    personalInformation: "Personal Information",
+    name: "Name",
+    dateOfBirth: "Date of Birth",
+    age: "Age",
+    phone: "Phone",
+    email: "Email",
+    address: "Address",
+    consultationHistory: "Consultation History",
+    reservationInfo: "Reservation Info",
+    additionalRequests: "Additional Requests",
+    metalInBody: "Presence of Metal in Body",
+    requests: "Requests",
+    consultationData: "Consultation Data",
+    timestamp: "Timestamp",
+    reservedBy: "Reserved by HP",
+    allRightsReserved: "© 2024 HP. All rights reserved.",
+    metalDetails: "Metal details",
+    preferredContact: "Preferred form of contact",
+    nameFurigana: "Name (Furigana)",
   },
 };
 

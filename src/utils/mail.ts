@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer"
+import nodemailer from "nodemailer";
 
 export async function sendMail({
   to,
@@ -15,7 +15,7 @@ export async function sendMail({
   const transport = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user:SMTP_EMAIL,
+      user: SMTP_EMAIL,
       pass: SMTP_PASSWORD,
     },
   });
@@ -29,8 +29,11 @@ export async function sendMail({
 
   try {
     const sendResult = await transport.sendMail({
-      from: SMTP_EMAIL, to, subject, html: body
-    })
+      from: SMTP_EMAIL,
+      to,
+      subject,
+      html: body,
+    });
     console.log(sendResult);
   } catch (error) {
     console.log(error);

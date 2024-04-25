@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import { getLocaleData } from "@/utils/helpers";
 import ReservationModal from "@/app/modals/ReservationModal";
 import PrivacyPolicyModal from "@/app/modals/PrivacyPolicyModal";
+import axios from "axios";
+
+const initialConsultationData = [
+  { date: "", timeSlot: "" },
+  { date: "", timeSlot: "" },
+  { date: "", timeSlot: "" },
+];
 
 const ConsultationForm: React.FC<ConsultationProps> = ({
   locale,
@@ -12,6 +19,22 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
 }) => {
   const localeData = getLocaleData(locale);
   const [privacyPolicyModalOpen, setPrivacyPolicyModalOpen] = useState(false);
+  const [consultationData, setConsultationData] = useState(
+    initialConsultationData,
+  );
+  // Other state variables...
+
+  const handleConsultationDateChange = (index: number, date: string) => {
+    const updatedData = [...consultationData];
+    updatedData[index] = { ...updatedData[index], date: date };
+    setConsultationData(updatedData);
+  };
+
+  const handleTimeSlotChange = (index: number, slot: string) => {
+    const updatedData = [...consultationData];
+    updatedData[index] = { ...updatedData[index], timeSlot: slot };
+    setConsultationData(updatedData);
+  };
   const handlePrivacyPolicyModalClose = () => {
     setPrivacyPolicyModalOpen(false);
   };
@@ -42,53 +65,96 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
   const [metalInBody, setMetalInBody] = useState("");
   const [metalDetails, setMetalDetails] = useState("");
   const [termsAgreed, setTermsAgreed] = useState(false);
-  const [preferredContactTime, setPreferredContactTime] = useState("");
+  const [requests, setRequests] = useState("");
   const [formError, setFormError] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-
+  const [isSending, setIsSending] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
-  const handleConfirmSubmit = () => {
-    // Additional logic to handle form submission
-    setName("");
-    setNameFurigana("");
-    setSurname("");
-    setSurnameFurigana("");
-    setDateOfBirth("");
-    setAddress("");
-    setConsultationDates(["", "", ""]),
-    setSelectedTimeSlots(["", "", ""]),
-    setEmail("");
-    setPhoneNumber("");
-    setPreferredContact("");
-    setConsultationHistory("");
-    setMetalInBody("");
-    setMetalDetails("");
-    setTermsAgreed(false);
-    setPreferredContactTime("");
-    setSelectedPlan(null);
-    setSelectedTests([]);
+  function calculateAge(dateOfBirth: string) {
+    // Parse the date of birth string into a Date object
+    const dob = new Date(dateOfBirth);
 
-    setTimeout(() => {
-      setModalOpen(false);
+    // Get the current date
+    const currentDate = new Date();
 
-    }, 1000);
+    // Calculate the difference in years
+    let age = currentDate.getFullYear() - dob.getFullYear();
+
+    // Adjust the age if the current date is before the birthday
+    if (
+      currentDate.getMonth() < dob.getMonth() ||
+      (currentDate.getMonth() === dob.getMonth() &&
+        currentDate.getDate() < dob.getDate())
+    ) {
+      age--;
+    }
+
+    return age;
+  }
+  const getCurrentDateTime = () => {
+    const currentDate = new Date();
+    return currentDate.toLocaleString(); // You can adjust the format as needed
   };
 
-  const handleConsultationDateChange = (index: number, date: string) => {
-    const updatedDates = [...consultationDates];
-    updatedDates[index] = date;
-    setConsultationDates(updatedDates);
+  const age = calculateAge(dateOfBirth);
+
+  const formData = {
+    selectedPlan,
+    selectedTests,
+    name,
+    nameFurigana,
+    surname,
+    surnameFurigana,
+    dateOfBirth,
+    age,
+    address,
+    email,
+    phoneNumber,
+    preferredContact,
+    consultationHistory,
+    metalInBody,
+    metalDetails,
+    requests,
+    consultationData,
   };
 
-  const handleTimeSlotChange = (index: number, slot: string) => {
-    const updatedSlots = [...selectedTimeSlots];
-    updatedSlots[index] = slot;
-    setSelectedTimeSlots(updatedSlots);
+  const handleConfirmSubmit = async function () {
+    try {
+      const timestamp = getCurrentDateTime();
+      await axios.post("/api", { formData, timestamp });
+      console.log("Email sent successfully!");
+      // Reset form fields
+      setTimeout(() => {
+        setModalOpen(false);
+        setName("");
+        setNameFurigana("");
+        setSurname("");
+        setSurnameFurigana("");
+        setDateOfBirth("");
+        setAddress("");
+        setConsultationData(initialConsultationData);
+        setEmail("");
+        setPhoneNumber("");
+        setPreferredContact("");
+        setConsultationHistory("");
+        setMetalInBody("");
+        setMetalDetails("");
+        setTermsAgreed(false);
+        setRequests("");
+        setSelectedPlan(null);
+        setSelectedTests([]);
+      }, 1000);
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      // Handle error
+    } finally {
+      setIsSending(false);
+    }
   };
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
+    setModalOpen(true);
     // Check if any required fields are empty
     if (
       name.trim() === "" ||
@@ -266,7 +332,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
               </label>
               <input
                 type="date"
-                value={consultationDates[index]}
+                value={consultationData[index].date}
                 min={currentDate.toISOString().split("T")[0]} // Set minimum date to current date
                 max={oneYearFromNow.toISOString().split("T")[0]} // Set maximum date to one year from now
                 onChange={(e) =>
@@ -280,7 +346,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
                 {localeData.CONSULTATION.TIME_SLOT}
               </label>
               <select
-                value={selectedTimeSlots[index]}
+                value={consultationData[index].timeSlot}
                 onChange={(e) => handleTimeSlotChange(index, e.target.value)}
                 className="block w-full border border-gray-300 rounded-b-md px-3 py-2 mt-1"
               >
@@ -293,7 +359,6 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
             </div>
           </div>
         ))}
-
         <div className="flex flex-col w-full justify-center items-center text-xs md:text-base">
           <div className="p-1 md:p-2 lg:w-[75%]">
             <label className="block font-semibold text-xs md:text-base">
@@ -323,9 +388,9 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
             </label>
             <div className="p-1 md:p-2">
               <textarea
-                value={preferredContactTime}
+                value={requests}
                 placeholder={localeData.CONSULTATION.INQUIRIES}
-                onChange={(e) => setPreferredContactTime(e.target.value)}
+                onChange={(e) => setRequests(e.target.value)}
                 className="block w-full border border-gray-300 rounded-md px-3 py-2 mt-1"
               />
             </div>
@@ -381,7 +446,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
           />
           <button
             type="button"
-            className="text-blue-500 underline cursor-pointer"
+            className="text-blue-500 underline cursor-pointer text-[10px] ml-2 md:text-sm"
             onClick={handlePrivacyPolicyClick}
           >
             {localeData.CONSULTATION.TERMS_OF_USE}
@@ -403,25 +468,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
         onClose={() => setModalOpen(false)}
         onSubmit={handleConfirmSubmit}
         locale={locale}
-        selectedPlan={selectedPlan}
-        selectedTests={selectedTests}
-        formData={{
-          consultationDates,
-          selectedTimeSlots,
-          name,
-          nameFurigana,
-          surname,
-          surnameFurigana,
-          dateOfBirth,
-          address,
-          email,
-          phoneNumber,
-          preferredContact,
-          consultationHistory,
-          metalInBody,
-          metalDetails,
-          preferredContactTime,
-        }}
+        formData={formData}
       >
         {/* Content of the modal */}
       </ReservationModal>

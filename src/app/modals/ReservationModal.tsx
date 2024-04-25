@@ -7,59 +7,124 @@ const ReservationModal: React.FC<ReservationModalProps> = ({
   onSubmit,
   formData,
   locale,
-  selectedPlan,
-  selectedTests,
 }) => {
   if (!isOpen) return null;
   const localeData = getLocaleData(locale);
 
-  const getCurrentDateTime = () => {
-    const currentDate = new Date();
-    return currentDate.toLocaleString(); // You can adjust the format as needed
-  };
-
   return (
-    <div className="fixed z-[100] inset-0 overflow-y-auto flex items-center justify-center">
-      <div
-        className="fixed inset-0 bg-black bg-opacity-75 transition-opacity"
-        onClick={onClose}
-      ></div>
-      <div className="z-50 bg-white rounded-lg p-4 w-[90%] md:w-[600px] lg:w-[800px]">
-        {/* Display user input for confirmation */}
-        <div>
-          <h2 className="text-lg font-bold mb-4">
+    <div className="fixed inset-0 z-[100] overflow-y-auto flex items-center justify-center bg-black bg-opacity-50">
+      <div className="bg-white rounded-lg overflow-y-scroll lg:overflow-hidden shadow-xl h-[90%] w-[95%] lg:w-full lg:h-auto lg:max-w-lg">
+        {/* Modal header */}
+        <div className="bg-gray-900 py-4 px-6 text-white">
+          <h2 className="text-lg font-bold">
             {localeData.RESERVATION_MODAL.TITLE}
           </h2>
-          <div className="grid-cols-2 p-2">
-            <p className="font-semibold">{selectedPlan}</p>
-            <p>{selectedTests.join(", ")}</p>
+        </div>
+        {/* Modal body */}
+        <div className="p-6">
+          {/* Form fields */}
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.selectedPlan}:
+            </label>
+            <p className="text-sm">{formData.selectedPlan}</p>
           </div>
-          <div className="grid grid-cols-2 gap-y-2">
-            {Object.entries(formData).map(([key, value]) => (
-              <div key={key} className="mb-4">
-                <label className="block font-semibold text-xs md:text-base">
-                  {key.charAt(0).toUpperCase() + key.slice(1)}:
-                </label>
-                <p className="text-xs lg:text-base">{value}</p>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.selectedTests}:
+            </label>
+            <p className="text-sm">{formData.selectedTests.join(", ")}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.name}:
+            </label>
+            <p className="text-sm">{formData.name} {formData.surname}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.nameFurigana}:
+            </label>
+            <p className="text-sm">{formData.nameFurigana} {formData.surnameFurigana}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.dateOfBirth}:
+            </label>
+            <p className="text-sm">{formData.dateOfBirth}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.address}:
+            </label>
+            <p className="text-sm">{formData.address}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.email}:
+            </label>
+            <p className="text-sm">{formData.email}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.phone}:
+            </label>
+            <p className="text-sm">{formData.phoneNumber}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.preferredContact}:
+            </label>
+            <p className="text-sm">{formData.preferredContact}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.consultationHistory}:
+            </label>
+            <p className="text-sm">{formData.consultationHistory}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.metalInBody}:
+            </label>
+            <p className="text-sm">{formData.metalInBody}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.metalDetails}:
+            </label>
+            <p className="text-sm">{formData.metalDetails}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.requests}:
+            </label>
+            <p className="text-sm">{formData.requests}</p>
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold mb-1">
+              {localeData.RESERVATION_FORM.consultationData}:
+            </label>
+            {formData.consultationData.map((data, index) => (
+              <div key={index} className="flex items-center justify-center space-x-2">
+                <p className="text-sm">{data.date}</p>
+                <p className="text-sm">||</p>
+                <p className="text-sm">{data.timeSlot}</p>
               </div>
             ))}
           </div>
         </div>
-        {/* Display timestamp */}
-        <div className="text-right text-xs text-gray-500 mt-2">
-          {getCurrentDateTime()}
-        </div>
-        {/* Buttons for submit or revise */}
-        <div className="flex justify-end mt-4">
+        {/* Modal footer */}
+        <div className="flex justify-end p-4 bg-gray-100">
           <button
             onClick={onClose}
-            className="bg-gray-500 text-white px-4 py-2 rounded-md mr-2 hover:scale-105 duration-500"
+            className="text-gray-600 bg-gray-200 px-4 py-2 rounded-md mr-2 hover:bg-gray-300 focus:outline-none"
           >
             {localeData.RESERVATION_MODAL.CLOSE}
           </button>
           <button
             onClick={onSubmit}
-            className="bg-cvic-red text-white px-4 py-2 rounded-md hover:scale-105 duration-500"
+            className="text-white bg-cvic-red px-4 py-2 rounded-md hover:bg-cvic-red-dark focus:outline-none"
           >
             {localeData.RESERVATION_MODAL.CONFIRM}
           </button>

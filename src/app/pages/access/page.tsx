@@ -13,9 +13,9 @@ const Access = () => {
     <div className="page-container">
       <div className="w-full bg-white/25 p-4">
         <div className="p-1 md:p-4 text-xs md:text-base">
-        <div className="w-full h-auto p-4 flex items-center justify-center">
-          <div className="w-[220px] h-[220px] md:w-[550px] md:h-[550px] bg-maps bg-cover border-2 bg-center"></div>
-        </div>
+          <div className="w-full h-auto p-4 flex items-center justify-center">
+            <div className="w-[220px] h-[220px] md:w-[550px] md:h-[550px] bg-maps bg-cover border-2 bg-center"></div>
+          </div>
           {/* JR Chuo/Sobu Line */}
           <div className="access-info flex flex-col p-1 bg-white rounded-lg my-2">
             <h3 className="font-semibold text-lg text-cvic-red mb-2">
