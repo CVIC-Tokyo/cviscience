@@ -76,7 +76,24 @@ interface ReservationModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSubmit: () => void;
-  formData: FormData;
+  formData: {
+    selectedPlan: string | null;
+    selectedTests: string[];
+    name: string;
+    nameFurigana: string;
+    surname: string;
+    surnameFurigana: string;
+    dateOfBirth: string;
+    address: string;
+    email: string;
+    phoneNumber: string;
+    preferredContact: string;
+    consultationHistory: string;
+    metalInBody: string;
+    metalDetails: string;
+    requests: string;
+    consultationData: consultationData[];
+  };
   locale: string;
 }
 
