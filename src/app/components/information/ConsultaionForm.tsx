@@ -128,8 +128,7 @@ const ConsultationForm: React.FC<ConsultationProps> = ({
         setSurnameFurigana("");
         setDateOfBirth("");
         setAddress("");
-        setConsultationDates(["", "", ""]),
-        setSelectedTimeSlots(["", "", ""]),
+        setConsultationData(initialConsultationData);
         setEmail("");
         setPhoneNumber("");
         setPreferredContact("");
