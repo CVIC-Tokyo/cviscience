@@ -814,6 +814,28 @@ const en = {
   ZIOSTATION: {
     DESCRIPTION: ""
   },
+  RESERVATION_FORM: {
+    selectedPlan: "Selected Plan:",
+    selectedTests: "Selected Tests:",
+    personalInformation: "Personal Information",
+    name: "Name:",
+    dateOfBirth: "Date of Birth:",
+    age: "Age:",
+    phone: "Phone:",
+    email: "Email:",
+    address: "Address:",
+    consultationHistory: "Consultation History:",
+    reservationInfo: "Reservation Info",
+    additionalRequests: "Additional Requests:",
+    metalInBody: "Presence of Metal in Body:",
+    requests: "Requests:",
+    consultationData: "Consultation Data",
+    timestamp: "Timestamp:",
+    reservedBy: "Reserved by HP",
+    allRightsReserved: "© 2024 HP. All rights reserved.",
+    metalDetails: "Metal details",
+    preferredContact: "Preferred form of contact",
+  },
 };
 
 export default en;

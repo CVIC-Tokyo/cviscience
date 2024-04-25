@@ -805,6 +805,28 @@ const ja = {
     "12:00 - 14:00",
     "14:30 ~",
   ],
+  RESERVATION_FORM: {
+    selectedPlan: "選択されたプラン：",
+    selectedTests: "選択されたテスト：",
+    personalInformation: "個人情報",
+    name: "名前：",
+    dateOfBirth: "生年月日：",
+    age: "年齢：",
+    phone: "電話番号：",
+    email: "メールアドレス：",
+    address: "住所：",
+    consultationHistory: "相談履歴：",
+    reservationInfo: "予約情報",
+    additionalRequests: "追加のリクエスト：",
+    metalInBody: "体内の金属の存在：",
+    requests: "リクエスト：",
+    consultationData: "相談データ",
+    timestamp: "タイムスタンプ：",
+    reservedBy: "HPによって予約済み",
+    allRightsReserved: "© 2024 HP. 全著作権所有。",
+    metalDetails: "金属の詳細：",
+    preferredContact: "優先連絡手段："
+  },
 };
 
 export default ja;
