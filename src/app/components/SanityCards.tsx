@@ -22,7 +22,7 @@ const SanityCards = async () => {
   const data: simpleBlogCard[] = await getData();
 
   return (
-    <div className="max-w-[1400px] w-full m-20">
+    <div className="max-w-[1700px] w-full m-8 md:m-20 border-t-2 border-b-2 border-cvic-red">
         <div className="bg-none md:bg-white/75 w-full">
             <h1 className="text-cvic-red p-2 w-full text-2xl font-bold">COLUMNS</h1>
         </div>
@@ -32,13 +32,12 @@ const SanityCards = async () => {
             <Image
               src={urlFor(post.titleImage).url()}
               alt="image"
-              width={500}
-              height={500}
-              layout="responsive"
+              width={300}
+              height={300}
               className="rounded-t-lg object-cover"
             />
 
-            <div className="mt-5">
+            <div className="p-1 md:mt-5">
               <h3 className="text-[7px] md:text-lg line-clamp-2 font-bold">{post.title}</h3>
               <p className="line-clamp-2 text-[6px] md:text-sm mt-2 text-gray-600 dark:text-gray-300">
                 {post.smallDescription}
