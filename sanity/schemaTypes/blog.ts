@@ -6,14 +6,19 @@ export default {
       {
         name: 'title',
         type: 'string',
-        title: 'Title of blog article',
+        title: 'Title of article (Japanese)',
+      },
+      {
+        name: 'entitle',
+        type: 'string',
+        title: 'Title of article (English)',
       },
       {
         name: 'slug',
         type: 'slug',
-        title: 'Slug of your blog article',
+        title: 'Slug of your article',
         options: {
-          source: 'title',
+          source: 'entitle',
         },
       },
       {
@@ -24,12 +29,27 @@ export default {
       {
         name: 'smallDescription',
         type: 'text',
-        title: 'Small Description',
+        title: 'Small Description (Japanese)',
+      },
+      {
+        name: 'ensmallDescription',
+        type: 'text',
+        title: 'Small Description (English)',
       },
       {
         name: 'content',
         type: 'array',
-        title: 'Content',
+        title: 'Content (Japanese)',
+        of: [
+          {
+            type: 'block',
+          },
+        ],
+      },
+      {
+        name: 'encontent',
+        type: 'array',
+        title: 'Content (English)',
         of: [
           {
             type: 'block',
