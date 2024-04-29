@@ -145,7 +145,7 @@ const QualitySection = () => {
                       <h2 className="p-1 md:p-2 text-sm md:text-base font-semibold">
                         {localeData.QPAS.content.Skill.text}
                       </h2>
-                          <div className="bg-software bg-center bg-cover rounded-lg h-[150px] md:h-[200px] w-[400px]" />
+                          <div className="bg-software bg-center bg-cover rounded-lg h-[150px] md:h-[200px] w-[330px]" />
                           <p className="p-1 md:p-2 text-[10px] md:text-sm font-semibold">
                             {localeData.QPAS.content.Skill.content[0]}
                           </p>
@@ -173,34 +173,34 @@ const QualitySection = () => {
                       <h2 className="p-1 md:p-2 text-sm md:text-base font-semibold">
                         {localeData.QPAS.content.Speed.text}
                       </h2>
-                      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
-  <div className="bg-blue-200 rounded-lg shadow-md p-6">
-    <h2 className="text-2xl font-bold text-blue-800 mb-4">{localeData.SERVICES.PROCESS.CT_TITLE}</h2>
-    <ul className="text-lg text-gray-800">
+                      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-4 md:p-6">
+  <div className="bg-blue-200 rounded-lg shadow-md p-4 md:p-6">
+    <h2 className="text-lg md:text-xl font-bold text-blue-800 mb-2 md:mb-4">{localeData.SERVICES.PROCESS.CT_TITLE}</h2>
+    <ul className="text-sm md:text-base text-gray-800">
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.CT_BULLET[1]}</span></li>
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.CT_BULLET[2]}</span></li>
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.CT_BULLET[3]}</span></li>
     </ul>
   </div>
-  <div className="bg-green-200 rounded-lg shadow-md p-6">
-    <h2 className="text-2xl font-bold text-green-800 mb-4">{localeData.SERVICES.PROCESS.MRI_TITLE}</h2>
-    <ul className="text-lg text-gray-800">
+  <div className="bg-green-200 rounded-lg shadow-md p-4 md:p-6">
+    <h2 className="text-lg md:text-xl font-bold text-green-800 mb-2 md:mb-4">{localeData.SERVICES.PROCESS.MRI_TITLE}</h2>
+    <ul className="text-sm md:text-base text-gray-800">
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.MRI_BULLET[1]}</span></li>
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.MRI_BULLET[2]}</span></li>
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.MRI_BULLET[3]}</span></li>
     </ul>
   </div>
-  <div className="col-span-2 bg-yellow-200 rounded-lg shadow-md p-6">
-    <h2 className="text-2xl font-bold text-yellow-800 mb-4">{localeData.SERVICES.PROCESS.POINT}</h2>
-    <ul className="text-lg text-gray-800">
+  <div className="md:col-span-2 bg-yellow-200 rounded-lg shadow-md p-4 md:p-6">
+    <h2 className="text-lg md:text-xl font-bold text-yellow-800 mb-2 md:mb-4">{localeData.SERVICES.PROCESS.POINT}</h2>
+    <ul className="text-sm md:text-base text-gray-800">
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_CT[1]}</span></li>
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_CT[2]}</span></li>
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_CT[3]}</span></li>
     </ul>
   </div>
-  <div className="col-span-2 bg-red-200 rounded-lg shadow-md p-6">
-    <h2 className="text-2xl font-bold text-red-800 mb-4">{localeData.SERVICES.PROCESS.POINT_MRI[1]}</h2>
-    <ul className="text-lg text-gray-800">
+  <div className="md:col-span-2 bg-red-200 rounded-lg shadow-md p-4 md:p-6">
+    <h2 className="text-lg md:text-xl font-bold text-red-800 mb-2 md:mb-4">{localeData.SERVICES.PROCESS.POINT_MRI[1]}</h2>
+    <ul className="text-sm md:text-base text-gray-800">
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_MRI[2]}</span></li>
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_MRI[3]}</span></li>
       <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_MRI[4]}</span></li>
