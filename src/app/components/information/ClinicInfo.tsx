@@ -69,7 +69,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                       <Reveal>
                         <div className="w-full p-1 md:p-2">
                           <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                          <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">
+                          <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
                             {localeData.CVIC_DESCRIPTION.TITLE}
                           </h1>
                           <div className="w-full flex flex-col md:grid grid-cols-3">
@@ -94,7 +94,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                       <Reveal>
                         <div className="w-full p-1 md:p-2">
                           <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                          <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">
+                          <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
                             {localeData.EARLY_DETECTION.TITLE}
                           </h1>
                           <div className="w-full flex flex-col-reverse md:grid grid-cols-3">
@@ -121,7 +121,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                       <Reveal>
                         <div className="w-full p-1 md:p-2">
                           <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                          <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">
+                          <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
                             {localeData.ADDRESSING_NEEDS.TITLE}
                           </h1>
                           <div className="w-full flex flex-col md:grid grid-cols-3">
@@ -143,7 +143,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                       <Reveal>
                         <div className="w-full p-1 md:p-2">
                           <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                          <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">
+                          <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
                             {localeData.CONTINUOUS_IMPROVEMENT.TITLE}
                           </h1>
                           <div className="w-full flex flex-col-reverse md:grid grid-cols-3">
@@ -156,7 +156,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                               </p>
                             </div>
                             <div className="w-full flex items-start justify-center">
-                              <div className="bg-case w-[270px] h-[250px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
+                              <div className="bg-case w-[300px] h-[250px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
                             </div>
                           </div>
                         </div>
