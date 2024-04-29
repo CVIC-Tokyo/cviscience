@@ -12,7 +12,7 @@ import GoogleMap from "../GoogleMap";
 const QualitySection = () => {
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
-  const [showQpas, setShowQpas] = useState(false);
+  const [showQpas, setShowQpas] = useState(true);
 
   const toggleQpas = () => {
     setShowQpas(!showQpas);
