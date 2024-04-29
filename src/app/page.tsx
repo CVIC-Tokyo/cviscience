@@ -15,7 +15,7 @@ export default function Home() {
       <About />
       <ClinicInfo />
       <AnnouncementCards />
-      <div className="w-full max-w-[1700px] h-auto mt-10 md:mt-32 flex flex-col lg:grid grid-cols-2 p-2">
+      <div className="w-full max-w-[1300px] h-auto mt-10 md:mt-32 flex flex-col lg:grid grid-cols-2 p-2 mb-20">
         <Services />
         <Equipments />
         <Doctors />

@@ -19,7 +19,7 @@ const QualitySection = () => {
   };
 
   return (
-    <div className="w-full h-auto flex flex-col items-center justify-center max-w-[1700px]">
+    <div className="w-full h-auto flex flex-col items-center justify-center max-w-[1700px] mb-20">
       <Reveal>
         <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
           <Reveal>
