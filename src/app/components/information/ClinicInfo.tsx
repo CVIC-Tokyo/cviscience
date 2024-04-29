@@ -83,9 +83,9 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                               </div>
                             </Link>
                             <div className="div-2 md:p-4 col-span-2 flex flex-col items-center justify-center">
-                          <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
-                            {localeData.CVIC_DESCRIPTION.TITLE}
-                          </h1>
+                              <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
+                                {localeData.CVIC_DESCRIPTION.TITLE}
+                              </h1>
                               {localeData.CVIC_DESCRIPTION.CONTENT}
                             </div>
                           </div>
@@ -96,9 +96,9 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                           <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
                           <div className="w-full flex flex-col-reverse md:grid grid-cols-3">
                             <div className=" col-span-2">
-                            <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
-                              {localeData.EARLY_DETECTION.TITLE}
-                            </h1>
+                              <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
+                                {localeData.EARLY_DETECTION.TITLE}
+                              </h1>
                               <p className="p-2 md:p-4">
                                 {localeData.EARLY_DETECTION.CONTENT}
                               </p>
@@ -106,9 +106,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                                 {localeData.ADVANCED_IMAGING.CONTENT}
                               </p>
                             </div>
-                            <div
-                              className="w-full flex flex-col items-center justify-center p-1 md:p-2"
-                            >
+                            <div className="w-full flex flex-col items-center justify-center p-1 md:p-2">
                               <div className="bg-pointing w-[300px] h-[150px] md:w-[400px] md:h-[230px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
                             </div>
                           </div>
@@ -128,9 +126,9 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                               </div>
                             </Link>
                             <div className="div-2 md:p-4 col-span-2 flex flex-col items-center justify-center">
-                            <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
-                              {localeData.ADDRESSING_NEEDS.TITLE}
-                            </h1>
+                              <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
+                                {localeData.ADDRESSING_NEEDS.TITLE}
+                              </h1>
                               {localeData.ADDRESSING_NEEDS.CONTENT}
                             </div>
                           </div>
@@ -141,9 +139,9 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                           <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
                           <div className="w-full flex flex-col-reverse md:grid grid-cols-3">
                             <div className="col-span-2 flex flex-col items-center justify-center">
-                            <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
-                              {localeData.CONTINUOUS_IMPROVEMENT.TITLE}
-                            </h1>
+                              <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
+                                {localeData.CONTINUOUS_IMPROVEMENT.TITLE}
+                              </h1>
                               <p className="p-2 md:p-4 md:pb-0 font-bold">
                                 {localeData.CONTINUOUS_IMPROVEMENT.CONTENT}
                               </p>
