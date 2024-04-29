@@ -841,8 +841,8 @@ const en = {
     section: "Why choose CVIC?",
     subtitle: "Q-PASS",
     text: "High Quality Heart Imaging Diagnosis",
-    content: [
-      {
+    content: {
+      Quality: {
         subtitle: "Quality",
         text: "CVIC conducts heart examinations using two heart MRI devices, one heart CT device, and two heart echo devices:",
         listItems: [
@@ -853,16 +853,20 @@ const en = {
           "Heart echo devices manufactured by Philips in the Netherlands",
         ],
       },
+      Performance:
       {
         subtitle: "Performance",
         text: "Rich Examination Experience",
         content: [
-          "As of July 2015, CVIC performs 295 heart CT examinations and 250 heart MRI examinations monthly, achieving the highest examination volume in Japan (the most examinations nationwide).",
-          "CVIC performs approximately 1% of the nationwide monthly 3,440 heart CT examinations (2013 national data) and approximately 10% of the nationwide monthly 2,600 heart MRI examinations (2013 national data).",
+          "Cardiac Imaging Clinic Iidabashi (CVIC) has been building a track record since its opening in November 2009 as a clinic specializing in cardiac imaging diagnosis, focusing on the heart. Requests for cardiac imaging diagnosis performed at CVIC are mainly received from various types of medical institutions, including university hospitals and core hospitals in the Tokyo area, as well as doctors at clinics. Nationwide, according to the 2019 Survey of Cardiovascular Disease Treatment (JROAD) 8*, 45,499 cardiac MRIs and 509,083 cardiac CTs were performed.",
+          "The number of cardiac MRIs performed at CVIC is said to be outstanding considering that there are over 8,000 hospitals and over 100,000 clinics nationwide. There are only a limited number of facilities that can take pictures of the heart, and the presence of a doctor who can perform the diagnosis is said to be an important factor. This can be said to be a track record unique to CVIC, which specializes in university hospitals and cardiac imaging diagnosis.",
+          "The annual average for each facility nationwide (excluding CVIC) is 30 cardiac MRIs and 334 cardiac CTs, which again shows that CVIC's number of cardiac examinations is outstanding.",
           "This examination performance is made possible by the high technical expertise and clinical experience of our specialists.",
+          "We believe that it is important to accumulate such achievements in the medical field. We believe that the fact that doctors at nearby university hospitals, core hospitals, and clinics request our tests is because they value our environment, which requires rapid heart testing, and our track record.",
           "Moreover, over 80% of these examinations are referred by medical professionals, underscoring CVIC's reputation as a reliable heart imaging diagnosis center.",
         ],
       },
+      Access:
       {
         subtitle: "Accessibility",
         text: "Convenient Access",
@@ -875,6 +879,7 @@ const en = {
           "It is well known that myocardial infarction and stroke often share a common cause: arterial sclerosis. Therefore, examining the heart and brain simultaneously can help detect signs of myocardial infarction or stroke, leading to the prevention of future occurrences.",
         ],
       },
+      Skill:
       {
         subtitle: "Skill",
         text: "High-level Imaging Technology",
@@ -885,6 +890,7 @@ const en = {
           "Skilled technicians perform high-precision examinations using their honed skills, ensuring accurate results.",
         ],
       },
+      Speed:
       {
         subtitle: "Speed",
         text: "Prompt Examinations and Same-day 3D Result Explanation",
@@ -898,7 +904,7 @@ const en = {
           "It is a unique feature of examinations at CVIC, made possible by our extensive experience and advanced technology. (The final examination results may differ from the preliminary examination results.)",
         ],
       },
-    ],
+    },
   },
 };
 
