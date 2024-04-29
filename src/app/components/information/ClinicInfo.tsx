@@ -69,15 +69,12 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                       <Reveal>
                         <div className="w-full p-1 md:p-2">
                           <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                          <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
-                            {localeData.CVIC_DESCRIPTION.TITLE}
-                          </h1>
                           <div className="w-full flex flex-col md:grid grid-cols-3">
                             <Link
                               href={"/pages/equipments"}
-                              className="w-full flex-col flex items-center justify-center"
+                              className="w-full flex-col flex items-center justify-center p-2"
                             >
-                              <div className="bg-equipments w-[300px] h-[150px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
+                              <div className="bg-equipments w-[300px] h-[150px] md:w-[400px] md:h-[230px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
                               <div className="text-xs p-2 text-blue-500">
                                 {
                                   localeData.FACILITIES.TITLES.MRI.VINTAGE_TITAN
@@ -85,20 +82,23 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                                 }
                               </div>
                             </Link>
-                            <p className="p-2 md:p-4 col-span-2">
+                            <div className="div-2 md:p-4 col-span-2 flex flex-col items-center justify-center">
+                          <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
+                            {localeData.CVIC_DESCRIPTION.TITLE}
+                          </h1>
                               {localeData.CVIC_DESCRIPTION.CONTENT}
-                            </p>
+                            </div>
                           </div>
                         </div>
                       </Reveal>
                       <Reveal>
                         <div className="w-full p-1 md:p-2">
                           <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                          <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
-                            {localeData.EARLY_DETECTION.TITLE}
-                          </h1>
                           <div className="w-full flex flex-col-reverse md:grid grid-cols-3">
                             <div className=" col-span-2">
+                            <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
+                              {localeData.EARLY_DETECTION.TITLE}
+                            </h1>
                               <p className="p-2 md:p-4">
                                 {localeData.EARLY_DETECTION.CONTENT}
                               </p>
@@ -106,48 +106,44 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                                 {localeData.ADVANCED_IMAGING.CONTENT}
                               </p>
                             </div>
-                            <Link
-                              href={"pages/equipments"}
-                              className="w-full flex flex-col items-center justify-center"
+                            <div
+                              className="w-full flex flex-col items-center justify-center p-1 md:p-2"
                             >
-                              <div className="bg-zio w-[300px] h-[150px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
-                              <div className="text-xs p-2 text-blue-500">
-                                {localeData.FACILITIES.TITLES.ZIO.TITLE}
-                              </div>
-                            </Link>
+                              <div className="bg-pointing w-[300px] h-[150px] md:w-[400px] md:h-[230px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
+                            </div>
                           </div>
                         </div>
                       </Reveal>
                       <Reveal>
                         <div className="w-full p-1 md:p-2">
                           <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                          <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
-                            {localeData.ADDRESSING_NEEDS.TITLE}
-                          </h1>
                           <div className="w-full flex flex-col md:grid grid-cols-3">
                             <Link
                               href={"/pages/reservation"}
-                              className="w-full flex flex-col items-center justify-center"
+                              className="w-full flex flex-col items-center justify-center p-1 md:p-2"
                             >
-                              <div className="bg-staff w-[300px] h-[150px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
+                              <div className="bg-staff w-[300px] h-[150px] md:w-[400px] md:h-[230px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
                               <div className="text-xs p-2 text-blue-500">
                                 {localeData.RESERVATION.TITLE}
                               </div>
                             </Link>
-                            <p className="p-2 md:p-4 col-span-2">
+                            <div className="div-2 md:p-4 col-span-2 flex flex-col items-center justify-center">
+                            <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
+                              {localeData.ADDRESSING_NEEDS.TITLE}
+                            </h1>
                               {localeData.ADDRESSING_NEEDS.CONTENT}
-                            </p>
+                            </div>
                           </div>
                         </div>
                       </Reveal>
                       <Reveal>
                         <div className="w-full p-1 md:p-2">
                           <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                          <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
-                            {localeData.CONTINUOUS_IMPROVEMENT.TITLE}
-                          </h1>
                           <div className="w-full flex flex-col-reverse md:grid grid-cols-3">
-                            <div className="col-span-2">
+                            <div className="col-span-2 flex flex-col items-center justify-center">
+                            <h1 className="font-bold text-cvic-red text-base md:text-lg tracking-widest p-1 md:p-2">
+                              {localeData.CONTINUOUS_IMPROVEMENT.TITLE}
+                            </h1>
                               <p className="p-2 md:p-4 md:pb-0 font-bold">
                                 {localeData.CONTINUOUS_IMPROVEMENT.CONTENT}
                               </p>
@@ -155,7 +151,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                                 {localeData.CVIC_DOCK.CONTENT}
                               </p>
                             </div>
-                            <div className="w-full flex items-start justify-center">
+                            <div className="w-full flex items-center justify-center">
                               <div className="bg-case w-[300px] h-[250px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
                             </div>
                           </div>
