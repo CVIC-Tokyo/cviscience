@@ -7,11 +7,12 @@ export const revalidate = 30; // revalidate at most 30 seconds
 
 async function getData(slug: string) {
   const query = `
-    *[_type == "blog" && slug.current == '${slug}'] {
+    *[_type == "announcement" && slug.current == '${slug}'] {
         "currentSlug": slug.current,
           title,
-          entitle,
           content,
+          entitle,
+          contentImage,
           titleImage
       }[0]`;
 
@@ -19,16 +20,25 @@ async function getData(slug: string) {
   return data;
 }
 
-export default async function BlogArticle({
+export default async function AnnouncementPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  const data: fullBlog = await getData(params.slug);
+  const data: fullAnnouncement = await getData(params.slug);
+    console.log(data)
 
   return (
     <div className="page-container bg-white">
       <div className="flex flex-col items-center justify-center p-2 md:p-4">
+        {/* <Image
+          src={urlFor(data.titleImage).url()}
+          width={300}
+          height={300}
+          alt="Title Image"
+          priority
+          className="rounded-lg mt-8 border"
+        /> */}
         <h1>
           <span className="mt-2 block text-3xl text-center text-cvic-red leading-8 font-bold tracking-tight sm:text-4xl">
             {data.title}
@@ -40,10 +50,10 @@ export default async function BlogArticle({
           </span>
         </h1>
         <Image
-          src={urlFor(data.titleImage).url()}
-          width={300}
-          height={300}
-          alt="Title Image"
+          src={urlFor(data.contentImage).url()}
+          width={350}
+          height={350}
+          alt="Content Image"
           priority
           className="rounded-lg mt-8 border"
         />
