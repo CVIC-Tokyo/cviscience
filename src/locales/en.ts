@@ -837,67 +837,69 @@ const en = {
     preferredContact: "Preferred form of contact",
     nameFurigana: "Name (Furigana)",
   },
-  QPAS: [
-    {
-      section: "Why choose CVIC?",
-      content: [
-        {
-          subtitle: "Q-PAS",
-          text: "High Quality Heart Imaging Diagnosis",
-        },
-        {
-          subtitle: "Quality",
-          text: "CVIC conducts heart examinations using two heart MRI devices, one heart CT device, and two heart echo devices:",
-          listItems: [
-            "MRI devices manufactured by Canon",
-            "MRI devices manufactured by Philips in the Netherlands",
-            "The highest-grade heart CT device manufactured by Canon, a 320-row multislice CT device",
-            "Heart echo devices manufactured by Canon",
-            "Heart echo devices manufactured by Philips in the Netherlands",
-          ],
-        },
-        {
-          subtitle: "Performance",
-          text: "Rich Examination Experience",
-          content: [
-            "As of July 2015, CVIC performs 295 heart CT examinations and 250 heart MRI examinations monthly, achieving the highest examination volume in Japan (the most examinations nationwide).",
-            "CVIC performs approximately 1% of the nationwide monthly 3,440 heart CT examinations (2013 national data) and approximately 10% of the nationwide monthly 2,600 heart MRI examinations (2013 national data).",
-            "This examination performance is made possible by the high technical expertise and clinical experience of our specialists.",
-            "Moreover, over 80% of these examinations are referred by medical professionals, underscoring CVIC's reputation as a reliable heart imaging diagnosis center.",
-          ],
-        },
-        {
-          subtitle: "Accessibility",
-          text: "Convenient Access",
-          content: [
-            "CVIC is located a 5-minute walk from Iidabashi Station, which is served by four subway lines (Tozai Line, Namboku Line, Yurakucho Line, and Oedo Line) and the JR Sobu Line.",
-            "While other facilities may have waiting times of over a month for advanced heart imaging diagnosis, CVIC offers examinations and appointment reservations not only on weekdays but also on Saturdays, Sundays, and holidays from 9:00 to 18:00.",
-            "We secure examination slots for heart imaging diagnosis even on Saturdays, Sundays, and holidays to fulfill our mission of providing the latest and best heart imaging diagnosis to as many patients as possible.",
-            "Research has shown that there are many individuals, known as Type A personalities, who are busy with work. Therefore, we believe that providing an environment where heart examinations can be conducted when heart disease is a concern, without using busyness as an excuse, can help prevent sudden cardiac death.",
-            "Furthermore, CVIC's heart-brain dock enables simultaneous examination of the heart and brain in one day.",
-            "It is well known that myocardial infarction and stroke often share a common cause: arterial sclerosis. Therefore, examining the heart and brain simultaneously can help detect signs of myocardial infarction or stroke, leading to the prevention of future occurrences.",
-          ],
-        },
-        {
-          subtitle: "Speed",
-          text: "High-level Imaging Technology",
-          content: [
-            "Among imaging examinations, heart CT and heart MRI are considered the most technically challenging and require advanced imaging technology.",
-            "CVIC is an imaging center specialized in difficult advanced heart imaging diagnosis.",
-            "CVIC not only has the latest imaging diagnostic equipment but also has the technical expertise and knowledge to fully utilize the performance of these devices.",
-            "Skilled technicians perform high-precision examinations using their honed skills, ensuring accurate results.",
-            "Few facilities, both domestically and internationally, can complete full heart MRI studies, which require advanced techniques, in under one hour and create 3D image reconstructions within 30 minutes on the examination day.",
-            "Heart imaging diagnosis often involves long waiting times, typically over a month.",
-            "CVIC, specializing in heart imaging, features short waiting times for heart CT on the same day and heart MRI within one week of examination scheduling.",
-            "We believe that it is essential to undergo high-quality heart imaging examinations as quickly as possible to anticipate and prevent heart diseases, which may progress unnoticed and lead to sudden death.",
-            "At CVIC, a team of experts with extensive experience collaborates to provide same-day explanations of 3D image analysis results (3D heart images) and preliminary examination results while watching heart videos.",
-            "This system, where patients can receive explanations from specialists while viewing 3D images and videos of their hearts and blood vessels immediately after the examination, is rare not only in Japan but also worldwide.",
-            "It is a unique feature of examinations at CVIC, made possible by our extensive experience and advanced technology. (The final examination results may differ from the preliminary examination results.)",
-          ],
-        },
-      ],
-    },
-  ],
+  QPAS: {
+    section: "Why choose CVIC?",
+    subtitle: "Q-PASS",
+    text: "High Quality Heart Imaging Diagnosis",
+    content: [
+      {
+        subtitle: "Quality",
+        text: "CVIC conducts heart examinations using two heart MRI devices, one heart CT device, and two heart echo devices:",
+        listItems: [
+          "MRI devices manufactured by Canon",
+          "MRI devices manufactured by Philips in the Netherlands",
+          "The highest-grade heart CT device manufactured by Canon, a 320-row multislice CT device",
+          "Heart echo devices manufactured by Canon",
+          "Heart echo devices manufactured by Philips in the Netherlands",
+        ],
+      },
+      {
+        subtitle: "Performance",
+        text: "Rich Examination Experience",
+        content: [
+          "As of July 2015, CVIC performs 295 heart CT examinations and 250 heart MRI examinations monthly, achieving the highest examination volume in Japan (the most examinations nationwide).",
+          "CVIC performs approximately 1% of the nationwide monthly 3,440 heart CT examinations (2013 national data) and approximately 10% of the nationwide monthly 2,600 heart MRI examinations (2013 national data).",
+          "This examination performance is made possible by the high technical expertise and clinical experience of our specialists.",
+          "Moreover, over 80% of these examinations are referred by medical professionals, underscoring CVIC's reputation as a reliable heart imaging diagnosis center.",
+        ],
+      },
+      {
+        subtitle: "Accessibility",
+        text: "Convenient Access",
+        content: [
+          "CVIC is located a 5-minute walk from Iidabashi Station, which is served by four subway lines (Tozai Line, Namboku Line, Yurakucho Line, and Oedo Line) and the JR Sobu Line.",
+          "While other facilities may have waiting times of over a month for advanced heart imaging diagnosis, CVIC offers examinations and appointment reservations not only on weekdays but also on Saturdays, Sundays, and holidays from 9:00 to 18:00.",
+          "We secure examination slots for heart imaging diagnosis even on Saturdays, Sundays, and holidays to fulfill our mission of providing the latest and best heart imaging diagnosis to as many patients as possible.",
+          "Research has shown that there are many individuals, known as Type A personalities, who are busy with work. Therefore, we believe that providing an environment where heart examinations can be conducted when heart disease is a concern, without using busyness as an excuse, can help prevent sudden cardiac death.",
+          "Furthermore, CVIC's heart-brain dock enables simultaneous examination of the heart and brain in one day.",
+          "It is well known that myocardial infarction and stroke often share a common cause: arterial sclerosis. Therefore, examining the heart and brain simultaneously can help detect signs of myocardial infarction or stroke, leading to the prevention of future occurrences.",
+        ],
+      },
+      {
+        subtitle: "Skill",
+        text: "High-level Imaging Technology",
+        content: [
+          "Among imaging examinations, heart CT and heart MRI are considered the most technically challenging and require advanced imaging technology.",
+          "CVIC is an imaging center specialized in difficult advanced heart imaging diagnosis.",
+          "CVIC not only has the latest imaging diagnostic equipment but also has the technical expertise and knowledge to fully utilize the performance of these devices.",
+          "Skilled technicians perform high-precision examinations using their honed skills, ensuring accurate results.",
+        ],
+      },
+      {
+        subtitle: "Speed",
+        text: "Prompt Examinations and Same-day 3D Result Explanation",
+        content: [
+          "Few facilities, both domestically and internationally, can complete full heart MRI studies, which require advanced techniques, in under one hour and create 3D image reconstructions within 30 minutes on the examination day.",
+          "Heart imaging diagnosis often involves long waiting times, typically over a month.",
+          "CVIC, specializing in heart imaging, features short waiting times for heart CT on the same day and heart MRI within one week of examination scheduling.",
+          "We believe that it is essential to undergo high-quality heart imaging examinations as quickly as possible to anticipate and prevent heart diseases, which may progress unnoticed and lead to sudden death.",
+          "At CVIC, a team of experts with extensive experience collaborates to provide same-day explanations of 3D image analysis results (3D heart images) and preliminary examination results while watching heart videos.",
+          "This system, where patients can receive explanations from specialists while viewing 3D images and videos of their hearts and blood vessels immediately after the examination, is rare not only in Japan but also worldwide.",
+          "It is a unique feature of examinations at CVIC, made possible by our extensive experience and advanced technology. (The final examination results may differ from the preliminary examination results.)",
+        ],
+      },
+    ],
+  },
 };
 
 export default en;
