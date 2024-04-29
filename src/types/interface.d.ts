@@ -151,3 +151,8 @@ interface fullBlog {
   content: any;
   titleImage: any;
 }
+
+interface ArrowIconProps {
+  showDropdown: boolean;
+  handleRotation: () => void;
+}
