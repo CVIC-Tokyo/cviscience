@@ -16,12 +16,12 @@ const QualitySection = () => {
   };
 
   return (
-    <div className="w-full h-auto p-2 flex flex-col items-center justify-center max-w-[1700px]">
+    <div className="w-full h-auto flex flex-col items-center justify-center max-w-[1700px]">
       <Reveal>
         <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
           <Reveal>
             <h1
-              className="about-title cursor-pointer flex items-center justify-between"
+              className="about-title cursor-pointer flex items-center justify-center"
               onClick={toggleQpas}
             >
               <span>{localeData.QPAS[0].section}</span>
