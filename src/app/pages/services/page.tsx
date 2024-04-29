@@ -12,50 +12,34 @@ const ServicesPage: React.FC<ServicesPageProps> = () => {
   const localeData = getLocaleData(locale);
 
   return (
-    <div className="page-container">
-      <div className="bg-white/25 flex flex-col items-center justify-center p-4">
-        <div className="w-full">
-          <div className="rounded-lg p-4 bg-white">
-            <div>
-              <p className="font-semibold text-cvic-red text-base md:text">
-                {localeData.CVIC_DOCK.TITLE}
-              </p>
-            </div>
-            <div>
-              <p className="text-[12px] p-1 md:p-2">
-                {localeData.CVIC_DOCK.CONTENT}
-              </p>
-            </div>
-          </div>
-        </div>
+    <div className="page-container bg-gradient-to-b from-blue-300 to-blue-200 p-4 md:p-8">
+      {/* CVIC Dock Section */}
+      <div className="bg-white rounded-lg shadow-2xl p-4 md:p-8 mb-4">
+        <h2 className="text-sm md:text-base font-semibold text-cvic-red mb-4">
+          {localeData.CVIC_DOCK.TITLE}
+        </h2>
+        <p className="text-[10px] md:text-sm">{localeData.CVIC_DOCK.CONTENT}</p>
       </div>
-      <div className="bg-white/25 flex flex-col items-center justify-center p-4 mb-4">
-        <div className="rounded-lg p-4 bg-white">
-          <div>
-            <p className="font-semibold text-cvic-red">
-              {localeData.NEW_CHECKUP_MENU.TITLE}
-            </p>
-          </div>
-          <div>
-            <p className="text-[12px] p-1 md:p-2">
-              {localeData.NEW_CHECKUP_MENU.CONTENT}
-            </p>
-          </div>
-        </div>
+
+      {/* New Checkup Menu Section */}
+      <div className="bg-white rounded-lg shadow-2xl p-4 md:p-8 mb-4">
+        <h2 className="text-sm md:text-base font-semibold text-cvic-red mb-4">
+          {localeData.NEW_CHECKUP_MENU.TITLE}
+        </h2>
+        <p className="text-[10px] md:text-sm">{localeData.NEW_CHECKUP_MENU.CONTENT}</p>
       </div>
-      <div className="bg-white/25 flex flex-col items-center justify-center">
-        <div className="w-full">
-          <div className="rounded-lg p-4">
-            <ServicesInfo services={localeData.SERVICES.DOCK} />
-          </div>
-        </div>
+
+      {/* Services Information Section */}
+      <div className=" rounded-lg shadow-2xl p-4 md:p-8 mb-4">
+        <h2 className="text-xl md:text-2xl font-semibold text-cvic-red mb-4">
+          {localeData.SERVICES.TITLE}
+        </h2>
+        <ServicesInfo services={localeData.SERVICES.DOCK} />
       </div>
-      <div className="bg-white/25 flex flex-col items-center justify-center mt-4">
-        <div className="w-full">
-          <div className="rounded-lg p-4">
-            <OptionalServicesInfo locale={locale} />
-          </div>
-        </div>
+
+      {/* Optional Services Information Section */}
+      <div className="rounded-lg shadow-2xl p-4 md:p-8">
+        <OptionalServicesInfo locale={locale} />
       </div>
     </div>
   );
