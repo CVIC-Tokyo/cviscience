@@ -24,7 +24,7 @@ html {
   }
 
   .tile-photo-container {
-    @apply w-full h-full overflow-hidden relative shadow-2xl before:bg-white/10 border-white/20 hover:border-white before:rounded-xl rounded-lg;
+    @apply w-full h-full overflow-hidden relative shadow-2xl before:bg-white/10 border-white/20 hover:border-white before:rounded-xl;
   }
 
   .tile-hidden-info {
