@@ -6,7 +6,7 @@ import Doctors from "./components/tiles/Doctors";
 import Services from "./components/tiles/Services";
 import ClinicInfo from "./components/information/ClinicInfo";
 import Staff from "./components/tiles/Reservationn";
-import QualitySection from "./components/information/Quality Section";
+import QualitySection from "./components/information/QualitySection";
 import SanityCards from "./components/SanityCards";
 
 export default function Home() {
