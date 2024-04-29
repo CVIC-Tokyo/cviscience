@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useRef, useState } from "react";
 import "../../../styles/globals.css";
@@ -57,89 +57,117 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                     <ArrowIcon
                       showDropdown={showIntroduction}
                       handleRotation={handleRotationIntroduction}
-                    /> 
+                    />
                   </h1>
                 </Reveal>
                 {showIntroduction && (
                   <Reveal>
                     <div className="p-4 text-[12px] md:text-base">
-                    <p className="font-bold p-2 md:p-4">
-                      {localeData.INTRODUCTION.CONTENT}
-                    </p>
-                    <Reveal>
-                      <div className="w-full p-1 md:p-2">
-                        <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                        <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">{localeData.CVIC_DESCRIPTION.TITLE}</h1>
-                        <div className="w-full flex flex-col md:grid grid-cols-3">
-                          <Link href={'/pages/equipments'} className="w-full flex-col flex items-center justify-center">
-                            <div className="bg-equipments w-[300px] h-[150px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1"/>
-                            <div className="text-xs p-2 text-blue-500">{localeData.FACILITIES.TITLES.MRI.VINTAGE_TITAN.TITLE}</div>
-                          </Link>
-                          <p className="p-2 md:p-4 col-span-2">
-                            {localeData.CVIC_DESCRIPTION.CONTENT}
-                          </p>
-                        </div>
-                      </div>
-                    </Reveal>
-                    <Reveal>
-                      <div className="w-full p-1 md:p-2">
-                        <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                        <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">{localeData.EARLY_DETECTION.TITLE}</h1>
-                        <div className="w-full flex flex-col-reverse md:grid grid-cols-3">
-                          <div className=" col-span-2">
-                            <p className="p-2 md:p-4">
-                              {localeData.EARLY_DETECTION.CONTENT}
-                            </p>
-                            <p className="p-2 md:p-4">
-                              {localeData.ADVANCED_IMAGING.CONTENT}
+                      <p className="font-bold p-2 md:p-4">
+                        {localeData.INTRODUCTION.CONTENT}
+                      </p>
+                      <Reveal>
+                        <div className="w-full p-1 md:p-2">
+                          <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
+                          <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">
+                            {localeData.CVIC_DESCRIPTION.TITLE}
+                          </h1>
+                          <div className="w-full flex flex-col md:grid grid-cols-3">
+                            <Link
+                              href={"/pages/equipments"}
+                              className="w-full flex-col flex items-center justify-center"
+                            >
+                              <div className="bg-equipments w-[300px] h-[150px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
+                              <div className="text-xs p-2 text-blue-500">
+                                {
+                                  localeData.FACILITIES.TITLES.MRI.VINTAGE_TITAN
+                                    .TITLE
+                                }
+                              </div>
+                            </Link>
+                            <p className="p-2 md:p-4 col-span-2">
+                              {localeData.CVIC_DESCRIPTION.CONTENT}
                             </p>
                           </div>
-                          <Link href={'pages/equipments'} className="w-full flex flex-col items-center justify-center">
-                            <div className="bg-zio w-[300px] h-[150px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1"/>
-                            <div className="text-xs p-2 text-blue-500">{localeData.FACILITIES.TITLES.ZIO.TITLE}</div>
-                          </Link>
                         </div>
-                      </div>
-                    </Reveal>
-                    <Reveal>
-                      <div className="w-full p-1 md:p-2">
-                        <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                        <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">{localeData.ADDRESSING_NEEDS.TITLE}</h1>
-                        <div className="w-full flex flex-col md:grid grid-cols-3">
-                          <Link href={'/pages/reservation'} className="w-full flex flex-col items-center justify-center">
-                            <div className="bg-staff w-[300px] h-[150px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1"/>
-                            <div className="text-xs p-2 text-blue-500">{localeData.RESERVATION.TITLE}</div>
-                          </Link>
-                          <p className="p-2 md:p-4 col-span-2">
-                            {localeData.ADDRESSING_NEEDS.CONTENT}
-                          </p>
-                        </div>
-                      </div>
-                    </Reveal>
-                    <Reveal>
-                      <div className="w-full p-1 md:p-2">
-                        <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                        <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">{localeData.CONTINUOUS_IMPROVEMENT.TITLE}</h1>
-                        <div className="w-full flex flex-col-reverse md:grid grid-cols-3">
-                          <div className="col-span-2">
-                            <p className="p-2 md:p-4 md:pb-0 font-bold">
-                              {localeData.CONTINUOUS_IMPROVEMENT.CONTENT}
-                            </p>
-                            <p className="p-2 md:p-4">
-                              {localeData.CVIC_DOCK.CONTENT}
-                            </p>
-                          </div>
-                          <div className="w-full flex items-start justify-center">
-                            <div className="bg-case w-[270px] h-[250px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1"/>
+                      </Reveal>
+                      <Reveal>
+                        <div className="w-full p-1 md:p-2">
+                          <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
+                          <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">
+                            {localeData.EARLY_DETECTION.TITLE}
+                          </h1>
+                          <div className="w-full flex flex-col-reverse md:grid grid-cols-3">
+                            <div className=" col-span-2">
+                              <p className="p-2 md:p-4">
+                                {localeData.EARLY_DETECTION.CONTENT}
+                              </p>
+                              <p className="p-2 md:p-4">
+                                {localeData.ADVANCED_IMAGING.CONTENT}
+                              </p>
+                            </div>
+                            <Link
+                              href={"pages/equipments"}
+                              className="w-full flex flex-col items-center justify-center"
+                            >
+                              <div className="bg-zio w-[300px] h-[150px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
+                              <div className="text-xs p-2 text-blue-500">
+                                {localeData.FACILITIES.TITLES.ZIO.TITLE}
+                              </div>
+                            </Link>
                           </div>
                         </div>
-                      </div>
-                    </Reveal>
-                    <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
-                    <Reveal>
-                      <p className="text-[10px] md+text-sm">{localeData.NEW_CVIC_GROUP.CONTENT}</p>
-                    </Reveal>
-                  </div>
+                      </Reveal>
+                      <Reveal>
+                        <div className="w-full p-1 md:p-2">
+                          <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
+                          <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">
+                            {localeData.ADDRESSING_NEEDS.TITLE}
+                          </h1>
+                          <div className="w-full flex flex-col md:grid grid-cols-3">
+                            <Link
+                              href={"/pages/reservation"}
+                              className="w-full flex flex-col items-center justify-center"
+                            >
+                              <div className="bg-staff w-[300px] h-[150px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
+                              <div className="text-xs p-2 text-blue-500">
+                                {localeData.RESERVATION.TITLE}
+                              </div>
+                            </Link>
+                            <p className="p-2 md:p-4 col-span-2">
+                              {localeData.ADDRESSING_NEEDS.CONTENT}
+                            </p>
+                          </div>
+                        </div>
+                      </Reveal>
+                      <Reveal>
+                        <div className="w-full p-1 md:p-2">
+                          <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
+                          <h1 className="font-bold text-cvic-red tracking-widest p-1 md:p-2">
+                            {localeData.CONTINUOUS_IMPROVEMENT.TITLE}
+                          </h1>
+                          <div className="w-full flex flex-col-reverse md:grid grid-cols-3">
+                            <div className="col-span-2">
+                              <p className="p-2 md:p-4 md:pb-0 font-bold">
+                                {localeData.CONTINUOUS_IMPROVEMENT.CONTENT}
+                              </p>
+                              <p className="p-2 md:p-4">
+                                {localeData.CVIC_DOCK.CONTENT}
+                              </p>
+                            </div>
+                            <div className="w-full flex items-start justify-center">
+                              <div className="bg-case w-[270px] h-[250px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
+                            </div>
+                          </div>
+                        </div>
+                      </Reveal>
+                      <div className="border-t-1 md:border-t-2 border-cvic-red/50" />
+                      <Reveal>
+                        <p className="text-[10px] md+text-sm">
+                          {localeData.NEW_CVIC_GROUP.CONTENT}
+                        </p>
+                      </Reveal>
+                    </div>
                   </Reveal>
                 )}
               </div>
@@ -161,93 +189,41 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                 />
               </h1>
             </Reveal>
-            {showMission && (
-              <Reveal>
-                <div
-                  className="w-full h-[200px] md:h-[300px] lg:h-[500px] bg-terashima_message bg-cover bg-center"
-                />
-              </Reveal>
-            )}
-            {showMission && (
-              <Reveal>
-                <div className="p-4 text-[12px] md:text-base">
-                  <p className="font-bold p-2 md:p-4">
-                    {localeData.CVIC_INFO.CLINIC_MISSION}
-                  </p>
-                  <p className="p-2 md:p-4">
-                    {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P1}
-                  </p>
-                  <p className="p-2 md:p-4">
-                    {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P2}
-                  </p>
-                  <p className="p-2 md:p-4">
-                    {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P3}
-                  </p>
-                  <p className="p-2 pb-0 md:p-4 md:pb-0 font-bold">
-                    {localeData.DOCTORS.TERASHIMA}
-                  </p>
-                  <p className="md:px-20">{localeData.DOCTORS.TERASHIMA_TITLE}</p>
-                </div>
-              </Reveal>
-            )}
-          </div>
-        </Reveal>
-        <Reveal>
-          <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
-            <Reveal>
-              <h1
-                className="about-title text-sm md:text-base cursor-pointer"
-                onClick={toggleCsr}
-              >
-                {localeData.ABOUT.CSR_TITLE}
-                <ArrowIcon
-                  showDropdown={showCsr}
-                  handleRotation={handleRotationCsr}
-                />
-              </h1>
-            </Reveal>
-            {showCsr && (
-              <Reveal>
-                <div className="flex flex-col md:grid grid-cols-3">
-                  <div>
-                    <Reveal>
-                      <h2 className="font-bold p-2">
-                        {localeData.ABOUT.CSR.ONE_TITLE}
-                      </h2>
-                    </Reveal>
-                    <Reveal>
-                      <p className="p-4 text-[12px] md:text-sm">
-                        {localeData.ABOUT.CSR.ONE}
+            <div className="w-full">
+              <div className="col-span-2">
+                {showMission && (
+                  <Reveal>
+                    <div className="w-full h-[150px] md:h-[300px] lg:h-[500px] bg-terashima_message bg-cover bg-center" />
+                  </Reveal>
+                )}
+                {showMission && (
+                  <Reveal>
+                    <div className="p-4 text-[12px] md:text-base">
+                      <p className="font-bold p-2 md:p-4">
+                        {localeData.CVIC_INFO.CLINIC_MISSION}
                       </p>
-                    </Reveal>
-                  </div>
-                  <div>
-                    <Reveal>
-                      <h2 className="font-bold p-2">
-                        {localeData.ABOUT.CSR.TWO_TITLE}
-                      </h2>
-                    </Reveal>
-                    <Reveal>
-                      <p className="p-4 text-[12px] md:text-sm">
-                        {localeData.ABOUT.CSR.TWO}
+                      <p className="p-2 md:p-4">
+                        {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P1}
                       </p>
-                    </Reveal>
-                  </div>
-                  <div>
-                    <Reveal>
-                      <h2 className="font-bold p-2">
-                        {localeData.ABOUT.CSR.THREE_TITLE}
-                      </h2>
-                    </Reveal>
-                    <Reveal>
-                      <p className="p-4 text-[12px] md:text-sm">
-                        {localeData.ABOUT.CSR.THREE}
+                      <p className="p-2 md:p-4">
+                        {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P2}
                       </p>
-                    </Reveal>
-                  </div>
-                  </div>    
-              </Reveal>
-            )}
+                      <p className="p-2 md:p-4">
+                        {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P3}
+                      </p>
+                      <p className="p-2 pb-0 md:p-4 md:pb-0 font-bold">
+                        {localeData.DOCTORS.TERASHIMA}
+                      </p>
+                      <p className="md:px-20">
+                        {localeData.DOCTORS.TERASHIMA_TITLE}
+                      </p>
+                    </div>
+                  </Reveal>
+                )}
+              </div>
+              <div>
+              </div>
+            </div>
           </div>
         </Reveal>
       </div>
