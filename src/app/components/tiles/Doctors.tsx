@@ -49,7 +49,7 @@ const Doctors: React.FC<DoctorsProps> = () => {
 
   return (
     <div
-      className="tile-container bg-white/25 p-4"
+      className="tile-container bg-gradient-to-b from-blue-300 to-blue-200 p-2 md:p-4"
       id="Doctors"
       ref={containerRef}
     >

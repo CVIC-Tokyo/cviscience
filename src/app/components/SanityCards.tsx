@@ -22,10 +22,10 @@ const SanityCards = async () => {
   const data: simpleBlogCard[] = await getData();
 
   return (
-    <div className="max-w-[1300px] w-full m-8 md:m-20 border-t-2 border-b-2 border-cvic-red">
-      <div className="bg-none md:bg-white w-full">
+    <div className="max-w-[1300px] w-full m-8 md:m-20 border-t-2 border-b-2 border-cvic-red bg-gradient-to-b from-blue-300 to-blue-200 ">
+      <div className=" w-full">
         <h1 className="text-cvic-red p-2 w-full text-lg md:text-2xl font-bold">
-          COLUMNS
+          PUBLISHED
         </h1>
       </div>
       <div className="grid grid-cols-3 h-[200px] md:h-[400px] md:flex p-4 gap-2 md:gap-5 items-center justify-center w-full overflow-x-scroll md:overflow-auto">

@@ -14,13 +14,13 @@ export default function Home() {
     <div className="w-full h-auto flex flex-col items-center justify-center">
       <About />
       <ClinicInfo />
-      <AnnouncementCards />
       <div className="w-full max-w-[1300px] h-auto mt-10 md:mt-32 flex flex-col lg:grid grid-cols-2 p-2 mb-20">
         <Services />
         <Equipments />
         <Doctors />
         <Staff />
       </div>
+      <AnnouncementCards />
       <SanityCards />
     </div>
   );
