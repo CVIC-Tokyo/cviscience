@@ -187,13 +187,13 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                         {localeData.CVIC_INFO.CLINIC_MISSION}
                       </p>
                       <p className="p-2 md:p-4 text-xs md:text-sm">
-                        " {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P1}
+                      &quot; {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P1}
                       </p>
                       <p className="p-2 md:p-4 text-xs md:text-sm">
                         {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P2}
                       </p>
                       <p className="p-2 md:p-4 text-xs md:text-sm">
-                        {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P3} "
+                        {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P3} &quot;
                       </p>
                       <p className="p-2 pb-0 md:p-4 md:pb-0 font-bold">
                         {localeData.DOCTORS.TERASHIMA}
