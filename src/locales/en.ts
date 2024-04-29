@@ -2,7 +2,7 @@ const en = {
   INTRODUCTION: {
     TITLE: "Introduction to CVIC",
     CONTENT:
-      "For early detection and treatment of heart disease. Heart disease is the second leading cause of death among Japanese people, following cancer, emphasizing the increasing importance of early detection and treatment. CVIC strives to serve as many patients as possible, collaborating with radiologists and cardiologists while working tirelessly every day. Through the widespread adoption of cardiac imaging diagnostics and further technological innovation, we aim to contribute to the advancement of healthcare in Japan.",
+      "Heart disease is the second leading cause of death among Japanese people, following cancer, emphasizing the increasing importance of early detection and treatment. CVIC strives to serve as many patients as possible, collaborating with radiologists and cardiologists while working tirelessly every day. Through the widespread adoption of cardiac imaging diagnostics and further technological innovation, we aim to contribute to the advancement of healthcare in Japan.",
   },
   CVIC_DESCRIPTION: {
     TITLE: "What is Cardiovascular Imaging Clinic Iidabashi (CVIC)?",
@@ -839,14 +839,14 @@ const en = {
   },
   QPAS: [
     {
-      section: 'High Quality Heart Imaging Diagnosis',
+      section: 'Why choose CVIC?',
       content: [
         {
-          subtitle: 'Q-PASS',
-          text: 'Quality',
+          subtitle: 'Q-PAS',
+          text: 'High Quality Heart Imaging Diagnosis',
         },
         {
-          subtitle: 'Advanced Diagnostic Technology',
+          subtitle: 'Quality',
           text: 'CVIC conducts heart examinations using two heart MRI devices, one heart CT device, and two heart echo devices:',
           listItems: [
             'MRI devices manufactured by Canon',
@@ -879,7 +879,7 @@ const en = {
           ],
         },
         {
-          subtitle: 'Advanced Imaging Technology',
+          subtitle: 'Speed',
           text: 'High-level Imaging Technology',
           content: [
             'Among imaging examinations, heart CT and heart MRI are considered the most technically challenging and require advanced imaging technology.',
@@ -887,12 +887,6 @@ const en = {
             'CVIC not only has the latest imaging diagnostic equipment but also has the technical expertise and knowledge to fully utilize the performance of these devices.',
             'Skilled technicians perform high-precision examinations using their honed skills, ensuring accurate results.',
             'Few facilities, both domestically and internationally, can complete full heart MRI studies, which require advanced techniques, in under one hour and create 3D image reconstructions within 30 minutes on the examination day.',
-          ],
-        },
-        {
-          subtitle: 'Speed',
-          text: 'Prompt Examinations and Same-day 3D Result Explanation',
-          content: [
             'Heart imaging diagnosis often involves long waiting times, typically over a month.',
             'CVIC, specializing in heart imaging, features short waiting times for heart CT on the same day and heart MRI within one week of examination scheduling.',
             'We believe that it is essential to undergo high-quality heart imaging examinations as quickly as possible to anticipate and prevent heart diseases, which may progress unnoticed and lead to sudden death.',

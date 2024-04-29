@@ -830,14 +830,14 @@ const ja = {
   },
   QPAS: [
     {
-      section: 'High Quality Heart Imaging Diagnosis',
+      section: 'CVICを選ぶ理由は何ですか？',
       content: [
         {
-          subtitle: 'Q-PASS',
-          text: 'Quality',
+          subtitle: 'Q-PAS',
+          text: 'High Quality Heart Imaging Diagnosis',
         },
         {
-          subtitle: 'Advanced Diagnostic Technology',
+          subtitle: 'Quality',
           text: 'CVICでは、2台の心臓MRI装置、1台の心臓CT装置、2台の心エコー装置を用いて心臓検査を実施しています。',
           listItems: [
             'Canon社製心臟MRI装置',
@@ -873,20 +873,14 @@ const ja = {
           ],
         },
         {
-          subtitle: 'Advanced Imaging Technology',
-          text: '高度な撮影技術',
+          subtitle: 'Speed',
+          text: '迅速な検査と当日3D結果説明',
           content: [
             '数ある画像診断検査の中でも、最も技術的に困雑で高度の撮影技術が必要といわれているのが心臓CTや心臓MRIです。',
             'CVICはその困難な高度心臓画像診断に特化したイメージングセンターです。',
             'CVICでは最新の画像診断機器を揃えているだけではなく、それら装置の性能を十二分に使いこなすだけの技術と知識があります。',
             '画像検査に熟練した技師が、その磨き上げられた技術を生かして、責任を持って高精度の検査を行います。',
             '高度な技術を要する心臓MRI検査のフルスタディを1時間以内にこなし、3D画像再構築を検査当日に30分以内作成出来る施設は国内だけではなく海外でも多くはありません。',
-          ],
-        },
-        {
-          subtitle: 'Speed',
-          text: '迅速な検査と当日3D結果説明',
-          content: [
             '心臓画像診断は、非常に待ち時間の長い査のつで、通常1か月以上の待ち時間であることが多いです。',
             'CVICは、心臓に特化することにより、心賊CTは当日検査から、心臓MRIは1週間以内と検査待ちが非常に短いのが特徴です。',
             '自分では気付かない間に進行し、突然死を引き起こすこともある心臓疾患を事前に予知するために、出来るだけ早いスピードで質の高い心臓画像検査を受けるべきであると我々は考えています。',
