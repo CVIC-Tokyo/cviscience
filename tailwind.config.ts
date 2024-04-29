@@ -36,6 +36,7 @@ const config: Config = {
         achieva: 'url("/images/equipments/achieva.jpg")',
         incisive: 'url("/images/equipments/incisive.jpg")',
         maps: 'url("/images/access/maps.webp")',
+        case: 'url("/images/home/cases.webp")'
       },
     },
   },
