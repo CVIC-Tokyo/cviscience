@@ -16,7 +16,7 @@ const ReservationProcess: React.FC<ReservationProcessProps> = ({ locale }) => {
           {localeData.RESERVATION_PROCESS.TITLE}
         </h2>
         <div className="flex flex-col md:flex-row items-start justify-around p-2 w-full">
-          <ul className="border-2 p-2 rounded-lg bg-gray-100">
+          <ul className="border-2 p-2 rounded-lg bg-gray-100 text-sm md:text-base">
             {/* First three lines */}
             {firstThreeLines.map((item, index) => (
               <li key={index} className="list-item">
@@ -27,14 +27,14 @@ const ReservationProcess: React.FC<ReservationProcessProps> = ({ locale }) => {
           {/* Next four lines */}
           <ul className="border-2 p-2 rounded-lg bg-gray-100 mt-4 md:mt-0">
             {nextFourLines.map((item, index) => (
-              <li key={index} className="list-item">
+              <li key={index} className="list-item text-sm md:text-base">
                 <strong>{item}</strong>
               </li>
             ))}
           </ul>
         </div>
         <div className="w-full p-2">
-          <p className="text-white bg-cvic-red rounded-md p-2 font-semibold">
+          <p className="text-white bg-cvic-red rounded-md p-2 font-semibold text-sm md:text-base">
             {localeData.RESERVATION_NOTICE.SUNDAY}
           </p>
         </div>
