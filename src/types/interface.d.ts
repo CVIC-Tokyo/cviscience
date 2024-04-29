@@ -145,10 +145,28 @@ interface simpleBlogCard {
   titleImage: any;
 }
 
+interface simpleAnnouncementCard {
+  title: string;
+  entitle: string;
+  smallDescription: string;
+  currentSlug: string;
+  titleImage: any;
+}
+
+interface fullAnnouncement {
+  currentSlug: string;
+  title: string;
+  content: any;
+  entitle: any;
+  contentImage: any,
+  titleImage: any;
+}
+
 interface fullBlog {
   currentSlug: string;
   title: string;
   content: any;
+  entitle: any;
   titleImage: any;
 }
 
