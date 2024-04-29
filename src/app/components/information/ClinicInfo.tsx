@@ -12,10 +12,8 @@ import Link from "next/link";
 const ClinicInfo: React.FC<ClinicInfoProps> = () => {
   const { locale } = useGlobalContext();
   const localeData = getLocaleData(locale);
-  const [showIntroduction, setShowIntroduction] = useState<boolean>(false);
-  const [showMission, setShowMission] = useState<boolean>(false);
-  const [showCsr, setShowCsr] = useState<boolean>(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [showIntroduction, setShowIntroduction] = useState<boolean>(true);
+  const [showMission, setShowMission] = useState<boolean>(true);
 
   const toggleIntroduction = () => {
     setShowIntroduction(!showIntroduction);
@@ -25,20 +23,12 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
     setShowMission(!showMission);
   };
 
-  const toggleCsr = () => {
-    setShowCsr(!showCsr);
-  };
-
   const handleRotationIntroduction = () => {
     setShowIntroduction(!showIntroduction);
   };
 
   const handleRotationMission = () => {
     setShowMission(!showMission);
-  };
-
-  const handleRotationCsr = () => {
-    setShowCsr(!showCsr);
   };
 
   return (
