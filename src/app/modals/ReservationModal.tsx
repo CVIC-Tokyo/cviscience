@@ -39,13 +39,17 @@ const ReservationModal: React.FC<ReservationModalProps> = ({
             <label className="block text-sm font-semibold mb-1">
               {localeData.RESERVATION_FORM.name}:
             </label>
-            <p className="text-sm">{formData.name} {formData.surname}</p>
+            <p className="text-sm">
+              {formData.name} {formData.surname}
+            </p>
           </div>
           <div className="mb-4">
             <label className="block text-sm font-semibold mb-1">
               {localeData.RESERVATION_FORM.nameFurigana}:
             </label>
-            <p className="text-sm">{formData.nameFurigana} {formData.surnameFurigana}</p>
+            <p className="text-sm">
+              {formData.nameFurigana} {formData.surnameFurigana}
+            </p>
           </div>
           <div className="mb-4">
             <label className="block text-sm font-semibold mb-1">
@@ -106,7 +110,10 @@ const ReservationModal: React.FC<ReservationModalProps> = ({
               {localeData.RESERVATION_FORM.consultationData}:
             </label>
             {formData.consultationData.map((data, index) => (
-              <div key={index} className="flex items-center justify-center space-x-2">
+              <div
+                key={index}
+                className="flex items-center justify-center space-x-2"
+              >
                 <p className="text-sm">{data.date}</p>
                 <p className="text-sm">||</p>
                 <p className="text-sm">{data.timeSlot}</p>
