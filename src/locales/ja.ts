@@ -833,8 +833,7 @@ const ja = {
     subtitle: "Q-PASS",
     text: "高品質の心臓画像診断",
     content: {
-      Quality:
-      {
+      Quality: {
         subtitle: "Quality",
         text: "CVICは、心臓MRI装置2台、心臓CT装置1台、心臓エコー装置2台を使用して心臓検査を実施しています:",
         listItems: [
@@ -845,8 +844,7 @@ const ja = {
           "オランダのフィリップス社製の心臓エコー装置",
         ],
       },
-      Performance:
-      {
+      Performance: {
         subtitle: "Performance",
         text: "豊富な検査経験",
         content: [
@@ -857,8 +855,7 @@ const ja = {
           "私たちは、医療分野でそのような成果を積み重ねることが重要だと考えています。近隣の大学病院、中核病院、クリニックの医師が私たちの検査を依頼する理由は、迅速な心臓検査を必要とする環境と私たちの実績を重視しているからだと私たちは考えています",
         ],
       },
-      Access:
-      {
+      Access: {
         subtitle: "Accessibility",
         text: "利便性の高いアクセス",
         content: [
@@ -870,8 +867,7 @@ const ja = {
           "心筋梗塞と脳梗塞は、多くの場合、動脈硬化という共通の原因があります。したがって、心臓と脳を同時に検査することで、心筋梗塞や脳梗塞の兆候を検出し、将来の発生を予防できます。",
         ],
       },
-      Skill:
-      {
+      Skill: {
         subtitle: "Skill",
         text: "高度な撮影技術",
         content: [
@@ -881,8 +877,7 @@ const ja = {
           "熟練した技術者が磨き上げられた技術を使用して、高精度の検査を行い、正確な結果を確実にします。",
         ],
       },
-      Speed:
-      {
+      Speed: {
         subtitle: "Speed",
         text: "迅速な検査と当日の3D結果説明",
         content: [

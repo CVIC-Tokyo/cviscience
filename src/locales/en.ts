@@ -853,8 +853,7 @@ const en = {
           "Heart echo devices manufactured by Philips in the Netherlands",
         ],
       },
-      Performance:
-      {
+      Performance: {
         subtitle: "Performance",
         text: "Rich Examination Experience",
         content: [
@@ -866,8 +865,7 @@ const en = {
           "Moreover, over 80% of these examinations are referred by medical professionals, underscoring CVIC's reputation as a reliable heart imaging diagnosis center.",
         ],
       },
-      Access:
-      {
+      Access: {
         subtitle: "Accessibility",
         text: "Convenient Access",
         content: [
@@ -879,8 +877,7 @@ const en = {
           "It is well known that myocardial infarction and stroke often share a common cause: arterial sclerosis. Therefore, examining the heart and brain simultaneously can help detect signs of myocardial infarction or stroke, leading to the prevention of future occurrences.",
         ],
       },
-      Skill:
-      {
+      Skill: {
         subtitle: "Skill",
         text: "High-level Imaging Technology",
         content: [
@@ -890,8 +887,7 @@ const en = {
           "Skilled technicians perform high-precision examinations using their honed skills, ensuring accurate results.",
         ],
       },
-      Speed:
-      {
+      Speed: {
         subtitle: "Speed",
         text: "Prompt Examinations and Same-day 3D Result Explanation",
         content: [

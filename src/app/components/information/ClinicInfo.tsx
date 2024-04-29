@@ -221,8 +221,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                   </Reveal>
                 )}
               </div>
-              <div>
-              </div>
+              <div></div>
             </div>
           </div>
         </Reveal>
