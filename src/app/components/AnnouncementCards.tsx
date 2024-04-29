@@ -29,7 +29,7 @@ const AnnouncementCards = async () => {
           ANNOUNCEMENTS
         </h1>
       </div>
-      <div className="grid grid-cols-3 md:flex p-4 gap-2 md:gap-5 items-center justify-center w-full overflow-x-scroll md:overflow-auto">
+      <div className="grid grid-cols-3 h-[150px] md:h-[250px] md:flex p-4 gap-2 md:gap-5 items-center justify-center w-full overflow-x-scroll md:overflow-auto">
         {data.map((post, idx) => (
           <div
           key={idx}
