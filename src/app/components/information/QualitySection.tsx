@@ -44,7 +44,7 @@ const QualitySection = () => {
                 </div>
                 <div className="flex flex-col md:grid grid-cols-4">
                   <div className="bg-qpas bg-center bg-cover w-full h-[700px]" />
-                  <div className="col-span-3 snap-y snap-mandatory overflow-y-scroll h-[600px] md:h-[800px] ">
+                  <div className="col-span-3 snap-y snap-mandatory overflow-y-scroll h-[600px] md:h-[700px] ">
                     <div className="snap-start">
                       {/* //Quality// */}
                       <div className="border-b-1 md:border-b-2 border-cvic-red/50 pb-1 md:pb-2" />
@@ -138,24 +138,77 @@ const QualitySection = () => {
                     </div>
                     {/* //Skill// */}
                     <div className="border-b-1 md:border-b-2 border-cvic-red/50 pb-1 md:pb-2" />
-                    <div className="snap-start">
+                    <div className="snap-start flex flex-col items-center">
                       <h1 className="font-bold tracking-widest text-cvic-red uppercase p-1 md:p-2">
                         {localeData.QPAS.content.Skill.subtitle}
                       </h1>
                       <h2 className="p-1 md:p-2 text-sm md:text-base font-semibold">
                         {localeData.QPAS.content.Skill.text}
                       </h2>
-                      <div className="flex flex-col md:grid grid-cols-3">
-                        <div className="bg-workstation bg-center bg-cover h-[145px] md:h-[390px]" />
-                        <div className="col-span-2">
-                          <p className="p-1 md:p-2 text-xs md:text-sm">
+                          <div className="bg-software bg-center bg-cover rounded-lg h-[150px] md:h-[200px] w-[400px]" />
+                          <p className="p-1 md:p-2 text-[10px] md:text-sm font-semibold">
+                            {localeData.QPAS.content.Skill.content[0]}
+                          </p>
+                      <div className="grid grid-cols-3 p-1 md:p-2">
+                        <div className="bg-zio bg-center bg-cover h-[200px] md:h-[150px] rounded-lg" />
+                        <div className="col-span-2 p-1 md:p-2">
+                          <p className="p-1 md:p-2 text-[10px] md:text-sm">
                             {localeData.QPAS.content.Skill.content[1]}
                           </p>
-                          <p className="p-1 md:p-2 text-xs md:text-sm">
+                          <p className="p-1 md:p-2 text-[10px] md:text-sm">
                             {localeData.QPAS.content.Skill.content[2]}
+                          </p>
+                          <p className="p-1 md:p-2 text-[10px] md:text-sm">
+                            {localeData.QPAS.content.Skill.content[3]}
                           </p>
                         </div>
                       </div>
+                    </div>
+                    {/* //Speed// */}
+                    <div className="border-b-1 md:border-b-2 border-cvic-red/50 pb-1 md:pb-2" />
+                    <div className="snap-start">
+                      <h1 className="font-bold tracking-widest text-cvic-red uppercase p-1 md:p-2">
+                        {localeData.QPAS.content.Speed.subtitle}
+                      </h1>
+                      <h2 className="p-1 md:p-2 text-sm md:text-base font-semibold">
+                        {localeData.QPAS.content.Speed.text}
+                      </h2>
+                      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+  <div className="bg-blue-200 rounded-lg shadow-md p-6">
+    <h2 className="text-2xl font-bold text-blue-800 mb-4">{localeData.SERVICES.PROCESS.CT_TITLE}</h2>
+    <ul className="text-lg text-gray-800">
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.CT_BULLET[1]}</span></li>
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.CT_BULLET[2]}</span></li>
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.CT_BULLET[3]}</span></li>
+    </ul>
+  </div>
+  <div className="bg-green-200 rounded-lg shadow-md p-6">
+    <h2 className="text-2xl font-bold text-green-800 mb-4">{localeData.SERVICES.PROCESS.MRI_TITLE}</h2>
+    <ul className="text-lg text-gray-800">
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.MRI_BULLET[1]}</span></li>
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.MRI_BULLET[2]}</span></li>
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.MRI_BULLET[3]}</span></li>
+    </ul>
+  </div>
+  <div className="col-span-2 bg-yellow-200 rounded-lg shadow-md p-6">
+    <h2 className="text-2xl font-bold text-yellow-800 mb-4">{localeData.SERVICES.PROCESS.POINT}</h2>
+    <ul className="text-lg text-gray-800">
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_CT[1]}</span></li>
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_CT[2]}</span></li>
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_CT[3]}</span></li>
+    </ul>
+  </div>
+  <div className="col-span-2 bg-red-200 rounded-lg shadow-md p-6">
+    <h2 className="text-2xl font-bold text-red-800 mb-4">{localeData.SERVICES.PROCESS.POINT_MRI[1]}</h2>
+    <ul className="text-lg text-gray-800">
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_MRI[2]}</span></li>
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_MRI[3]}</span></li>
+      <li><span className="font-semibold">{localeData.SERVICES.PROCESS.POINT_MRI[4]}</span></li>
+    </ul>
+  </div>
+</div>
+
+
                     </div>
                   </div>
                 </div>
