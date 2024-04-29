@@ -41,6 +41,8 @@ const config: Config = {
         numbers: 'url("/images/home/numbers.webp")',
         patients: 'url("/images/home/patients.webp")',
         workstation: 'url("/images/home/workstation.webp")',
+        pointing: 'url("/images/home/pointing.webp")',
+        software: 'url("/images/home/software.webp")',
       },
     },
   },
