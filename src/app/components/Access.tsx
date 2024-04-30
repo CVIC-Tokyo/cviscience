@@ -42,7 +42,7 @@ const Access: React.FC<AccessProps> = () => {
             </div>
           </div>
         </Reveal>
-        <div className="w-full h-full md:w-[90%] md:h-[65%] bg-white md:bg-white/75 flex items-center justify-center tile-photo-container mb-4 md:mb-8">
+        <div className="w-full h-full md:w-[90%] md:h-[65%] bg-gradient-to-b from-blue-300 to-blue-200 flex items-center justify-center tile-photo-container mb-4 md:mb-8">
           <GoogleMap />
         </div>
       </div>

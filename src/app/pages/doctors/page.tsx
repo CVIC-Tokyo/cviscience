@@ -19,7 +19,7 @@ const DoctorsPage: React.FC<DoctorsPageProps> = () => {
           {localeData.DOCTORS.TITLE}
         </div>
       </div>
-      <div className="w-f ull h-full bg-white/20 p-2">
+      <div className="w-f ull h-full bg-gradient-to-b from-blue-300 to-blue-200 p-2">
         <div className="w-full h-auto mb-4">
           <DoctorsInfo locale={locale} focus={focus} setFocus={setFocus} />
           <History_Carousel locale={locale} focus={focus} setFocus={setFocus} />

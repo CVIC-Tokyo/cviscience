@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import { useGlobalContext } from "../../../context/store";
 import { getLocaleData } from "@/utils/helpers";
@@ -47,7 +49,7 @@ const Equipments: React.FC<EquipmentsProps> = () => {
 
   return (
     <div
-      className="tile-container bg-white/25 p-4"
+      className="tile-container bg-gradient-to-b from-blue-300 to-blue-200 p-2 md:p-4"
       id="Equipments"
       ref={containerRef}
     >

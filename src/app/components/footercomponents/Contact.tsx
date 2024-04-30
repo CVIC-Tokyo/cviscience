@@ -12,17 +12,17 @@ const Contact: React.FC<ContactProps> = () => {
   return (
     <div className="footer-text w-full h-auto flex justify-center items-center">
       <div className="grid grid-cols-2 w-auto">
-        <div className="col-span-1 flex items-center justify-center p-2 text:xs md:text-xl text-black">
-          <div className="w-full h-full tracking-wide bg-white hover:bg-white/75 font-bold p-2 flex flex-col items-center cursor-pointer">
+        <div className="col-span-1 flex items-center justify-center p-2 text:xs md:text-xl">
+          <div className="w-full h-full tracking-wide text-white bg-cvic-red rounded-2xl shadow-3xl hover:bg-cvic-red/75 font-bold p-2 flex flex-col items-center cursor-pointer">
             <p>{localeData.REACH.NUMBER}</p>
             <p>({localeData.REACH.HOURS})</p>
             <PiPhoneCallFill />
           </div>
         </div>
-        <div className="col-span-1 flex items-center justify-center p-2 text:xs md:text-xl text-black">
+        <div className="col-span-1 flex items-center justify-center p-2 text:xs md:text-xl">
           <Link
             href="/pages/reservation"
-            className="w-full h-full tracking-wide bg-white hover:bg-white/75 font-bold p-4 flex flex-col items-center cursor-pointer"
+            className="w-full h-full tracking-wide text-white bg-cvic-red rounded-2xl shadow-3xl hover:bg-cvic-red/75 font-bold p-4 flex flex-col items-center cursor-pointer"
           >
             {localeData.REACH.APPLY_ONLINE}
             <IoMailSharp />

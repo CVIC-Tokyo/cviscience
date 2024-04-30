@@ -37,7 +37,7 @@ const DockSelector: React.FC = () => {
       <div className="w-full my-4">
         <ReservationNotice locale={locale} />
       </div>
-      <div className="bg-white/25 flex flex-col items-center justify-around md:flex-row md:items-start md:justify-around p-2">
+      <div className="bg-gradient-to-r from-cvic-red via-blue-500 to-cvic-red flex flex-col items-center justify-around md:flex-row md:items-start md:justify-around p-2">
         <div className="w-full">
           <div className="bg-white rounded-lg p-4 m-2">
             <h2 className="text-base text-cvic-red md:text-lg font-bold mb-2">

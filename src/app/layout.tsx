@@ -7,16 +7,6 @@ export const metadata: Metadata = {
   description: "CVIC Iidabashi",
 };
 
-export const send = async () => {
-  "use server";
-  await sendMail({
-    to: "gardocaves@gmail.com",
-    name: "Buddy",
-    subject: "Test Mail",
-    body: `<h1>Hello world</h1>`,
-  });
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
