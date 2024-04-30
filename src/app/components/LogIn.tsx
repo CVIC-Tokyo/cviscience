@@ -2,16 +2,12 @@
 
 import React, { useState } from "react";
 import { doSignInWithEmailAndPassword, doSignInWithGoogle } from '../firebase/auth'
-import { Navigate, useNavigate } from "react-router-dom";
-import { useAuth } from '../../context/authContext'
 import '../../styles/globals.css'
 
 const Login = () => {
-    const userLoggedIn = useAuth()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSigningIn, setIsSigningIn] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -34,7 +30,7 @@ const Login = () => {
   }
 
   return (
-      <div className="page-container bg-gradient-to-b from-blue-300 to-blue-200 h-[70vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="page-container border-10 border-red bg-gradient-to-b from-blue-300 to-blue-200 h-[70vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mb-10 md:mb-20">
       <div className="max-w-md w-full bg-white p-8 rounded-md shadow-md">
         <div>
           <h2 className="text-3xl font-extrabold text-gray-900 text-center">
