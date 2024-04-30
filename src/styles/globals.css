@@ -12,7 +12,7 @@ html {
   }
 
   .footer-text {
-    @apply text-[10px] md:text-sm lg:text-base flex items-center justify-center w-auto tracking-wider;
+    @apply text-[10px] md:text-xs lg:text-sm flex items-center justify-center w-auto tracking-wider;
   }
 
   .tile-container {
@@ -56,4 +56,5 @@ html {
   .sns-logo {
     @apply mx-2 hover:scale-125 cursor-pointer hover:shadow-2xl;
   }
+  
 }
