@@ -1,24 +1,23 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
-import { doCreateUserWithEmailAndPassword } from '../firebase/auth'
-import { useAuth } from '../../context/authContext'
-import '../../styles/globals.css'
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { doCreateUserWithEmailAndPassword } from "../firebase/auth";
+import { useAuth } from "../../context/authContext";
+import "../../styles/globals.css";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
-        const res = await doCreateUserWithEmailAndPassword(email, password);
-        console.log(res)
+      const res = await doCreateUserWithEmailAndPassword(email, password);
+      console.log(res);
     } catch (error) {
-        console.log(error)
+      console.log(error);
     }
   };
 

@@ -26,7 +26,9 @@ const ServicesPage: React.FC<ServicesPageProps> = () => {
         <h2 className="text-sm md:text-base font-semibold text-cvic-red mb-4">
           {localeData.NEW_CHECKUP_MENU.TITLE}
         </h2>
-        <p className="text-[10px] md:text-sm">{localeData.NEW_CHECKUP_MENU.CONTENT}</p>
+        <p className="text-[10px] md:text-sm">
+          {localeData.NEW_CHECKUP_MENU.CONTENT}
+        </p>
       </div>
 
       {/* Services Information Section */}

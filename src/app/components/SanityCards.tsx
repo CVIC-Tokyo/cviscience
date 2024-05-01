@@ -30,12 +30,11 @@ const SanityCards = async () => {
       </div>
       <div className="grid grid-cols-3 h-[200px] md:h-[400px] md:flex p-4 gap-2 md:gap-5 items-center justify-center w-full overflow-x-scroll md:overflow-auto">
         {data.map((post, idx) => (
-          <div 
-          key={idx}
-          className="w-full h-full flex items-center justify-center">
-            <div
-              className="bg-white rounded-xl shadow-lg w-[100px] h-[100px] md:h-[350px] md:w-[200px] p-1 md:p-2 relative pb-[150px] md:pb-[200px]"
-            >
+          <div
+            key={idx}
+            className="w-full h-full flex items-center justify-center"
+          >
+            <div className="bg-white rounded-xl shadow-lg w-[100px] h-[100px] md:h-[350px] md:w-[200px] p-1 md:p-2 relative pb-[150px] md:pb-[200px]">
               <Image
                 src={urlFor(post.titleImage).url()}
                 alt="image"

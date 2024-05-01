@@ -26,7 +26,7 @@ const ReservationNotice: React.FC<ReservationNoticeProps> = ({ locale }) => {
                   <span className="mr-2">&#8226;</span>
                   {detail}
                 </div>
-              )
+              ),
             )}
           </div>
         </div>

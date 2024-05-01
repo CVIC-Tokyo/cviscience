@@ -158,7 +158,7 @@ interface fullAnnouncement {
   title: string;
   content: any;
   entitle: any;
-  contentImage: any,
+  contentImage: any;
   titleImage: any;
 }
 

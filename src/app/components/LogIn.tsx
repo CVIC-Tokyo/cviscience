@@ -1,8 +1,11 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
-import { doSignInWithEmailAndPassword, doSignInWithGoogle } from '../firebase/auth'
-import '../../styles/globals.css'
+import {
+  doSignInWithEmailAndPassword,
+  doSignInWithGoogle,
+} from "../firebase/auth";
+import "../../styles/globals.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -11,26 +14,26 @@ const Login = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    if(!isSigningIn) {
-        const res= await doSignInWithEmailAndPassword(email, password);
-        setIsSigningIn(true);
-        console.log(res)
-        console.log('Signed In:', !isSigningIn)
+    if (!isSigningIn) {
+      const res = await doSignInWithEmailAndPassword(email, password);
+      setIsSigningIn(true);
+      console.log(res);
+      console.log("Signed In:", !isSigningIn);
     }
   };
 
-  const handleGoogleSignIn = (e:any) => {
+  const handleGoogleSignIn = (e: any) => {
     e.preventDefault();
-    if(!isSigningIn) {
-        setIsSigningIn(true);
-        doSignInWithGoogle().catch(err => {
-            setIsSigningIn(false);
-        });
+    if (!isSigningIn) {
+      setIsSigningIn(true);
+      doSignInWithGoogle().catch((err) => {
+        setIsSigningIn(false);
+      });
     }
-  }
+  };
 
   return (
-      <div className="page-container border-10 border-red bg-gradient-to-b from-blue-300 to-blue-200 h-[70vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mb-10 md:mb-20">
+    <div className="page-container border-10 border-red bg-gradient-to-b from-blue-300 to-blue-200 h-[70vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mb-10 md:mb-20">
       <div className="max-w-md w-full bg-white p-8 rounded-md shadow-md">
         <div>
           <h2 className="text-3xl font-extrabold text-gray-900 text-center">

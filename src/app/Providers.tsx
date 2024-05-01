@@ -20,22 +20,22 @@ export default function Providers({
   return (
     <NextUIProvider>
       <GlobalContextProvider>
-        { isSignedIn ?
-        <div className="w-full overflow-hidden bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
-          <React.Fragment>
-            <Preloader />
-            <Navbar />
-            {children}
-            <Access />
+        {isSignedIn ? (
+          <div className="w-full overflow-hidden bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
+            <React.Fragment>
+              <Preloader />
+              <Navbar />
+              {children}
+              <Access />
+              <Footer />
+            </React.Fragment>
+          </div>
+        ) : (
+          <div className="w-full h-full bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
+            <Login />
             <Footer />
-          </React.Fragment>
-        </div>
-        :
-        <div className="w-full h-full bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
-          <Login />
-          <Footer />
-        </div>
-      }
+          </div>
+        )}
       </GlobalContextProvider>
     </NextUIProvider>
   );

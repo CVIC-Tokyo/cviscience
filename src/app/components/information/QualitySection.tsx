@@ -19,7 +19,10 @@ const QualitySection = () => {
   };
 
   return (
-    <div id="why-choose-cvic" className="w-full h-auto flex flex-col items-center justify-center max-w-[1700px] mb-20">
+    <div
+      id="why-choose-cvic"
+      className="w-full h-auto flex flex-col items-center justify-center max-w-[1700px] mb-20"
+    >
       <Reveal>
         <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
           <Reveal>
@@ -47,45 +50,47 @@ const QualitySection = () => {
                   <div className="col-span-3 snap-y snap-mandatory overflow-y-scroll h-[600px] md:h-[700px] ">
                     <div className="snap-start">
                       {/* //Quality// */}
-                      <div className="border-b-1 md:border-b-2 border-cvic-red/50 pb-1 md:pb-2"/>
+                      <div className="border-b-1 md:border-b-2 border-cvic-red/50 pb-1 md:pb-2" />
                       <h1 className="font-bold tracking-widest text-cvic-red uppercase p-2 md:p-4 text-lg md:text-xl">
-                      <span className="text-4xl md:text-5xl font-bold">
-                        {localeData.QPAS.content.Quality.subtitle.charAt(0)}
-                      </span>
-                      {localeData.QPAS.content.Quality.subtitle.slice(1)}
-                    </h1>
-                        <h2 className="p-2 md:p-4 text-sm md:text-base font-semibold">
-                          {localeData.QPAS.content.Quality.text}
-                        </h2>
-                        <Link
-                          href={"/pages/equipments"}
-                          className="w-full shadow-lg"
-                        >
-                          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-2 md:p-4 hover:scale-95 duration-500">
-                            <div className="bg-equipments bg-cover bg-center h-[100px] md:h-[200px] w-full" />
-                            <div className="bg-achieva bg-cover bg-center h-[100px] md:h-[200px] w-full" />
-                            <div className="bg-incisive bg-cover bg-center h-[100px] md:h-[200px] w-full" />
-                            <div className="bg-zio bg-cover bg-center h-[100px] md:h-[200px] w-full" />
-                          </div>
-                        </Link>
-                        <div>
-                          <h3 className="text-xs md:text-sm p-2 md:p-4">
-                            {localeData.QPAS.content.Quality.listItems.join(
-                              ", ",
-                            )}
-                          </h3>
+                        <span className="text-4xl md:text-5xl font-bold">
+                          {localeData.QPAS.content.Quality.subtitle.charAt(0)}
+                        </span>
+                        {localeData.QPAS.content.Quality.subtitle.slice(1)}
+                      </h1>
+                      <h2 className="p-2 md:p-4 text-sm md:text-base font-semibold">
+                        {localeData.QPAS.content.Quality.text}
+                      </h2>
+                      <Link
+                        href={"/pages/equipments"}
+                        className="w-full shadow-lg"
+                      >
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-2 md:p-4 hover:scale-95 duration-500">
+                          <div className="bg-equipments bg-cover bg-center h-[100px] md:h-[200px] w-full" />
+                          <div className="bg-achieva bg-cover bg-center h-[100px] md:h-[200px] w-full" />
+                          <div className="bg-incisive bg-cover bg-center h-[100px] md:h-[200px] w-full" />
+                          <div className="bg-zio bg-cover bg-center h-[100px] md:h-[200px] w-full" />
                         </div>
+                      </Link>
+                      <div>
+                        <h3 className="text-xs md:text-sm p-2 md:p-4">
+                          {localeData.QPAS.content.Quality.listItems.join(", ")}
+                        </h3>
+                      </div>
                     </div>
                     {/* //Performance// */}
                     <div className="snap-start">
                       <div className="max-w-5xl mx-auto">
                         <div className="border-b-1 md:border-b-2 border-cvic-red/50 pb-1 md:pb-2" />
                         <h1 className="font-bold tracking-widest text-cvic-red uppercase p-2 md:p-4 text-lg md:text-xl">
-                      <span className="text-4xl md:text-5xl font-bold">
-                        {localeData.QPAS.content.Performance.subtitle.charAt(0)}
-                      </span>
-                      {localeData.QPAS.content.Performance.subtitle.slice(1)}
-                    </h1>
+                          <span className="text-4xl md:text-5xl font-bold">
+                            {localeData.QPAS.content.Performance.subtitle.charAt(
+                              0,
+                            )}
+                          </span>
+                          {localeData.QPAS.content.Performance.subtitle.slice(
+                            1,
+                          )}
+                        </h1>
                         <h2 className="p-2 md:p-4 text-sm md:text-base font-semibold">
                           {localeData.QPAS.content.Performance.text}
                         </h2>
@@ -124,11 +129,11 @@ const QualitySection = () => {
                       <div className="snap-start">
                         <div className="border-b-1 md:border-b-2 border-cvic-red/50 pb-1 md:pb-2" />
                         <h1 className="font-bold tracking-widest text-cvic-red uppercase p-2 md:p-4 text-lg md:text-xl">
-                      <span className="text-4xl md:text-5xl font-bold">
-                        {localeData.QPAS.content.Access.subtitle.charAt(0)}
-                      </span>
-                      {localeData.QPAS.content.Access.subtitle.slice(1)}
-                    </h1>
+                          <span className="text-4xl md:text-5xl font-bold">
+                            {localeData.QPAS.content.Access.subtitle.charAt(0)}
+                          </span>
+                          {localeData.QPAS.content.Access.subtitle.slice(1)}
+                        </h1>
                         <h2 className="p-2 md:p-4 text-sm md:text-base font-semibold">
                           {localeData.QPAS.content.Access.text}
                         </h2>
@@ -157,12 +162,12 @@ const QualitySection = () => {
                     <div className="snap-start max-w-5xl mx-auto">
                       <div className="border-b-1 md:border-b-2 border-cvic-red/50 pb-1 md:pb-2" />
                       <div className="flex flex-col items-center">
-                      <h1 className="font-bold tracking-widest text-cvic-red uppercase p-2 md:p-4 text-lg md:text-xl">
-                      <span className="text-4xl md:text-5xl font-bold">
-                        {localeData.QPAS.content.Skill.subtitle.charAt(0)}
-                      </span>
-                      {localeData.QPAS.content.Skill.subtitle.slice(1)}
-                    </h1>
+                        <h1 className="font-bold tracking-widest text-cvic-red uppercase p-2 md:p-4 text-lg md:text-xl">
+                          <span className="text-4xl md:text-5xl font-bold">
+                            {localeData.QPAS.content.Skill.subtitle.charAt(0)}
+                          </span>
+                          {localeData.QPAS.content.Skill.subtitle.slice(1)}
+                        </h1>
                         <h2 className="p-2 md:p-4 text-sm md:text-base font-semibold">
                           {localeData.QPAS.content.Skill.text}
                         </h2>
@@ -190,12 +195,12 @@ const QualitySection = () => {
                     {/* //Speed// */}
                     <div className="snap-start border-b-1 md:border-b-2 border-cvic-red/50 pb-1 md:pb-2" />
                     <div className="">
-                    <h1 className="font-bold tracking-widest text-cvic-red uppercase p-2 md:p-4 text-lg md:text-xl">
-                      <span className="text-4xl md:text-5xl font-bold">
-                        {localeData.QPAS.content.Speed.subtitle.charAt(0)}
-                      </span>
-                      {localeData.QPAS.content.Speed.subtitle.slice(1)}
-                    </h1>
+                      <h1 className="font-bold tracking-widest text-cvic-red uppercase p-2 md:p-4 text-lg md:text-xl">
+                        <span className="text-4xl md:text-5xl font-bold">
+                          {localeData.QPAS.content.Speed.subtitle.charAt(0)}
+                        </span>
+                        {localeData.QPAS.content.Speed.subtitle.slice(1)}
+                      </h1>
                       <h2 className="p-1 md:p-2 text-sm md:text-base font-semibold">
                         {localeData.QPAS.content.Speed.text}
                       </h2>

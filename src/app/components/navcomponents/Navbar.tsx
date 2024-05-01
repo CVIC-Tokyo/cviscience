@@ -36,7 +36,9 @@ const Navbar: React.FC<NavbarProps> = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
-    <div className={`w-auto fixed top-0 left-0 right-0 z-[90] ${showShadow ? `shadow-2xl bg-white/35 hover:bg-white` : "bg-white/0 hover:bg-white"}`}>
+    <div
+      className={`w-auto fixed top-0 left-0 right-0 z-[90] ${showShadow ? `shadow-2xl bg-white/35 hover:bg-white` : "bg-white/0 hover:bg-white"}`}
+    >
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="relative max-w-[1240px] mx-auto flex md:justify-between items-center p-2">
         <motion.div
@@ -74,16 +76,28 @@ const Navbar: React.FC<NavbarProps> = () => {
             {isHovered && (
               <div className="absolute top-full left-0 w-full bg-gray-100 border border-gray-200 rounded-b-lg shadow-md">
                 <div className="py-2">
-                  <Link href="/#introduction" className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25">
+                  <Link
+                    href="/#introduction"
+                    className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25"
+                  >
                     {localeData.INTRODUCTION.TITLE}
                   </Link>
-                  <Link href="/#why-choose-cvic" className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25">
+                  <Link
+                    href="/#why-choose-cvic"
+                    className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25"
+                  >
                     {localeData.QPAS.section}
                   </Link>
-                  <Link href="/#mission" className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25">
+                  <Link
+                    href="/#mission"
+                    className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25"
+                  >
                     {localeData.ABOUT.MISSION_TITLE}
                   </Link>
-                  <Link href="/#announcements" className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25">
+                  <Link
+                    href="/#announcements"
+                    className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25"
+                  >
                     Announcements
                   </Link>
                 </div>
