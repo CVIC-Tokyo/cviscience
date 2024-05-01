@@ -33,10 +33,10 @@ const Navbar: React.FC<NavbarProps> = () => {
     setShowSidebar(!showSidebar);
   };
 
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+
   return (
-    <div
-      className={`w-auto fixed top-0 left-0 right-0 z-[90] ${showShadow ? `shadow-2xl bg-white/35` : "bg-white/0"}`}
-    >
+    <div className={`w-auto fixed top-0 left-0 right-0 z-[90] ${showShadow ? `shadow-2xl bg-white/35 hover:bg-white` : "bg-white/0 hover:bg-white"}`}>
       {/* NAVBAR LOGO AND TOGGLE */}
       <div className="relative max-w-[1240px] mx-auto flex md:justify-between items-center p-2">
         <motion.div
@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           onClick={() => handleSidebar()}
-          className="absolute z-100 top-0 left-0 w-14 h-14 md:hidden curser-pointer p-1"
+          className="absolute z-100 top-0 left-0 w-14 h-14 md:hidden cursor-pointer p-1"
         >
           <HamburgerButton
             showSidebar={showSidebar}
@@ -63,9 +63,33 @@ const Navbar: React.FC<NavbarProps> = () => {
       {/* NAVBAR BUTTONS */}
       <div className="max-w-[1240px] mx-auto hidden md:flex items-center pt-2">
         <div className="w-full p-1 grid grid-cols-6">
-          <Link href="/" className="navbar-button">
-            {localeData.BASIC.HOME}
-          </Link>
+          <div
+            className="relative"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <Link href="/" className="navbar-button">
+              {localeData.BASIC.HOME}
+            </Link>
+            {isHovered && (
+              <div className="absolute top-full left-0 w-full bg-gray-100 border border-gray-200 rounded-b-lg shadow-md">
+                <div className="py-2">
+                  <Link href="/#introduction" className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25">
+                    {localeData.INTRODUCTION.TITLE}
+                  </Link>
+                  <Link href="/#why-choose-cvic" className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25">
+                    {localeData.QPAS.section}
+                  </Link>
+                  <Link href="/#mission" className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25">
+                    {localeData.ABOUT.MISSION_TITLE}
+                  </Link>
+                  <Link href="/#announcements" className="block px-4 py-2 text-gray-800 hover:bg-cvic-red/25">
+                    Announcements
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
           <Link href="/pages/services" className="navbar-button">
             {localeData.BASIC.SERVICES}
           </Link>
