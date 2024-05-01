@@ -1,3 +1,6 @@
+## Clinic Website
+This is a Next.js TypeScript Tailwind CSS responsive clinic website design with Firebase authentication.
+
 ![image](https://github.com/CVIC-Tokyo/cviscience/assets/106292948/1bcb3705-1ae6-4a56-8ba7-3669d913761a)This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -40,3 +43,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ![image](https://github.com/CVIC-Tokyo/cviscience/assets/106292948/8ec0f290-81e2-4ac3-b11d-7d3cf5cd45ae)
 ![image](https://github.com/CVIC-Tokyo/cviscience/assets/106292948/404b2f00-2dc9-4098-98b6-f4fa03ccd8f7)
 ![image](https://github.com/CVIC-Tokyo/cviscience/assets/106292948/6bf6812d-7656-46d2-a328-9a60e4cd314c)
+## Deploy on Vercel
+The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
