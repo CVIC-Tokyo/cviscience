@@ -18,7 +18,6 @@ const Login = () => {
       const res = await doSignInWithEmailAndPassword(email, password);
       setIsSigningIn(true);
       console.log(res);
-      console.log("Signed In:", !isSigningIn);
     }
   };
 
