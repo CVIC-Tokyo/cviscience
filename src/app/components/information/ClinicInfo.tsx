@@ -37,7 +37,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
         <div className="max-w-[1700px] w-full flex items-center justify-center tracking-wide mb-20">
           <div className="w-full h-auto flex flex-col items-center justify-center">
             <Reveal>
-              <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
+              <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto" id="introduction">
                 <Reveal>
                   <h1
                     className="about-title cursor-pointer"
@@ -160,7 +160,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
         </div>
         <QualitySection />
         <Reveal>
-          <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
+          <div id="mission" className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
             <Reveal>
               <h1
                 className="about-title cursor-pointer"
