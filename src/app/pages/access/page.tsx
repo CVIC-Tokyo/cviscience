@@ -27,7 +27,7 @@ const Access = () => {
                   <li key={index} className="mb-2 text-black">
                     {item}
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>
@@ -44,7 +44,7 @@ const Access = () => {
                   <li key={index} className="mb-2 text-black">
                     {item}
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>

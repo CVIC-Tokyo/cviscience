@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Providers from "./Providers";
-import { sendMail } from "@/utils/mail";
 
 export const metadata: Metadata = {
   title: "Cardiovascular Imaging Clinic",
@@ -23,7 +22,7 @@ export default function RootLayout({
         <script
           src="https://chatwith.tools/chatbot/d1548dd1-b93a-452e-b254-effd84def9c2.js"
           async
-        ></script>
+        />
       </head>
       <body className="noto-serif w-full h-full text-center">
         <Providers>{children}</Providers>

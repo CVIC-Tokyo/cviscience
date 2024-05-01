@@ -37,7 +37,10 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
         <div className="max-w-[1700px] w-full flex items-center justify-center tracking-wide mb-20">
           <div className="w-full h-auto flex flex-col items-center justify-center">
             <Reveal>
-              <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
+              <div
+                className="bg-white p-2 m-2 rounded-lg h-auto mx-auto"
+                id="introduction"
+              >
                 <Reveal>
                   <h1
                     className="about-title cursor-pointer"
@@ -71,7 +74,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                               className="w-full flex-col flex items-center justify-center p-2"
                             >
                               <div className="text-xs p-2 text-blue-500">
-                              <div className="bg-equipments w-[300px] h-[150px] md:w-[400px] md:h-[230px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
+                                <div className="bg-equipments w-[300px] h-[150px] md:w-[400px] md:h-[230px] bg-center bg-cover rounded-lg shadow-lg hover:scale-105 duration-500 cursor-pointer col-span-1" />
                                 {
                                   localeData.FACILITIES.TITLES.MRI.VINTAGE_TITAN
                                     .TITLE
@@ -160,7 +163,10 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
         </div>
         <QualitySection />
         <Reveal>
-          <div className="bg-white p-2 m-2 rounded-lg h-auto mx-auto">
+          <div
+            id="mission"
+            className="bg-white p-2 m-2 rounded-lg h-auto mx-auto"
+          >
             <Reveal>
               <h1
                 className="about-title cursor-pointer"
@@ -187,7 +193,7 @@ const ClinicInfo: React.FC<ClinicInfoProps> = () => {
                         {localeData.CVIC_INFO.CLINIC_MISSION}
                       </p>
                       <p className="p-2 md:p-4 text-xs md:text-sm">
-                      &quot; {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P1}
+                        &quot; {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P1}
                       </p>
                       <p className="p-2 md:p-4 text-xs md:text-sm">
                         {localeData.CVIC_INFO.TERASHIMA_MESSAGE_P2}

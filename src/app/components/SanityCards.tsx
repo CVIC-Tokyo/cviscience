@@ -22,7 +22,7 @@ const SanityCards = async () => {
   const data: simpleBlogCard[] = await getData();
 
   return (
-    <div className="max-w-[1300px] w-full m-8 md:m-10 border-t-2 border-b-2 border-cvic-red bg-gradient-to-b from-blue-300 to-blue-200 ">
+    <div className="max-w-[1300px] w-full m-8 md:m-10 bg-gradient-to-b from-blue-300 to-blue-200 ">
       <div className=" w-full">
         <h1 className="text-cvic-red p-2 w-full text-lg md:text-2xl font-bold">
           PUBLISHED
@@ -30,12 +30,11 @@ const SanityCards = async () => {
       </div>
       <div className="grid grid-cols-3 h-[200px] md:h-[400px] md:flex p-4 gap-2 md:gap-5 items-center justify-center w-full overflow-x-scroll md:overflow-auto">
         {data.map((post, idx) => (
-          <div 
-          key={idx}
-          className="w-full h-full flex items-center justify-center">
-            <div
-              className="bg-white rounded-xl shadow-lg w-[100px] h-[100px] md:h-[350px] md:w-[200px] p-1 md:p-2 relative pb-[150px] md:pb-[200px]"
-            >
+          <div
+            key={idx}
+            className="w-full h-full flex items-center justify-center"
+          >
+            <div className="bg-white rounded-xl shadow-lg w-[100px] h-[100px] md:h-[350px] md:w-[200px] p-1 md:p-2 relative pb-[150px] md:pb-[200px]">
               <Image
                 src={urlFor(post.titleImage).url()}
                 alt="image"

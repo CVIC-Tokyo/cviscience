@@ -1,7 +1,7 @@
 import { client, urlFor } from "@/app/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
-import '../../../styles/globals.css'
+import "../../../styles/globals.css";
 
 export const revalidate = 30; // revalidate at most 30 seconds
 

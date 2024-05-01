@@ -1,7 +1,7 @@
 import { client, urlFor } from "@/app/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
-import '../../../styles/globals.css'
+import "../../../styles/globals.css";
 
 export const revalidate = 30; // revalidate at most 30 seconds
 
@@ -26,7 +26,7 @@ export default async function AnnouncementPage({
   params: { slug: string };
 }) {
   const data: fullAnnouncement = await getData(params.slug);
-    console.log(data)
+  console.log(data);
 
   return (
     <div className="page-container bg-white">

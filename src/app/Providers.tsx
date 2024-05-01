@@ -2,29 +2,54 @@
 
 import { GlobalContextProvider } from "@/context/store";
 import { NextUIProvider } from "@nextui-org/react";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/navcomponents/Navbar";
 import Access from "./components/Access";
 import Footer from "./components/footercomponents/Footer";
 import Preloader from "./components/Preloader";
+import Login from "./components/LogIn";
+import Signup from "./components/Singup";
 
 export default function Providers({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [auth, setAuth] = useState(undefined);
+  const [signIn, setIsSignIn] = useState(false);
+
+  function getAuth (authObject: any) {
+    setAuth(authObject);
+  }
+  
+  const handleIsSignIn = () => {
+    setIsSignIn(true);
+  }
+
   return (
     <NextUIProvider>
       <GlobalContextProvider>
-        <div className="w-full overflow-hidden bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
-          <React.Fragment>
-            <Preloader />
-            <Navbar />
-            {children}
-            <Access />
+        {auth && signIn ? (
+          <div className="w-full overflow-hidden bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
+            <React.Fragment>
+              <Preloader />
+              <Navbar />
+              {children}
+              <Access />
+              <Footer />
+            </React.Fragment>
+          </div>
+        ) : (
+          <div className="w-full h-full bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
+            {
+              signIn ?
+              <Signup />
+              :
+              <Login handleIsSignIn={handleIsSignIn} getAuth={getAuth}/>
+            }
             <Footer />
-          </React.Fragment>
-        </div>
+          </div>
+        )}
       </GlobalContextProvider>
     </NextUIProvider>
   );

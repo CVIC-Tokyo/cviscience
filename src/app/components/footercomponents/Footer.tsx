@@ -24,7 +24,7 @@ const Footer: React.FC<FooterProps> = () => {
         </div>
         <SNS />
         <Contact />
-        <p className="footer-text">
+        <p className="text-[9px] md:text-xs">
           {localeData.CVIC_INFO.CLINIC_RIGHTS_RESERVED}
         </p>
       </div>
