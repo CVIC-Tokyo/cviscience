@@ -174,3 +174,12 @@ interface ArrowIconProps {
   showDropdown: boolean;
   handleRotation: () => void;
 }
+
+interface LoginProps {
+  getAuth: (arg:any) => void;
+  handleIsSignIn: () => void;
+}
+
+interface SignupProps {
+  setIsSignIn: Dispatch<SetStateAction<boolean>>;
+}

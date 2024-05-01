@@ -2,25 +2,34 @@
 
 import { GlobalContextProvider } from "@/context/store";
 import { NextUIProvider } from "@nextui-org/react";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/navcomponents/Navbar";
 import Access from "./components/Access";
 import Footer from "./components/footercomponents/Footer";
 import Preloader from "./components/Preloader";
-import { useAuth } from "@/context/authContext";
 import Login from "./components/LogIn";
+import Signup from "./components/Singup";
 
 export default function Providers({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isSignedIn = useAuth();
+  const [auth, setAuth] = useState(undefined);
+  const [signIn, setIsSignIn] = useState(false);
+
+  function getAuth (authObject: any) {
+    setAuth(authObject);
+  }
+  
+  const handleIsSignIn = () => {
+    setIsSignIn(true);
+  }
 
   return (
     <NextUIProvider>
       <GlobalContextProvider>
-        {isSignedIn ? (
+        {auth && signIn ? (
           <div className="w-full overflow-hidden bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
             <React.Fragment>
               <Preloader />
@@ -32,7 +41,12 @@ export default function Providers({
           </div>
         ) : (
           <div className="w-full h-full bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
-            <Login />
+            {
+              signIn ?
+              <Signup />
+              :
+              <Login handleIsSignIn={handleIsSignIn} getAuth={getAuth}/>
+            }
             <Footer />
           </div>
         )}

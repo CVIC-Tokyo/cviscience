@@ -7,7 +7,7 @@ import {
 } from "../firebase/auth";
 import "../../styles/globals.css";
 
-const Login = () => {
+const Login:React.FC<LoginProps> = ({ getAuth, handleIsSignIn }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSigningIn, setIsSigningIn] = useState(false);
@@ -17,7 +17,8 @@ const Login = () => {
     if (!isSigningIn) {
       const res = await doSignInWithEmailAndPassword(email, password);
       setIsSigningIn(true);
-      console.log(res);
+      handleIsSignIn();
+      getAuth(res);
     }
   };
 
@@ -85,6 +86,14 @@ const Login = () => {
             </button>
           </div>
         </form>
+          <div>
+            <div
+            onClick={handleSubmit}
+              className="w-full py-3 text-sm font-medium rounded-md hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 cursor-pointer"
+            >
+              Sign in
+            </div>
+          </div>
       </div>
     </div>
   );

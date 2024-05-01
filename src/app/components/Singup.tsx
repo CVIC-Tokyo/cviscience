@@ -1,28 +1,30 @@
 "use client";
 
 import React, { useState } from "react";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { doCreateUserWithEmailAndPassword } from "../firebase/auth";
-import { useAuth } from "../../context/authContext";
 import "../../styles/globals.css";
+import Link from "next/link";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    try {
-      const res = await doCreateUserWithEmailAndPassword(email, password);
-      console.log(res);
-    } catch (error) {
-      console.log(error);
-    }
+    if (password === confirmPassword) {
+        try {
+          const res = await doCreateUserWithEmailAndPassword(email, password);
+          console.log(res);
+        } catch (error) {
+          console.log(error);
+        }
+    } else setErrorMessage("The passwords must match!")
   };
 
   return (
-    <div className="page-container bg-gradient-to-b from-blue-300 to-blue-200 h-[70-vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="page-container border-10 border-red bg-gradient-to-b from-blue-300 to-blue-200 h-[70vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mb-10 md:mb-20">
       <div className="max-w-md w-full bg-white p-8 rounded-md shadow-md">
         <div>
           <h2 className="text-3xl font-extrabold text-gray-900 text-center">
@@ -46,7 +48,7 @@ const Signup = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className="block w-full px-4 py-3 border border-gray-300 rounded-md placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 sm:text-sm"
                 placeholder="Email address"
-              />
+                />
             </div>
             <div>
               <label htmlFor="password" className="sr-only">
@@ -62,7 +64,7 @@ const Signup = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 className="block w-full px-4 py-3 border border-gray-300 rounded-md placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 sm:text-sm"
                 placeholder="Password"
-              />
+                />
             </div>
             <div>
               <label htmlFor="confirm-password" className="sr-only">
@@ -78,10 +80,16 @@ const Signup = () => {
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 className="block w-full px-4 py-3 border border-gray-300 rounded-md placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
                 placeholder="Confirm Password"
-              />
+                />
             </div>
           </div>
-
+            {errorMessage ?
+                <div>
+                    <p className="p-2 text-red-500">{errorMessage}</p>
+                </div>
+                :
+                <></>
+            }
           <div>
             <button
               type="submit"
@@ -89,6 +97,14 @@ const Signup = () => {
             >
               Sign up
             </button>
+          </div>
+          <div>
+            <Link
+              href={'/sign-up'}
+              className="w-full py-3 text-sm font-medium rounded-md hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+            >
+              Log in
+            </Link>
           </div>
         </form>
       </div>
