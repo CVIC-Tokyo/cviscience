@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import React, { useState } from "react";
 import {
@@ -6,16 +6,13 @@ import {
   doSignInWithGoogle,
 } from "../firebase/auth";
 import "../../styles/globals.css";
+import google from "../../../public/logos/google.webp"
+import Image from "next/image";
 
 const Login:React.FC<LoginProps> = ({ getAuth, handleIsSignIn }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSigningIn, setIsSigningIn] = useState(false);
-
-  const firebase = require('firebase');
-  const firebaseui = require('firebaseui');
-  const ui = new firebaseui.auth.AuthUI(firebase.auth());
-
   
 
   const handleSubmit = async (e: any) => {
@@ -28,13 +25,14 @@ const Login:React.FC<LoginProps> = ({ getAuth, handleIsSignIn }) => {
     }
   };
 
-  const handleGoogleSignIn = (e: any) => {
+  const handleGoogleSignIn = async (e: any) => {
     e.preventDefault();
-    if (!isSigningIn) {
-      setIsSigningIn(true);
-      doSignInWithGoogle().catch((err) => {
-        setIsSigningIn(false);
-      });
+    try {
+      const res = await doSignInWithGoogle()
+      setIsSigningIn(true)
+      
+    } catch (error) {
+      console.log(error) 
     }
   };
 
@@ -92,22 +90,31 @@ const Login:React.FC<LoginProps> = ({ getAuth, handleIsSignIn }) => {
             </button>
           </div>
         </form>
-          <div>
-            <div
-            onClick={handleIsSignIn}
-              className="w-full py-3 text-sm font-medium rounded-md hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 cursor-pointer"
-            >
-              Sign up
-            </div>
+        <div>
+          <div
+          onClick={() => handleIsSignIn()}
+            className="w-full py-3 text-sm font-medium rounded-md hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 cursor-pointer"
+          >
+            Sign up
           </div>
-          <div>
-            <div
-            onClick={handleIsSignIn}
-              className="w-full py-3 text-[10px] font-medium rounded-md hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 cursor-pointer"
-            >
-              Continue without login
-            </div>
+        </div>
+        <div className="rounded-full border-2 w-auto hover:bg-gray-300">
+          <div
+          onClick={(e) => handleGoogleSignIn(e)}
+            className="flex items-center justify-center py-1 text-sm font-medium hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 cursor-pointer"
+          >
+          <Image src={google} alt="google" height={40}
+        width={40}
+        className="sns-logo hover:none"  />
+            Sign-in with Google
           </div>
+        </div>
+        <div
+        onClick={() => handleIsSignIn()}
+          className="w-full py-3 text-[10px] font-medium rounded-md hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 cursor-pointer"
+        >
+          Continue without login
+        </div>
       </div>
     </div>
   );
