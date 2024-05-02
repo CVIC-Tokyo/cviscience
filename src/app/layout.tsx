@@ -23,6 +23,7 @@ export default function RootLayout({
           src="https://chatwith.tools/chatbot/d1548dd1-b93a-452e-b254-effd84def9c2.js"
           async
         />
+        <script src="https://accounts.google.com/gsi/client" async />
       </head>
       <body className="noto-serif w-full h-full text-center">
         <Providers>{children}</Providers>
