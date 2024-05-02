@@ -1,4 +1,6 @@
-interface NavbarProps {}
+interface NavbarProps {
+  auth: any;
+}
 
 interface TranslationTabProps {}
 

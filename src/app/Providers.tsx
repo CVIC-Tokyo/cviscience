@@ -33,7 +33,7 @@ export default function Providers({
           <div className="w-full overflow-hidden bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
             <React.Fragment>
               <Preloader />
-              <Navbar />
+              <Navbar auth={auth} />
               {children}
               <Access />
               <Footer />

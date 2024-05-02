@@ -7,8 +7,11 @@ import { getLocaleData } from "@/utils/helpers";
 import { useGlobalContext } from "../../../context/store";
 import { motion } from "framer-motion";
 import HamburgerButton from "./HamburgerButton";
+import { FaHouseUser } from "react-icons/fa";
+import { HiOutlineLogout } from "react-icons/hi";
+import { doSignOut } from "@/app/firebase/auth";
 
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar: React.FC<NavbarProps> = ({ auth }) => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
   const [showShadow, setShowShadow] = useState<boolean>(false);
   const { locale } = useGlobalContext();
@@ -60,6 +63,17 @@ const Navbar: React.FC<NavbarProps> = () => {
         </Link>
         <div className="hidden md:flex h-[10xpx]">
           <TranslationTab />
+        <div className="hidden md:flex border-2 p-2 ml-2">
+          { auth ?
+          <div>
+            <FaHouseUser />
+            {auth.email}
+            <HiOutlineLogout onClick={() => doSignOut()} />
+          </div>
+            :
+            'login'
+        }
+        </div>
         </div>
       </div>
       {/* NAVBAR BUTTONS */}
