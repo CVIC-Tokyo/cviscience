@@ -43,6 +43,7 @@ const config: Config = {
         workstation: 'url("/images/home/workstation.webp")',
         pointing: 'url("/images/home/pointing.webp")',
         software: 'url("/images/home/software.webp")',
+        google: 'url("/logos/google.webp")'
       },
     },
   },
