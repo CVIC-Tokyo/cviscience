@@ -19,11 +19,11 @@ export default function Providers({
   const [signIn, setIsSignIn] = useState(false);
 
   function getAuth (authObject: any) {
-    setAuth(authObject);
+    setAuth(authObject.user);
   }
   
   const handleIsSignIn = () => {
-    setIsSignIn(true);
+    setIsSignIn(!signIn);
   }
 
   return (
@@ -43,7 +43,7 @@ export default function Providers({
           <div className="w-full h-full bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
             {
               signIn ?
-              <Signup />
+              <Signup handleIsSignIn={handleIsSignIn}/>
               :
               <Login handleIsSignIn={handleIsSignIn} getAuth={getAuth}/>
             }

@@ -181,5 +181,5 @@ interface LoginProps {
 }
 
 interface SignupProps {
-  setIsSignIn: Dispatch<SetStateAction<boolean>>;
+  handleIsSignIn: () => void;
 }
