@@ -7,9 +7,7 @@ import { getLocaleData } from "@/utils/helpers";
 import { useGlobalContext } from "../../../context/store";
 import { motion } from "framer-motion";
 import HamburgerButton from "./HamburgerButton";
-import { FaHouseUser } from "react-icons/fa";
-import { HiOutlineLogout } from "react-icons/hi";
-import { doSignOut } from "@/app/firebase/auth";
+import UserInfo from "./UserInfo";
 
 const Navbar: React.FC<NavbarProps> = ({ auth }) => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
@@ -56,24 +54,15 @@ const Navbar: React.FC<NavbarProps> = ({ auth }) => {
             setShowSidebar={setShowSidebar}
             handleSidebar={handleSidebar}
             locale={locale}
+            auth={auth}
           />
         </motion.div>
         <Link href={"/"}>
           <div className="w-[280px] h-[39px] md:w-[600px] md:h-[75px] bg-logo_600 bg-contain ml-12"></div>
         </Link>
-        <div className="hidden md:flex h-[10xpx]">
+        <div className="hidden md:flex flex-col p-2 h-[10xpx] items-center justify-center">
+          <UserInfo auth={auth} />
           <TranslationTab />
-        <div className="hidden md:flex border-2 p-2 ml-2">
-          { auth ?
-          <div>
-            <FaHouseUser />
-            {auth.email}
-            <HiOutlineLogout onClick={() => doSignOut()} />
-          </div>
-            :
-            'login'
-        }
-        </div>
         </div>
       </div>
       {/* NAVBAR BUTTONS */}

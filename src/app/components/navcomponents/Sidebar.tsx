@@ -5,12 +5,14 @@ import cvic_logo_600 from "@/../public/logos/cvic_logo_600.png";
 import { getLocaleData } from "@/utils/helpers";
 import TranslationTab from "./TranslationTab";
 import SNS from "../footercomponents/SNS";
+import UserInfo from "./UserInfo";
 
 const SideBar: React.FC<SidebarProps> = ({
   showSidebar,
   setShowSidebar,
   handleSidebar,
   locale,
+  auth,
 }) => {
   const localeData = getLocaleData(locale);
 
@@ -85,6 +87,7 @@ const SideBar: React.FC<SidebarProps> = ({
             </div>
           </div>
           <div className="border-b border-grey-300 my-4"></div>
+          <UserInfo auth={auth} />
         </div>
       </div>
     </div>
