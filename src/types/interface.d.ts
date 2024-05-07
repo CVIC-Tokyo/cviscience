@@ -9,6 +9,7 @@ interface SidebarProps {
   setShowSidebar: (arg: boolean) => void;
   handleSidebar: () => void;
   locale: string;
+  auth: any;
 }
 
 interface HomeDropdownProps {}
@@ -64,6 +65,7 @@ interface HamburgerProps {
   setShowSidebar: (arg: boolean) => void;
   handleSidebar: () => void;
   locale: string;
+  auth: any;
 }
 
 interface ConsultationProps {
@@ -184,4 +186,8 @@ interface LoginProps {
 
 interface SignupProps {
   handleIsSignIn: () => void;
+}
+
+interface UserInfoProps {
+  auth: any;
 }
