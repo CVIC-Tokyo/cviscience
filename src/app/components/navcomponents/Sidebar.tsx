@@ -13,6 +13,7 @@ const SideBar: React.FC<SidebarProps> = ({
   handleSidebar,
   locale,
   auth,
+  handleIsSignIn,
 }) => {
   const localeData = getLocaleData(locale);
 
@@ -87,7 +88,7 @@ const SideBar: React.FC<SidebarProps> = ({
             </div>
           </div>
           <div className="border-b border-grey-300 my-4"></div>
-          <UserInfo auth={auth} />
+          <UserInfo handleIsSignIn={handleIsSignIn} auth={auth} />
         </div>
       </div>
     </div>

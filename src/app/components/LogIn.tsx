@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import {
+  doAnonymousLogin,
   doSignInWithEmailAndPassword,
   doSignInWithGoogle,
 } from "../firebase/auth";
@@ -19,9 +20,9 @@ const Login:React.FC<LoginProps> = ({ getAuth, handleIsSignIn }) => {
     e.preventDefault();
     if (!isSigningIn) {
       const res = await doSignInWithEmailAndPassword(email, password);
-      setIsSigningIn(true);
       handleIsSignIn();
       getAuth(res);
+      setIsSigningIn(true);
     }
   };
 
@@ -29,12 +30,25 @@ const Login:React.FC<LoginProps> = ({ getAuth, handleIsSignIn }) => {
     e.preventDefault();
     try {
       const res = await doSignInWithGoogle()
-      setIsSigningIn(true)
-      
+      handleIsSignIn();
+      getAuth(res);
+      console.log(res)
     } catch (error) {
       console.log(error) 
     }
   };
+
+  const handleAnonymousLogin = async (e: any) => {
+    e.preventDefault();
+    try {
+      const res = await doAnonymousLogin();
+      handleIsSignIn();
+      getAuth(res);
+      setIsSigningIn(true);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <div className="page-container bg-gradient-to-b from-blue-300 to-white h-[70vh] md:w-[40%] rounded-lg shadow-2xl flex items-center justify-center py-12 px-4 lg:px-8 md:mb-20">
@@ -110,7 +124,7 @@ const Login:React.FC<LoginProps> = ({ getAuth, handleIsSignIn }) => {
           </div>
         </div>
         <div
-        onClick={() => handleIsSignIn()}
+        onClick={(e) => handleAnonymousLogin(e)}
           className="w-full py-3 text-[10px] font-medium rounded-md hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 cursor-pointer"
         >
           Continue without login

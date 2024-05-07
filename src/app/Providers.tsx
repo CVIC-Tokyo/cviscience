@@ -2,7 +2,7 @@
 
 import { GlobalContextProvider } from "@/context/store";
 import { NextUIProvider } from "@nextui-org/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./components/navcomponents/Navbar";
 import Access from "./components/Access";
 import Footer from "./components/footercomponents/Footer";
@@ -26,6 +26,9 @@ export default function Providers({
     setIsSignIn(!signIn);
   }
 
+  useEffect(() => {
+  },[auth, signIn])
+
   return (
     <NextUIProvider>
       <GlobalContextProvider>
@@ -33,7 +36,7 @@ export default function Providers({
           <div className="w-full overflow-hidden bg-center bg-gradient-to-b from-blue-300 to-white md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
             <React.Fragment>
               <Preloader />
-              <Navbar auth={auth} />
+              <Navbar  handleIsSignIn={handleIsSignIn} auth={auth} />
               {children}
               <Access />
               <Footer />

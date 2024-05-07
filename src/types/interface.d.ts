@@ -1,5 +1,6 @@
 interface NavbarProps {
   auth: any;
+  handleIsSignIn: () => void;
 }
 
 interface TranslationTabProps {}
@@ -10,6 +11,7 @@ interface SidebarProps {
   handleSidebar: () => void;
   locale: string;
   auth: any;
+  handleIsSignIn: () => void;
 }
 
 interface HomeDropdownProps {}
@@ -66,6 +68,7 @@ interface HamburgerProps {
   handleSidebar: () => void;
   locale: string;
   auth: any;
+  handleIsSignIn: () => void;
 }
 
 interface ConsultationProps {
@@ -190,4 +193,5 @@ interface SignupProps {
 
 interface UserInfoProps {
   auth: any;
+  handleIsSignIn: () => void;
 }
