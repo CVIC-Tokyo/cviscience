@@ -11,7 +11,10 @@ const UserInfo: React.FC<UserInfoProps> = ({ auth }) => {
           <div className="footer-text flex items-center justify-center">
             <FaHouseUser className="h-6 w-6 mr-2" />
             {auth.email}
-            <HiOutlineLogout className="h-6 w-6 ml-2" onClick={() => doSignOut()} />
+            <div className="flex items-center jusitfy-center ml-2 rounded-md hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 cursor-pointer">
+                <HiOutlineLogout className="h-6 w-6 ml-2" onClick={() => doSignOut()} />
+                Logout
+            </div>
           </div>
             :
             'login'

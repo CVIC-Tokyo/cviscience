@@ -61,8 +61,8 @@ const Navbar: React.FC<NavbarProps> = ({ auth }) => {
           <div className="w-[280px] h-[39px] md:w-[600px] md:h-[75px] bg-logo_600 bg-contain ml-12"></div>
         </Link>
         <div className="hidden md:flex flex-col p-2 h-[10xpx] items-center justify-center">
-          <UserInfo auth={auth} />
           <TranslationTab />
+          <UserInfo auth={auth} />
         </div>
       </div>
       {/* NAVBAR BUTTONS */}
