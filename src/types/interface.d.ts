@@ -1,4 +1,7 @@
-interface NavbarProps {}
+interface NavbarProps {
+  auth: any;
+  handleIsSignIn: () => void;
+}
 
 interface TranslationTabProps {}
 
@@ -7,6 +10,8 @@ interface SidebarProps {
   setShowSidebar: (arg: boolean) => void;
   handleSidebar: () => void;
   locale: string;
+  auth: any;
+  handleIsSignIn: () => void;
 }
 
 interface HomeDropdownProps {}
@@ -62,6 +67,8 @@ interface HamburgerProps {
   setShowSidebar: (arg: boolean) => void;
   handleSidebar: () => void;
   locale: string;
+  auth: any;
+  handleIsSignIn: () => void;
 }
 
 interface ConsultationProps {
@@ -181,5 +188,10 @@ interface LoginProps {
 }
 
 interface SignupProps {
-  setIsSignIn: Dispatch<SetStateAction<boolean>>;
+  handleIsSignIn: () => void;
+}
+
+interface UserInfoProps {
+  auth: any;
+  handleIsSignIn: () => void;
 }

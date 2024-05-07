@@ -7,6 +7,8 @@ const HamburgerButton: React.FC<HamburgerProps> = ({
   setShowSidebar,
   handleSidebar,
   locale,
+  auth,
+  handleIsSignIn,
 }) => {
   const [active, setActive] = useState(false);
 
@@ -99,6 +101,8 @@ const HamburgerButton: React.FC<HamburgerProps> = ({
           setShowSidebar={setShowSidebar}
           handleSidebar={handleSidebar}
           locale={locale}
+          auth={auth}
+          handleIsSignIn={handleIsSignIn}
         />
       </div>
     </MotionConfig>

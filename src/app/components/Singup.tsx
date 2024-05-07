@@ -5,7 +5,7 @@ import { doCreateUserWithEmailAndPassword } from "../firebase/auth";
 import "../../styles/globals.css";
 import Link from "next/link";
 
-const Signup = () => {
+const Signup: React.FC<SignupProps> = ({ handleIsSignIn }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -24,10 +24,10 @@ const Signup = () => {
   };
 
   return (
-    <div className="page-container border-10 border-red bg-gradient-to-b from-blue-300 to-blue-200 h-[70vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mb-10 md:mb-20">
+    <div className="page-container bg-gradient-to-b from-blue-300 to-white h-[70vh] md:w-[40%] rounded-lg shadow-2xl flex items-center justify-center py-12 px-4 lg:px-8 md:mb-20">
       <div className="max-w-md w-full bg-white p-8 rounded-md shadow-md">
         <div>
-          <h2 className="text-3xl font-extrabold text-gray-900 text-center">
+          <h2 className="text-lg md:text-2xl font-extrabold text-gray-900 text-center">
             Sign up
           </h2>
         </div>
@@ -46,7 +46,7 @@ const Signup = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="block w-full px-4 py-3 border border-gray-300 rounded-md placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 sm:text-sm"
+                className="block w-full px-4 py-3 border border-gray-300 rounded-md placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 text-xs md:text-base"
                 placeholder="Email address"
                 />
             </div>
@@ -62,7 +62,7 @@ const Signup = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="block w-full px-4 py-3 border border-gray-300 rounded-md placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 sm:text-sm"
+                className="block w-full px-4 py-3 border border-gray-300 rounded-md placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 text-xs md:text-base"
                 placeholder="Password"
                 />
             </div>
@@ -78,7 +78,7 @@ const Signup = () => {
                 required
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="block w-full px-4 py-3 border border-gray-300 rounded-md placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                className="block w-full px-4 py-3 border border-gray-300 rounded-md placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-red-500 focus:border-red-500 text-xs md:text-base"
                 placeholder="Confirm Password"
                 />
             </div>
@@ -99,12 +99,12 @@ const Signup = () => {
             </button>
           </div>
           <div>
-            <Link
-              href={'/sign-up'}
+            <div
+              onClick={handleIsSignIn}
               className="w-full py-3 text-sm font-medium rounded-md hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
             >
               Log in
-            </Link>
+            </div>
           </div>
         </form>
       </div>

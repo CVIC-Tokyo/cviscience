@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = () => {
 
   return (
     <div className="bg-cvic-dark text-white w-full h-auto p-3 flex justify-center items-center align-bottom">
-      <div className="flex flex-col justify-center items-center w-full h-full">
+      <div className="flex flex-col md:flex-row justify-around items-center w-full h-full">
         <Image src={cvic_logo_600} width={75} height={75} alt="/CVIC logo" />
         <div className="flex flex-col items-center p-4 justify-center">
           <p className="footer-text">
@@ -22,8 +22,12 @@ const Footer: React.FC<FooterProps> = () => {
           </p>
           <p className="footer-text">{localeData.CVIC_INFO.CLINIC_ADDRESS}</p>
         </div>
-        <SNS />
-        <Contact />
+        <div className="flex flex-col md:flex-row items-center">
+          <SNS />
+          <div className="w-full hidden md:flex">
+            <Contact />
+          </div>
+        </div>
         <p className="text-[9px] md:text-xs">
           {localeData.CVIC_INFO.CLINIC_RIGHTS_RESERVED}
         </p>

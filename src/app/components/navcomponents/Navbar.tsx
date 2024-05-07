@@ -7,8 +7,9 @@ import { getLocaleData } from "@/utils/helpers";
 import { useGlobalContext } from "../../../context/store";
 import { motion } from "framer-motion";
 import HamburgerButton from "./HamburgerButton";
+import UserInfo from "./UserInfo";
 
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar: React.FC<NavbarProps> = ({ auth, handleIsSignIn }) => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
   const [showShadow, setShowShadow] = useState<boolean>(false);
   const { locale } = useGlobalContext();
@@ -52,14 +53,17 @@ const Navbar: React.FC<NavbarProps> = () => {
             showSidebar={showSidebar}
             setShowSidebar={setShowSidebar}
             handleSidebar={handleSidebar}
+            handleIsSignIn={handleIsSignIn}
             locale={locale}
+            auth={auth}
           />
         </motion.div>
         <Link href={"/"}>
           <div className="w-[280px] h-[39px] md:w-[600px] md:h-[75px] bg-logo_600 bg-contain ml-12"></div>
         </Link>
-        <div className="hidden md:flex h-[10xpx]">
+        <div className="hidden md:flex flex-col p-2 h-[10xpx] items-center justify-center">
           <TranslationTab />
+          <UserInfo handleIsSignIn={handleIsSignIn} auth={auth} />
         </div>
       </div>
       {/* NAVBAR BUTTONS */}

@@ -34,20 +34,20 @@ const SanityCards = async () => {
             key={idx}
             className="w-full h-full flex items-center justify-center"
           >
-            <div className="bg-white rounded-xl shadow-lg w-[100px] h-[100px] md:h-[350px] md:w-[200px] p-1 md:p-2 relative pb-[150px] md:pb-[200px]">
+            <div className="bg-white rounded-xl shadow-lg w-[100px] h-[100px] md:h-[260px] md:w-[150px] p-1 md:p-2 relative pb-[150px] md:pb-[200px]">
               <Image
                 src={urlFor(post.titleImage).url()}
                 alt="image"
                 width={300}
-                height={300}
-                className="rounded-t-lg object-cover"
+                height={100}
+                className="rounded-t-lg"
               />
 
               <div className="p-1 md:mt-1">
-                <h3 className="text-[7px] md:text-sm line-clamp-2 font-bold">
+                <h3 className="text-[7px] md:text-xs line-clamp-2 font-bold">
                   {post.title}
                 </h3>
-                <p className="line-clamp-2 text-[6px] md:text-xs mt-2 text-gray-600 dark:text-gray-300">
+                <p className="line-clamp-2 text-[6px] md:text-[9px] mt-2 text-gray-600 dark:text-gray-300">
                   {post.smallDescription}
                 </p>
                 <div className="rounded-b-xl w-full rounded-t-none mt-7 absolute bottom-0 left-0 bg-cvic-red/75 hover:bg-cvic-red text-white flex h-[25px] md:h-[50px] items-center justify-center">
