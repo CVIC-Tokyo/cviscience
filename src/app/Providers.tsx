@@ -30,7 +30,7 @@ export default function Providers({
     <NextUIProvider>
       <GlobalContextProvider>
         {auth && signIn ? (
-          <div className="w-full overflow-hidden bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
+          <div className="w-full overflow-hidden bg-center bg-gradient-to-b from-blue-300 to-white md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
             <React.Fragment>
               <Preloader />
               <Navbar auth={auth} />
@@ -40,7 +40,7 @@ export default function Providers({
             </React.Fragment>
           </div>
         ) : (
-          <div className="w-full h-full bg-center bg-parallax_sm md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
+          <div className="w-full h-full bg-center bg-gradient-to-b from-blue-300 to-white md:bg-parallax bg-cover bg-fixed flex flex-col items-center justify-start">
             {
               signIn ?
               <Signup handleIsSignIn={handleIsSignIn}/>
