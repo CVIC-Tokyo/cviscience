@@ -20,7 +20,6 @@ async function getData() {
 
 const AnnouncementCards = async () => {
   const data: simpleAnnouncementCard[] = await getData();
-  console.log(data);
 
   return (
     <div
