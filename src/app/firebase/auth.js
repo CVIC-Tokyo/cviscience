@@ -24,7 +24,6 @@ export const doSignInWithGoogle = async () => {
 };
 
 export const doAnonymousLogin = async () => {
-  console.log(auth)
   return await signInAnonymously(auth);
 }
 
